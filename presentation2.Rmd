@@ -1,0 +1,368 @@
+---
+title: "GDP and the CPI: Tracking the Macroeconomy"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: center,middle,mctitle-slide 
+
+
+# GDP and the CPI: Tracking the Macroeconomy I
+
+## Manolis Chatzikonstantinou  
+
+---
+
+
+# What will you learn in the next two lectures?
+
+- __How do economists use aggregate measures to track the performance of the economy?__
+
+--
+
+- __What is gross domestic product (GDP), and how is it calculated?__
+
+--
+
+- _What is the difference between real GDP and nominal GDP, and why is real GDP the appropriate measure of real economic activity?_
+
+--
+
+- _What is a price index, and how is it used to calculate the inflation rate?_
+
+---
+
+# The National Accounts
+
+- The formal way we measure key aspects of an economy, and how can we compare economies.
+
+--
+
+- We use the national income and product accounts, often referred to as the national accounts. 
+
+--
+
+- The national accounts keep track of spending of consumers, sales of producers, business investment spending, government purchases, and other flows of money between different sectors of the economy. 
+
+--
+
+```{r  out.width = "50%",echo=FALSE}
+knitr::include_graphics("week2graphs/circflow.png") 
+```
+
+
+---
+
+# The National Accounts
+
+- Consumer spending is household spending on goods and services.
+
+--
+
+- Government purchases of goods and services are total expenditures on goods and services by federal, state, and local governments.
+
+--
+
+- Investment spending is spending on productive physical capital (such as machinery and construction of buildings) and on changes to inventories.
+
+--
+
+- Goods and services sold to other countries are exports. Goods and services purchased from other countries are imports.
+
+--
+
+- If we add up consumer spending, investment spending, government purchases, exports and subtract imports, we will get the market value of the goods and services the economy produces—the country’s gross domestic product.
+
+--
+
+__Digression: Stocks and Flows__
+
+- The distinction between a stock and a flow is very important in economic measurement and national income accounting
+
+- A stock is a position at a moment of time, for example,
+the stock of inventories in the economy at year end 2021
+
+- A flow is the rate of change in a stock, for example, the
+change in the stock of inventories in the economy in
+2005 ..(Profit and loss statements report flows
+
+
+
+
+---
+
+# Gross Domestic Product
+
+__Definition__
+
+> GDP or gross domestic product is the market value of all final goods and services produced in a
+country in a given time period.
+
+This definition has four parts:
+
+  1. Market value
+
+  2. Final goods and services
+
+  3. Produced within a country
+
+  4. In a given time period
+
+__Excludes__ financial transactions and income transfers
+since these do not reflect production
+
+__Net additions to inventory__ are current period output so are also included 
+
+
+- How to measure GDP ? 
+
+> GDP measures the value of production, which also equals total expenditure on final goods and total income.
+
+---
+
+# Calculating GDP
+
+
+Gross domestic product (GDP): the total value of all final goods and services produced within a country during a given year:
+
+- Goods and services are final if they are sold to the final, or end, user. 
+- Goods and services are intermediate if the purchaser—another firm—is not the final user.
+
+  - If you buy a car from a dealer, the car is a final good. If an automobile manufacturer buys steel from a steel foundry, that steel is an intermediate good. 
+
+  
+- Market Value
+  - GDP is a market value-goods and services are valued at their market prices.
+  - To add apples and oranges, computers and popcorn, we add the market values so we have a total value of output in dollars.
+
+- __Final Goods and Services__
+  - GDP is the value of the final goods and services produced.
+  - A final good (or service) is an item bought by its final user during a specified time period.
+  - Excluding the value of intermediate goods and services avoids counting the same value more than once.
+
+
+---
+
+# Calculating GDP
+
+> GDP Equals Expenditure Equals Income
+
+Total expenditure on final goods and services equals GDP.
+- GDP $=C+I+G+X-I M$.
+
+
+- Aggregate income equals the total amount paid for the use of factors of production: wages, interest, rent, and profit.
+
+
+
+> GDP can be calculated in three ways:
+
+1. Add up the total value of all final goods and services produced
+
+2. Add up all aggregate spending on domestically produced final goods and services
+
+3. Add up the total factor income earned by households from firms in the economy
+
+It doesn’t matter if we add up all the spending or all the incomes because one person’s spending is another person’s income.
+
+---
+
+# Example
+
+This hypothetical economy consists of three firms. GDP can be calculated:  
+
+1. as the value of final goods and services 
+2. as aggregate spending on domestically produced final goods and services
+3. as factor income earned by households from firms in the economy
+
+
+```{r  out.width = "50%",echo=FALSE}
+knitr::include_graphics("week2graphs/hypotheticaleconomy.png") 
+```
+
+
+---
+
+#  GDP as Spendind on domestic production
+
+> Add up all spending on domestically produced final goods and services. 
+
+__Aggregate spending:__ the sum of consumer spending, investment spending, government purchases of goods and services, and exports minus imports
+
+
+$$
+GDP = C + I + G + X – IM 
+$$
+- C = consumer spending
+  - Consumer Durables: "has a life of over 3 years: cars, furniture, etc"
+  - Consumer Non Durables: "food, utilities, clothing"
+  - Services: "Housing, healthcare, recreation, education"
+- I = investment spending : adding to the capital stock
+  - Residential Investment (homes)
+  - Non residential Investment (business investments in structures and equipment)
+  - Changes in Inventories (changes get registered)
+- G = government purchases of goods and services
+  - Government Expenditures reflect direct consumption, not transfers,  "Defense, Government investments in roads and other infrastructure"
+  - Transfer payments represent money redistributed from one group of citizens (taxpayers) to another (poor, unemployed, elderly) $\rightarrow$ Does not result in production of new goods and services
+
+---
+
+# External Accounts
+
+- X = sales to foreigners, and
+- IM = imports (purchases of foreign goods)
+- Net Exports = NX = X
+
+
+__Observe__
+
+  - If NX = X- IM > 0 Trade Surplus
+  - If NX = X - IM < 0 Trade Deficit
+
+__Some examples of exports of services__
+
+- Spending of foreign tourists in USA or Qatar:
+
+  - transportation services
+
+  - insurance / banking services
+
+  - medical services
+
+  - retail services (souvenirs)   
+
+  - hotel accommodation services
+
+
+---
+
+# The expenditure approach
+
+```{r  out.width = "70%",echo=FALSE}
+knitr::include_graphics("week2graphs/expenditureapproach.png") 
+```
+
+---
+
+#  The Income Approach
+
+> The income approach measures GDP by summing the
+incomes that firms pay households for the factors of
+production they hire.
+
+
+-  add all factor income earned from firms and workers in the economy;
+
+  - The wages earned by labor
+  - The interest paid on savings
+  - The rent earned by those who lease their assets
+  - Dividends paid to the shareholders
+
+-- 
+The National Income and Expenditure Accounts divide
+incomes into two broad categories:
+
+1. Compensation of employees
+
+2. Net operating surplus
+
+> Compensation of employees is the payments for labor
+services. The sum of net wages plus taxes withheld plus
+social security and pension fund contributions.
+
+> Net operating surplus is the sum of other factor incomes. It
+includes net interest, rental income, corporate profits, and
+proprietor’s income.
+
+
+---
+
+# The Income approach
+
+```{r  out.width = "70%",echo=FALSE}
+knitr::include_graphics("week2graphs/incomeapproach.png") 
+```
+
+
+---
+
+# The value added approach
+
+
+- Add up the value of all the final goods and services produced in the economy.
+
+- We count only each producer’s value added in the calculation of GDP: the difference between the value of its sales and the value of the intermediate goods and services it purchases from other businesses. 
+
+
+- It’s easy to confuse what is included in and excluded from GDP. For example, changes to inventories are included in GDP, but the steel used to make cars is not. Why? 
+
+__We only include items that are newly produced and aren’t used up in production.__
+
+
+- In
+ - Investment spending
+ - Capital spending (it’s part of investment spending)
+ - Domestically produced final goods and services, including capital goods, new construction of structures, and changes to inventories
+- Out 
+ - Intermediate goods and services
+ - Used goods
+ -Financial assets like stocks and bonds
+---
+
+# The value added approach
+
+```{r  out.width = "60%",echo=FALSE}
+knitr::include_graphics("week2graphs/intermediates.png") 
+```
+
+ 
+---
+
+
+
+# Different approaches, same result
+
+```{r  out.width = "60%",echo=FALSE}
+knitr::include_graphics("week2graphs/2waysmeasure.png") 
+```
+
+
+---
+
+# What we will learn next:
+
+- __Real GDP__
+ - Aggregate output: the total quantity of final goods and services the economy produces 
+ - We measure aggregate output by real GDP
+ - calculated using the __prices of a selected base year__
+
+- vs __Nominal GDP:__ the value of all final goods and services produced in the economy during a given year, calculated using the prices current in the year in which the output is produced
+
+
+Remember GDP measures the size of the economy. 
+
+- One must be careful when comparing economies over time. That’s because increases in GDP over time might represent increases in prices rather than increases in output. 
+
+- We need to adjust GDP for price changes—we need real GDP!
+
+
+---
+
+# Interesting Links:
+
+-
+
+-
+
+-

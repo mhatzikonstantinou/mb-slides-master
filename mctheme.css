@@ -1,0 +1,23 @@
+.mctitle-slide {
+  background-image: url(https://www.asergeev.com/pictures/archives/2014/1381/jpeg/14.jpg);
+  background-size: cover;
+    height: 100%;
+}
+
+.mctitle-slide {
+  border-top: 0px solid #FAFAFA;
+}
+
+
+.mctitle-slide h1 {
+  font-weight: normal;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #ffffcc;
+}
+
+.mctitle-slide h2, h3, h4 {
+  color: #ffffcc;
+  text-shadow: none;
+  text-align: center;
+}
