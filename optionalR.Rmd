@@ -1,0 +1,446 @@
+---
+title: "Introduction R"
+author: "Manolis Chatzikonstantinou"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+description: '''Introduction to R'' is an optional companion to the notes in
+  class. It gives an introduction to the essentials of R programming and guides students
+  on how to get macroeconomics data and plot them using R.'
+---
+
+# Preface {-}
+
+
+```{r html, echo=FALSE}
+# globally set chunk options
+knitr::opts_chunk$set(fig.align = 'center', 
+                      out.width = '80%',
+                      comment = '#>',
+                      collapse = TRUE)
+
+my_output <- knitr::opts_knit$get("rmarkdown.pandoc.to")
+
+# function for escaping special LaTeX characters
+escape_latex = function(x, newlines = FALSE, spaces = FALSE) {
+	x = gsub('\\\\', '\\\\textbackslash', x)
+	x = gsub('([#$%&_{}])', '\\\\\\1', x)
+	x = gsub('\\\\textbackslash', '\\\\textbackslash{}', x)
+	x = gsub('~', '\\\\textasciitilde{}', x)
+	x = gsub('\\^', '\\\\textasciicircum{}', x)
+	if (newlines) x = gsub('(?<!\n)\n(?!\n)', '\\\\\\\\', x, perl = TRUE)
+	if (spaces) x = gsub('  ', '\\\\ \\\\ ', x)
+	x
+}
+
+# function for output dependent inline code formatting
+ttcode <- function(x, type = "tt") {
+  outputFormat <- knitr:::pandoc_to()
+  if (outputFormat %in% c('latex', 'beamer'))
+    paste0("\\texttt{", escape_latex(x), "}")
+  else if (outputFormat == 'html')
+    paste0("<", type, ">", x, "</", type, ">")
+  else
+    x
+}
+
+```
+
+
+```{r latex, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "latex", echo=FALSE}
+knitr::opts_chunk$set(fig.width=5.6, fig.height=3.7, fig.align='center', fig.pos = 'h') 
+```
+
+
+```{r global, echo=FALSE}
+knitr::opts_chunk$set(message=F, warning=F) 
+```
+
+
+
+```{r, eval=my_output == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+
+<center><img src='images/cover.png' style = 'width:60%;'></center>
+
+
+```{r, eval=knitr::opts_knit$get("rmarkdown.pandoc.to") == "html", results='asis', echo=FALSE}
+cat('<hr style="background-color:#3C6690;height:2px">')
+```
+
+Over the recent years, the statistical programming language R has grown in the economics/data science community. Most students have not been exposed to any programming language before this class and thus learning a programming language on their own is time consuming and especially hard at the beginning. Despite its relatively steep learning curve, knowledge of R (or of other statistical software) is important to conduct and communicate economic data through tables and graphs. As students, all of the latter are capabilities that should be part of your toolbox.
+
+The benefits of R include being freely available, open source and having a large and constantly growing community of users.  An advantage of using `r ttcode("R")` in econometrics is that it enables researchers to explicitly document their analysis step-by-step such that it is easy to update and to expand. This allows to re-use code for similar applications with different data. Furthermore, `r ttcode("R")` programs are fully reproducible, which makes it straightforward for others to comprehend and validate results by your future self or others. 
+These introductory notes are small reports that provide guidance on how to implement in `r ttcode("R")` selected applications like plotting data that we source from online sources. Writing these notes, or any other document that includes code and results is facilitated considerably by the packages `r ttcode("knitr")` [@R-knitr] and `r ttcode("R markdown")` [@R-rmarkdown]. In conjunction, both `r ttcode("R")` packages provide powerful functionalities for report generation which allow to seamlessly combine pure text, LaTeX, `r ttcode("R")` code and its output in a variety of formats, including PDF and HTML. This set of tools is very helpful as in the future, you would be able to combine code and text to make a report without having to go back and forth using different programs, e.g. Word and Excel. Instead, you do everything in R.
+
+How does this work? Well, first you type a text paragraph and then you type a code chuck, that reports both the code and the output. As an example, consider the following line of code presented in chunk below. It tells `r ttcode("R")` to compute the number of packages available on `r ttcode("CRAN")`. The code chunk is followed by the output produced.
+
+```{r}
+# check the number of R packages available on CRAN
+nrow(available.packages(repos = "http://cran.us.r-project.org"))
+```
+
+
+
+#### Conventions Used in the Notes {-}
+
++ *Italic* text indicates new terms, names, buttons and alike.
+
++ `r ttcode("Constant width text")` is generally used in paragraphs to refer to `r ttcode("R")` code. This includes commands, variables, functions, data types, databases and file names. 
+
++ <code>Constant width text on gray background</code> indicates `r ttcode("R")`.
+
+
+# A Very Short Introduction to `r ttcode("R")` and *RStudio*
+
+```{r, fig.align='center', echo=FALSE, fig.cap="RStudio: the four panels"}
+knitr::include_graphics('images/rstudio.jpg')
+```
+
+#### `r ttcode("R")` Basics {-}
+
+These notes are not a comprehensive introduction to `r ttcode("R")` but a guide on how to use its capabilities for applications commonly encountered in undergraduate statistics. This section is meant for those who have not worked with `r ttcode("R")` or *RStudio* before. 
+
+First of all, after installing `r ttcode("R")` and *RStudio*, start *RStudio*. Open a new `r ttcode("R")` script by selecting *File*, *New File*, *R Script*. In the editor panel(1 in the picture above), type
+
+```{r, eval = F}
+1 + 1
+```
+
+and click on the button labeled *Run* in the top right corner of the editor. By doing so, your line of code is sent to the console (panel 4) and the result of this operation should be displayed right underneath it. As you can see, `r ttcode("R")` works just like a calculator. You can do all arithmetic calculations by using the corresponding operator (`r ttcode("+")`, `r ttcode("-")`, `r ttcode("*")`, `r ttcode("/")` or `r ttcode("^")`). If you are not sure what the last operator does, try it out and check the results.
+
+#### Vectors {-}
+
+`r ttcode("R")` is of course more sophisticated than that. We can work with variables or, more generally, objects. Objects are defined by using the assignment operator `r ttcode("<-")`. To create a variable named `r ttcode("x")` which contains the value `r ttcode("10")` type `x <- 10` and click the button *Run* yet again. The new variable should have appeared in the environment panel(2) on the top right. The console however did not show any results, because our line of code did not contain any call that creates output. When you now type `x` in the console and hit return, you ask `r ttcode("R")` to show you the value of `r ttcode("x")` and the corresponding value should be printed in the console.
+
+`r ttcode("x")` is a scalar, a vector of length $1$. You can easily create longer vectors by using the function `r ttcode("c()")` (*c* is for "concatenate" or "combine"). To create a vector `r ttcode("y")` containing the numbers $1$ to $5$ and print it, do the following.
+
+```{r, eval = T}
+y <- c(1, 2, 3, 4, 5)
+y
+```
+
+You can also create a vector of letters or words. For now just remember that characters have to be surrounded by quotes, else they will be parsed as object names.
+
+```{r, eval = F}
+hello <- c("Hello", "World")
+```
+
+Here we have created a vector of length 2 containing the words `r ttcode("Hello")` and `r ttcode("World")`. 
+
+Do not forget to save your script! To do so, select *File*, *Save*.
+
+#### Functions {-}
+
+You have seen the function `r ttcode("c()")` that can be used to combine objects. In general, all function calls look the same: a function name is always followed by round parentheses. Sometimes, the parentheses include arguments.
+
+Here are two simple examples.
+
+```{r, eval = T}
+# generate the vector `z`
+z <- seq(from = 1, to = 5, by = 1)
+
+# compute the mean of the enries in `z`
+mean(z)
+```
+
+In the first line we use a function called `r ttcode("seq()")` to create the exact same vector as we did in the previous section, calling it `r ttcode("z")`. The function takes on the arguments `r ttcode("from")`, `r ttcode("to")` and `r ttcode("by")` which should be self-explanatory.
+The function `r ttcode("mean()")` computes the arithmetic mean of its argument `r ttcode("x")`. Since we pass the vector `r ttcode("z")` as the argument `r ttcode("x")`, the result is `r ttcode("3")`!
+
+If you are not sure which arguments a function expects, you may consult the function's documentation. Let's say we are not sure how the arguments required for `r ttcode("seq()")` work. We then type `?seq` in the console. By hitting return the documentation page for that function pops up in the lower right pane of *RStudio*. In there, the section *Arguments* holds the information we seek. On the bottom of almost every help page you find examples on how to use the corresponding functions. This is very helpful for beginners and we recommend to look out for those.
+
+#### Packages and Libraries {-}
+
+Packages are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality. There are 10,000+ user contributed packages and growing. There are a set of standard (or base) packages which are considered part of the R source code and automatically available as part of your R installation. Base packages contain the basic functions that allow R to work, and enable standard statistical and graphical functions on datasets; for example, all of the functions that we have been using so far in our examples above.
+
+The directories in R where the packages are stored are called the libraries. The terms package and library are sometimes used synonymously. You can check what libraries are loaded in your current R session by typing into the console:
+
+```{r}
+sessionInfo() #Print version information about R, the OS and attached or loaded packages
+```
+ 
+Previously we have introduced you to functions from the standard base packages. However, the more you work with R, you will come to realize that there is a lot of R packages that offer a wide variety of functionality. To use additional packages will require installation. Many packages can be installed from the CRAN repository.
+
+CRAN is a repository where the latest downloads of R (and legacy versions) are found in addition to source code for thousands of different user contributed R packages. Packages for R can be installed from the CRAN package repository using the install.packages function. This function will download the source code from on the CRAN mirrors and install the package (and any dependencies) locally on your computer.
+
+An example is given below for the ggplot2 package that will be required for some plots we will create later on. Run this code to install ggplot2.
+```{r, eval=FALSE}
+install.packages("ggplot2")
+``` 
+
+__Loading libraries__
+
+Once you have the package installed, you can load the library into your R session for use. Any of the functions that are specific to that package will be available for you to use by simply calling the function as you would for any of the base functions. Note that quotations are not required here.
+```{r, eval=FALSE}
+library(ggplot2)
+``` 
+
+We only need to install a package once on our computer. However, to use the package, we need to load the library every time we start a new R/RStudio environment. 
+Finding functions specific to a package
+
+This is your first time using ggplot2, how do you know where to start and what functions are available to you? One way to do this, is by using the Package tab in RStudio. If you click on the tab, you will see listed all packages that you have installed. For those libraries that you have loaded, you will see a blue checkmark in the box next to it. Scroll down to ggplot2 in your list. An alternative is to find the help manual online, which can be less technical and sometimes easier to follow. 
+
+#### Tidyverse {-}
+
+The tidyverse universe of packages, a collection of packages specially focused on data science, marked a milestone in R programming. In this post I am going to summarize very briefly the most essential to start in this world. The tidyverse grammar follows a common structure in all functions. The most essential thing is that the first argument is the object and then come the rest of the arguments. In addition, a set of verbs is provided to facilitate the use of the functions. The tidyverse philosophy and grammar of functions are also reflected in other packages that make its use compatible with the collection. For example, the sf package (simple feature) is a standardized way to encode spatial vector data and allows the use of multiple functions that we can find in the dplyr package.
+
+The core of the tidyverse collection is made up of the following packages:
+
+| ggplot2 | Grammar for creating graphics |
+| :--- | :--- |
+| purrr | R functional programming |
+| tibble | Modern and effective table system |
+| dplyr | Grammar for data manipulation |
+| tidyr | Set of functions to create tidy data |
+| stringr | Function set to work with characters |
+| readr | An easy and fast way to import data |
+| forcats | Tools to easily work with factors |
+
+In addition to the mentioned packages, lubridate is also used very frequently to work with dates and times, and also readxl which allows us to import files in Excel format. To know all the available packages we can use the function tidyverse_packages().
+
+__Style guide:__ In R there is no universal style guide, that is, in the R syntax it is not necessary to follow specific rules for our scripts. But it is recommended to work in a homogeneous, uniform, legible and clear way when writing scripts. The tidyverse collection has its own [guide](https://style.tidyverse.org/) that many researchers and many economists follow.
+
+The most important recommendations are:
+
+ - Avoid using more than 80 characters per line to allow reading the complete code.
+ - Always use a space after a comma, never before.
+ - The operators (==, +, -, <-,%>%, etc.) must have a space before and after.
+ - There is no space between the name of a function and the first parenthesis, nor between the last argument and the final parenthesis of a function.
+ - Avoid reusing names of functions and common variables (c <- 5 vs. c())
+ - Avoid accent marks or special symbols in names, files, routes, etc.
+ - Object names must follow a constant structure: day_one, day_1.
+ - It is advisable to use a correct indentation for multiple arguments of a function or functions chained by the pipe operator (%>%).
+ 
+ Now I provide some code and notes to explain some of the functionality of tidyverse. You can install it using install.packages.
+ 
+```{r}
+library(tidyverse)
+``` 
+
+
+#### Pipe %>% {-}
+To facilitate working in data management, manipulation and visualization, the magrittr package (part of the tidyverse) introduces the famous pipe operator in the form %>% with the aim of combining various functions without the need to assign the result to a new object. The pipe operator passes the output of a function applied to the first argument of the next function. This way of combining functions allows you to chain several steps simultaneously, to perform sequential tasks. In the very simple example below, we pass the vector 1:9 to the mean() function to calculate the average, instead of using mean(1:5). You should know that there are a couple of other pipe operators in the same package.
+
+```{r}
+1:9 %>% mean()
+```
+
+####  Read and write data {-}
+
+The readr package makes it easy to read or write multiple file formats using functions that start with read_* or write_*. In comparison to R Base, readr functions are faster; they handle problematic column names, and dates are automatically converted. The imported tables are of class tibble (tbl_df), a modern version of data.frame from the tibble package. In the same sense, you can use the read_excel() function of the readxl package to import data from Excel sheets (more details also in this blog post). In the following example, we import data directly from the internet, a dta repository called [CORGIS: The Collection of Really Great, Interesting, Situated Datasets](https://corgis-edu.github.io/corgis/csv/). In particular, the data are several development indices from different countries in the world.
+
+| Function | Description |
+| :--- | :--- |
+| read_csv()  | coma or semicolon (CSV) |
+| read_delim() | general separator |
+| read_table() | whitespace-separated |
+
+ 
+```{r}
+library(tidyverse)
+global_development <- read_csv("https://corgis-edu.github.io/corgis/datasets/csv/global_development/global_development.csv")
+
+```
+
+
+
+
+#### Table and vector manipulation {-}
+The dplyr and tidyr packages provide us with a data manipulation grammar, a set of useful verbs to solve common problems. The most important functions are:
+
+| Function | Description |
+| :--- | :--- |
+| mutate() | add new variables or modify existing ones |
+| select() | select variables |
+| filter() | filter |
+| summarise() | summarize|
+| arrange() | sort |
+| group_by() | group |
+| rename() | rename columns |
+
+
+##### Select and rename {-}
+
+We can select or remove columns with the select() function, using the name or index of the column. To delete columns we make use of the negative sign. The rename function helps in renaming columns with either the same name or their index.
+
+```{r}
+global_development <- global_development %>% select(Country,Year,`Data.Health.Life Expectancy at Birth, Total`,`Data.Urban Development.Urban Population Percent Growth`) %>% 
+                        rename(lifeexp = 3, urbangrowth = 4)
+```
+
+
+ 
+##### Filter and sort {-}
+
+To filter data, we use filter() with logical operators (|, ==, >, etc) or functions that return a logical value (str_detect(), is.na() , etc.). The arrange() function sorts from least to greatest for one or multiple variables (with the negative sign - the order is reversed from greatest to least).
+
+```{r}
+filter(global_development, 
+       Country == "Qatar")
+```
+
+   
+##### Group and mutate {-}
+
+Where do we find the biggest change of life expectancy between 1980 and 2010?
+
+To answer this question, we first filter the data and then we group by the country column. When we use the mutate() function after grouping, it allows us to create a new variable by country.  
+
+```{r}
+global_development <- global_development %>%  filter(Year == 1980 | Year == 2010)  %>% group_by(Country) %>% 
+  mutate(years_gained = lifeexp - lag(lifeexp) )
+```
+
+The arrange function sorts by the value of the variable specified in an increasing order after we keep only the variables of interest:
+
+```{r}
+global_development %>% select(Country,years_gained) %>% drop_na() %>% arrange(years_gained)
+```
+  
+##### Visualize data {-}
+
+ggplot2 is a modern system for data visualization with a huge variety of options. Unlike the R Base graphic system, in ggplot2 a different grammar is used. The grammar of graphics (gg) consists of the sum of several independent layers or objects that are combined using + to construct the final graph. ggplot differentiates between data, what is displayed and how it is displayed. We need to specify the following in this grammar:
+
+_data:_ our dataset 
+
+_aesthetics:_ with the aes() function we indicate the variables that correspond to the x, y, z, … axes, or when it is intended to apply graphic parameters (color, size, shape) according to a variable. It is possible to include aes() in ggplot() or in the corresponding function to a geometry geom_ *.
+
+_geometries:_ are geom_ * objects that indicate the geometry to be used, (eg: geom_point(), geom_line(), geom_boxplot(), etc.).
+
+_scales:_ are objects of type scales_ * (eg, scale_x_continous(), scale_colour_manual()) to manipulate axes, define colors, etc.
+
+statistics: are stat_ * objects (eg, stat_density()) that allow to apply statistical transformations.
+
+More details can be found in the [book of ggplot](https://ggplot2-book.org/)
+
+
+# create subset
+
+Let's create the subset of the data that has for year 2010 the increase in the number 
+of years of life expectancy and the the urban growth rate in 2010:
+
+```{r}
+dev <-global_development %>% filter(Year ==2010)%>% select(Country,years_gained,urbangrowth) 
+```
+
+
+__Scatterplot__
+
+```{r}
+ggplot(dev, 
+       aes(years_gained, urbangrowth)) + 
+    geom_point()
+```
+
+
+
+To modify the axes, we use the different scale_* functions that we must adapt to the scales of measurement (date, discrete, continuous, etc.). The labs() function helps us define the axis, legend and plot titles. Finally, we add the style of the graph with theme_light() (others are theme_bw(), theme_minimal(), etc.). We could also make changes to all graphic elements through theme().
+
+```{r}
+ggplot(dev, 
+       aes(years_gained, urbangrowth/100)) + 
+    geom_point() +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Years Gained", 
+       y = "Urban Growth",
+       title = "Life expectancy gains and urban growth") +
+  theme_light()
+```
+
+
+### Getting started with Macroeconomic Data using fredr {-}
+
+The notes are based on a great package and the associated guide available [here](https://cran.r-project.org/web/packages/fredr/vignettes/fredr.html). Packages or libraries are set of tools/functions developed by R users that repeat tasks and can be used over and over again for doing the same task, for example the package fredr is used to access data from [Federal Reserve of Economic Data (FRED)](https://fred.stlouisfed.org/) RESTful API, provided by the Federal Reserve Bank of St. Louis. The functions allow the user to search for and fetch time series observations within the FRED database. We can install the package by using the following code
+
+
+```{r,eval=FALSE}
+install.packages(fredr)
+```
+
+The we access the set of functions by calling:
+
+```{r}
+library(fredr)
+```
+
+The core function in this package is `fredr()`, which fetches observations for a FRED series. That said, there are many other FRED endpoints exposed through fredr, such as `fredr_series_search_text()`, which allows you to search for a FRED series by text.
+
+#### Authentication {-}
+
+
+To use fredr and the FRED API in general, you must first [obtain a FRED API key](https://research.stlouisfed.org/docs/api/api_key.html). Once you've obtained an API key, the recommended way to use it is to set the key as an environment variable: `FRED_API_KEY` . The easiest way to do that is by calling `usethis::edit_r_environ()` to open a `.Renviron` file. Once the file is open set the key as:
+
+    FRED_API_KEY=yourfredkey
+
+where the key has been replaced by the one you received from FRED. Don't forget to restart R after saving and closing the `.Renviron` file.
+
+Alternatively, you can set an API key for the current R session with `fredr_set_key()` like so:
+
+```{r fredr_set_key, eval=FALSE}
+fredr_set_key("yourfredkey")
+```
+
+Again, this will only set the key for the current R session, and it is recommended to use an environment variable.
+
+#### Retrieve series observations {-}
+
+
+`fredr()` (an alias for `fredr_series_observations()`) retrieves series observations (i.e. the actual time series data) for a specified FRED series ID. The function returns a tibble (which is a specific way to represent a table in R) with 3 columns (observation date, series ID, and value).
+
+```{r fredr_series_observations, message=FALSE, warning=FALSE}
+fredr(
+  series_id = "UNRATE",
+  observation_start = as.Date("1990-01-01"),
+  observation_end = as.Date("2000-01-01")
+)
+```
+
+Leverage the native features of the FRED API by passing additional parameters:
+
+```{r fredr_series_observations2, message=FALSE, warning=FALSE}
+fredr(
+  series_id = "UNRATE",
+  observation_start = as.Date("1990-01-01"),
+  observation_end = as.Date("2000-01-01"),
+  frequency = "q", # quarterly
+  units = "chg" # change over previous value
+)
+```
+
+`fredr` plays nicely with [tidyverse](https://www.tidyverse.org/) packages:
+
+```{r fredr_series_observations3, message=FALSE, warning=FALSE}
+library(dplyr)
+library(ggplot2)
+popular_funds_series <- fredr_series_search_text(
+    search_text = "federal funds",
+    order_by = "popularity",
+    sort_order = "desc",
+    limit = 1
+)
+popular_funds_series_id <- popular_funds_series$id
+popular_funds_series_id %>%
+  fredr(
+    observation_start = as.Date("1990-01-01"),
+    observation_end = as.Date("2000-01-01")
+  ) %>%
+  ggplot(data = ., mapping = aes(x = date, y = value, color = series_id)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Rate", color = "Series")+
+  theme_light()
+```
+
+Since `fredr()` returns a tibble with a series ID, mapping `fredr()` over a vector of series IDs can be achieved as follows using the package purrr:
+
+```{r fredr_series_observations4, message=FALSE, warning=FALSE}
+library(purrr)
+map_dfr(c("UNRATE", "FEDFUNDS"), fredr) %>%
+  ggplot(data = ., mapping = aes(x = date, y = value, color = series_id)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Rate", color = "Series")+
+  theme_light()
+```
+ 
+
