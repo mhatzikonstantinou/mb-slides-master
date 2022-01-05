@@ -40,9 +40,9 @@ class: center,middle,mctitle-slide
   2. Midterm #2:  $\text{Thursday, March 31st}$
   3. Final:  $\text{TBA}$
 
-- Problem Sets(25%): There will be weekly problem sets
+- Problem Sets(40%): There will be weekly problem sets
 
-- Participation Quizzes(25%): Given at the beginning of every lecture
+- Participation Quizzes(10%): Given at the beginning of every lecture
 
 - Material: Textbook + Lecture slides
 
