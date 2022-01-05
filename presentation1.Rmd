@@ -48,8 +48,9 @@ class: center,middle,mctitle-slide
 
 
 ???
+Class Format- First week virtually, expain how participation quiz will work,
+we will do a test on Monday and then Wednesday we will have the first one
 
-_if not asked to lend money_.
 
 ---
 
@@ -72,6 +73,10 @@ _if not asked to lend money_.
 
 - Office hours start next week and will be virtually. After week 3, we will be available by appointment in person 
 - Make sure to inform us, beforehand even during office hours, to avoid long waiting times!
+
+???
+Greece, Phd in Economics, Macroeconomics and Finance -I like to study how firms grow and what that means for the aggregate economy and financial markets
+Ask the TA to introduce themselves
 ---
 
 
@@ -105,6 +110,11 @@ __Some macroeconomic questions:__
 
 - The importance of monetary and fiscal policy as tools against economic downturns 
 
+
+???
+Ask students how they think macroeconomics will be different from microeconomics. Make a list of anything interesting that they come up with. Ask students why studying macroeconomics might be important for all students regardless of their major. One reason is to be a more informed voter.
+Ask students what are some interesting questions about microeconomics
+Microeconomic versus Macroeconomic Questions
 ---
 
 # Would you ask a microeconomist this ?
@@ -117,6 +127,8 @@ __Some macroeconomic questions:__
 | What determines the salary Google offers to Cherie Camajo, a new MBA? | What determines the overall salary levels paid to workers in a given year? |
 | What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
 
+???
+|  | What government policies should be adopted to promote employment and growth in the economy as a whole? |
 
 
 ---
@@ -133,7 +145,8 @@ __Some macroeconomic questions:__
 |  | What government policies should be adopted to promote employment and growth in the economy as a whole? |
 
 
-
+???
+What government policies should be adopted to make it easier for lowincome students to attend college?
 ---
 
 # Would you ask a microeconomist this ?
@@ -147,8 +160,10 @@ __Some macroeconomic questions:__
 | What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
 | What government policies should be adopted to make it easier for lowincome students to attend college? | What government policies should be adopted to promote employment and growth in the economy as a whole? |
  
- 
 
+
+???
+WhatWhat determines whether Citibank opens a new office in Shanghai?
 ---
 
 # Would you ask a microeconomist this ?
@@ -163,6 +178,10 @@ __Some macroeconomic questions:__
 | What government policies should be adopted to make it easier for lowincome students to attend college? | What government policies should be adopted to promote employment and growth in the economy as a whole? |
 | What determines whether Citibank opens a new office in Shanghai? |  |
 
+
+???
+WhWhat determines the overall trade in goods, services, and financial assets between the United States and the rest of the world? 
+
 ---
 
 # Would you ask a microeconomist this ?
@@ -176,8 +195,6 @@ __Some macroeconomic questions:__
 | What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
 | What government policies should be adopted to make it easier for lowincome students to attend college? | What government policies should be adopted to promote employment and growth in the economy as a whole? |
 | What determines whether Citibank opens a new office in Shanghai? | What determines the overall trade in goods, services, and financial assets between the United States and the rest of the world? |
-
-
 
 
 ---
@@ -250,6 +267,13 @@ interest rates and affect overall spending.
 -  Fiscal policy uses changes in government spending and taxes to
 affect overall spending.
 
+???
+•	Conduct a brief poll of your students to identify how they think the economy is doing. Have them each identify (by a show of hands, a voice vote, or on a slip of paper) whether they think the state of the economy is “excellent,” “good,” “fair,” or “poor.” Present the results of the poll to the class. 
+
+
+Then ask your students to tell you on what they based their decision. What made them choose excellent, good, fair, or poor? They may say something about GDP, inflation, or unemployment. Keep a list of their responses. Ask them how their responses would have been different a year ago and five years ago. Use their sense of how things are going and how the state of the economy can change over time to lead into a discussion of the business cycle. 
+•	Ask students to recall the actions that the government took during the recession of 2020. What were the short-term benefits of the government relief packages? (Alleviating the pains of unemployment and saving small businesses.) What are the long-term costs? (The increase in the public debt, the danger of high inflation in the future.) 
+
 ---
 
 # The Business Cycle
@@ -269,10 +293,8 @@ economic upturns when output and employment are rising.
 
 
 ???
-
 _The point at which the economy turns from expansion to
 recession is a business cycle peak_.
-
 _The point at which the economy turns from recession to
 expansion is a business cycle trough_.
 
@@ -307,6 +329,9 @@ knitr::include_graphics("week1graphs/buscycle2.png")
 
 - What causes recession and how can policy makers change the economy?
 
+???
+. It is a good time to mention the deficit and debt levels and see what students think about them. Tell students that policy makers evaluate the economy by comparing the current data with average or benchmark values to get a sense for where we are. Mention that a downside of recession is higher-than-average unemployment. 
+
 
 ---
 
@@ -316,6 +341,9 @@ knitr::include_graphics("week1graphs/buscycle2.png")
 knitr::include_graphics("week1graphs/jobopenings.png") 
 ```
 
+???
+Opening Example: In 2016, the unemployment rate in Greece was 24% and was much higher for people younger than 25 years. This extremely high unemployment rate is highlighted as a consequence of the Great Recession. The Great Recession is compared with the Great Depression (1929–1940) to show how economic policies might help or hinder recovery. 
+Should I stay or go do a PhD? Will it matter if I was an engineer, economist, accountant?
 ---
 
 # Taming the Business Cycle
@@ -357,7 +385,11 @@ economy
   - Conclusion: Government should intervene to restore full employment
 
 ??? 
-
+Examples of monetary and fiscal policy:
+•	In response to the Great Recession of 2008, the U.S. government cut taxes and increased spending. The government actions were helping the depressed economy.
+•	In response to the Great Recession of 2008, many European governments raised taxes and cut spending. The government actions were hurting the economy.
+•	When a recession hit Brazil in 2014, the government cut spending. The government actions were hurting the economy.
+•	When the coronavirus recession hit the United States in 2020, the U.S. government launched the $2 trillion relief package in March and the $3 trillion package in May. The government actions were helping the depressed economy.
 Do we only care about fluctuations in employment and output?
 ---
 
@@ -384,6 +416,11 @@ knitr::include_graphics("week1graphs/inflation.png")
 
 - The economy has price stability when the aggregate price level is changing only slowly.
 
+???
+Creating Student Interest 
+•	Ask students how much a can of Coke costs. Have they ever heard anyone bring up the cost of a soda starting with “Well, back in MY day, a soda cost . . .”? Present the class with the following data: Coke was first sold in cans in the 1950s for 5 cents a can. By the end of the 1950s, the same can of Coke cost 10 cents. In 1960, the average price was about 13 cents, and by 1970 about 85 cents. Have students consider and speculate as to why the same can of soda costs so much more today than in the 1950s. Ask students if they believe the things they buy are getting more expensive. Make a list of some of the items they bring up. Ask them to guess the average rate of inflation in the United States. 
+•	Ask students: Since inflation causes pain, should the United States target the zero percent inflation? Point out that many factors influence inflation, and if it turns into deflation, it will also cause pain to individuals and businesses.
+
 ---
 # Long Run Economic Growth
 
@@ -405,6 +442,11 @@ knitr::include_graphics("week1graphs/longrun.png")
 
 -  A central concern of macroeconomics is what determines long run economic growth.
 
+???
+Creating Student Interest 
+•	Make sure students understand the definition of long-run growth as a sustained increase in the economy’s output over time. You might discuss the recent growth experiences of countries like China, India, and Brazil in comparison with the United States and Europe. You might ask students if they think economic growth is a good thing. Generally, they should say yes because economic growth leads to an increase in per capita income and living standards. You may have some students in class who are concerned about the environment, or running out of resources, and this can also lead to some interesting discussions. 
+•	Tell students that a hundred years ago, Argentina was as rich and advanced as Canada or Germany. Today it’s a much poorer country than Canada or Germany. Ask them what went wrong in Argentina as opposed to Canada or Germany. Similarly, you can tell students that a hundred years ago, Britain was the richest and most advanced country in the world, while the United States was just one of many emerging economies. Today the United States is the economic and political leader of the world. Ask students what factors propelled the United States forward.
+•	Ask students if they think the economy usually grows at a positive rate over time. They will probably say yes. Then ask them if they think most economies grow at a positive rate each year on average. They will probably say no, and this can lead to an interesting discussion about which countries are more and less developed. 
 ---
 
 # Summary of main topics to cover
