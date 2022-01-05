@@ -3,6 +3,6 @@
 .RData
 .Ruserdata
 ignore/*
-diary 
+*.txt 
 *.pdf
 *.html
