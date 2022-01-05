@@ -76,3 +76,57 @@ Do you think Qatar is an relatively open or closed economy?
 •	Ask students what products they have purchased that were produced in another country. Create a list of these items. Then ask students to name some products the United States has produced and sold to other countries. Create a list of these items. It will likely be easier for students to name imports they have purchased than exports the United States has sold. 
 
 
+Day 2 
+
+I need links for National Income Accounts
+
+BEA etc and a simple document for them!
+
+
+
+xaringanExtra
+
+
+code and output
+
+
+scribble version to draw on the slides!
+
+.panelset[
+.panel[.panel-name[
+code and output
+]
+]
+]
+
+panelset equals true in the chuck! easy way in R
+
+moving across slides
+name:given_name
+then #given_name
+o to have overview
+
+c to replicate slides and then p in one of the two that you do not share
+
+fig.alt in the chunk includes plot with screen reader
+
+source: https://www.youtube.com/watch?v=RPFh3y9UAX4
+
+presentable-user2021.netlify.app
+
+,footnote[]
+
+.big[]
+
+class:center middle - only for figures
+
+check out the video 1.03 to 1.06 to copy rule from firefox!!
+
+alternative to colors 
+
+.text-decorator
+
+add everything in extra css
+
+css cheatsheet
+https://www.sitepoint.com/css-selectors/
