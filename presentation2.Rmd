@@ -71,10 +71,11 @@ class: center,middle,mctitle-slide
 
 --
 
-```{r  out.width = "50%",echo=FALSE}
+.center2[
+```{r  out.width = "40%", fig.align = 'center' ,echo=FALSE}
 knitr::include_graphics("week2graphs/circflow.png") 
 ```
-
+]
 
 ---
 
@@ -345,12 +346,12 @@ proprietor’s income.
 
 ---
 
-# The Income approach
+# The Income Approach
 
-```{r  out.width = "70%",echo=FALSE}
+
+```{r  out.width = "60%", fig.align = 'center' ,echo=FALSE}
 knitr::include_graphics("week2graphs/incomeapproach.png") 
 ```
-
 
 ---
 
