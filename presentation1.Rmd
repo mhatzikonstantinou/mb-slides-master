@@ -501,6 +501,22 @@ The five key elements of this model:
   4. The market equilibrium
   5. Changes in the market equilibrium
   
+???
+Last time our discussion was informal
+But I hope that generated some interest in macroeconomics
+The important think is to provide you the tools that will help you
+understand how the macroeconomy works, to help you be a better
+economist-analyst-voter but I want you to remind you today
+that as economists a lot of our discussion are based on 
+simplified models and when you are thinking on individual cases
+those models might not be the besto to apply . Emerging countries
+are different than developed economies and the same messages are not 
+uniform. However, economics would provide you with a lot of tools that 
+you can use on your debates and decisions. A short review to set the stage
+for the models and variables we will talk about.
+  
+  
+  
 --
 
 
@@ -608,3 +624,7 @@ Ask class what happens:
   if price is too high or too low?
  if demand shifts down
  if supply shifts up
+These are the mechanisms that we would like to explore in macroeconomics for specific
+markets, e.g. housing market, + the economy as a whole and the first class
+would be about that, how to measure the  total values goods and services 
+that determine whether the economy is large or small

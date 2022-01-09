@@ -55,6 +55,8 @@ class: center,middle,mctitle-slide
 
  - Measures cost of the "same basket of goods" in different years. 
 
+???
+All heard of GDP,. but do we include the following in the measurent?
 ---
 
 # The National Accounts
@@ -76,6 +78,12 @@ class: center,middle,mctitle-slide
 knitr::include_graphics("week2graphs/circflow.png") 
 ```
 ]
+
+???
+Figure 7(22)-1 of the text, An Expanded Circular-Flow Diagram: The Flows of Money Through
+the Economy, demonstrates the manner in which money flows from producers to households,
+governments, and the rest of the world, and vice versa. break up the elements in the diagram and describe them individually!
+
 
 ---
 
@@ -160,6 +168,71 @@ __In or Out?__
 
 > GDP measures the value of production, which also equals total expenditure on final goods and total income.
 
+???
+Value - we can't add apples and oranges (literally!) to find a meaningful number. Think of adding one car to one pair of socks and getting " 2 "- -it doesn't make sense. So, we add up the market value of the output (we can add dollars and dollars). This sets up the later discussion of the exclusion of nonmarket production from the calculation of GDP as well as the difference between real and nominal.
+
+Final-explain that, to avoid double counting, we add up only final production (or we could use the value-added approach).
+
+Goods and services-these are both included in GDP. The difference is that goods are tangible and can be stored in inventories, unlike a service, such as a haircut-you can't get two haircuts and save one for later!). However, both represent output and are included in GDP.
+
+An economy-GDP can be calculated for any group of countries, individual country, state (gross state product), region, or whatever definition of an economy is of interest.
+
+A given period—since we are continuously producing, we have to identify
+the period over which we are measuring output. Output is a flow variable (like
+a river) rather than a stock variable (like a lake). We don’t all stop and count
+output on December 31, so we have to identify a time period and count only
+what was produced during that time period. GDP can be calculated annually,
+quarterly, monthly, and so on.
+
+---
+
+# Example
+
+This hypothetical economy consists of three firms:  
+
+1. Iron Ore Producer and Seller
+2. Steel Producer and Seller
+3. Car manufacturer
+
+--
+
+
+```{r  out.width = "50%",echo=FALSE}
+knitr::include_graphics("week2graphs/hypotheticaleconomy.png") 
+```
+
+???
+As a preview, ask students what
+firms will do if consumers decide to reduce spending. Then ask them what happens to the
+income of the people who work at the firm.
+
+ 
+---
+
+
+# Calculating GDP
+
+Total expenditure on final goods and services equals GDP.
+- GDP $=C+I+G+X-I M$.
+
+--
+
+- Aggregate income also equals the total amount paid for the use of factors of production: wages, interest, rent, and profit.
+
+--
+
+> GDP can be calculated in three ways:
+
+1. Add up the total value of all final goods and services produced
+
+2. Add up all aggregate spending on domestically produced final goods and services
+
+3. Add up the total factor income earned by households from firms in the economy
+
+--
+
+It doesn’t matter if we add up all the spending or all the incomes because one person’s spending is another person’s income.
+
 ---
 
 # Calculating GDP
@@ -187,49 +260,60 @@ Gross domestic product (GDP): the total value of all final goods and services pr
   - A final good (or service) is an item bought by its final user during a specified time period.
   - Excluding the value of intermediate goods and services avoids counting the same value more than once.
 
-
+???
+Three ways to calculate GDP. Because GDP can be calculated three different ways—summing
+income earned, summing expenditures, and summing the value of production—students may
+mistakenly believe that these three methods yield different values for GDP in a given period.
+Emphasize to students that this is not the case, because ultimately the value of all final goods and
+services produced must equal the value of income earned in the production of all final goods and
+services in a given year.
+ GDP: What’s in and what’s out. Students often have a hard time figuring out exactly what
+counts in GDP. Be sure they understand the difference between investment goods and intermediate
+goods. They may not understand why goods count when they are produced, even if they are not
+sold. Explain that income was earned to produce the goods, even if they were not sold yet. These
+goods are added to inventory, and then subtracted from inventory when sold. Explain that
+purchases of financial assets are transfers and do not count in GDP. Make sure they understand
+used goods do not count, though the service of selling a used good does count. The service is value
+added. Finally, make sure they understand that purchases of foreign goods are subtracted from
+consumption as imports because we are only counting domestic production.
 ---
 
-# Calculating GDP
 
-Total expenditure on final goods and services equals GDP.
-- GDP $=C+I+G+X-I M$.
+# The Value Added Approach
 
---
 
-- Aggregate income also equals the total amount paid for the use of factors of production: wages, interest, rent, and profit.
+- Add up the value of all the final goods and services produced in the economy.
+
 
 --
 
-> GDP can be calculated in three ways:
+- We count only each producer’s value added in the calculation of GDP: the difference between the value of its sales and the value of the intermediate goods and services it purchases from other businesses. 
 
-1. Add up the total value of all final goods and services produced
-
-2. Add up all aggregate spending on domestically produced final goods and services
-
-3. Add up the total factor income earned by households from firms in the economy
 
 --
 
-It doesn’t matter if we add up all the spending or all the incomes because one person’s spending is another person’s income.
+- It’s easy to confuse what is included in and excluded from GDP. For example, changes to inventories are included in GDP, but the steel used to make cars is not. Why? 
 
+__We only include items that are newly produced and aren’t used up in production.__
+
+
+--
+
+- **In**/Out
+ - **Investment and Capital spending**
+ - **Changes to inventories**
+--
+
+ - Intermediate goods and services
+ - Used goods
+ - Financial assets like stocks and bonds
 ---
 
-# Example
+# The Value Added Approach
 
-This hypothetical economy consists of three firms:  
-
-1. Iron Ore Producer and Seller
-2. Steel Producer and Seller
-3. Car manufacturer
-
---
-
-
-```{r  out.width = "50%",echo=FALSE}
-knitr::include_graphics("week2graphs/hypotheticaleconomy.png") 
+```{r  out.width = "60%",echo=FALSE}
+knitr::include_graphics("week2graphs/intermediates.png") 
 ```
-
 
 ---
 
@@ -237,8 +321,6 @@ knitr::include_graphics("week2graphs/hypotheticaleconomy.png")
 
 > Add up all spending on domestically produced final goods and services. 
 
-
---
 
 __Aggregate spending:__ the sum of consumer spending, investment spending, government purchases of goods and services, and exports minus imports
 
@@ -251,20 +333,21 @@ $$
 
 --
 - C = consumer spending
-  - Consumer Durables: "has a life of over 3 years: cars, furniture, etc"
-  - Consumer Non Durables: "food, utilities, clothing"
-  - Services: "Housing, healthcare, recreation, education"
+  - Consumer Durables: **"has a life of over 3 years: cars, furniture, etc"**
+  - Consumer Non Durables: **"food, utilities, clothing"**
+  - Services: **"Housing, healthcare, recreation, education"**
 --
 
 - I = investment spending : adding to the capital stock
-  - Residential Investment (homes)
+  - Residential Investment 
   - Non residential Investment (business investments in structures and equipment)
   - Changes in Inventories 
 --
 
 - G = government purchases of goods and services
-  - Government Expenditures reflect direct consumption, not transfers,  "Defense, Government investments in roads and other infrastructure"
-  - Transfer payments represent money redistributed from one group of citizens (taxpayers) to another (poor, unemployed, elderly) $\rightarrow$ Does not result in production of new goods and services
+  - Government Expenditures reflect direct consumption, not transfers,  **"Defense, Transportation and other infrastructure"
+  **
+  - Transfer payments $\rightarrow$ no production of new goods and services $\rightarrow$ Out
 
 ---
 
@@ -355,50 +438,6 @@ knitr::include_graphics("week2graphs/incomeapproach.png")
 
 ---
 
-# The value added approach
-
-
-- Add up the value of all the final goods and services produced in the economy.
-
-
---
-
-- We count only each producer’s value added in the calculation of GDP: the difference between the value of its sales and the value of the intermediate goods and services it purchases from other businesses. 
-
-
---
-
-- It’s easy to confuse what is included in and excluded from GDP. For example, changes to inventories are included in GDP, but the steel used to make cars is not. Why? 
-
-__We only include items that are newly produced and aren’t used up in production.__
-
-
---
-
-- In
- - Investment spending
- - Capital spending (it’s part of investment spending)
- - Domestically produced final goods and services, including capital goods, new construction of structures, and changes to inventories
-
---
- 
-- Out 
- - Intermediate goods and services
- - Used goods
- -Financial assets like stocks and bonds
----
-
-# The Value Added Approach
-
-```{r  out.width = "60%",echo=FALSE}
-knitr::include_graphics("week2graphs/intermediates.png") 
-```
-
- 
----
-
-
-
 # Different approaches, same result
 
 ```{r  out.width = "60%",echo=FALSE}
@@ -434,8 +473,18 @@ Remember GDP measures the size of the economy.
 
 # Interesting Links:
 
--
+.pull-left[
+```{r  out.width = "90%",echo=FALSE}
+knitr::include_graphics("week2graphs/tradingeconomics.png") 
+```
+]
 
--
+- [Trading Economics](https://tradingeconomics.com/)
 
--
+- [Marketwatch](https://www.marketwatch.com/?showsmscrim=true)
+
+- [Worldometers](https://www.worldometers.info/gdp)
+
+- [Classroom economist resources by Fed Atlanta](https://www.atlantafed.org/education/classroom-economist/gdp/resources)
+
+- [GDP resources in the Bureau of Economic Analysis](https://www.bea.gov/resources/learning-center/what-to-know-gdp)
