@@ -27,9 +27,6 @@ class: center,middle,mctitle-slide
 
 # What will you learn today?
 
-- _How do economists use aggregate measures to track the performance of the economy?_
-
---
 
 - _What is gross domestic product (GDP), and how is it calculated?_
 
@@ -47,30 +44,32 @@ class: center,middle,mctitle-slide
 - __What is a price index, and how is it used to calculate the inflation rate?__
 
  - Measures cost of the "same basket of goods" in different years. 
-
-
----
-
-# Review
-
-
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week3graphs/review.png") 
-```
-
  
+--
+
+**Why?**
+
+- From  **International Monetary Fund** data: In 2017–2018, the nominal GDP of Venezuela grew from 2 to 2,039 billion in national currency–a 101,850% increase.At the same time, there are food riots in the country. 
+
+- From  **Bureau of Economic Analysis** data: In 2000, the value of output produced by the soft drink industry was $3.3 billion. In 2006, that number was $4.1 billion $\rightarrow$ the United States’ GDP increased by $800 million as a result of soft drink production. 
+
+
+
+
 ---
 
 # Nominal GDP and Real GDP
 
-- Real GDP is the value of final goods and services produced in a given year valued at the prices of a reference base year.
+- Nominal GDP is the value of goods and services produced during a given year **valued at the prices of that year**.
 --
 
-- The current base year is 2012. Real GDP shows what GDP would have been in each year if goods were priced in 2012 dollars. 
+
+- Real GDP is the value of final goods and services produced in a given year **valued at the prices of a reference base year**.
 --
 
-- Nominal GDP is the value of goods and services produced during a given year valued at the prices of that year.
+- The current base year is 2012: **"Real GDP shows what GDP would have been in each year if goods were priced in 2012 dollars."**
 --
+
 
 .pull-left[
 ```{r  out.width = "70%",echo=FALSE}
@@ -99,7 +98,7 @@ If we add up consumer spending, investment spending, government purchases, expor
 
 
 .pull-left[
-```{r  out.width = "70%",echo=FALSE}
+```{r  out.width = "85%",echo=FALSE}
 knitr::include_graphics("week3graphs/realgdptable.png") 
 ```
 ]
@@ -107,7 +106,7 @@ knitr::include_graphics("week3graphs/realgdptable.png")
 
 .pull-right[
 
-- let's calculate real GDP in 2014.
+- Let's calculate real GDP in 2014.
 
 
 - The quantities are those of
@@ -127,13 +126,15 @@ million
 ---
 
 
-# GDP Deflator in 2016
+# GDP Deflator
 
 
 ```{r  out.width = "70%",echo=FALSE}
 knitr::include_graphics("week3graphs/gdpdeflator.png") 
 ```
 
+???
+Exercise to follow the steps for 2018
 ---
 
 # GDP Statistics
@@ -146,50 +147,45 @@ knitr::include_graphics("week3graphs/gdpdeflator.png")
 knitr::include_graphics("week3graphs/gdpstats.png") 
 ```
 
+- **What is the base year?**
+
+--
 
 - Where is the deflator?
 ???
 Except for the base year, real GDP (output at prices of a base year) is not the same as nominal GDP (output at current prices).
 
- - __GDP per capita:__ average GDP per person
 
 --
 
-- Not an end in itself as it does not address how a country uses that output to affect living standards.
+-  Does Real GDP = Welfare/Standard of Living?
 
---
-
-$$
-\text { Real GDP Per capita  }=\frac{\text { Real GDP }}{\text { Population }}
-$$
+???
+China: 14.72 trillion USD (2020) vs France 2.603 trillion USD(2020)
+Not an end in itself as it does not address how a country uses that output to affect living standards.
 
 ---
 
 
 # GDP and the meaning of life
 
-- Rich is better.
 
---
+$$
+\text { Real GDP Per capita  }=\frac{\text { Real GDP }}{\text { Population }}
+$$
 
-- Money matters less as you grow richer.
-
---
-
-
-[The Economist, Growth does not mean happiness](https://www.economist.com/graphic-detail/2019/03/21/economic-growth-does-not-guarantee-rising-happiness)
 
 --
 
 __Uses and limitations of real GDP__
 
 - Measure The Standard of Living Over Time
-- Real GDP per person tells us the value of goods and services that the average person can enjoy.
+- Real GDP per person tells us the value of goods and services that the **average person** can enjoy.
 
 
 --
 
-- For example, in 1960, real GDP per person was $\$ 15,850$ and in 2012 , it was $\$ 42,800$.
+- For example, in the U.S. in 1960, real GDP per person was $15,850$ $ and in 2012 , it was $42,800$ $.
 - So real GDP per person in 2012 was $2.7$ times its 1960 level.
 
 --
@@ -200,6 +196,13 @@ __Some Shortcomings:__
 - Improved product quality
 - GDP and the environment
 - Noneconomic sources of well being
+
+--
+
+
+
+[The Economist, Growth does not mean happiness](https://www.economist.com/graphic-detail/2019/03/21/economic-growth-does-not-guarantee-rising-happiness)
+
 
 ???
 By using real GDP, we remove any influence that rising prices and a rising cost of living might have had on our comparison. 
@@ -212,13 +215,13 @@ parity (PPP) PPP),
 
 ---
 
-# Price Indexes and the Aggregate Price Level
+# Aggregate Price Indeces
 
 - __Aggregate price level:__ a measure of the overall level of prices in the economy
 
 - To measure the aggregate price level, economists calculate the cost of purchasing a market basket.
 
-- Market basket: a hypothetical set of consumer purchases
+- **Market basket:** a hypothetical set of consumer purchases
 of goods and services
 
 --
@@ -228,8 +231,10 @@ in a given year, where that cost is normalized so that it is
 equal to 100 in the selected base year
 
 --
+$$
+\text{Price index in a given year} = 
+$$
 
-Price index in a given year:
 
 $$
 \frac{\text{Cost of market basket in a given year}}{\text{Cost of market basket in base year}}\times 100
@@ -293,7 +298,9 @@ knitr::include_graphics("week3graphs/cpichange.png")
 .pull-right[
 - The annual percentage increases in recent years have been much smaller than those of the 1970s and early 1980s.
 
-- This slide needs more
+- Evidence that using **real** GDP matters for comparisons over time
+
+- Changes in **prices** + Changes in the **market basket**
 ]
 
 
@@ -361,8 +368,6 @@ $$
 
 --
 
-- Compute nominal GDP in each year.
-
 - Compute real GDP in each year using 2012 as the base year.
 
 
@@ -382,13 +387,6 @@ real GDP multiply each year's Qs by 2012 Ps
 
 # Practice Problem: Inflation
 
-|  | Nom. GDP | Real GDP | GDP deflator | Inflation rate |
-| :---: | :---: | :---: | :---: | :---: |
-| 2012 | $46,200 | $46,200 | 100.0 | n.a. |
-| 2013 | 51,400 | 50,000 | 102.8 | 2.8% |
-| 2014 | 58,300 | 52,000 | 112.1 | 9.1% |
-
---
 
 - Use your previous answers to compute the GDP deflator in each
 year.
@@ -397,20 +395,50 @@ year.
 
 --
 
-GDP deflator $(2008)=100 \times \frac{51,400}{50000}=102.8$
-GDP deflator $(2009)=100 \times \frac{58,300}{52,000}=112.1$
 
-FIXME: add more details here
+|  | Nom. GDP | Real GDP | GDP deflator | Inflation rate |
+| :---: | :---: | :---: | :---: | :---: |
+| 2012 | $46,200 | $46,200 | 100.0 | n.a. |
+| 2013 | 51,400 | 50,000 | 102.8 | 2.8% |
+| 2014 | 58,300 | 52,000 | 112.1 | 9.1% |
+
+
+--
+
+* GDP deflator $(2008)=100 \times \frac{51,400}{50000}=102.8$
+
+--
+
+* Inflation rate $(2008)= \frac{102.8 - 100}{100} = 0.028$
 
 ---
+
 
 # What we learned?
 
 
 __Useful Links__
 
-- tradingeconomics and more
+.pull-left[
+```{r  out.width = "100%",echo=FALSE}
+knitr::include_graphics("week3graphs/inflationpandemic.png") 
+```
 
-- TODO
+]
 
+.pull-right[
+
+The following websites provide information on U.S. GDP, inflation, unemployment, and many other interesting macroeconomic variables:
+
+- [Federal Reserve Economic Data](https://fred.stlouisfed.org/)
+
+- [Consumer Price Index (CPI) in the BLS](https://fred.stlouisfed.org/)
+
+- [Inflation during the pandemic](https://www.youtube.com/watch?v=Yrr9X62A1o4)
+
+- [Learning more about Prices & Inflation](https://www.bea.gov/resources/learning-center/what-to-know-prices-inflation)
+
+- [The Billion Price Project—Inflation in real time](http://www.thebillionpricesproject.com/) 
+
+]
 
