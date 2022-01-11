@@ -107,21 +107,6 @@ governments, and the rest of the world, and vice versa. break up the elements in
 
 - If we add up consumer spending, investment spending, government purchases, exports and subtract imports, we will get the market value of the goods and services the economy produces—the country’s gross domestic product.
 
---
-
-
-- __Digression: Stocks and Flows__ 
-
-- A stock is a position at a moment of time, for example,
-the stock of inventories in the economy at year end 2021
-
-- A flow is the rate of change in a stock, for example, the
-change in the stock of inventories in the economy in 2021
-
-
-???
-The distinction between a stock and a flow is very important in economic measurement and national income accounting
- ..(Profit and loss statements report flows
 
 ---
 
@@ -164,9 +149,15 @@ __In or Out?__
 
 --
 
-- How to measure GDP ? 
 
-> GDP measures the value of production, which also equals total expenditure on final goods and total income.
+- __Digression: Stocks and Flows__ 
+
+- A stock is a position at a moment of time, for example,
+the stock of inventories in the economy at year end 2021
+
+- A flow is the rate of change in a stock, for example, the
+change in the stock of inventories in the economy in 2021
+
 
 ???
 Value - we can't add apples and oranges (literally!) to find a meaningful number. Think of adding one car to one pair of socks and getting " 2 "- -it doesn't make sense. So, we add up the market value of the output (we can add dollars and dollars). This sets up the later discussion of the exclusion of nonmarket production from the calculation of GDP as well as the difference between real and nominal.
@@ -184,27 +175,33 @@ output on December 31, so we have to identify a time period and count only
 what was produced during that time period. GDP can be calculated annually,
 quarterly, monthly, and so on.
 
+
 ---
 
-# Example
+# Calculating GDP
 
-This hypothetical economy consists of three firms:  
 
-1. Iron Ore Producer and Seller
-2. Steel Producer and Seller
-3. Car manufacturer
+Gross domestic product (GDP): the total **value** of all **final** goods and services produced within a country during a given year:
 
 --
 
+- Goods and services are final if they are sold to the final, or end, user. 
+- Goods and services are intermediate if the purchaser—another firm—is not the final user.
 
-```{r  out.width = "50%",echo=FALSE}
-knitr::include_graphics("week2graphs/hypotheticaleconomy.png") 
-```
+  - If you buy a car from a dealer, the car is a final good. If an automobile manufacturer buys steel from a steel foundry, that steel is an intermediate good. 
+  
+--
 
-???
-As a preview, ask students what
-firms will do if consumers decide to reduce spending. Then ask them what happens to the
-income of the people who work at the firm.
+  
+- Market Value
+  - GDP is a market value-goods and services are valued at their market prices.
+  - To add apples and oranges, computers and popcorn, we add the market values so we have a total value of output in dollars.
+  
+--
+
+- __Final__ Goods and Services
+  - A final good (or service) is an item bought by its final user during a specified time period.
+  - Excluding the value of intermediate goods and services avoids counting the same value more than once.
 
  
 ---
@@ -233,33 +230,6 @@ Total expenditure on final goods and services equals GDP.
 
 It doesn’t matter if we add up all the spending or all the incomes because one person’s spending is another person’s income.
 
----
-
-# Calculating GDP
-
-
-Gross domestic product (GDP): the total value of all final goods and services produced within a country during a given year:
-
---
-
-- Goods and services are final if they are sold to the final, or end, user. 
-- Goods and services are intermediate if the purchaser—another firm—is not the final user.
-
-  - If you buy a car from a dealer, the car is a final good. If an automobile manufacturer buys steel from a steel foundry, that steel is an intermediate good. 
-  
---
-
-  
-- Market Value
-  - GDP is a market value-goods and services are valued at their market prices.
-  - To add apples and oranges, computers and popcorn, we add the market values so we have a total value of output in dollars.
-  
---
-
-- __Final__ Goods and Services
-  - A final good (or service) is an item bought by its final user during a specified time period.
-  - Excluding the value of intermediate goods and services avoids counting the same value more than once.
-
 ???
 Three ways to calculate GDP. Because GDP can be calculated three different ways—summing
 income earned, summing expenditures, and summing the value of production—students may
@@ -276,6 +246,32 @@ purchases of financial assets are transfers and do not count in GDP. Make sure t
 used goods do not count, though the service of selling a used good does count. The service is value
 added. Finally, make sure they understand that purchases of foreign goods are subtracted from
 consumption as imports because we are only counting domestic production.
+
+
+---
+
+
+
+# Example
+
+This hypothetical economy consists of three firms:  
+
+1. Iron Ore Producer and Seller
+2. Steel Producer and Seller
+3. Car manufacturer
+
+--
+
+
+```{r  out.width = "50%",echo=FALSE}
+knitr::include_graphics("week2graphs/hypotheticaleconomy.png") 
+```
+
+???
+As a preview, ask students what
+firms will do if consumers decide to reduce spending. Then ask them what happens to the
+income of the people who work at the firm.
+
 ---
 
 
@@ -300,7 +296,6 @@ __We only include items that are newly produced and aren’t used up in producti
 --
 
 - **In**/Out
- - **Investment and Capital spending**
  - **Changes to inventories**
 --
 
@@ -345,9 +340,9 @@ $$
 --
 
 - G = government purchases of goods and services
-  - Government Expenditures reflect direct consumption, not transfers,  **"Defense, Transportation and other infrastructure"
-  **
+  - Government Expenditures reflect direct consumption, not transfers,  **"Defense, Transportation and other infrastructure"**
   - Transfer payments $\rightarrow$ no production of new goods and services $\rightarrow$ Out
+
 
 ---
 
@@ -488,3 +483,5 @@ knitr::include_graphics("week2graphs/tradingeconomics.png")
 - [Classroom economist resources by Fed Atlanta](https://www.atlantafed.org/education/classroom-economist/gdp/resources)
 
 - [GDP resources in the Bureau of Economic Analysis](https://www.bea.gov/resources/learning-center/what-to-know-gdp)
+
+- [OECD National Accounts Statistics](https://www.oecd.org/sdd/na/)

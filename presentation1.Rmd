@@ -535,12 +535,21 @@ __Key topics__
 
 # Demand Schedule and Curve
 
-
-```{r  out.width = "60%",echo=FALSE}
+.center2[
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
 knitr::include_graphics("week1graphs/demandcurve.png") 
 ```
+]
+---
+
+# Demand Schedule and Curve
 
 
+.center2[
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week1graphs/demandincrease1.png") 
+```
+]
 ---
 
 # Demand Shifts
