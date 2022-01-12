@@ -1,0 +1,281 @@
+---
+title: "Long Run Economic Growth"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: center,middle,mctitle-slide 
+
+
+# Long Run Economic Growth II
+
+## Manolis Chatzikonstantinou  
+
+---
+
+
+# What will you learn today?
+
+
+- Why is long run economic growth measured as the increase in real GDP per capita?
+
+- Why is productivity the key to long run economic growth? How is productivity measured?
+
+- Why do long run growth rates differ so much among countries?
+
+--
+
+- __How does growth vary among several important regions of the world?__
+
+- __Convergence Hypothesis and applications__
+
+- __How does scarcity of natural resources and environmental degradation pose a challenge to sustainable long run economic growth?__
+
+---
+
+# Growth accounting
+
+> __Growth accounting:__ estimates of the contribution of each major factor in the aggregate production function to economic growth
+
+> __Total factor productivity:__ the amount of output that can be produced with a given amount of factor inputs
+
+--
+
+- When total factor productivity increases, the economy can produce more output with the same quantity of physical capital, human capital, and labor.
+
+--
+
+- Increases in total factor productivity are central to economic growth. 
+
+- Technological progress drives increases in total factor productivity.
+
+- According to the Bureau of Labor Statistics, over the period from 1948 to 2019 American labor productivity rose 2.1% per year. 
+
+- 49% of that rise is explained by increases in physical and human capital per worker; the rest is explained by rising total factor productivity—by  technological progress. 
+
+- How do we know? 
+
+---
+
+# Total Factor Productivity 
+
+- $TFP =\mathrm{A}=\mathrm{Y} / \mathrm{F}(\mathrm{K}, \mathrm{H})$
+ 
+- Basically, TFP is a 'catch-all' for anything that effects output other than capital input $\mathrm{K}$ and education-adjusted labor input $\mathrm{L}$.
+
+--
+
+ 
+- Cobb-Douglas production function:
+.pull-left[
+```{r  out.width = "100%",echo=FALSE}
+knitr::include_graphics("week7graphs/cbpf.png") 
+```
+]
+
+.pull-right[
+
+- Regulation/Rule of law
+
+- Infrastructure/Market access
+
+- Misallocation
+
+- Innovation
+
+- __Measure of our ignorance__
+]
+
+???
+A convenient functional form for growth accounting is the
+---
+
+# Growth accounting 
+.pull-left[
+```{r  out.width = "80%",echo=FALSE}
+knitr::include_graphics("week7graphs/grac.png") 
+```
+]
+
+.pull-right[
+|  | 1939-1948 | 1948-1973 | 1973-1990 | 1990-2007 | 2007-2013 |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| Output | 5.79 | 4.00 | 3.10 | 3.60 | 1.1 |
+| Capital | 3.34 | 3.70 | 4.20 | 4.10 | 1.4 |
+| Labor | 4.46 | 1.00 | 1.90 | 1.60 | -0.1 |
+| Productivity | 1.71 | 2.1 | 0.5 | 1.2 | 0.7 |
+]
+
+--
+
+- Real GDP growth is declining over time.
+- Capital has been growing faster than labor
+- The contribution of productivity is diminishing!
+
+---
+
+# COnvergence hypothesis
+
+```{r  out.width = "80%",echo=FALSE}
+knitr::include_graphics("week7graphs/convergence.png") 
+```
+---
+
+# EAST ASIA’S MIRACLE (1 of 2)
+
+It took South Korea only 35 years to achieve growth that required centuries elsewhere.
+Since 1975, the East Asian region has increased real GDP per capita by 6% per year, more than three times America’s historical rate of growth.  
+How have the Asian countries achieved such high growth rates?
+Very high savings rates allow businesses to borrow and add more physical capital per worker. 
+Very good basic education has permitted a rapid improvement in human capital. 
+Substantial technological progress
+
+--
+
+Economic growth can be especially fast in countries that are playing catch-up to countries with higher GDP per capita.
+East Asian economies grew fast because they adopted the technologies that already existed.
+The convergence hypothesis: differences in real GDP per capita among countries tend to narrow over time
+But having a low real GDP per capita is no guarantee of rapid growth, as the examples of Latin America and Africa demonstrate.
+
+
+---
+
+# LATIN AMERICA’S DISAPPOINTMENT
+
+What’s holding Argentina (and other Latin American nations) back?
+
+
+Irresponsible government action that eroded savings through high inflation
+Lack of emphasis on education
+Political instability
+
+---
+
+# AFRICA’S TROUBLES AND PROMISE 
+
+What’s holding much of Africa back?
+Government corruption
+Civil wars and 
+political instability
+Unfavorable geography
+
+Is Africa poor because it’s politically unstable or unstable because it’s poor? 
+Good news: Growth rates are up in sub-Saharan African nations since 2011.
+
+
+---
+
+
+# THE ROLE OF GOVERNMENT IN PROMOTING ECONOMIC GROWTH 
+
+Government policies can increase the economy’s growth rate through the following six channels: 
+Government subsidies to infrastructure
+Infrastructure: roads, power lines, ports, information networks, and other underpinnings for economic activity
+China spends more on infrastructure than Western Europe and North America combined.
+Government subsidies to education
+Literacy in China has been increasing more rapidly than in Argentina. This isn’t because China is richer than Argentina; it’s because the Chinese government has made education a priority.
+
+--
+Government subsidies to R&D
+For example, the internet grew out of the Advanced Research Projects Agency Network (ARPANET), created by the U.S. Department of Defense.
+Maintaining a well-functioning financial system
+If people distrust banks, they’ll keep gold or cash in safe deposit boxes or under the mattress, where it cannot be turned into productive investment spending.
+--
+
+Protection of property rights
+Property rights are the legal rights held by owners of valuable items to dispose of those items as they choose. 
+Intellectual property rights are the rights of innovators to accrue the rewards of their innovations. 
+Generally, governments protect intellectual property rights by giving patents (government-created temporary monopolies given to innovators for the use or sale of their innovations).
+--
+
+Political stability and good governance 
+There’s not much point in investing in a business if rioting mobs are likely to destroy it.
+Economic success of the United States has been possible because there are good laws, institutions that enforce those laws, and a stable political system that maintains those institutions
+
+---
+
+# IS WORLD GROWTH SUSTAINABLE?
+
+Sustainable long-run economic growth: long-run growth that can continue in the face of the limited supply of natural resources and the impact of growth on the environment
+
+--
+
+“Neo-Malthusian” theories claim that economic growth will be severely limited by lack of resources.
+Economists believe that modern economies handle scarcity fairly well. 
+Resource scarcity leads to high prices, and these high prices provide strong incentives to conserve the resource and find alternatives. 
+For example, after the sharp oil price increases of the 1970s, U.S. consumers turned to smaller, more fuel-efficient cars.
+
+
+---
+
+# CLIMATE CHANGE AND GROWTH
+
+```{r  out.width = "100%",echo=FALSE}
+knitr::include_graphics("week7graphs/carbon.png") 
+```
+
+- The United States and Europe have historically been responsible for the great bulk of carbon dioxide emissions. 
+
+- As China and other emerging economies have grown, they began to emit much more carbon dioxide.
+
+
+---
+
+# ECONOMIC GROWTH AND THE ENVIRONMENT
+
+Economic growth tends to have the adverse impact on the environment: pollution, loss of wildlife habitats, extinction of species, and reduced biodiversity.
+There’s local environmental degradation and global environmental degradation. 
+It’s easier to reduce local environmental harm and it’s more difficult to address global environmental degradation, in particular, the problem of climate change. 
+
+--
+
+Climate change: changes in Earth’s climate brought about by human activity 
+Unmitigated climate change will cost 20% of world gross domestic product by 2100. Moreover, these costs tend to fall more heavily on poor countries. 
+Climate change is been a hard problem to solve because it requires the cooperation of many countries.
+Paris Agreement of 2015: 196 countries agreed to reduce their greenhouse gas emissions in an effort to limit the rise in Earth’s temperature to no more than 2 degrees Celsius.
+China and India agreed to limit their emissions, and the rich countries committed to help poorer countries pay the cost. 
+The Trump administration announced plans for the United States to withdraw from the agreement in November 2020. 
+
+
+---
+
+
+# What we learned?
+
+
+__Useful Links__
+
+.pull-left[
+```{r  out.width = "100%",echo=FALSE}
+knitr::include_graphics("week3graphs/inflationpandemic.png") 
+```
+
+]
+
+.pull-right[
+
+The following websites provide information on U.S. GDP, inflation, unemployment, and many other interesting macroeconomic variables:
+
+- [Federal Reserve Economic Data](https://fred.stlouisfed.org/)
+
+- [Consumer Price Index (CPI) in the BLS](https://fred.stlouisfed.org/)
+
+- [Inflation during the pandemic](https://www.youtube.com/watch?v=Yrr9X62A1o4)
+
+- [Learning more about Prices & Inflation](https://www.bea.gov/resources/learning-center/what-to-know-prices-inflation)
+
+- [The Billion Price Project—Inflation in real time](http://www.thebillionpricesproject.com/) 
+
+]
+
