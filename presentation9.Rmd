@@ -1,5 +1,5 @@
 ---
-title: "The financial system"
+title: "Savings and Investment"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,13 +18,14 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# The financial system
+# Savings and Investment
 
 ## Manolis Chatzikonstantinou  
 
 ---
 
-# # What will you learn in this lecture?
+
+# What will you learn in this lecture?
 
 
 ```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
@@ -357,6 +358,3 @@ On the other side, the past 25 years were marked by two huge asset bubbles:
 The dot-com bubble: In the late 1990s the prices of technology stocks soared, then plunged, helping to cause the 2001 recession. 
 The housing bubble: In 2008, the collapse of the housing market triggered a severe financial crisis followed by a deep recession. 
 These events have prompted much debate over whether and how to limit financial instability. We discuss it in Chapter 14. 
-
-
-
