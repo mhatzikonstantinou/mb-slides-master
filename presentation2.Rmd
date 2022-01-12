@@ -306,7 +306,7 @@ __We only include items that are newly produced and aren’t used up in producti
 
 # The Value Added Approach
 
-```{r  out.width = "60%",echo=FALSE}
+```{r  out.width = "75%",fig.align='center',echo=FALSE}
 knitr::include_graphics("week2graphs/intermediates.png") 
 ```
 

@@ -28,59 +28,100 @@ class: center,middle,mctitle-slide
 # What will you learn this week?
 
 
-How is unemployment measured and how is the
-unemployment rate calculated?
+- **How is unemployment measured and how is the unemployment rate calculated?**
+
 --
-What is the significance of the unemployment rate for the
-economy?
+
+- **What is the significance of the unemployment rate for the economy?**
+
 --
-What is the relationship between the unemployment rate
-and economic growth?
+
+- **What is the relationship between the unemployment rate and economic growth?**
+
 --
-What factors determine the natural rate of
-unemployment?
+
+- *What factors determine the natural rate of unemployment?*
+
 --
-What are the economic costs of inflation?
+
+- *What are the economic costs of inflation?*
+
 --
-How do inflation and deflation create winners and losers?
+
+- *How do inflation and deflation create winners and losers?*
+
 --
-Why do policy makers try to maintain a stable rate of
-inflation?
+
+- *Why do policy makers try to maintain a stable rate of inflation?*
 
 ---
 
 # The unemployment rate in the US, 1948-2020
 
-Unemployment always rises during recessions and usually (but not always) falls during periods of economic expansion.
+- Unemployment always rises during recessions and usually (but not always) falls during periods of economic expansion.
 
-graph table code
+
+```{r  out.width = "75%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/unemploymentbc.png") 
+```
+
 
 ---
 
 #  Employment and Unemployment
 
-  - Why Unemployment Is a Problem ?
+- Why Unemployment Is a Problem ?
+  
+--
 
 Unemployment results in:
 
-- Lost incomes and production
+- **Lost incomes and production**
 
   - Lost income $\rightarrow$ reduction in demand and welfare
   - Employment benefits create a safety net $\rightarrow$ not fully and not for long
 
--- 
+--
 
-- Lost human capital
+- **Lost human capital**
+
+.pull-left[
+```{r  out.width = "50%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/scar.png") 
+```
+
+]
+
+.pull-right[
 
  - Prolonged unemployment permanently damages a
-person’s job prospects by destroying human
-capital.
+person’s job prospects 
+- destroying human capital: experiance and connections
+]
 
-http://www.bls.gov/eag/eag.us.htm
+---
 
--- 
+
+
+#  Who is unemployed? 
 
  - Is everyone not working, unemployed?
+ 
+--
+
+ - Female—45, worked full time during the month as computer analyst 
+ - Male—50, laid off last year, did not work or look for work during the month
+
+--
+
+ - 	Female—22, not working, applied for positions in retail sales during the month 
+ -	Male—15, worked part time during the month at a restaurant 
+
+--
+
+ -	Male—70, retired
+ -	Female—68, worked 30 hours per week as a substitute middle school teacher
+
 
 --
 
@@ -93,24 +134,29 @@ The working age population is divided into two groups:
 
 __The labor force is the sum of employed and unemployed workers.__
 
---
-
-- Who is counted as unemployed ? 
 
 ---
 
 # Labor Force Statistics
 
-Employment: the total number of people currently employed, either full time or part time 
-Unemployment: the total number of people who are actively looking for work but aren’t currently employed 
-Labor force: the sum of employment and unemployment
+> **Employment:** the total number of people currently employed, either full time or part time 
 
-- __Working age population__
+> **Unemployment:** the total number of people who are actively looking for work but aren’t currently employed 
+
+> **Labor force:** the sum of employment and unemployment
+
+- __Unemployment rate:__ the percent of the total number of people in the labor force who are unemployed
+
 
 --
 
-Labor force participation rate: the percentage of adults (people 16 and older) in the labor force
-Unemployment rate: the percent of the total number of people in the labor force who are unemployed
+>  __Working age population__: the sum of active labor force + and thos not participating 
+
+
+-  __Labor force participation rate:__ the percentage of adults (people 16 and older) in the labor force
+
+--
+
 
 $$
 \text { Labor force participation rate }=\frac{\text { Labor force }}{\text { Population age } 16 \text { and older }} \times 100
@@ -124,28 +170,32 @@ $$
 
 # Unemployment: Significance and Pitfalls
 
-The unemployment rate is a good but imperfect indicator of how easy or difficult it is to find a job:
+ - The unemployment rate is a good but imperfect indicator of how easy or difficult it is to find a job:
 
-It can overstate the true level of unemployment.
-It takes at least a few weeks to find a job. If you are searching for a job and have not yet found one, you are counted as unemployed. 
-The unemployment rate never falls to zero, even in boom times when jobs are plentiful. 
+--
 
+- It can overstate the true difficulty of finding a job:
+    - It takes time to change jobs
+    - The unemployment rate never falls to zero, even in boom times when jobs are plentiful. 
 
-It can understate the true level of unemployment.
-Discouraged workers: those who have given up looking for a job because there are no jobs available. 
-The deeper the recession, the more discouraged workers there are.
-They are part of a larger group—marginally attached  workers: those who looked for work in the past (looked in the past 12 months but NOT in the past 4 weeks) but are not currently looking for work.
-The underemployed: those who would like to work full time but are currently working part time.
+--
 
 
+- It can understate the true level of difficulty of finding a job
+    - **Discouraged workers:** those who have given up looking for a job because there are no jobs available. 
+    - They are part of a larger group—**marginally attached  workers::** those who looked for work in the past (looked in the past 12 months but NOT in the past 4 weeks) but are not currently looking for work.
+    
+--
 
-So how good an indicator is the unemployment rate? 
-It isn’t perfect.
-It doesn’t measure the quality of jobs or how well people are matched to their jobs.
-Economists also look at other indicators:
-Labor force participation rate
-Number of full-time jobs
-Average wages
+- The underemployed: those who would like to work full time but are currently working part time.
+
+--
+
+- So how good an indicator is the unemployment rate? 
+    - Quality of jobs or how well people are matched to their jobs.
+    - Labor force participation rate
+    - Number of full-time jobs
+    - Average wages
 
 
 ---
@@ -153,31 +203,101 @@ Average wages
 # Alternative measures of unemployment
 
 
-The unemployment rate counts people as unemployed if they have been looking for work during the past four weeks. 
-Broader measures also count discouraged workers, marginally attached workers, and the underemployed. 
+- The unemployment rate counts people as unemployed if they have been looking for work during the past four weeks. 
+- Broader measures also count discouraged workers, marginally attached workers, and the underemployed. 
 
-altmeasures.png
+--
+.pull-left[
+```{r  out.width = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/altmeasures.png") 
+```
+]
+
+.pull-right[
+
+- U-A: Those unemployed for 15 or more weeks
+- U-B: Unemployed job losers
+- U-1: The official unemployment rate
+ 
+__Broader measures are:__
+
+ -  U-2: U-3 + Discouraged workers
+ -  U-3: U-4 + Marginally attached workers
+ -  U-4: U-4 + Part-time workers who want full-time jobs
+]
+---
+
+# Unemployment rates and demographics
+
+- Data show that unemployment rates vary greatly between groups.
+
+
+--
+
+```{r  out.width = "70%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/unemploymenteduc.png") 
+```
 
 ---
 
 # Unemployment rates and demographics
 
-- Data show that unemployment rates vary greatly between
-groups.
+- Data show that unemployment rates vary greatly between groups.
+
+
+--
+
+```{r  out.width = "60%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/unemploymentgender.png") 
+```
+
+---
+
+# Unemployment rates and demographics
+
+- Data show that unemployment rates vary greatly between groups.
+
+
+--
+
+```{r  out.width = "70%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/unemploymentrace.png") 
+```
+
+---
+
+# Unemployment rates and demographics
+
+- Data show that unemployment rates vary greatly between groups.
+
+
+--
+
+```{r  out.width = "70%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/unemploymentmena.png") 
+```
+
 
 
 ---
 
 # Unemployment and growth
 
-GROWTH AND CHANGES IN UNEMPLOYMENT,
-1949 2016
-•
-Generally there is a negative relationship between
-economic growth and the unemployment rate. A jobless
-recovery is a period in which the real GDP growth rate is
-positive but the unemployment rate is still rising
 
+-  Generally there is a negative relationship between economic growth and the unemployment rate
+
+
+--
+
+
+```{r  out.width = "90%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/unemploymentgr.png") 
+```
+
+--
+-  A __jobless recovery__ is a period in which the real GDP growth rate is positive but the unemployment rate is still rising
+
+???
 There is a generally strong negative relationship between growth and unemployment. 
 The green vertical line indicates the average growth rate of real GDP. Points to the right of the green line: above-average growth and falling unemployment. 
 Points to the left of the green line: below-average growth and usually rising unemployment. A period when the growth is below the average and unemployment is rising is called a jobless recovery or a growth recession. 
@@ -186,148 +306,197 @@ Points to the left of the green line: below-average growth and usually rising un
 
 # Job Creation and destruction
 
-If fast economic growth reduces the unemployment rate, how low can it go?
-Over the past 50 years, the national unemployment rate has never dropped below 2.9%.
-Even in the best of times, jobs are constantly being created and destroyed. 
+- If fast economic growth reduces the unemployment rate, how low can it go?
+
+
+--
+
+- Over the past 50 years, the national unemployment rate has never dropped below 2.9%.
+
+- Even in the best of times, jobs are constantly being created and destroyed. 
+
+--
+
+
 There are three types of unemployment:
-frictional
-structural
-cyclical
+
+  1. frictional
+  2. structural
+  3. cyclical
+  
+--
 
 Even in low-employment months, many workers move into and out of both employment and unemployment.
+
+>The Great Resignation, also known as the Big Quit, is an economic trend in which employees voluntarily resign from their jobs en masse, beginning in early 2021, primarily in the United States. 
+
+--
+
+> According to a PricewaterhouseCoopers survey conducted in early August 2021, 65% of employees said they are looking for a new job and 88% of executives said their company is experiencing higher turnover than normal.
+
 
 
 ---
 
 # Frictional Unemployment
-Frictional Unemployment
-is unemployment that arises
-from normal labor market turnover.
-•
-The creation and destruction of jobs requires that unemployed
-workers search for new jobs.
-•
-Increases in the number of people entering and reentering the labor
-force and increases in unemployment benefits raise frictional
-unemployment.
-•
-Frictional unemployment is a permanent and healthy phenomenon of
-a growing economy
+
+- __Frictional Unemployment__ is unemployment that arises from normal __labor market turnover__.
 
 --
 
-__Duration:__ The short duration of unemployment for most workers suggests that unemployment in early 2020 was mostly frictional.
+- The creation and destruction of jobs requires that unemployed workers search for new jobs.
+
+--
+
+- Increases in the number of people entering and reentering the labor force 
+- increases in unemployment benefits raise frictional unemployment.
+
+--
+
+.pull-left[
+```{r  out.width = "70%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/bigquit.png") 
+```
+]
+
+.pull-right[
+
+__Duration:__ The short duration of unemployment for most workers suggests that unemployment in early 2020 and 2021 was mostly frictional.
+
+- Frictional unemployment is a permanent and healthy phenomenon of a growing economy
+
+]
+
+
+
+---
+
+# Frictional Unemployment?
+
+```{r  out.width = "50%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/frictional1.png") 
+```
 
 ---
 
 # Structural Unemployment
 
-Sometimes there is a persistent surplus of job-seekers in a particular labor market:
-There may be more workers with a particular skill than there are jobs available for that skill, or 
-There may be more workers in a particular geographic region than there are jobs in that region.  
+- Sometimes there is a persistent surplus of job-seekers in a particular labor market:
+  - There may be more workers with a particular skill than there are jobs available for that skill, or 
+  - There may be more workers in a particular geographic region than there are jobs in that region.  
 
-Structural unemployment: more people are seeking jobs in a particular labor market than there are jobs available at the current wage rate, even when the economy is at the peak of the business cycle.
+--
 
-Structural unemployment occurs when the wage rate is persistently above the equilibrium wage rate. 
-Several factors can lead to a wage rate in excess of the equilibrium wage rate:
-Minimum wages
-Unions
-Efficiency wages
-Side effects of government policies
-Mismatches between employees and employers
+**Structural unemployment:** more people are seeking jobs in a particular labor market than there are jobs available at the current wage rate, even when the economy is at the peak of the business cycle.
 
----
+--
 
-# Micro Review: Minimum wages
+- Structural unemployment occurs when the wage rate is persistently above the equilibrium wage rate. 
 
+.pull-left[
+```{r  out.width = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/structural1.png") 
+```
+]
+
+.pull-right[
+  
+1. Minimum wages
+2. Unions
+3. Efficiency wages
+4. Side effects of government policies
+5. Mismatches between employees and employers
+]
+
+???
 A minimum wage is a government-mandated floor on the wage rate.
 A binding minimum wage leads to a persistent surplus in the labor market.
 A sufficiently high minimum wage leads to structural unemployment. 
 The minimum wage in the United States is quite low and isn’t binding for the majority of workers. 
-
---
-
 __Side effects:__ Benefits to laid-off workers reduce workers’ incentive to quickly find a new job. 
 During the 1980s, generous unemployment benefits in some European countries contributed to Eurosclerosis, persistently high unemployment.
-
 ---
+
 
 # Cyclical unemployment
 
-Cyclical Unemployment is the higher than normal
-unemployment at a business cycle trough and lower than
-normal unemployment at a business cycle peak.
-•
-A worker laid off because the economy is in a
-recession and is then rehired when the expansion
-begins experiences cycle unemployment.
-
-“
-Natural” Unemployment is the unemployment that arises
-from frictions and structural change when there is no cyclical
-unemployment.
-•
-Frictional and structural unemployment are always present;
-they are “natural.”
-•
-Natural unemployment frictional unemployment +
-structural unemployment
-•
-Actual unemployment = natural unemployment + cyclical
-unemployment
+>__Cyclical Unemployment__ is the higher than normal unemployment at a business cycle trough and lower than normal unemployment at a business cycle peak.
 
 --
 
+- A worker laid off because the economy is in a
+recession and is then rehired when the expansion
+begins experiences cycle unemployment.
+
+--
+
+**“Natural” Unemployment** is the unemployment that arises from frictions and structural change when there is no cyclical unemployment.
+--
+
+- [FRED Natural rate of unemployment](https://fred.stlouisfed.org/series/NROU)
+- The natural rate of unemployment (NAIRU) is the rate of unemployment arising from all sources except fluctuations in aggregate demand
+
+???
 It takes time for workers and firms to adjust to shifts in the economy. 
 The result can be a mismatch between what employees have to offer and what employers are looking for. 
 A skills mismatch
 A geographic mismatch
+
+--
+
+- Frictional and structural unemployment are always present;they are “natural.”
+
+- Actual unemployment = natural unemployment + cyclical unemployment
+
+
 
 
 ---
 
 # Unemployment and full employment
 
-The natural unemployment rate changes over time and is
-influenced by many factors.
-•
-We need estimates of the natural rate of unemployment both to make forecasts and to conduct policy analyses.
-What causes it to change?
-Changes in characteristics of the labor force
-Changing demographics
-Changes in labor market institutions
-Unions, temp agencies, and new technology
-Changes in government policies
-Job-training programs
 
---
+.pull-left[
+```{r  out.width = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/natural_rate.png") 
+```
+]
 
-Real GDP and Unemployment Over the Cycle
-Potential GDP is the quantity of real GDP produced at full
-employment.
-Potential GDP corresponds to the capacity of the economy to
-produce output on a sustained basis.
-Real GDP minus potential GDP is the output gap.
-Over the business cycle, the output gap fluctuates and the
-unemployment rate fluctuates around the natural unemployment rate.
+.pull-right[
+- The natural unemployment rate changes over time and is
+influenced by many factors:
+
+ - Changes in characteristics of the labor force
+ - Changing demographics
+ - Changes in labor market institutions
+ - Unions, temp agencies, and new technology
+ - Changes in government policies
+ - Job-training programs
+]
 
 
+
+
+- **Potential GDP is the quantity of real GDP produced at full employment,** corresponds to the _capacity_ of the economy to produce output.
+- Real GDP minus potential GDP is the **output gap**.
+
+- Business cycle: fluctuation in the output gap and in the
+unemployment rate around the natural unemployment rate.
 
 ---
 
-# What we learned?
+# Useful Links
 
 
-__Useful Links__
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week4graphs/glance.png") 
+```
 
-- tradingeconomics
 
--
 
-http://www.bls.gov/eag/eag.us.htm
-https://www.statista.com/statistics/808890/unemployment-rate-in-qatar/
+- [US Economy at a Glance](http://www.bls.gov/eag/eag.us.htm)
 
-https://www.imf.org/external/datamapper/LUR@WEO/OEMDC/ADVEC/WEOWORLD
+- [Unemployment rate in Qatar](https://www.statista.com/statistics/808890/unemployment-rate-in-qatar/)
 
-https://www.bls.gov/cps/lfcharacteristics.htm#unemp
+- [Labor Force Characteristics](https://www.bls.gov/cps/lfcharacteristics.htm#unemp)
 
