@@ -1,5 +1,5 @@
 ---
-title: "Unemployment and Inflation"
+title: "Inflation and Deflation"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,19 +18,144 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Unemployment and Inflation
+# Inflation and Deflation
 
 ## Manolis Chatzikonstantinou  
 
 ---
 
-# Review: Labor Market Flows
+
+# What will you learn this week?
 
 
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week4graphs/in_out.png") 
+
+- __What is a price index, and how is it used to calculate the inflation rate?__
+
+ - Measures cost of the "same basket of goods" in different years. 
+
+--
+
+- __What are the economic costs of inflation?__
+
+--
+
+- __How do inflation and deflation create winners and losers?__
+
+--
+
+- __Why do policy makers try to maintain a stable rate of inflation?__
+---
+
+
+
+# Aggregate Price Indices
+
+- __Aggregate price level:__ a measure of the overall level of prices in the economy
+
+- To measure the aggregate price level, economists calculate the cost of purchasing a market basket.
+
+- **Market basket:** a hypothetical set of consumer purchases of goods and services
+
+--
+
+__Price index:__ the cost of purchasing a given market basket
+in a given year, where that cost is normalized so that it is
+equal to 100 in the selected base year
+
+--
+$$
+\text{Price index in a given year} = 
+$$
+
+
+$$
+\frac{\text{Cost of market basket in a given year}}{\text{Cost of market basket in base year}}\times 100
+$$
+
+
+---
+
+# Calculating the cost of a market basket
+
+|  | January | February |
+| :--- | :--- | :--- |
+| Price of orange | $$ \$ 0.20 $$ | $$ \$ 0.40 $$ |
+| Price of grapefruit | $$ \$ 0.60 $$ | $$ \$ 1.00 $$ |
+| Price of lemon | $$ \$ 0.25 $$ | $$ \$ 0.45 $$ |
+| Cost of market basket (200 oranges, 50 grapefruit, 100 lemons ) | $$(200 \times 0.20) + (50 \times 0.60)+ (100 \times 0.25) = \$95.00 $$| $$ = \$175.00 $$ |
+
+--
+
+- The CPI in the USA measures the cost of the market basket of a typical urban American family
+
+--
+- __The inflation rate:__ the yearly percentage change in a price
+index, typically based on consumer price index (CPI), the
+most common measure of the aggregate price level.
+
+--
+
+
+$$
+\textbf{Inflation rate: } \frac{\text{Price index in year 2 - Price index in year 1}}{\text{Price index in year 1}}\times 100
+$$
+
+---
+
+# The consumer price index 
+
+
+The makeup of the consumer price index in 2010
+
+```{r  out.width = "70%",echo=FALSE}
+knitr::include_graphics("week3graphs/cpibasket.png") 
 ```
 
+
+---
+
+# Consumer Prices in the long run
+
+.pull-left[
+```{r  out.width = "100%",echo=FALSE}
+knitr::include_graphics("week3graphs/cpichange.png") 
+```
+]
+
+
+
+.pull-right[
+- The annual percentage increases in recent years have been much smaller than those of the 1970s and early 1980s.
+
+- Evidence that using **real** GDP matters for comparisons over time
+
+- Changes in **prices** + Changes in the **market basket**
+]
+
+
+---
+
+# Other Price Indices
+
+.pull-left[
+```{r  out.width = "100%",echo=FALSE}
+knitr::include_graphics("week3graphs/cpistats.png") 
+```
+]
+
+.pull-right[
+
+- __CPI__: Based on consumption basket and prices consumers pay!
+
+- __Producer price index (PPI):__ similar to the CPI, but measures changes in the prices of goods purchased by producers
+
+- Economists also use the GDP deflator that measures the price level by calculating the ratio of nominal to real GDP.
+
+
+$$
+\text { GDP deflator }=100 \times \frac{\text { Nominal GDP }}{\text { Real GDP }}
+$$
+]
 
 ---
 
@@ -167,29 +292,45 @@ loses its value so quickly.
 
 # Inflation in History!
 
-TYPES OF INFLATION
-•
-Demand pull inflation :
-increases in aggregate
-demand outpace
-increases in aggregate
-supply.
-•
-Cost push inflation :
-increases in production
-costs cause firms to
-raise prices.
-•
-Hyperinflation :
-extremely high rate of
-inflation.
+.pull-left[
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week3graphs/inflationhist.png") 
+```
+]
 
+.pull-right[
+
+- __Hyperinflation :__ extremely high rate of inflation.
+
+- __Demand pull inflation :__ increases in aggregate demand outpace increases in aggregate supply.
+
+- __Cost push inflation :__ increases in production costs cause firms to raise prices.
+
+]
 ---
 
-#  INFLATION IS EASY, DISINFLATION IS HARD
+#  Inflation is easy, disinflation in hard
 
-Disinflation: bringing the inflation rate down
-Two major periods of disinflation happened in the mid-1970s and the early 1980s. 
-Disinflation is difficult and costly because it requires a temporary but large increase in the unemployment rate.
+.pull-left[
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week3graphs/volcker.jfif") 
+```
+]
 
+.pull-right[
+- Disinflation: bringing the inflation rate down
+
+- Two major periods of disinflation happened in the mid-1970s and the early 1980s. 
+
+- Disinflation is difficult and costly because it requires a temporary but large increase in the unemployment rate.
+
+- Cold-Turkey policies try to reduce the inflation rate as quickly as possible towards a target.
+
+- Gradualist policies reduce the rate of inflation at a slow pace
+
+]
+
+???
+To reduce inflation, policymakers must choose between cold-turkey and gradualist policies. Cold-Turkey policies try to reduce the inflation rate as quickly as possible towards a target. Gradualist policies reduce the rate of inflation at a slow pace, which is to say that these policies move the economy slowly towards a target.
+Cold-turkey policies create a shock-effect, which might not be good for the economy if the shock is great, but can be good for the economy if it builds policymaker trustworthiness. Gradualist policies allow policymakers to incorporate new information when playing out the policies
 

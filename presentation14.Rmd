@@ -1,0 +1,415 @@
+---
+title: "Monetary Policy"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: center,middle,mctitle-slide 
+
+
+# Monetary Policy
+
+## Manolis Chatzikonstantinou  
+
+---
+
+
+
+# What will you learn in this lecture?
+
+-  What is the money demand curve?
+
+--
+
+-  Why does the liquidity preference model determine the interest rate in the short run?
+
+-- 
+
+-  How does the Federal Reserve implement monetary policy?
+
+-- 
+
+-  Why is monetary policy the main tool for stabilizing the economy?
+
+-- 
+
+-  Why do economists believe in monetary neutrality?
+
+---
+
+#  Who decides what the global interest rate is? 
+
+.pull-left[
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/powel.png") 
+```
+
+]
+
+
+.pull-right[
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/presheight.png") 
+```
+
+]
+--
+
+- The chairmanship of the Federal Reserve is arguably the most powerful position in the U.S. government.
+
+---
+
+# The opportunity cost of holding money
+
+We all carry some cash for the convenience, but that convenience comes with a price:
+Cash yields no return;
+We give up the interest that could have been earned by putting money into interest-bearing assets like CDs (certificates of deposits).
+A certificate of deposit (CD) allows customers to deposit their funds for a specified amount of time and earn a specified interest rate.
+
+--
+
+Individuals and firms trade off the benefit of holding cash versus the benefit of holding interest-bearing nonmonetary assets. 
+
+| One-month Treasury bills | 2.45% |
+| :--- | :--- |
+| Interest-bearing demand deposits | 0.06% |
+| Cash | 0 |
+
+--
+
+Funds in demand deposits are more accessible than those in Treasury bills, but they earn only 0.06%. 
+The most accessible asset—cash in your wallet—earns zero. 
+
+---
+
+# The opportunity cost of holding money
+
+Short-term interest rates: the interest rates on financial assets that mature within less than a year
+Long-term interest rates: interest rates on financial assets that mature a number of years in the future
+
+The higher the interest rate, the higher the opportunity cost of holding money.
+The lower the interest rate, the lower the opportunity cost of holding money.
+
+--
+
+|  | March 2019 | March 2020 |
+| :--- | :---: | :---: |
+| Federal funds rate | 2.41% | 0.65% |
+| One-month Treasury bills | 2.45% | 0.37% |
+| Interest-bearing demand deposits | 0.06% | 0.06% |
+| Currency | 0 | 0 |
+| Treasury bills minus interest-bearing demand deposits (percentage points) | 2.35 | 0.31 |
+| Treasury bills minus currency (percentage points) | 2.41 | 0.37 |
+
+- __What happened to the opportunity cost of holding money between 2019 and 2020? 
+
+???
+The opportunity cost of holding money declined sharply between 2019 and 2020. 
+
+---
+
+# The money demand curve
+
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/MD.png") 
+```
+
+
+--
+
+The money demand curve shows the relationship between the quantity of money demanded and the interest rate.
+It slopes downward: 
+A higher interest rate reduces the quantity of money demanded. 
+A lower interest rate increases the quantity of money demanded.
+
+---
+
+# Shifts the money demand curve 
+
+- __What shifts the money demand curve?__
+
+--
+
+- Changes in aggregate price level
+Higher prices mean we need more money for transactions (and vice versa).
+
+--
+
+- Changes in real GDP
+More goods and services produced and sold means we need more money (and vice versa).
+
+
+--
+
+- Changes in credit markets and banking technology
+The ease of credit cards reduces the need for cash.
+
+--
+
+- Changes in institutions or trust
+  - __Example:__ U.S. banks weren’t allowed to offer interest on checking accounts until 1980. When regulation changed, banks started paying interest on checking accounts, which raised the demand for money and shifted the MD curve to the right.
+  - __Japan is still a cash society:__ The many small businesses haven’t invested in credit card technology.
+And the short-term interest rates have been below 1% since the 1990s. Also, crime is low. So…why not hold cash?
+
+---
+
+# Shifts the money demand curve 
+
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/MDshift.png") 
+```
+
+---
+
+# Money and interest rates
+
+So how does the Fed control interest rates?
+We need to understand how interest rates are set in the market.
+The liquidity preference model of the interest rate asserts that the interest rate is determined by the supply and demand for money.
+It combines the money demand curve, MD, with the money supply curve, MS, which shows how the quantity of money supplied varies with the interest rate.
+The Federal Reserve can influence the money supply through open-market operations, the discount window, or reserve requirements. Let’s assume that the Fed simply chooses the level of the money supply. Then the money supply curve is a vertical line.
+
+--
+
+
+.pull-left[
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/MS.png") 
+```
+
+]
+
+.pull-right[
+
+At low interest rates , money demanded > money supply. Investors will drive the interest rate up.
+
+At high interest rates , money demanded < money supply. Investors will drive the interest rate down.
+
+]
+
+
+---
+
+# Monetary policy and interest rates
+
+By adjusting the money supply up or down, the Fed can set the interest rate.
+The Fed sets a target federal funds rate and undertakes the appropriate open-market operations.
+Target federal funds rate: the Federal Reserve’s desired federal funds rate
+The Fed uses open-market operations to push the interest rate down (or up) to the target rate.
+
+--
+
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/target.png") 
+```
+
+--
+A common mistake is to imagine that changes in the way the Federal Reserve operates alter the way the money market works.
+In fact, the money market works the same way as always: The interest rate is determined by the supply and demand for money.
+The only difference is that now the Fed adjusts the supply of money to achieve its target interest rate.
+
+
+---
+
+# Long-term interest rates
+
+Long-term interest rates—rates on bonds or loans that mature in several years—are quite different from short-term rates. Why?
+Long-term rates reflect expected future monetary policy, which largely depend on the future economic outlook.
+For example, if investors expect interest rates to rise, they will buy short-term bonds to reinvest the money later at higher interest rates.
+Long-term rates are usually higher than short-term rates because long-term bonds and loans carry extra risk.
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/lrr.png") 
+```
+
+---
+
+# UP THE DOWN STAIRCASE
+
+When the crisis hit in 2008, the Fed cut rates and kept them low for seven years. Even in 2019, the federal funds rate was still well below what it had been in 2007. 
+Why was the Fed moving so slowly?
+Inflation was well below the target.
+Aging population and slowing productivity growth mean that maintaining full employment would require low interest rates.
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/updown.png") 
+```
+
+---
+
+# Monetary policy and aggregate demand
+
+Expansionary monetary policy: monetary policy that increases aggregate demand (also called “loose monetary money policy”)
+Contractionary monetary policy: monetary policy that reduces aggregate demand (also called “tight monetary policy”)
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/mpad.png") 
+```
+
+---
+
+# Monetary policy in practice
+
+How does the Fed decide whether to use expansionary or contractionary monetary policy?
+And how does it decide how much is enough?
+Policy makers try to fight recessions, as well as to ensure price stability: low (though usually not zero) inflation.
+Actual monetary policy reflects a combination of these goals.
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/practice.png") 
+```
+
+---
+
+# The Taylor rule
+
+In 1993, Stanford economist John Taylor proposed a simple rule for monetary policy.
+Taylor rule for monetary policy: set the federal funds rate according to the level of the inflation rate and either the output gap or the unemployment rate:
+Federal funds target rate = 2.07 + 1.28 × inflation rate  – 1.95 × unemployment gap
+As it turns out, between 1988 and 2008 the Fed did just this.
+
+--
+
+
+-pull-left[
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/taylor.png") 
+```
+]
+
+-pull-right[
+The actual federal funds rate tracked the predicted rate quite closely through the end of 2008. 
+After that the Taylor rule called for negative interest rates, which aren’t possible.
+]
+
+
+---
+
+# Inflation Targeting
+
+
+-pull-left[
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/Itarget.png") 
+```
+]
+
+-pull-right[
+Instead of using a Taylor rule, many central banks use inflation targeting.
+The central bank sets an explicit target for the inflation rate and uses monetary policy to hit that target.
+This figure shows the target inflation rates of six central banks. There are no significant differences between their target inflation rates.
+]
+
+
+--
+
+One major difference between the two methods:
+Inflation targeting is forward-looking (based on a forecast of future inflation).
+The Taylor rule is backward-looking (adjusts monetary policy in response to past inflation).
+
+---
+
+# THE ZERO LOWER BOUND PROBLEM
+
+Zero lower bound for interest rates: Interest rates can’t go below zero without causing significant problems.
+By 2016, the Swiss equivalent of the federal funds rate was −0.75%, and both the European Central Bank and the Bank of Japan also had slightly negative rates.
+The zero lower bound isn’t an absolute limit. Still, no central bank has tried to push rates significantly below zero.
+Running up against the zero lower bound: When inflation is low and the economy is below potential, normal monetary policy runs out of room to operate because short-term interest rates are already at or near zero.
+November 2010:  Interest rates were at or near zero, and the Fed got creative and tried “quantitative easing” by buying longer-term government bonds.
+Despite the Fed’s efforts, the pace of recovery remained disappointingly slow.
+
+---
+
+# WHAT THE FED WANTS, THE FED GETS?
+
+Causality problem: high interest rates go along with a strong economy; low interest rates go along with a weak economy.
+Romer and Romer focused on episodes when the Fed decided “to create a recession to reduce inflation.” 
+In 4 out of 5 cases, unemployment did increase. The Fed gets what it wants.
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/fedwants.png") 
+```
+
+
+---
+
+# Money, output and prices in the long run
+
+What about the economy’s ability to self-correct toward long-run equilibrium through flexible wages and SRAS shifts?
+In short, we believe that in the long run, changes in the quantity of money affect the price level but not the output or interest rate.
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/longrun.png") 
+```
+
+
+---
+
+# Monetary neutrality
+
+In the long run, changes in the money supply don’t affect the interest rate.
+Monetary neutrality: changes in the money supply have no real effect on the economy.
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/neutrality.png") 
+```
+
+---
+
+INTERNATIONAL EVIDENCE OF MONETARY NEUTRALITY
+
+- Do increases in the money supply really lead to equal percentage rises in the price level? 
+
+--
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week14graphs/neutralitydata.png") 
+```
+
+--
+
+- It’s not exact, but yes.
+
+
+---
+
+# Useful links
+
+Here DEBT TO GDP over pandemic!!
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week12graphs/implicit.png") 
+```
+
+
+- Visit this site for current debt and deficit figures:
+	https://www.cbo.gov/topics/budget

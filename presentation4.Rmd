@@ -18,7 +18,7 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Unemployment and Inflation
+#Unemployment and its causes
 
 ## Manolis Chatzikonstantinou  
 
@@ -40,19 +40,7 @@ class: center,middle,mctitle-slide
 
 --
 
-- *What factors determine the natural rate of unemployment?*
-
---
-
-- *What are the economic costs of inflation?*
-
---
-
-- *How do inflation and deflation create winners and losers?*
-
---
-
-- *Why do policy makers try to maintain a stable rate of inflation?*
+- **What factors determine the natural rate of unemployment?**
 
 ---
 

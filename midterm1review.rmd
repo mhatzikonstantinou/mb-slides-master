@@ -1,0 +1,95 @@
+---
+title: "midterm1review"
+author: "Manolis Chatzikonstantinou"
+date: "1/13/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## 
+
+
+# Practice Problem: Calculating GDP
+
+|  | 2012 |  | 2013 |  | 2014 |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  | P | Q | P | Q | P | Q |
+| good A | $30 | 900 | $31 | 1,000 | $36 | 1,050 |
+| good B | $100 | 192 | $102 | 200 | $100 | 205 |
+
+--
+
+- Compute nominal GDP in each year.
+
+- Compute real GDP in each year using 2012 as the base year.
+
+--
+
+- nominal GDP multiply Ps and Qs from same year
+
+  - 2012: $$ \$ 46,200= \$30 \times 900+ \$ 100 \times 192$$
+
+--
+  - 2013: $ 51,400
+  - 2014: $ 58,300
+
+--
+
+---
+
+
+# Practice Problem: Calculating GDP
+
+|  | 2012 |  | 2013 |  | 2014 |  |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  | P | Q | P | Q | P | Q |
+| good A | $30 | 900 | $31 | 1,000 | $36 | 1,050 |
+| good B | $100 | 192 | $102 | 200 | $100 | 205 |
+
+--
+
+- Compute real GDP in each year using 2012 as the base year.
+
+
+
+--
+
+real GDP multiply each year's Qs by 2012 Ps
+
+  - 2012: $46,200
+
+--
+
+- 2014: $$ \$ 52,000=\$ 30 \times 1050+\$ 100 \times 205 $$
+
+---
+
+
+# Practice Problem: Inflation
+
+
+- Use your previous answers to compute the GDP deflator in each
+year.
+- Use GDP deflator to compute the inflation rate from 2012 to
+2013, and from 2013 to 2014.
+
+--
+
+
+|  | Nom. GDP | Real GDP | GDP deflator | Inflation rate |
+| :---: | :---: | :---: | :---: | :---: |
+| 2012 | $46,200 | $46,200 | 100.0 | n.a. |
+| 2013 | 51,400 | 50,000 | 102.8 | 2.8% |
+| 2014 | 58,300 | 52,000 | 112.1 | 9.1% |
+
+
+--
+
+* GDP deflator $(2008)=100 \times \frac{51,400}{50000}=102.8$
+
+--
+
+* Inflation rate $(2008)= \frac{102.8 - 100}{100} = 0.028$

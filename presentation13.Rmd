@@ -1,0 +1,470 @@
+---
+title: "Money, Banking and the Federal Reserve System"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: center,middle,mctitle-slide 
+
+
+# Money, Banking and the Federal Reserve System
+
+## Manolis Chatzikonstantinou  
+
+---
+
+
+
+# What will you learn in this lecture?
+
+- What are the various roles money plays and what forms does it take?
+
+--
+
+- Why is the level of the money supply so important to the state of the economy?
+
+--
+
+- How do the actions of private banks and the Federal Reserve determine the money supply?
+--
+
+- How does the Federal Reserve use open market operations to change the monetary base?
+
+---
+
+#  The meaning of money
+
+- We often use the word money to mean wealth, but for economists, money doesn’t include all forms of wealth. 
+
+- __What distinguishes money from other forms of wealth? 
+
+--
+ 
+Money: any asset that can easily be used to purchase goods and services
+Currency in circulation: cash held by the public
+Checkable bank deposits: bank accounts on which people can write checks
+The money supply is the total value of financial assets in the economy that are considered money.
+The narrower definition of money considers only the most liquid assets to be money: currency in circulation and checkable bank deposits. 
+The broader definition includes the narrow definition and “almost” checkable assets such as savings account deposits that can easily be transferred into checking accounts. 
+ 
+
+??? 
+dollars vs stocks
+
+---
+
+# The roles of money
+
+- Money functions as: 
+
+a medium of exchange.
+
+Medium of exchange: something people accept as payment for goods and services
+(an asset that individuals acquire for the purpose of trading rather than for their own consumption)
+
+
+--
+
+a store of value.
+
+: Money is a means of holding purchasing power over time.
+It enables people to save the money they earn today and use it to buy the goods and services they want tomorrow
+
+--
+
+a unit of account.
+
+Money provides a yardstick for measuring and comparing the values of a wide variety of goods and services.
+
+---
+
+# Types of money
+
+Commodity money: a good, normally gold or silver, used as a medium of exchange that has intrinsic value in other uses. 
+For thousands of years, societies have used commodity money.
+Commodity-backed money: a medium of exchange with no intrinsic value; the ultimate value is guaranteed by a promise that it can be converted into valuable goods. 
+The big advantage of commodity-backed money was that it tied up fewer resources: although a note-issuing bank still had to keep some gold and silver on hand, it had to keep only enough to satisfy demands for redemption of its notes, and it could lend out the remaining gold and silver.
+Fiat money: money whose value derives entirely from its official status as a means of payment
+Fiat money has two advantages. First, it doesn’t use up any real resources beyond the paper it’s printed on. Second, the supply of money can be adjusted based on the needs of the economy.
+Fiat money has two disadvantages: it can be counterfeited, and governments can abuse the privilege of printing money. 
+
+---
+
+# Measuring the money supply
+
+Monetary aggregate: an overall measure of the money supply
+
+- __M1:__ includes only the most liquid forms of money.
+- __M2:__ includes near-moneys: financial assets that can’t be directly used as a medium of exchange but can readily be converted into cash or checkable bank deposits. Example: small-denomination certificates of deposit (CDs), which aren’t checkable but can be withdrawn at any time before their maturity date
+
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week13graphs/m1m2.png") 
+```
+
+---
+
+# Banks and monetary policy
+
+Roughly 43% of M1 is currency in circulation.
+Bank deposits make up more than half of M1 and most of M2.
+How does the banking system create money?
+
+--
+
+Banks are financial intermediaries that use liquid assets (in the form of bank deposits) to finance the illiquid investments of borrowers.
+Banks create liquidity because they don’t have to keep all of the funds in highly liquid assets.
+To meet depositors’ demands, a bank must keep currency in the its vault or deposits at the Federal Reserve. 
+Bank reserves: the currency that banks hold in their vaults plus their deposits at the Federal Reserve
+
+--
+
+.pull-left[
+| Assets |  | Liabilities |  |
+| :--- | ---: | :--- | :---: |
+| Loans | $1,200,000 | Deposits | $1,000,000 |
+| Reserves | $100,000 |  |  |
+]
+
+.pull-right[
+
+T-account: a tool for analyzing a business’s financial position by showing the business’s assets and liabilities
+The reserve ratio: the fraction of bank deposits that a bank holds as reserves ($100,000/$1,000,000 = 10%)
+The Federal Reserve sets a minimum required reserve ratio for banks. To understand why banks are regulated, let’s consider a problem banks can face: bank runs.
+]
+
+---
+
+# The problem of bank runs
+
+Banks hold only a fraction of deposits on reserve and use the rest to make loans.
+From time to time, people get worried about banks losing their money.
+Bank run: a phenomenon in which many of a bank’s depositors try to withdraw their funds because they fear a bank failure
+Historically, bank runs have proved contagious, with a run on one bank leading to a loss of faith in other banks, causing additional bank runs.
+In the 1930s, for example, the wave of bank runs swept across the United States. 
+In response to bank runs, the United States established a system of bank regulations that protect depositors.
+
+---
+
+# Bank regulation
+
+Bank regulation has four main features: 
+
+--
+
+Deposit insurance:  a guarantee that a bank’s depositors will be paid even if the bank can’t come up with the funds (the FDIC currently guarantees the first $250,000 of each account)
+
+--
+
+Capital requirements: requirement that the owners of banks hold substantially more assets than the value of bank deposits
+Deposit insurance creates a well-known incentive problem: banks can take more risks since they are insured.
+To help motivate safe behavior, banks’ capital is required to equal 7% or more of their assets.
+
+--
+
+Reserve requirements: rules set by the Federal Reserve that determine the minimum reserve ratio for a bank
+For example, in the United States, the minimum reserve ratio for checkable bank deposits is 10%.
+The discount window: an arrangement in which the Federal Reserve stands ready to lend money to banks in trouble
+
+--
+ 
+__Limits to regulation: Shadow Banking__
+
+???
+As the financial crisis showed us, there are many large financial firms that don’t accept deposits, so they aren’t covered by deposit insurance or regulation that make conventional banks safer.
+These ”shadow banks” include:
+investment banks
+insurance companies
+hedge fund companies
+money market fund companies
+
+---
+
+# How Banks create money
+
+Silas keeps a shoebox full of cash under his bed.  Deciding to enter the twenty-first century, he deposits this cash at the bank. What’s the effect of his $1,000?
+Assume that the reserve ratio is 10%.
+The bank will reserve 10% and lend out 90% of the deposit.
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week13graphs/moneycreation.png") 
+```
+
+--
+- The first bank lends $900 to Maya, who pays the money  to Anne, who deposits it at her bank—and the cycle starts 
+--
+
+|  | Currency in circulation | Checkable bank deposits | Money supply |
+| :--- | :---: | :---: | :---: |
+| First stage Silas keeps his cash under his bed. | $1,000 | $0 | $1,000 |
+| Second stage Silas deposits cash in First Street Bank, which lends out $900 to Maya, who then pays it to Anne Acme. | 900 | 1,000 | 1,900 |
+| Third stage Anne Acme deposits $900 in Second Street Bank, which lends out $810 to another borrower. | 810 | 1,900 | 2,710 |
+
+---
+# REQUIRED AND EXCESS RESERVES
+•
+The bank must keep some cash available for its depositors; it
+does this through a combination of vault cash and deposits with
+the Federal Reserve.
+•
+Banks in the U.S. are required to hold required reserves :
+reserves that a bank is legally required to hold, based on its
+checking account deposits.
+•
+The required reserve ratio (RR) is the minimum fraction of
+deposits banks are required by law to keep as reserves.
+•
+Banks might choose to hold excess reserves : reserves over
+the legal requirement.
+
+-- 
+
+Excess reserves: bank's reserves over and above its required reserves
+- Assume that banks don't want to hold excess reserves.
+Increase in bank deposits from $\$ 1,000$ in excess reserves =
+$\$ 1,000+[\$ 1,000 \times(1-r r)]+\left[\$ 1,000 \times(1-r r)^{2}\right]+[\$ 1,000 \times(1-$ rr) $\left.^{3}\right]+\ldots$
+This can be simplified to $\$ 1,000 / r r$.
+
+---
+
+# The money multiplier in reality 
+
+.pull-left[
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week13graphs/reality.png") 
+```
+]
+
+.pull-right[
+The monetary base is the sum of currency in circulation and bank reserves.
+The monetary base is different from the money supply in two ways:
+Bank reserves, which are part of the monetary base, aren’t part of the money supply. 
+Checkable bank deposits, which are part of the money supply, aren’t part of the monetary base
+]
+
+--
+
+The money multiplier is the ratio of the money supply to the monetary base.
+Before the financial crisis of 2008, it was 1.6; after the crisis, it was 0.7.
+The minimum reserve ratio is 10%. Why is the money multiplier not 1/0.1=10? 
+People hold significant amounts of cash, which reduces bank deposits.
+
+???
+If X for example, can increase the money supply by
+pulling cash out from under her bed and injecting into the
+banking system, the reverse can happen anytime people
+carry cash.
+
+---
+
+# The Federal Reserve System
+
+The Federal Reserve is a central bank—an institution that oversees and regulates the banking system and controls the monetary base
+
+The Federal Reserve has two parts: the Board of Governors and the 12 regional Federal Reserve Banks. The Board of Governors is chosen by the president and confirmed by the Senate.
+Each Federal Reserve Bank serves a certain region.
+Decisions about monetary policy are made by the Federal Open Market Committee, which consists of the Board of Governors plus five of the regional bank presidents. 
+
+--
+
+---
+
+# What the Fed does
+
+The three tools of the Fed:
+reserve requirements, 
+the discount rate, 
+open-market operations.
+The Fed sets a minimum reserve ratio requirement, currently equal to 10% for checkable bank deposits. 
+
+- __What if a bank can not meet the requirement?__
+--
+
+
+If a bank can’t meet the Fed’s reserve requirement, it can borrow reserves at the federal funds market.
+The federal funds market allows banks that fall short of the reserve requirement to borrow funds from banks with excess reserves.
+The federal funds rate is the interest rate in the federal funds market.
+Alternatively, banks can borrow from the Fed via the discount window. 
+The discount rate is the interest rate the Fed charges on those loans. 
+
+--- 
+
+# Open Market Operations
+
+.pull-left[
+| Assets | Liabilities |
+| :--- | :--- |
+| Government debt (Treasury bills) | Monetary base (currency in circulation + bank reserves) |
+]
+
+.pull-right[
+Like any bank, the Federal Reserve has assets and liabilities. 
+The Fed’s assets are mainly short-term U.S. government bonds, known as Treasury bills or T-bills. 
+The Fed’s liabilities are currency in circulation and bank reserves. 
+]
+
+--
+
+The Fed rarely changes the minimum reserve requirement and rarely uses the discount rate. Monetary policy is conducted almost exclusively using the Fed’s third policy tool: open-market operations.
+In an open-market operation the Federal Reserve buys or sells U.S. Treasury bills, normally through a transaction with commercial banks (banks that accept deposits and make loans), and investment banks (banks that create and trade assets but don’t accept deposits).
+The Fed never buys T-bills directly from the federal government. 
+If it did, it would be printing money to fund the budget deficit, which would trigger inflation.
+
+
+--- 
+
+# Open Market Operations
+
+- The Fed buys $100 million of T-bills from banks. 
+The Fed electronically increases the sellers’ reserves. 
+With more reserves, banks increase loans. 
+As banks increase loans, the money supply increases via the money multiplier. 
+
+--
+
+- Open Market __Purchase__
+
+.pull-left[
+|  | Assets |  | Liabilities |  |
+| :--- | :--- | :--- | :---: | :---: |
+| Federal Reserve | Treasury bills | +$100 million | Monetary base | +$100 million |
+|  |  |  |  |  |
+]
+
+.pull-right[
+|  | Assets |  | Liabilities |
+| ---: | :--- | :---: | :--- |
+| Commercial banks | Treasury bills | - $100 million | No change |
+|  | Reserves | +$100 |  |
+|  |  | million |  |
+]
+
+
+--
+
+- Open Market __Sale__
+
+.pull-left[
+|  | Assets |  | Liabilities |  |
+| :--- | :--- | :---: | :--- | :---: |
+| Federal Reserve | Treasury bills | -$100 million | Monetary base | -$100 million |
+|  |  |  |  |  |
+]
+
+.pull-right[
+|  | Assets |  | Liabilities |
+| ---: | :--- | :---: | :--- |
+| Commercial banks | Treasury bills | + $100 million | No change |
+|  | Reserves | -$100 |  |
+|  |  | million |  |
+]
+
+---
+
+# The ECB
+
+The European Central Bank (ECB) rivals the Fed in terms of importance to the world economy.
+The ECB
+Was created in January,1999, when 11 European nations abandoned their national currencies, adopted the euro, and placed their joint monetary policy in the ECB’s hands.
+Located in Frankfurt, Germany
+Represents a (combined) economy as large as that of the United States
+
+--
+
+Analogies between ECB and the Fed:
+Europe’s national banks (the Bank of France, the Bank of Italy, etc.) are like regional Feds: they provide financial services to local banks and businesses and conduct open-market operations.
+The counterpart of Fed’s Board of Governors is the ECB’s Executive Board.
+The counterpart of the Federal Open Market Committee is the ECB’s Governing Council.
+Just as the Fed’s Open Market Committee consists of the Board of Governors plus a rotating group of regional Fed presidents, the ECB’s Governing Council consists of the Executive Board plus the heads of the national central banks
+Like the Fed, the ECB is ultimately answerable to voters, and it tries to maintain its independence from short-term political pressures.
+
+
+---
+
+# Banking crises
+
+The main problem afflicting the banking system was that the money supply was not sufficiently responsive: It was difficult to shift currency around the country to respond quickly to local economic changes.
+Rumors that a bank had insufficient currency to satisfy demands for withdrawals would quickly lead to a bank run.
+The Panic of 1907 led to a four-year national recession and showed how vulnerable the system had become.
+
+--
+
+The panic of 1907 convinced many that the time for central control of bank reserves had come.
+In 1913, the Federal Reserve was created.
+
+--
+
+-  __S&L__ 
+The __S&L__ crisis of the 1980s arose because Congress deregulated S&Ls, allowing them to engage in risky speculation.
+The intent was to allow them to offer higher rates of return, like banks, in an era of high inflation.
+They incurred huge losses.
+Depositors in failed S&Ls were compensated with taxpayer funds because they were covered by deposit insurance.
+The crisis caused steep losses in the financial and real estate sectors, resulting in a recession of the early 1990s
+
+???
+Bank reserves became centralized and standardized—but not immune to bank runs.
+A series of bank runs in 1930, 1931, and 1933 convinced the Fed that banks needed more regulation.
+Regulators closed nonviable banks and expanded banks’ ability to borrow from the Federal Reserve. 
+The Glass-Steagall Act (1933) separated banks into two categories:
+Commercial banks accepted deposits and were covered by deposit insurance.
+Investment banks traded in financial assets (stocks and corporate bonds); did not accept deposits and but were not covered by deposit insurance.
+
+---
+
+# The financial crisis of 2008
+
+By the early twenty-first century, a new problem had emerged: 
+Regulations didn’t cover shadow banking—activities that don’t look like traditional banking but serve similar purposes. 
+Shadow banking doesn’t have to keep enough cash on hand to repay its debts; there is no deposit insurance, and there is much less regulation.
+In 2008 shadow banking was at the center of the crisis.
+
+--
+
+Subprime lending helped create the U.S. housing bubble of the 2000s and was made worse with securitization. 
+Subprime lending: lending to home buyers who don’t meet the usual criteria for being able to make the payments
+Securitization: a pool of loans assembled and shares of it sold to investors
+When the bubble burst, massive losses by banks and other financial institutions led to widespread collapse in the financial system
+
+--
+
+To prevent another Great Depression, the Fed and the U.S. Treasury expanded lending to banks and other financial institutions, provided capital through the purchase of bank shares, and purchased private debt.
+The Fed and the Treasury Department rescued individual firms that were “too big to fail” : the investment bank Bear Stearns and the insurance company AIG.
+
+---
+
+# The aftermath of the financial crisis of 2008
+
+
+The Federal Reserve engaged in new forms of open-market operations: 
+For example, the Fed was buying long-term government debt and the debt of Fannie Mae and Freddie Mac.
+
+--
+
+In July 2010, President Obama signed the Dodd-Frank Act (the Wall Street Reform and Consumer Protection Act).
+Gives a special government committee, the Financial Stability Oversight Council, the right to designate institutions as “systemically important” and thus subject to normal bank regulation (even though they are not traditional banks).
+Established new rules on the trading of derivatives: They must now be traded in exchanges so their prices and volume are more transparent.
+Created the Consumer Financial Protection Bureau. Its mission was to protect borrowers from being exploited through seemingly attractive financial deals they didn’t understand.
+
+---
+
+# Useful links
+
+Here DEBT TO GDP over pandemic!!
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week12graphs/implicit.png") 
+```
+
+
+- Visit this site for current debt and deficit figures:
+	https://www.cbo.gov/topics/budget
