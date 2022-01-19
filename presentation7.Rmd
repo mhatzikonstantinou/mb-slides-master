@@ -60,6 +60,8 @@ class: center,middle,mctitle-slide
 
 - Technological progress drives increases in total factor productivity.
 
+--
+
 - According to the Bureau of Labor Statistics, over the period from 1948 to 2019 American labor productivity rose 2.1% per year. 
 
 - 49% of that rise is explained by increases in physical and human capital per worker; the rest is explained by rising total factor productivity—by  technological progress. 
@@ -70,14 +72,15 @@ class: center,middle,mctitle-slide
 
 # Total Factor Productivity 
 
-- $TFP =\mathrm{A}=\mathrm{Y} / \mathrm{F}(\mathrm{K}, \mathrm{H})$
+- $TFP =\mathrm{A}=\mathrm{Y} / \mathrm{F}(\mathrm{K}, \mathrm{L})$
  
-- Basically, TFP is a 'catch-all' for anything that effects output other than capital input $\mathrm{K}$ and education-adjusted labor input $\mathrm{L}$.
+- Basically, TFP is a 'catch-all' for anything that effects output other than capital input $\mathrm{K}$ and education-adjusted labor $\mathrm{L}$.
 
 --
 
  
-- Cobb-Douglas production function:
+- __Cobb-Douglas production function:__
+
 .pull-left[
 ```{r  out.width = "100%",echo=FALSE}
 knitr::include_graphics("week7graphs/cbpf.png") 
@@ -103,7 +106,7 @@ A convenient functional form for growth accounting is the
 
 # Growth accounting 
 .pull-left[
-```{r  out.width = "80%",echo=FALSE}
+```{r  out.width = "100%",echo=FALSE}
 knitr::include_graphics("week7graphs/grac.png") 
 ```
 ]
@@ -125,127 +128,171 @@ knitr::include_graphics("week7graphs/grac.png")
 
 ---
 
-# COnvergence hypothesis
-
-```{r  out.width = "80%",echo=FALSE}
-knitr::include_graphics("week7graphs/convergence.png") 
-```
----
-
 # EAST ASIA’S MIRACLE (1 of 2)
 
-It took South Korea only 35 years to achieve growth that required centuries elsewhere.
-Since 1975, the East Asian region has increased real GDP per capita by 6% per year, more than three times America’s historical rate of growth.  
-How have the Asian countries achieved such high growth rates?
-Very high savings rates allow businesses to borrow and add more physical capital per worker. 
-Very good basic education has permitted a rapid improvement in human capital. 
-Substantial technological progress
+- It took South Korea only 35 years to achieve growth that required centuries elsewhere.
+- Since 1975, the East Asian region has increased real GDP per capita by 6% per year, more than three times America’s historical rate of growth.  
+- How have the Asian countries achieved such high growth rates?
 
 --
 
-Economic growth can be especially fast in countries that are playing catch-up to countries with higher GDP per capita.
-East Asian economies grew fast because they adopted the technologies that already existed.
-The convergence hypothesis: differences in real GDP per capita among countries tend to narrow over time
-But having a low real GDP per capita is no guarantee of rapid growth, as the examples of Latin America and Africa demonstrate.
+- Very high savings rates allow businesses to borrow and add more physical capital per worker. 
+- Very good basic education has permitted a rapid improvement in human capital. 
+- Substantial technological progress
+
+--
+
+- Economic growth can be especially fast in countries that are playing catch-up to countries with higher GDP per capita.
+- East Asian economies grew fast because they adopted the technologies that already existed.
 
 
 ---
 
-# LATIN AMERICA’S DISAPPOINTMENT
+#  Latin America's disappointment
 
-What’s holding Argentina (and other Latin American nations) back?
+- What’s holding Argentina (and other Latin American nations) back?
 
 
-Irresponsible government action that eroded savings through high inflation
-Lack of emphasis on education
-Political instability
+```{r  out.width = "70%",fig.align='center',echo=FALSE}
+knitr::include_graphics("week7graphs/argentina.png") 
+```
+
+
+--
+
+- Irresponsible government action that eroded savings through high inflation
+- Lack of emphasis on education
+- Political instability
 
 ---
 
 # AFRICA’S TROUBLES AND PROMISE 
 
-What’s holding much of Africa back?
-Government corruption
-Civil wars and 
-political instability
-Unfavorable geography
+- What’s holding much of Africa back?
 
-Is Africa poor because it’s politically unstable or unstable because it’s poor? 
+--
+
+- Government corruption
+- Civil wars and 
+- political instability
+- Unfavorable geography
+
+--
+
+- Is Africa poor because it’s politically unstable or unstable because it’s poor? 
+
+
+--
+
+- __The convergence hypothesis:__ differences in real GDP per capita among countries tend to narrow over time
+- But having a low real GDP per capita is no guarantee of rapid growth, as the examples of Latin America and Africa demonstrate. Conditional convergence!
+- Good news: Growth rates are up in sub-Saharan African nations since 2011.
+
+
+???
 Good news: Growth rates are up in sub-Saharan African nations since 2011.
-
 
 ---
 
 
-# THE ROLE OF GOVERNMENT IN PROMOTING ECONOMIC GROWTH 
+# Convergence hypothesis
 
-Government policies can increase the economy’s growth rate through the following six channels: 
-Government subsidies to infrastructure
+```{r  out.width = "90%",fig.align='center',echo=FALSE}
+knitr::include_graphics("week7graphs/convergence.png") 
+```
+
+---
+
+# The role of government in economic growth 
+
+__Six channels:__
+
+- Government subsidies to infrastructure    
+  - China spends more on infrastructure than Western Europe and North America combined.
+
+
+--
+
+- Government subsidies to education
+  - Literacy in China has been increasing more rapidly than in Argentina. 
+
+--
+- Government subsidies to R&D
+  - the Advanced Research Projects Agency Network (ARPANET), created by the U.S. Department of Defense.
+
+--
+
+- Maintaining a well-functioning financial system
+  - If people distrust banks $\rightarrow$ cash in safe deposit boxes $\rightarrow$  not  turned into productive investment spending.
+--
+
+- Protection of property rights
+  - Well functioning markets, e.g. patents and invention markets 
+
+--
+
+- Political stability and good governance 
+
+
+???
+- Government policies can increase the economy’s growth rate through the following six channels: 
 Infrastructure: roads, power lines, ports, information networks, and other underpinnings for economic activity
-China spends more on infrastructure than Western Europe and North America combined.
-Government subsidies to education
-Literacy in China has been increasing more rapidly than in Argentina. This isn’t because China is richer than Argentina; it’s because the Chinese government has made education a priority.
-
---
-Government subsidies to R&D
-For example, the internet grew out of the Advanced Research Projects Agency Network (ARPANET), created by the U.S. Department of Defense.
-Maintaining a well-functioning financial system
-If people distrust banks, they’ll keep gold or cash in safe deposit boxes or under the mattress, where it cannot be turned into productive investment spending.
---
-
-Protection of property rights
 Property rights are the legal rights held by owners of valuable items to dispose of those items as they choose. 
 Intellectual property rights are the rights of innovators to accrue the rewards of their innovations. 
-Generally, governments protect intellectual property rights by giving patents (government-created temporary monopolies given to innovators for the use or sale of their innovations).
---
-
-Political stability and good governance 
+(government-created temporary monopolies given to innovators for the use or sale of their innovations).
 There’s not much point in investing in a business if rioting mobs are likely to destroy it.
 Economic success of the United States has been possible because there are good laws, institutions that enforce those laws, and a stable political system that maintains those institutions
 
 ---
 
-# IS WORLD GROWTH SUSTAINABLE?
+# Is world growth sustainable?
 
-Sustainable long-run economic growth: long-run growth that can continue in the face of the limited supply of natural resources and the impact of growth on the environment
+.pull-left[
+__Sustainable long-run economic growth:__ long-run growth that can continue in the face of the limited supply of natural resources and the impact of growth on the environment
+]
+
+.pull-right[
+- Theory: economic growth will be severely limited by lack of resources. 
+- Economists believe that modern economies handle scarcity fairly well. 
+- Directed technical change!
+]
+
+
 
 --
 
-“Neo-Malthusian” theories claim that economic growth will be severely limited by lack of resources.
-Economists believe that modern economies handle scarcity fairly well. 
-Resource scarcity leads to high prices, and these high prices provide strong incentives to conserve the resource and find alternatives. 
-For example, after the sharp oil price increases of the 1970s, U.S. consumers turned to smaller, more fuel-efficient cars.
-
-
----
-
-# CLIMATE CHANGE AND GROWTH
-
-```{r  out.width = "100%",echo=FALSE}
+```{r  out.width = "50%",fig.align='center',echo=FALSE}
 knitr::include_graphics("week7graphs/carbon.png") 
 ```
 
-- The United States and Europe have historically been responsible for the great bulk of carbon dioxide emissions. 
-
-- As China and other emerging economies have grown, they began to emit much more carbon dioxide.
+???
+Malthus argued that two types of checks hold population within resource limits: positive checks, which raise the death rate; and preventive ones, which lower the birth rat
+Resource scarcity leads to high prices, and these high prices provide strong incentives to conserve the resource and find alternatives. 
+For example, after the sharp oil price increases of the 1970s, U.S. consumers turned to smaller, more fuel-efficient cars.
+The United States and Europe have historically been responsible for the great bulk of carbon dioxide emissions. 
+As China and other emerging economies have grown, they began to emit much more carbon dioxide.
 
 
 ---
 
-# ECONOMIC GROWTH AND THE ENVIRONMENT
+#  Economic growth and the environment
 
-Economic growth tends to have the adverse impact on the environment: pollution, loss of wildlife habitats, extinction of species, and reduced biodiversity.
-There’s local environmental degradation and global environmental degradation. 
-It’s easier to reduce local environmental harm and it’s more difficult to address global environmental degradation, in particular, the problem of climate change. 
+- Economic growth tends to have the adverse impact on the environment:
+  - pollution, loss of wildlife habitats, extinction of species, and reduced biodiversity.
+  - There’s local environmental degradation and global environmental degradation. 
+  - It’s easier to reduce local environmental harm and it’s more difficult to address global environmental degradation, in particular, the problem of climate change. 
 
 --
 
-Climate change: changes in Earth’s climate brought about by human activity 
-Unmitigated climate change will cost 20% of world gross domestic product by 2100. Moreover, these costs tend to fall more heavily on poor countries. 
-Climate change is been a hard problem to solve because it requires the cooperation of many countries.
-Paris Agreement of 2015: 196 countries agreed to reduce their greenhouse gas emissions in an effort to limit the rise in Earth’s temperature to no more than 2 degrees Celsius.
-China and India agreed to limit their emissions, and the rich countries committed to help poorer countries pay the cost. 
-The Trump administration announced plans for the United States to withdraw from the agreement in November 2020. 
+__Climate change:__ changes in Earth’s climate brought about by human activity 
+
+> Unmitigated climate change will cost 20% of world gross domestic product by 2100. Moreover, these costs tend to fall more heavily on poor countries.
+
+--
+
+- Climate change is been a hard problem to solve because it requires the cooperation of many countries.
+- Paris Agreement of 2015
+- China and India agreed to limit their emissions, and the rich countries committed to help poorer countries pay the cost. 
 
 
 ---
@@ -257,25 +304,24 @@ The Trump administration announced plans for the United States to withdraw from 
 __Useful Links__
 
 .pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week3graphs/inflationpandemic.png") 
+```{r  out.width = "100%",fig.align='center',echo=FALSE}
+knitr::include_graphics("week7graphs/china.png") 
 ```
 
 ]
 
 .pull-right[
 
-The following websites provide information on U.S. GDP, inflation, unemployment, and many other interesting macroeconomic variables:
+- [Innovation and Growth](https://www.ecb.europa.eu/ecb/educational/explainers/tell-me-more/html/growth.en.html)
 
-- [Federal Reserve Economic Data](https://fred.stlouisfed.org/)
+- [Converging to convergence](https://www.youtube.com/watch?v=agrqciukZoU)
 
-- [Consumer Price Index (CPI) in the BLS](https://fred.stlouisfed.org/)
+- [Boosting GDP growth by accounting for the environment](https://www-science-org.proxy.library.georgetown.edu/doi/10.1126/science.1253506)
 
-- [Inflation during the pandemic](https://www.youtube.com/watch?v=Yrr9X62A1o4)
+- [Growth, sustainability, and the measurement of global gross product](https://voxeu.org/article/growth-sustainability-and-measurement-global-gross-product)
 
-- [Learning more about Prices & Inflation](https://www.bea.gov/resources/learning-center/what-to-know-prices-inflation)
+- [Climate Change, Climate Policy, and Economic Growth](https://www.youtube.com/watch?v=v4WzeuvBS_w)
 
-- [The Billion Price Project—Inflation in real time](http://www.thebillionpricesproject.com/) 
-
+- [IMF Asks James Stock about Climate Change and the Role of Integrated Assessment Models](https://www.youtube.com/watch?v=gj4W9V3gyT0)
 ]
 

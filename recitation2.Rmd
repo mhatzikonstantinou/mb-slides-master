@@ -2,7 +2,11 @@
 title: "Recitation 2"
 author: "Manolis Chatzikonstantinou"
 date: "1/13/2022"
-output: pdf_document
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -46,9 +50,9 @@ Suppose that people consume only three goods, as shown in this table :
 
 2.  Using a method similar to the CPI, compute the percentage change in the overall price level. If you were to learn that a bottle of Gatorade increased in size from 2017 to 2018, should that information affect your calculation of the inflation rate? If so, how?
 
-    **Answers:**
+**Answers:**
 
-    1.  The percentage change in the price of each of the three goods:
+  1.  The percentage change in the price of each of the three goods:
 
         -   Tennis Balls : 0 %
 
@@ -56,11 +60,11 @@ Suppose that people consume only three goods, as shown in this table :
 
         -   Gatorade : 100 %
 
-    2.  Here, since in the two years people are consuming the same amount of goods, the total amount of goods consumed can serve as the basket of goods for CPI:
+  2.  Here, since in the two years people are consuming the same amount of goods, the total amount of goods consumed can serve as the basket of goods for CPI:
 
         -   Total Cost in \$ {2017}=100 $\times$ 2+100 $\times$ 4+ 200$\times$ 1= 800\$
 
-        -   Total Cost in \$ {2018}=100 $\times$ 2+100 $\times$ 6+ 200$\times$ 2= 120\$
+        -   Total Cost in \$ {2018}=100 $\times$ 2+100 $\times$ 6+ 200$\times$ 2= 1200\$
 
             Therefore, CPI using 2017 as the Base year would be
 
@@ -72,7 +76,8 @@ Suppose that people consume only three goods, as shown in this table :
 
         -   \% change =$\frac{C P I_{2018}-C P I_{2017}}{C P I_{2017}} \times 100=50 \%$
 
-    If we find out that the size of a bottle of Gatorade had doubled in 2018 compared to 2017, then the increase in the price of Gatorade that we observe does not mean that Gatorade has become more expensive : it instead means that people consume more Gatorade than before. However, that effect is not taken into account when calculating Price level using CPI. Therefore compared to the inflation rate we get using CPI, the real inflation rate should be smaller.
+
+If we find out that the size of a bottle of Gatorade had doubled in 2018 compared to 2017, then the increase in the price of Gatorade that we observe does not mean that Gatorade has become more expensive : it instead means that people consume more Gatorade than before. However, that effect is not taken into account when calculating Price level using CPI. Therefore compared to the inflation rate we get using CPI, the real inflation rate should be smaller.
     
     
 ## The Unemployment Rate 
@@ -114,17 +119,22 @@ B.	Frictional unemployment
   -	Frictional unemployment is unemployment due to the time workers spend in search of a job. 
 C.	Structural unemployment 
   1.	In structural unemployment, more people are seeking jobs in a particular labor market than there are jobs available at the current wage rate, even when the economy is at the peak of the business cycle. 
-  2.	 Structural unemployment occurs when the wage rate is persistently above the equilibrium level.  
+  2.	Structural unemployment occurs when the wage rate is persistently above the equilibrium level.  
   3.	Several factors can lead to a wage rate in excess of the equilibrium wage rate: minimum wages, unions, efficiency wages, side effects of government policies, and mismatches between employees and employers.
   
 ### Question 2:
 
 
-Classify the people described in each of the following scenarios as either frictionally, structurally, or cyclically unemployed. 
+Classify the people described in each of the following scenarios as either frictionally, structurally, or cyclically unemployed.
+
 1.	Phil is currently unemployed because the tire factory where he used to work installed robots, which replaced 500 laborers, including Phil. 
+
 2.	Jessica is unemployed because she is in the process of reentering the labor force after taking time off to have a baby. 
+
 3.	Mary is unemployed because she lost her job at McDonald’s after the state increased the minimum wage. 
+
 4.	Barry is unemployed because he was laid off by the automobile factory when the economy entered a severe, prolonged recession. 
+
 5.	Sandy left her former job at an accounting firm a month ago. She is in the process of interviewing for a similar position at six different accounting firms, although she has not yet accepted a job. 
 
 
@@ -132,10 +142,15 @@ Classify the people described in each of the following scenarios as either frict
 __Answer__:
 
 Name the Type of Unemployment
+
 1.	Phil is structurally unemployed. 
-2.	Jessica is frictionally unemployed. 
+
+2.  Jessica is frictionally unemployed. 
+
 3.	Mary is structurally unemployed. 
+
 4.	Barry is cyclically unemployed. 
+
 5.	Sandy is frictionally unemployed.
 
 
@@ -144,14 +159,39 @@ Name the Type of Unemployment
 ### Question 3:
 
 Compute the answers to the following questions. 
-1.	Samantha invested $2,500 of her savings in a certificate of deposit that pays an annual 4.25% rate of interest. The current annual inflation rate is 5%. Has Samantha made a wise investment from an economic perspective? 
+1.	Samantha invested $2,500 of her savings in a certificate of deposit that pays an annual 4.25% rate of interest. The current annual inflation rate is 5%. Will Samantha be better financially that she is today, based
+on the return of the bond?
+
 2.	William wants to earn a real annual interest rate on his investment of at least 7%. If the annual rate of inflation is 4%, what is the minimum nominal rate of interest William would be willing to accept on his investment? 
 
 __Answer__
 
-Samantha has not made a wise investment, as the real interest rate she is earning on this investment is negative. The real interest rate Samantha is earning is computed as follows:
+1.
+The return of the bond is the real interest rate (in terms of purchasing power). The real interest rate she is earning on this investment is negative. The real interest rate Samantha is earning is computed as follows:
 Real interest rate $=$ Nominal interest rate $-$ Rate of inflation
 Real interest rate $=4.25 \%-5 \%=-0.75 \%$
+
+2.
 William must receive a minimum nominal annual rate of interest equal to $11 \%$, which is computed as follows: Real interest rate $=$ Nominal interest rate $-$ Rate of inflation
 $7 \%=$ Nominal interest rate $-4 \%$
 Nominal interest rate $=11 \%$
+
+
+### Question 4:
+
+The accompanying table contains two price indexes for the years 2016, 2017, and 2018: the GDP deflator and the CPI. For each price index, calculate the inflation rate from 2016 to 2017 and from 2017 to 2018.
+
+| Year | GDP deflator | CPI |
+| :--- | :--- | :--- |
+| 2016 | 106.551 | 241.432 |
+| 2017 | 108.713 | 246.524 |
+| 2018 | 111.256 | 251.233 |
+
+The accompanying table calculates the inflation rates based on the GDP deflator and on the CPI:
+
+|  |  | Inflation |  | Inflation |
+| :---: | :---: | :---: | :---: | :---: |
+| Year | deflator | deflator) | CPI | CPI) |
+| 2016 | 106.551 |  | 241.432 |  |
+| 2017 | 108.713 | 2.03% | 246.524 | 2.11% |
+| 2018 | 111.256 | 2.34% | 251.233 | 1.91% |

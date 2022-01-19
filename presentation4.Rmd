@@ -62,19 +62,17 @@ knitr::include_graphics("week4graphs/unemploymentbc.png")
   
 --
 
-Unemployment results in:
-
 - **Lost incomes and production**
 
   - Lost income $\rightarrow$ reduction in demand and welfare
-  - Employment benefits create a safety net $\rightarrow$ not fully and not for long
+  - Unmployment benefits create a safety net $\rightarrow$ not fully and not for long
 
 --
 
 - **Lost human capital**
 
 .pull-left[
-```{r  out.width = "50%", fig.align = 'center',echo=FALSE}
+```{r  out.width = "70%", fig.align = 'center',echo=FALSE}
 knitr::include_graphics("week4graphs/scar.png") 
 ```
 
@@ -171,7 +169,8 @@ $$
 
 - It can understate the true level of difficulty of finding a job
     - **Discouraged workers:** those who have given up looking for a job because there are no jobs available. 
-    - They are part of a larger group—**marginally attached  workers::** those who looked for work in the past (looked in the past 12 months but NOT in the past 4 weeks) but are not currently looking for work.
+    
+    — **marginally attached  workers:** those who looked for work in the past (looked in the past 12 months but NOT in the past 4 weeks) but are not currently looking for work.
     
 --
 
@@ -185,7 +184,8 @@ $$
     - Number of full-time jobs
     - Average wages
 
-
+???
+Discouraged workers are part of a larger group
 ---
 
 # Alternative measures of unemployment
@@ -462,14 +462,12 @@ influenced by many factors:
  - Job-training programs
 ]
 
-
-
+--
 
 - **Potential GDP is the quantity of real GDP produced at full employment,** corresponds to the _capacity_ of the economy to produce output.
 - Real GDP minus potential GDP is the **output gap**.
 
-- Business cycle: fluctuation in the output gap and in the
-unemployment rate around the natural unemployment rate.
+- **Business cycle:** fluctuation in the output gap and in the unemployment rate around the natural unemployment rate.
 
 ---
 
@@ -488,3 +486,4 @@ knitr::include_graphics("week4graphs/glance.png")
 
 - [Labor Force Characteristics](https://www.bls.gov/cps/lfcharacteristics.htm#unemp)
 
+- [Impact of covid-19 and gender in the labor market](https://www.bbc.com/worklife/article/20201021-why-this-recession-disproportionately-affects-women)
