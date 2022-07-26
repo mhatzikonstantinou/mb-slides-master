@@ -1,0 +1,213 @@
+---
+title: "Replicating Money Banking Figures and Tables"
+author: "Manolis Chatzikonstantinou"
+date: "4/17/2022"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Fredr recap
+
+Load the packages and connect to the database API
+
+```{r}
+pacman::p_load(fredr,extrafont,purrr,tidyverse,ggplot2)
+fredr::fredr_set_key("3bc35d4a8b94bd0f461a3a61f3d804ba")
+```
+
+
+
+# Find a series
+
+Now we would like to find the series related to commercial paper;
+
+```{r}
+popular_funds_series <- fredr_series_search_text(
+    search_text = "commercial paper",
+    order_by = "popularity",
+    sort_order = "desc"
+)
+
+popular_funds_series %>% filter(substr(id,1,10) == "BOGZ1FL893") 
+
+```
+
+
+Now we would like to find the series related to commercial paper;
+
+
+```{r}
+# All Sectors; Corporate Equities; Asset, Market Value Levels
+popular_funds_series <- fredr_series_search_text(
+    search_text = "equity",
+    order_by = "popularity",
+    sort_order = "desc"
+)
+
+popular_funds_series %>% filter(substr(id,1,9) == "BOGZ1LM89")  %>% select(id,title)
+
+```
+
+
+
+
+```{r}
+# All Sectors; Corporate Equities; Asset, Market Value Levels
+popular_funds_series <- fredr_series_search_text(
+    search_text = "mortgage",
+    order_by = "popularity",
+    sort_order = "desc"
+)
+
+popular_funds_series %>% filter(substr(id,1,9) == "BOGZ1FL89")  %>% select(id,title)
+
+```
+
+
+```{r}
+# All Sectors; Corporate Equities; Asset, Market Value Levels
+popular_funds_series <- fredr_series_search_text(
+    search_text = "bonds",
+    order_by = "popularity",
+    sort_order = "desc"
+)
+
+popular_funds_series %>% filter(substr(id,1,9) == "BOGZ1FL89")  %>% select(id,title)
+
+```
+
+
+
+
+```{r echo=FALSE}
+# All Sectors; Corporate Equities; Asset, Market Value Levels
+popular_funds_series <- fredr_series_search_text(
+    search_text = "securities",
+    order_by = "popularity",
+    sort_order = "desc"
+)
+
+popular_funds_series %>% filter(substr(id,1,9) == "BOGZ1LM89")  %>% select(id,title)
+# 59 BOGZ1FL894122005A All Sectors; Total Debt Securities; Liability, Level     
+# 28 BOGZ1FL894022005Q All Sectors; Total Debt Securities; Asset, Level                                             
+#15 BOGZ1FL894104005A All Sectors; Debt Securities and Loans; Liability, Level 
+# 75 BOGZ1FA893061105Q All Sectors; Treasury Securities; Asset, Transactions                                        
+# 24 BOGZ1FL893061105Q All Sectors; Treasury Securities; Asset, Level  
+
+
+
+#BOGZ1LM893064105A	All Sectors; Corporate Equities; Asset, Market Value Levels
+#BOGZ1FL893163005A	All Sectors; Corporate and Foreign Bonds; Liability, Level		
+#BOGZ1FL893063005A	All Sectors; Corporate and Foreign Bonds; Asset, Level
+
+# BOGZ1FL893065125Q All Sectors; Home Equity Loans; Asset, Level                                                        
+
+     
+     
+
+```
+
+
+
+```{r}
+# All Sectors; Corporate Equities; Asset, Market Value Levels
+popular_funds_series <- fredr_series_search_text(
+    search_text = "government",
+    order_by = "popularity",
+    sort_order = "desc"
+)
+
+popular_funds_series %>% filter(substr(id,1,9) == "BOGZ1LM89")  %>% select(id,title)
+
+```
+
+## Chapter 2
+
+Table 1 Principal Money Market Instruments
+```{r data}
+
+pacman::p_load(fredr,extrafont,purrr,tidyverse,ggplot2)
+fredr::fredr_set_key("3bc35d4a8b94bd0f461a3a61f3d804ba")
+
+```
+
+
+# Get the data
+
+We download the data and then name each series in the way, we present them in the table:
+```{r}
+# Corporate stocks (market value)-BOGZ1LM893064105A
+# Residential mortgages-BOGZ1FL893065105A
+# Corporate bonds-BOGZ1FL893163005A
+# U.S. government securities (marketable long-term)-BOGZ1FL313161205A
+# U.S. government agency securities - BOGZ1FL893161705A
+#State and local government bonds - SLGMSOA027N
+# Bank loans- BOGZ1FL793068005A
+# Consumer loans-HNOCCIA027N
+# Commercial and farm mortgages-BOGZ1FL893065603A+BOGZ1FL893065505A
+
+
+datatable2<-bind_rows(fredr(series_id = "BOGZ1LM893064105A",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "Corporate stocks (market value)") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+  fredr(series_id = "BOGZ1FL893065105A",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "Residential mortgages") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+  fredr(series_id = "BOGZ1FL893163005A",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "Corporate bonds") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+  fredr(series_id = "BOGZ1FL313161205A",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "U.S. government securities (marketable long-term)") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+  fredr(series_id = "BOGZ1FL893161705A",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "U.S. government agency securities") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+  fredr(series_id = "SLGMSOA027N",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "State and local government bonds") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+    fredr(series_id = "BOGZ1FL793068005A",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "Bank loans") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+    fredr(series_id = "HNOCCIA027N",observation_start = as.Date("1990-01-01")) %>% 
+  mutate(sname = "Consumer loans") %>% mutate(value  = value/1000) %>% select(1,3,sname),
+   inner_join(fredr(series_id = "BOGZ1FL893065603A",observation_start = as.Date("1990-01-01")),fredr(series_id = "BOGZ1FL893065505A",observation_start = as.Date("1990-01-01")),by="date") %>% mutate(value = (value.x+ value.y)/1000,sname="Commercial and farm mortgages") %>% select(date,value,sname))
+
+
+```
+
+
+
+## Including Tables
+
+You can also embed tables, for example:
+
+```{r pressure, echo=FALSE, eval=FALSE}
+# install.packages("gt")
+library(gt)
+library(tidyverse)
+
+# Define the start and end dates for the data range
+dates <- c("1990-01-01","2000-01-01","2010-01-01","2016-01-01")
+dates<- as.Date(dates)
+# Create a gt table based on preprocessed
+#
+my_table<-datatable2 %>% filter(date %in% dates)%>% mutate(year=substr(date,1,4)) %>% 
+  select(2,3,4)  %>% 
+   mutate( year = paste("Amount ($ billions end of year)",year,sep = " ")) %>%
+  pivot_wider(names_from = year,values_from = value) %>%
+  gt() %>% tab_header(title = "Table 2: Principal Capital Market Instruments")  %>% 
+  fmt_number( # Another column (also numeric data)
+    columns = 2:5, # What column variable? BOD$demand
+    decimals = 1 # I want this column to have one decimal place
+  )%>%cols_label(sname="Type of instrument") %>% 
+  fmt_markdown(columns = everything())  %>%
+  cols_width(sname ~ px(200),
+             everything() ~ px(120))
+
+
+gtsave(my_table,filename = "week1graphs/table2.jpg")
+```
+ 
+```{r include=TRUE, fig.align="center", fig.cap=c("your caption"), echo=FALSE}
+knitr::include_graphics("my_table.pdf")
+```
+
+

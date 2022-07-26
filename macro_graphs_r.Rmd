@@ -1,0 +1,87 @@
+---
+title: "Untitled"
+author: "Manolis Chatzikonstantinou"
+date: "4/12/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+library(econocharts)
+supply(ncurves = 1,            # Number of supply curves to be plotted
+       type = "convex",        # Type of the curve ("line" or "convex")
+       x = c(3, 5, 6),         # Y-axis values where to create intersections
+       linecol = 4,            # Color of the curves
+       generic = TRUE,         # Intersection labels are in a generic form (X_A, Y_A)
+       geom = "label",         # Label type of the intersection points
+       geomfill = "lightblue", # If geom = "label", is the background color of the label
+       main = "Supply curve")  # Title of the plot
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+# install.packages("ggplot2")
+library(ggplot2)
+
+# Add custom curves
+supply1 <- data.frame(Hmisc::bezier(c(1, 3, 9),
+                                    c(9, 3, 1))) 
+
+supply2 <- data.frame(Hmisc::bezier(c(2.5, 4.5, 10.5),
+                                    c(10.5, 4.5, 2.5))) 
+
+demand1 <- data.frame(Hmisc::bezier(c(1, 8, 9),
+                                    c(1, 5, 9))) 
+
+
+# Custom data
+supply1 <- data.frame(x = c(1, 9), y = c(1, 9))
+supply1
+
+demand1 <- data.frame(x = c(7, 2), y = c(2, 7))
+demand1
+
+supply2 <- data.frame(x = c(2, 10), y = c(1, 9))
+supply2
+
+lrsupply <- data.frame(x = c(4.5, 4.5), y = c(0, 10))
+
+demand2 <- data.frame(x = c(8, 2), y = c(2, 8))
+demand2
+
+p <- sdcurve(supply1,   # Custom data
+             demand1,
+             supply2, 
+             demand2,lrsupply, curve_names = T,names = c("AS_1","AD1","SRAS","AD2","LRAS"),
+             main = "Recessionary Gap",
+             equilibrium = TRUE) # Background color
+p + annotate("segment", x = 2.5, xend = 3, y = 6.5, yend = 7,                # Add more layers
+             arrow = arrow(length = unit(0.3, "lines")), colour = "grey50")
+p
+# Supply and demand curves and arrows
+sdcurve(supply1, demand1, supply2, demand1,
+        names = c("D[1]", "S[1]","D[2]", "S[1]")) +
+  annotate("segment", x = 2.5, xend = 3.5, y = 7, yend = 7, # Add arrows
+           arrow = arrow(length = unit(0.3, "lines")), colour = "grey50") +
+  annotate("segment", x = 1, xend = 1, y = 3.5, yend = 4.5,               
+           arrow = arrow(length = unit(0.3, "lines")), colour = "grey50") +
+  annotate("segment", x = 5, xend = 6, y = 1, yend = 1,               
+           arrow = arrow(length = unit(0.3, "lines")), colour = "grey50")
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+

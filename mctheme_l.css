@@ -1,7 +1,7 @@
 .mctitle-slide {
   background-image: url(https://www.asergeev.com/pictures/archives/2014/1381/jpeg/14.jpg);
   background-size: cover;
-    height: 100%;
+  height: 100%;
 }
 
 .mctitle-slide {
@@ -18,28 +18,32 @@
 
 .mctitle-slide h2, h3, h4 {
   color: #ffffcc;
-  text-shadow: none;
+    text-shadow: none;
   text-align: center;
 }
 
 <style>
-
-.center2 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+  
+  .center2 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
 </style>
+  
+  .myred2 {
+    color: red;
+  }
 
-.myred2 {
-  color: red;
-}
+
+<style type="text/css">
+  .remark-slide-content {
+    font-size: 50px;
+    padding: 1em 4em 1em 4em;
+  }
+</style>
   
-  
-.my-one-page-font {
-  font-size: 26px;
-}

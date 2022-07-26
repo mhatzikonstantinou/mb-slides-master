@@ -1,0 +1,212 @@
+---
+title: "Recitation 5"
+author: "Manolis Chatzikonstantinou"
+date: "1/13/2022"
+output:
+  word_document: default
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Chapter Outline
+
+I. The Multiplier: An Informal Introduction 
+A.	A change in aggregate spending leads to changes in income, which lead to further changes in aggregate spending. To analyze aggregate spending, we make the following four simplifying assumptions 
+1.	Producers are willing to supply additional output at a fixed price. 
+2.	The interest rate is given. 
+3.	There is no government spending or taxes. 
+4.	Exports and imports are zero. 
+B.	An increase in spending creates a direct effect on real GDP and generates multiple rounds of additional increases on spending. 
+1.	Marginal propensity to consume (or MPC) = Δ Consumer spending/Δ Disposable income 
+2.	Marginal propensity to save (or MPS) = MPS = 1 – MPC.  
+3.	If home builders spend an extra $100 billion on home construction, the total effect on real GDP will be 
+(1+ MPC+ MPC2+ MPC3+…) × $100 billion
+=1/(1-MPC)×$100billion.
+
+4.	An autonomous change in aggregate spending is an initial change in aggregate spending at a given level of real GDP. The multiplier is the ratio of the total change in real GDP caused by an autonomous change in aggregate spending to the size of that autonomous change. 
+5.	The multiplier = 1/(1 – MPC). 
+II. Consumer Spending 
+A.	The consumption function is an equation showing how an individual household’s consumer spending varies with the household’s current disposable income. 
+B.	The consumption function is expressed as: 
+c = a + MPC × yd
+	where c denotes individual household consumer spending, a is individual household autonomous consumer spending, MPC is the marginal propensity to consume, and yd is individual household current disposable income. 
+C.	Slope of individual consumption function: 
+∆c/∆yd=MPC
+
+
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("recitation5/mgraph.png") 
+```
+
+According to data, autonomous spending is around $20,195 and MPC = 0.60 so that the consumption function fitted to the data is
+c = $20,195+0.60 ×yd
+
+E.	The aggregate consumption function is the relationship for the economy between aggregate current disposable income and aggregate consumer spending. The aggregate consumption function is expressed as: 
+C = A + MPC × YD
+	where C is aggregate consumer spending, A is aggregate autonomous consumer spending, MPC is the marginal propensity to consume, and YD denotes aggregate current disposable income. 
+F.	Slope of aggregate consumption function: 
+∆C/∆YD=MPC
+
+G.	The aggregate consumption function shows the relationship between disposable income and consumer spending, other things equal. When things other than disposable income change, the aggregate consumption function shifts. 
+1.	There are two main causes of shifts of the aggregate consumption function: 
+a.	changes in future disposable income. Consumer spending depends on the income people expect to have over the long term rather than on their current income: the permanent income hypothesis. For example, expectations of higher incomes lead consumers to spend more, shifting the aggregate consumption function up.
+b.	changes in aggregate wealth. Consumers plan their spending over a lifetime; they try to smooth their consumption over their lifetimes: the life-cycle hypothesis. For example, a rise in aggregate wealth—say, because of a booming stock market—increases aggregate autonomous consumer spending, shifting the aggregate consumption function up.
+
+III. Investment Spending 
+A.	Although consumer spending is much larger than investment spending, booms and busts in investment spending tend to drive the business cycle. 
+B.	Planned investment spending (IPlanned) is the investment spending that businesses intend to undertake during a given period. It depends on three principal factors:
+1.	Interest rate (If the interest rate rises, fewer projects will be undertaken, and investment spending will be lower. If the interest rate falls, some projects will become profitable, and investment spending will be higher.)
+2.	Expected future real GDP (A higher expected growth rate of real GDP results in a higher level of planned investment spending. A lower growth rate leads to lower planned investment spending. This relationship is known as the accelerator principle.)
+3.	Current level of production capacity (other things equal, the higher the current capacity, the lower the investment spending.)
+B.	According to the accelerator principle, a higher growth rate of GDP leads to higher planned investment spending, and a lower growth rate of real GDP leads to lower planned investment spending. 
+C.	Inventories and unplanned investment spending. 
+1.	Actual investment spending (I) is expressed as: 
+I = IUnplanned + IPlanned
+2.	Rising inventories typically indicate positive unplanned inventory investment and a slowing economy. Falling inventories typically indicate negative unplanned inventory investment and a growing economy.
+IV. The Income–Expenditure Model 
+A.	Assumptions underlying the multiplier process 
+1.	The aggregate price level is fixed. 
+2.	The interest rate is fixed. 
+3.	Taxes, government transfers, and government purchases are all zero. 
+4.	There is no foreign trade. 
+B.	Planned aggregate spending and real GDP 
+1.	Planned aggregate spending (AEPlanned) is the total amount of planned spending in the economy. 
+2.	Planned aggregate spending is equal to the sum of consumer spending and planned investment spending. 
+AEPlanned = C + IPlanned
+3.	The level of planned aggregate spending in a given year depends on the level of real GDP in that year. 
+C.	Income–expenditure equilibrium 
+1.	The economy is in income–expenditure equilibrium when aggregate output, measured by real GDP, is equal to planned aggregate spending. 
+2.	Income–expenditure equilibrium GDP is the level of real GDP at which real GDP equals planned aggregate spending. 
+3. The Keynesian cross diagram identifies income–expenditure equilibrium as the point where the planned aggregate spending line crosses the 45-degree line. 
+
+
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("recitation5/igraph.png") 
+```
+When the economy is in income–expenditure equilibrium, unplanned inventories are zero. 
+6.	At any level of real GDP that is less than the income–expenditure equilibrium level of GDP, unplanned inventory investment is negative and firms respond by increasing production. 
+7.	At any level of real GDP that is greater than the income–expenditure equilibrium level of GDP, unplanned inventory investment is positive and firms respond by decreasing production. 
+D.	The multiplier process and inventory adjustment 
+1.	Changes in inventories are a leading indicator of economic activity. Here’s why: When planned spending does not equal the aggregate output, inventories change; firms respond to inventory changes and move real GDP to the point at which real GDP and planned aggregate spending are equal.
+2.	There are only two possible sources of a shift of the planned aggregate spending line: a change in planned investment spending or a shift of the aggregate consumption function. For example, a change in planned investment spending can occur because of a change in the interest rate. A shift of the aggregate consumption function can occur because of a change in aggregate wealth—say, due to a rise in house prices. 
+3.	After an autonomous change in planned aggregate spending, the economy moves to a new income–expenditure equilibrium through the inventory adjustment process. 
+	Due to the multiplier effect, the change in income–expenditure equilibrium GDP (Y*) is a multiple of the autonomous change in planned aggregate expenditure (AAEPlanned). 
+
+〖∆Y〗^*=Multiplier ×〖∆AAE〗_Planned
+
+=1/(1-MPC)×〖∆AAE〗_Planned
+
+	where Y* denotes change in income–expenditure equilibrium
+
+
+## Question 1: 
+
+
+In an economy with no government and no foreign sectors, autonomous consumer spending is $250 billion, planned investment spending is $350 billion, and the marginal propensity to consume is 2/3.
+a. What is unplanned inventory investment when real GDP equals $600 billion?
+b. What is Y*, income–expenditure equilibrium GDP?
+c. What is the value of the multiplier?
+d. If planned investment spending rises to $450 billion, what will be the new Y*?
+
+__Solution__
+
+a. 
+
+. a. If autonomous consumer spending is $250 billion and MPC is 2/3, the aggregate consumption function is:
+C = $250 billion + 2/3 × YD
+Planned aggregate spending equals consumer spending plus planned investment spending:
+AEPlanned = C + IPlanned
+AEPlanned = ($250 billion + 2/3 × YD) + $350 billion
+AEPlanned = $600 billion + 2/3 × YD
+
+When real GDP equals $600 billion, planned aggregate spending is $1,000 billion ( $600 billion + 2/3 × $600 billion). Unplanned inventory investment equals real GDP minus planned aggregate spending, or –$400 billion. 
+
+b. . Y* occurs when  real GDP equals planned aggregate spending. From the accompanying diagram, we can see that this occurs at real GDP equal to $1,800 billion.
+
+c. The value of the multiplier is 1/(1 − 2/3) = 3.
+d. If planned investment spending rises to $450 billion, that will be an increase of $100 billion in planned investment spending. Given a multiplier of 3, Y* will rise by $300 billion to $2,100 billion.
+
+
+## Question 2:
+
+From 2014 to 2019, Eastlandia experienced large fluctuations in both aggregate consumer spending and disposable income, but wealth, the interest rate, and expected future disposable income did not change. The accompanying table shows the level of aggregate consumer spending and disposable income in millions of dollars for each of these years. Use this information to answer the following questions.
+
+
+| Year | Disposable income | Consumer spending |
+| :---: | :---: | :---: |
+| 2014 | $100 | $180 |
+| 2015 | 350 | 380 |
+| 2016 | 300 | 340 |
+| 2017 | 400 | 420 |
+| 2018 | 375 | 400 |
+| 2019 | 500 | 500 |
+
+a. Plot the aggregate consumption function for Eastlandia.
+b. What is MPC? What is MPS?
+c. What is the aggregate consumption function?
+
+__Solution:__
+
+4. a. The accompanying diagram shows the aggregate consumption function for Eastlandia.
+ 
+```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("recitation5/cgraph.png") 
+```
+
+MPC is determined by taking the change in consumer spending divided by the change in disposable income over any two-year period. From 2014 to 2015, consumer spending increased from $180 to $380 and disposable income increased from $100 to $350. So MPC will equal ($380 − $180)/($350 − $100) = $200/$250 = 0.8. MPS is equal to the 1 − MPC or 1 − 0.8 = 0.2. You can verify that MPC is the same for the other years. 
+c. The aggregate consumption function is of the form C = A + MPC × YD. We know MPC = 0.8, so we must now solve for A. Rearranging the equation, we have A = C − MPC × YD. Plugging in the data from the first row of the table, we have A = $180 million − 0.8 × $100 million = $100 million. Hence, the aggregate consumption function is C = $100 million + 0.8 × YD.
+
+
+
+
+
+
+## Question 3: Calculating the value of the multiplier
+
+ Complete the following table by calculating the value of the multiplier and identifying the change in Y* due to the change in autonomous spending. How does the value of the multiplier change with the marginal propensity to consume?
+ 
+ | MPC | Value of multiplier | Change in spending | Change in $Y^{*}$ |
+| :---: | :---: | :---: | :---: |
+| 0.5 | ? | Delta C=+$50 million | ? |
+| 0.6 | ? | Delta I=-$10 million | ? |
+| 0.75 | ? | Delta C=-$25 million | ? |
+| 0.8 | ? | Delta I=+$20 million | ? |
+| 0.9 | ? | Delta C=-$2.5 million | ? |
+
+__Solution__
+
+The value of the multiplier increases with an increase in the marginal propensity to consume.
+
+
+| MPC | Value of multiplier | Change in spending | Change in Y^(**) |
+| :---: | :---: | :---: | :---: |
+| 0.5 | 1//(1-0.5)=2 | Delta C=+$50 million | +$100 million |
+| 0.6 | 1//(1-0.6)=2.5 | Delta I=-$10 million | -$25 million |
+| 0.75 | 1//(1-0.75)=4 | Delta C=-$25 million | -$100 million |
+| 0.8 | 1//(1-0.8)=5 | Delta I=+$20 million | +$100 million |
+| 0.9 | 1//(1-0.9)=10 | Delta C=-$2.5 million | -$25 million |
+
+
+## Question 4: 
+
+In an economy without government purchases, transfers, or taxes, and without imports or exports, aggregate autonomous consumer spending is $500 billion, planned investment spending is $250 billion, and the marginal propensity to consume is 0.5.
+a. Write the expression for planned aggregate spending as in Equation 11A-1.
+b. Solve for Y* algebraically.
+c. What is the value of the multiplier?
+d. How will Y* change if autonomous consumer spending falls to $450 billion?
+Solution
+2. a. In an economy without government purchases, planned aggregate spending equals the aggregate consumption function plus planned investment spending:
+AEPlanned = C + IPlanned
+AEPlanned = $500 billion + 0.5 × YD + $250 billion
+b. In an economy without transfers or taxes, GDP equals disposable income. The economy will be in income–expenditure equilibrium when GDP equals planned aggregate spending:
+Y* = $750 billion + 0.5 × Y*
+0.5 × Y* = $750 billion
+Y* = $1,500 billion
+c. The value of the multiplier is 1/(1 – 0.5) = 2.
+d. If autonomous consumer spending falls to $450 billion, it will have decreased by $50 billion. Given a multiplier of 2, Y* will fall by $100 billion when autonomous consumer spending falls by $50 billion. The new Y* will equal $1,400 billion.
+

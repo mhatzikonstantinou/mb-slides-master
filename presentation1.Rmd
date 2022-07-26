@@ -1,5 +1,5 @@
 ---
-title: "MACROECONOMICS: THE BIG PICTURE"
+title: "Money and Banking : Introduction"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,37 +18,46 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Macroeconomics: The Big Picture
+# Money and Banking : an Introduction
 
-## Manolis Chatzikonstantinou  
+## Why Study Money, Banking, and Financial Markets?
+
+### Manolis Chatzikonstantinou  
 
 ---
 
 
 # Syllabus
 
-- Class Format: $\quad 2$ lectures weekly by Prof. Chatzikonstantinou $+$ Recitiation by TA
-  - First two weeks virtually, see syllabus
-  - After week 3, every lecture takes place in Georgetown Building-Qatar 0A11
+- Class Format: $\quad 2$ lectures weekly by Prof. Chatzikonstantinou
+  - MW 4:00 pm - 5:15 pm	
+  - Georgetown Building-Qatar 0A08
+
+--
   
 - Grading:  
 
-  - Exams (25 % M + 25 % F):
+  1. Midterm #1 (12.5 %):  $\text{Monday, September 5th}$
+  2. Midterm #2 (12.5 %):  $\text{Monday, October 24th}$
+  3. Presentations  (12.5 %): $\text{October 26-31}$
+  4. Paper submission (25 %): $\text{November 8th}$
+  5. Problem Sets(25%): There will be bi-weekly problem sets
+  6. Participation Quizzes(12.5%): Given at the beginning of every lecture
+  
+--
 
-  1. Midterm #1:  $\text{Thursday, February 17th}$
+- Material: 
+  - Textbook 
+  - Lecture slides 
+  - Mandatory and Optional Readings
 
-  2. Midterm #2:  $\text{Thursday, March 31st}$
-  3. Final:  $\text{TBA}$
+--
 
-- Problem Sets(40%): There will be weekly problem sets
-
-- Participation Quizzes(10%): Given at the beginning of every lecture
-
-- Material: Textbook + Lecture slides
+- Skills: Data Analysis + Presentation + Report Writing (R programming?)
 
 
 ???
-Class Format- First week virtually, expain how participation quiz will work,
+How and why participation quiz will work,
 we will do a test on Monday and then Wednesday we will have the first one
 
 
@@ -61,18 +70,26 @@ we will do a test on Monday and then Wednesday we will have the first one
 
 	- E-mail: ec1269@georgetown.edu 
 	- Office: 0D26.
-	- Office Hours: Mon. and Wed. 1:30-3:00 pm or by appointment (use e-mail).
-  - Zoom Room: Available on Canvas.
+	- Office Hours: Mon. and Wed. 2:30-4:00 pm or by appointment (use e-mail).
+  - Zoom Room: by appointment.
 
+--
 
-- Teaching Assistants: __Fatima Hamady__
-  - E-mail: fh311@georgetown.edu 
-	- Zoom Room: TBD.
-	- Office: 1G34.
-	- Office Hours: Mon. and Wed. 12:00 to 13:30
+- Office hours start this week and can also be held virtually (by appointment). 
+- Make sure to inform me, beforehand even during office hours, to avoid long waiting times!
+- Do not attend office hours only before exams!
+- Consult me if you face any issues with the material, presentation and final paper.
+- Make use of canvas discussion section.
 
-- Office hours start next week and will be virtually. After week 3, we will be available by appointment in person 
-- Make sure to inform us, beforehand even during office hours, to avoid long waiting times!
+--
+
+- About me:
+  -  Phd in Economics, UCLA 2021
+  -  International Macroeconomics, Finance, Multinational firms
+
+--
+
+- __What about you?__
 
 ???
 Greece, Phd in Economics, Macroeconomics and Finance -I like to study how firms grow and what that means for the aggregate economy and financial markets
@@ -82,558 +99,301 @@ Ask the TA to introduce themselves
 
 # What you will learn 
 
-- What makes macroeconomics different from microeconomics ?
+- How financial markets such as bond and stock  markets affect your everyday life.
+- How financial institutions such as banks, investment and insurance companies work.
+- The role of money in the economy!
+
 
 --
 
-  - Can you name some micro economic questions?
-
-  -  How do you think macro economic thinking will be helpful?
-
---
-
-__Some macroeconomic questions:__
+__Class discussion:__
+  - Can you think why financial markets are important for an economist ?
+  - How do you think money and banking will be helpful?
 
 --
 
-- What is a business cycle is how would you measure the state of the aggregate economy ?
+__Some important questions:__
+
+- What are the basic links among monetary policy, the business cycle, and economic variables ?
 
 --
 
-- What is long-run economic growth and how it determines a country's standard of living  ?
+- What causes financial markets to crash ?
 
 --
 
-- What is the meaning of inflation and deflation and why price stability is preferred  ?
+- Why banks are vulnerable?
 
 --
 
-- The importance of monetary and fiscal policy as tools against economic downturns 
+- What policies can we use to stabilize financial markets, banks and the economy>
 
 
 ???
-Ask students how they think macroeconomics will be different from microeconomics. Make a list of anything interesting that they come up with. Ask students why studying macroeconomics might be important for all students regardless of their major. One reason is to be a more informed voter.
-Ask students what are some interesting questions about microeconomics
-Microeconomic versus Macroeconomic Questions
----
-
-# Would you ask a microeconomist this ?
-
-
-
-| Microeconomic Questions | Macroeconomic Questions |
-| :--- | :--- |
-| Should I go to business school or take a job right now? | How many people are employed in the economy as a whole this year? |
-| What determines the salary Google offers to Cherie Camajo, a new MBA? | What determines the overall salary levels paid to workers in a given year? |
-| What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
-
-???
-|  | What government policies should be adopted to promote employment and growth in the economy as a whole? |
-
+Ask students= if they think this is a  macroeconomics or microeconomics. Ask students their major and why studying money and banking might be important for all students regardless of their major. 
 
 ---
 
-# Would you ask a microeconomist this ?
+# Why Study Financial Markets?
 
 
-
-| Microeconomic Questions | Macroeconomic Questions |
-| :--- | :--- |
-| Should I go to business school or take a job right now? | How many people are employed in the economy as a whole this year? |
-| What determines the salary Google offers to Cherie Camajo, a new MBA? | What determines the overall salary levels paid to workers in a given year? |
-| What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
-|  | What government policies should be adopted to promote employment and growth in the economy as a whole? |
-
-
-???
-What government policies should be adopted to make it easier for lowincome students to attend college?
----
-
-# Would you ask a microeconomist this ?
-
-
-
-| Microeconomic Questions | Macroeconomic Questions |
-| :--- | :--- |
-| Should I go to business school or take a job right now? | How many people are employed in the economy as a whole this year? |
-| What determines the salary Google offers to Cherie Camajo, a new MBA? | What determines the overall salary levels paid to workers in a given year? |
-| What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
-| What government policies should be adopted to make it easier for lowincome students to attend college? | What government policies should be adopted to promote employment and growth in the economy as a whole? |
- 
-
-
-???
-WhatWhat determines whether Citibank opens a new office in Shanghai?
----
-
-# Would you ask a microeconomist this ?
-
-
-
-| Microeconomic Questions | Macroeconomic Questions |
-| :--- | :--- |
-| Should I go to business school or take a job right now? | How many people are employed in the economy as a whole this year? |
-| What determines the salary Google offers to Cherie Camajo, a new MBA? | What determines the overall salary levels paid to workers in a given year? |
-| What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
-| What government policies should be adopted to make it easier for lowincome students to attend college? | What government policies should be adopted to promote employment and growth in the economy as a whole? |
-| What determines whether Citibank opens a new office in Shanghai? |  |
-
-
-???
-WhWhat determines the overall trade in goods, services, and financial assets between the United States and the rest of the world? 
-
----
-
-# Would you ask a microeconomist this ?
-
-
-
-| Microeconomic Questions | Macroeconomic Questions |
-| :--- | :--- |
-| Should I go to business school or take a job right now? | How many people are employed in the economy as a whole this year? |
-| What determines the salary Google offers to Cherie Camajo, a new MBA? | What determines the overall salary levels paid to workers in a given year? |
-| What determines the cost to a university or college of offering a new course? | What determines the overall level of prices in the economy as a whole? |
-| What government policies should be adopted to make it easier for lowincome students to attend college? | What government policies should be adopted to promote employment and growth in the economy as a whole? |
-| What determines whether Citibank opens a new office in Shanghai? | What determines the overall trade in goods, services, and financial assets between the United States and the rest of the world? |
-
-
----
-
-# Microeconomics versus Macroeconomics
-
-
-- Microeconomics focuses on how decisions are made by individuals and firms and the consequences of those decisions.
+- 2007-2009 Financial Crisis: 
+  - the collapse of housing markets led to 
+  - financial difficulties, e.g. the default of a major investment bank Lehman Brothers,
 
 --
 
-  - Example: How much it would cost for a university or college to offer a new course ─ the cost of the instructor’s salary, the classroom facilities, the class materials, and so on.
-
-  - Having determined the cost, the school can then decide whether to
-offer the course by weighing the costs and benefits.
+  - credit contraction and reduced profitability,
+  - economic crisis, firms defaulted, firms freezed hiring and fired workers. 
 
 --
 
-- Macroeconomics examines the aggregate behavior of the economy (that is, how the actions of all the individuals and firms in the economy interact to produce a particular level of economic performance as a whole).
-
---
-
-  - Example: Overall level of prices in the economy (how high or how low they are relative to prices last year) rather than the price of a particular good or service.
-
---
-
-- In macroeconomics, the behavior of the whole macroeconomy is greater than the sum of
-individual actions:
-
-
---
-  - __Paradox of thrift:__ when families and businesses are worried about the possibility of
-economic hard times, they prepare by cutting their spending $\rightarrow$ This reduction in spending depresses the economy as consumers spend less and businesses react by laying off workers $\rightarrow$  families and businesses may end up worse off than if they hadn’t tried to act responsibly by cutting their spending.
-
----
-
-# Theory and Policy
-
-> “The long run is a misleading guide to current
-affairs. In the long run we are all dead . Economists
-set themselves too easy, too useless a task if in
-tempestuous seasons they can only tell us that
-when the storm is past the ocean is flat again.”
-
-John Maynard Keynes, A Tract on Monetary Reform (1923) Ch. 3
-
---
-
-- Modern Macroeconomics were born as a result of a need to deal with Great Depression
-
---
-
--  In a self regulating economy, problems such as unemployment
-are resolved without government intervention, through the
-working of the "invisible hand".
-
---
-
-- According to Keynesian economics, economic slumps are
-caused by inadequate spending and they can be mitigated by
-government intervention.
-
---
-
-- Monetary policy uses changes in the quantity of money to alter
-interest rates and affect overall spending.
-
---
-
--  Fiscal policy uses changes in government spending and taxes to
-affect overall spending.
-
-???
-•	Conduct a brief poll of your students to identify how they think the economy is doing. Have them each identify (by a show of hands, a voice vote, or on a slip of paper) whether they think the state of the economy is “excellent,” “good,” “fair,” or “poor.” Present the results of the poll to the class. 
-
-
-Then ask your students to tell you on what they based their decision. What made them choose excellent, good, fair, or poor? They may say something about GDP, inflation, or unemployment. Keep a list of their responses. Ask them how their responses would have been different a year ago and five years ago. Use their sense of how things are going and how the state of the economy can change over time to lead into a discussion of the business cycle. 
-•	Ask students to recall the actions that the government took during the recession of 2020. What were the short-term benefits of the government relief packages? (Alleviating the pains of unemployment and saving small businesses.) What are the long-term costs? (The increase in the public debt, the danger of high inflation in the future.) 
-
----
-
-# The Business Cycle
-
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week1graphs/buscycle.png") 
-```
-
-
-- The business cycle is the short run alternation between
-economic downturns and economic upturns. 
-- Recessions are periods of economic downturns when output
-and employment are falling. 
-- Expansions , sometimes called recoveries , are periods of
-economic upturns when output and employment are rising.
-
-
-
-???
-_The point at which the economy turns from expansion to
-recession is a business cycle peak_.
-_The point at which the economy turns from recession to
-expansion is a business cycle trough_.
-
-
----
-
-# What will we learn?
-
-```{r  out.width = "50%",echo=FALSE}
-knitr::include_graphics("week1graphs/buscycle2.png") 
-```
-
-???
-
-- What happens during a business cycle, and what can be done about it?
-
-??? 
-
---
-
-- Fluctuations in unemployment and aggregate output
-
---
-
-  - Recession: Employment $\downarrow$  
---
-  
-  - Recession: Output $\downarrow$
-
-
---
-
-- What causes recession and how can policy makers change the economy?
-
-???
-. It is a good time to mention the deficit and debt levels and see what students think about them. Tell students that policy makers evaluate the economy by comparing the current data with average or benchmark values to get a sense for where we are. Mention that a downside of recession is higher-than-average unemployment. 
-
-
----
-
-# Taming the Business Cycle
-
-```{r  out.width = "60%",echo=FALSE}
-knitr::include_graphics("week1graphs/jobopenings.png") 
-```
-
-???
-Opening Example: In 2016, the unemployment rate in Greece was 24% and was much higher for people younger than 25 years. This extremely high unemployment rate is highlighted as a consequence of the Great Recession. The Great Recession is compared with the Great Depression (1929–1940) to show how economic policies might help or hinder recovery. 
-Should I stay or go do a PhD? Will it matter if I was an engineer, economist, accountant?
----
-
-# Taming the Business Cycle
-
-
-- The business cycle is a main concern of modern policy makers in macroeconomics:
-they try to smooth out the business cycle and reduce unemployment.
-
---
-
-- Policy efforts undertaken to reduce the severity of recessions are
-called stabilization policies .
-
---
-
-- Two type of stabilization policies: 1. monetary policy : changes in the interest rate. 2. fiscal policy : changes in government spending, taxes, or both.
-
---
-
-- To understand the impact of policies we need models! Classical vs. Keynesian models:
-
-  - The classical approach: the idea that if there are free markets
-and individuals conduct their economic affairs in their own
-best interests, the overall economy will work well. Wages and prices adjust rapidly to get to equilibrium
-  – Equilibrium: a situation in which the quantities
-demanded and supplied are equal
-
---
-
-  - Conclusion: Government should have only a limited role in the
-economy
-
---
-
-  - The Keynesian approach: Classical theory failed to explain persistent high unemployment during  The Great Depression. Keynes: Persistent unemployment occurs because wages and prices adjust slowly, so markets remain out of equilibrium for long periods
+  - The crisis transmitted  in several countries 
   
 --
 
-  - Conclusion: Government should intervene to restore full employment
+- 2019-2022: 
+  - the recent pandemic led to a huge decline in production and consumption.
+  - Firms could not support operations, increased subsidized lending + Fiscal Transfers
 
-??? 
-Examples of monetary and fiscal policy:
-•	In response to the Great Recession of 2008, the U.S. government cut taxes and increased spending. The government actions were helping the depressed economy.
-•	In response to the Great Recession of 2008, many European governments raised taxes and cut spending. The government actions were hurting the economy.
-•	When a recession hit Brazil in 2014, the government cut spending. The government actions were hurting the economy.
-•	When the coronavirus recession hit the United States in 2020, the U.S. government launched the $2 trillion relief package in March and the $3 trillion package in May. The government actions were helping the depressed economy.
-Do we only care about fluctuations in employment and output?
+--
+
+  - Fiscal Transfers in 2021 led to high demand and high prices
+  - High commodity prices and high inflation changed expectations of consumers about prices
+  
+--
+  - -> Increase in interest rates -> Recession???  __Poll__
+
 ---
 
-# Inflation and Deflation
+# The Bond Market and Interest Rates
+  - A __security__ (financial instrument) is a claim on the issuer’s future income or assets.
+  - A __bond__ is a debt security that promises to make payments periodically for a specified period of time.
+  - An __interest rate__ is the cost of borrowing or the price paid for the rental of funds.
 
 
-- A rising aggregate price level is __inflation__.
 
---
-
-- A falling aggregate price level is __deflation__.
-
---
-
-- The inflation rate is the annual percent change in the aggregate price level.
-
---
-
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week1graphs/inflation.png") 
+```{r  out.width = "65%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture1.jpg") 
 ```
 
---
 
-- The economy has price stability when the aggregate price level is changing only slowly.
 
-???
-Creating Student Interest 
-•	Ask students how much a can of Coke costs. Have they ever heard anyone bring up the cost of a soda starting with “Well, back in MY day, a soda cost . . .”? Present the class with the following data: Coke was first sold in cans in the 1950s for 5 cents a can. By the end of the 1950s, the same can of Coke cost 10 cents. In 1960, the average price was about 13 cents, and by 1970 about 85 cents. Have students consider and speculate as to why the same can of soda costs so much more today than in the 1950s. Ask students if they believe the things they buy are getting more expensive. Make a list of some of the items they bring up. Ask them to guess the average rate of inflation in the United States. 
-•	Ask students: Since inflation causes pain, should the United States target the zero percent inflation? Point out that many factors influence inflation, and if it turns into deflation, it will also cause pain to individuals and businesses.
-
+- Source: Federal Reserve Bank of St. Louis, FRED database:
+    - https://fred.stlouisfed.org/series/TB3MS;
+    - https://fred.stlouisfed.org/series/GS10;
+    - https://fred.stlouisfed.org/series/BAA;
+    
+    
 ---
-# Long Run Economic Growth
 
---
+# The Stock Market
 
-- Long run economic growth is the sustained upward trend in the economy’s
-output over time.
 
---
+  - __Common stock__ represents a share of ownership in a corporation.
+  - __A share of stock__ is a claim on the residual earnings and assets of the corporation.
 
-- A country can achieve a permanent increase in the standard of living of its
-citizens only through long run growth.
-
---
-
-```{r  out.width = "50%",echo=FALSE}
-knitr::include_graphics("week1graphs/longrun.png") 
+```{r  out.width = "50%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture2.jpg") 
 ```
 
--  A central concern of macroeconomics is what determines long run economic growth.
 
-???
-Creating Student Interest 
-•	Make sure students understand the definition of long-run growth as a sustained increase in the economy’s output over time. You might discuss the recent growth experiences of countries like China, India, and Brazil in comparison with the United States and Europe. You might ask students if they think economic growth is a good thing. Generally, they should say yes because economic growth leads to an increase in per capita income and living standards. You may have some students in class who are concerned about the environment, or running out of resources, and this can also lead to some interesting discussions. 
-•	Tell students that a hundred years ago, Argentina was as rich and advanced as Canada or Germany. Today it’s a much poorer country than Canada or Germany. Ask them what went wrong in Argentina as opposed to Canada or Germany. Similarly, you can tell students that a hundred years ago, Britain was the richest and most advanced country in the world, while the United States was just one of many emerging economies. Today the United States is the economic and political leader of the world. Ask students what factors propelled the United States forward.
-•	Ask students if they think the economy usually grows at a positive rate over time. They will probably say yes. Then ask them if they think most economies grow at a positive rate each year on average. They will probably say no, and this can lead to an interesting discussion about which countries are more and less developed. 
----
+- Source: Federal Reserve Bank of St. Louis:
+    - https://fred.stlouisfed.org/series/TB3MS;
 
-# Summary of main topics to cover
-
-Macroeconomics studies the structure of aggregate economies and the impact of policies on their performance.
-
---
-
-- What determines economic fluctuations? (__business cycle__)
-
---
-
-- Why some countries grow faster than others? (__economic growth__)
-
---
-
-- What causes __unemployment__?
-
---
-
-- What drives price changes? (__inflation__)
-
---
-
-- What is the role of economic policies and the government? (__monetary and fiscal policies__)
-
---
-
-Useful Material:
-
-- Graphs in Economics (Appendix after Chapter 2: Graphs in Economics)
-
-- Microeconomics Review (Chapters 2,3 and 4)
-
-- [NBER's The Digest](https://www.nber.org/digest-2021-09)
-
-- [Macroeconomists as policy makers](https://www-nber-org.proxy.library.georgetown.edu/news/gita-gopinath-tapped-new-imf-role)
-
-
---
 
 ---
 
-# Short Review
+class: my-one-page-font
 
-  - A competitive market has many buyers and sellers of the same good or service, none of whom can influence the price.
-  - The supply and demand model is a model of how a competitive market behaves.
-The five key elements of this model:
-  1. The demand curve
-  2. The supply curve
-  3. Factors that shift the demand curve and factors that shift the supply curve
-  4. The market equilibrium
-  5. Changes in the market equilibrium
-  
-???
-Last time our discussion was informal
-But I hope that generated some interest in macroeconomics
-The important think is to provide you the tools that will help you
-understand how the macroeconomy works, to help you be a better
-economist-analyst-voter but I want you to remind you today
-that as economists a lot of our discussion are based on 
-simplified models and when you are thinking on individual cases
-those models might not be the besto to apply . Emerging countries
-are different than developed economies and the same messages are not 
-uniform. However, economics would provide you with a lot of tools that 
-you can use on your debates and decisions. A short review to set the stage
-for the models and variables we will talk about.
-  
-  
+# Why Study: 
+
+_Financial Institutions and Banking?_
+
+- __Financial intermediaries:__ institutions that borrow funds from investors and in turn provide funds
+    - _Banks:_ accept deposits and make loans
+    - _Other financial institutions:_ insurance companies, finance companies, pension funds, mutual funds
+
+--
+
+- __Financial innovation:__ the development of new financial products and services  
+  - Can be an important force for good by making the financial system more efficient
+  - _E-finance:_ the ability to deliver financial services electronically
+
+--
+
+- __Financial crises:__ major disruptions in financial markets that are characterized by sharp declines in asset prices and bank failures
+
+
+---
+
+class: my-one-page-font
+
+# Why Study:
+
+_Study Money and Monetary Policy?_
+
+- Evidence suggests that money, defined as anything that is generally accepted as payment for goods or services or in the repayment of debts, plays an important role in generating business cycles.
+  - Recessions (unemployment) and expansions affect all of us.
+  - Monetary theory ties changes in the money supply to changes in aggregate economic activity and the price level.
   
 --
 
-
-__Key topics__
-
-- Demand represents the behavior of buyers. Supply Represents the behavior of producers/sellers.
-
-  - A demand schedule is a table showing how much of a good or service consumers will want to buy at different prices. A supply schedule shows how much of a good or service would be supplied at different prices. 
-
-  - A demand curve shows the quantity demanded at various prices. A supply curve shows the quantity supplied at various prices
-
-
-  - The law of demand and the law of supply
+- The __aggregate price level__ is the average price of goods and services in an economy
+- A continual rise in the price level (__inflation__) affects all economic players
+- Data show a connection between the money supply and the price level
 
 ---
 
-# Demand Schedule and Curve
+# Money, Business Cycles, and Inflation
 
-.center2[
-```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week1graphs/demandcurve.png") 
+
+- Money Growth (M2 Annual Rate)
+
+```{r  out.width = "50%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture3.jpg") 
 ```
-]
+
+
+- Source: Federal Reserve Bank of St. Louis:
+  - https://fred.stlouisfed.org/series/M2SL
+
 ---
 
-# Demand Schedule and Curve
+# Prices and Money Supply
+
+- Aggregate Price Level and the Money Supply in the United States, 1960–2020
 
 
-.center2[
-```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week1graphs/demandincrease1.png") 
+
+```{r  out.width = "65%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture4.jpg") 
 ```
-]
+
+
+- Source: Federal Reserve Bank of St. Louis:
+  - https://fred.stlouisfed.org/series/M2SL
+  - https://fred.stlouisfed.org/series/GDPDEF
+  
+  
 ---
 
-# Demand Shifts
+# Inflation and Money Growth
 
-.pull-left[
+- Average Inflation Rate Versus Average Rate of Money Growth for Selected Countries, 2009–2019
 
-```{r  out.width = "80%",echo=FALSE}
-knitr::include_graphics("week1graphs/demandshift1.png") 
+```{r  out.width = "70%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture5.jpg") 
 ```
-]
+
+---
+
+# Money and Interest Rates
+
+- Interest rates = the price of money
+- Prior to 1980, the rate of money growth and the interest rate on long-term Treasury bonds were closely tied
+- Since then, the relationship is less clear, but the rate of money growth is still an important determinant of interest rates
+
+```{r  out.width = "50%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture6.jpg") 
+```
+
+
+- Source: Federal Reserve Bank of St. Louis:
+  - https://fred.stlouisfed.org/series/M2SL
+  - https://fred.stlouisfed.org/series/GS10
+
+---
+
+class: my-one-page-font
+
+# Stabilization policies
+
+- __Monetary policy__ is the management of the money supply and interest rates
+  - Responsibility of the __Central Bank__
+  - Conducted in the United States by the Federal Reserve System (Fed)
+
 --
 
-
-.pull-right[
-
-```{r  out.width = "80%",echo=FALSE}
-knitr::include_graphics("week1graphs/demandshifts.png") 
-```
-]
- 
-???
-
-Five factors that shift the demand curve: 
-Changes in the prices of related goods or services 
-Changes in income 
-Changes in tastes 
-Changes in expectations 
-Changes in the number of consumers
+- __Fiscal policy__ deals with government spending and taxation
+  - Budget deficit is the excess of expenditures over revenues for a particular year
+  - Budget surplus is the excess of revenues over expenditures for a particular year
+  - Any deficit must be financed by borrowing
 
 
 
 ---
 
-# Supply Shifts
+# Government Budget 
 
 
-
-.pull-left[
-
-```{r  out.width = "120%",echo=FALSE}
-knitr::include_graphics("week1graphs/supplyshift.png") 
+```{r  out.width = "70%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture7.jpg") 
 ```
-]
+
+
+- Source: Federal Reserve Bank of St. Louis:
+  - https://fred.stlouisfed.org/series/FYFSGDA188S
+
+
+---
+
+# The foreign exchange market
+
+- The __foreign exchange market:__ where funds are converted from one currency into another
+- The __foreign exchange rate__ is the price of one currency in terms of another currency.
+
+
+```{r  out.width = "70%",echo=FALSE,fig.align="center"}
+knitr::include_graphics("week1graphs/Picture8.jpg") 
+```
+
+
+- Source: Federal Reserve Bank of St. Louis:
+  - https://fred.stlouisfed.org/series/TWEXM
+
+
+ 
+---
+
+# Money, Banking, and Financial Markets and Your Career
+
+- Understanding monetary policy can help you 
+  1. predict when interest rates will rise or fall, 
+  2. make decisions about whether it is better to borrow now or to wait until later,
+  3. know how banks and other financial institutions are managed which may
+    - better deals when you need to borrow from them and 
+    - better investment decisions, whether for yourself or for the company you work for
+
 --
 
+How We Will Study Money, Banking, and Financial Markets
 
-.pull-right[
-
-```{r  out.width = "80%",echo=FALSE}
-knitr::include_graphics("week1graphs/supplyshift2.png") 
-```
-]
- 
- 
-???
-Important supply shifters include changes in:
-input prices.
-the prices of related goods or services.
-technology.
-expectations.
-the number of producers.
+- A simplified approach to the demand for assets
+- The concept of equilibrium
+- Basic supply and demand to explain behavior in financial markets
+- An approach to financial structure based on transaction costs and asymmetric information
 
 ---
 
-# Market Equilibrium
+# Exploring the Web and Software
 
- - When $Q_s = Q_d$ at a certain price, the market is in equilibrium.
+- The importance of the World Wide Web and statistical software is important several times:
+  1. when we view the most current data for a high percentage of data figures (Federal Reserve Bank of St. Louis’s FRED) 
+  2.  at the end of almost every chapter there are several real-time data analysis problems, which ask you to download the most recent data from the Federal Reserve Bank of St. Louis’s FRED database and then use these data to answer interesting questions.
+  3. when we access additional Web exercises at the end of many chapters that prompt you to visit sites related to the chapter and use them to learn more about macroeconomic issues.
+  4. when you prepare your presentation and paper.
+  5. to automate process to follow the data and topics we study in the future.
 
- - That is, the amount consumers would purchase at this price is matched exactly by the amount producers wish to sell.
- 
- 
-```{r  out.width = "40%",echo=FALSE}
-knitr::include_graphics("week1graphs/equilibrium.png") 
-```
- 
- 
- 
-???
- The price at which this takes place is the equilibrium price, also referred to as the market-clearing price. The quantity of the good or service bought and sold at that price is the equilibrium quantity
-Ask class what happens:
-  if price is too high or too low?
- if demand shifts down
- if supply shifts up
-These are the mechanisms that we would like to explore in macroeconomics for specific
-markets, e.g. housing market, + the economy as a whole and the first class
-would be about that, how to measure the  total values goods and services 
-that determine whether the economy is large or small
+--
+
+- Take Home Exercise: 
+
+
+- [Global Markets Headlines](https://www.reuters.com/markets/)
+- [Rstudio and R for free online](https://rstudio.cloud/plans/free)
+- [Explore FRED](https://fred.stlouisfed.org/)
+- [Obtain a FRED API](https://fred.stlouisfed.org/docs/api/api_key.html)
+
+
+

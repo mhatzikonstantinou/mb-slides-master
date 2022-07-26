@@ -287,13 +287,13 @@ Japan, for example, has very few natural resources but very high real GDP per ca
 
 
 $$ 
-\text{GDP} = T \times \text{(Physical capital per worker)}^{1/3} \times \text{(Human capital per worker)}^{2/3}
+\text{GDP} = T \times \text{(Physical capital)}^{1/3} \times \text{(Human capital)}^{2/3}
 $$
 
 $$ 
-\text{GDP per worker} = T \times \text{(Physical capital per worker)}^{1/3} 
+\text{GDP per worker} = T \times H  \times \text{(Physical capital per worker)}^{1/3} 
 $$
-- where $T$ is an estimate of the level of technology, and human capital is years of education
+- where $T$ is an estimate of the level of technology, and $H$: human capital is years of education
 
 --
 

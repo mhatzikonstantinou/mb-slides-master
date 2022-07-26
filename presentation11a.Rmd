@@ -24,7 +24,7 @@ class: center,middle,mctitle-slide
 
 ---
 
-
+class: my-one-page-font
 
 # What will you learn in this lecture?
 
@@ -50,9 +50,10 @@ class: center,middle,mctitle-slide
 
 ---
 
+class: my-one-page-font
+
+
 #  Aggregate demand curve
-
-
 
 ```{r  out.width = "65%",out.length = "100%", fig.align = 'center',echo=FALSE}
 knitr::include_graphics("week11graphs/ADcurve.png") 
@@ -63,32 +64,29 @@ knitr::include_graphics("week11graphs/ADcurve.png")
 
 - __Aggregate demand curve:__ relates the aggregate price level and the quantity of aggregate output demanded 
 
-- The AD curve is __downward sloping:__ if the price level in 1933 had been 5 instead of 9.4, the quantity of domestic final goods and services demanded would have been $1,109 billion instead of $817 billion.
  
 ---
 
+class: my-one-page-font
+
 # Downward sloping ?
 
-Recall: 
-
-$$GDP = C + I + G + X − IM$$
-
+Recall:  $GDP = C + I + G + X − IM$
 
 - Why does a rise in the aggregate price level reduce C, I, and X − IM? 
  
-
 --
 
 - __The wealth effect:__ A higher aggregate price level reduces the purchasing power of households’ wealth and reduces consumer spending.
 
-  - FIXME
+
 --
 
-- __The interest rate effect:__ A higher aggregate price level makes households hold more money and  leads to a rise in interest rates (and a fall in investment spending and consumer spending).
-
-  - FIXME
+- __The interest rate effect:__ A higher aggregate price level makes households hold more money, households need more liquid money for payments when prices are high, less savings leads to a rise in interest rates (and a fall in investment spending).
   
 ---
+
+class: my-one-page-font
 
 # Aggregate demand curve and Income-Expenditure
 
@@ -99,17 +97,12 @@ knitr::include_graphics("week11graphs/ADmovement.png")
 
 --
 
-
-- The AD curve is derived from the income–expenditure model.
-
-- We now drop the assumption that the overall price level is fixed. When the aggregate price level changes, the $AE_{Planned}$ curve shifts.
-
+- When the aggregate price level changes, the $AE_{Planned}$ curve shifts.
 
 --
 
-
-- If the price level drops, planned spending rises at all output levels (from the wealth and interest-rate effects).
-- A multiplier process that moves the income–expenditure equilibrium from E1 to E2 and raises real GDP from Y1 to Y2.
+- If the price level drops, planned spending rises at all output levels.
+- A multiplier process that moves the income–expenditure equilibrium from E1 to E2.
 
 
 ---
@@ -123,6 +116,8 @@ knitr::include_graphics("week11graphs/ADshifts.png")
 
 ---
 
+class: my-one-page-font
+
 # Shifts in the Aggregate demand curve 
 
 - What happens when some factor changes spending patterns at every price level?
@@ -132,18 +127,9 @@ knitr::include_graphics("week11graphs/ADshifts.png")
 - The aggregate demand curve shifts because of changes in:
   - __Expectations:__ If consumers and firms become more optimistic, aggregate spending rises; if they become more pessimistic, aggregate spending falls.
   - __Wealth:__ When the real value of household assets rises, their purchasing power also rises, leading to an increase in aggregate spending.
-  - __Size of the existing stock of physical capital:__ Firms plan investment spending depending on how much physical capital they already have: the more they have, the less they will feel a need to add more.
-
---
-
-__Fiscal policy: __
-Government purchases of final goods and services, G, directly affect the aggregate demand curve because government purchases are a component of aggregate demand. 
-Taxes and government transfers influence the aggregate demand curve indirectly through their effect on disposable income. 
-
---
-
-__Monetary policy:__
-When the central bank increases the quantity of money in circulation, households and firms have more money to lend out which drives the interest rate down, leading to higher investment spending and higher consumer spending.
+  - __Size of the existing stock of physical capital:__ Firms plan investment spending depending on how much physical capital they already have.
+  - __Fiscal policy: __ Taxes and government transfers influence the aggregate demand curve indirectly through their effect on disposable income. 
+  - __Monetary policy:__ If the quantity of money in circulation, households lend out more money driving the interest rate down, leading to higher spending.
 
 
 ---
@@ -161,6 +147,8 @@ knitr::include_graphics("week11graphs/ADshiftfactor2.png")
 ```
 
 ---
+
+class: my-one-page-font
 
 # Factors that shift the Aggregate demand curve 
 
@@ -188,7 +176,7 @@ Example: The housing market crashes.
 
 # Aggregate Supply
 
-The curve shows the relationship between the aggregate price level and the quantity of aggregate output producers are willing to supply in the economy:
+The curve shows the relationship between the aggregate price level and the quantity of aggregate output supplied:
 
 --
 
@@ -238,9 +226,9 @@ knitr::include_graphics("week11graphs/ASshifts.png")
 
 
 The SRAS curve shifts because of changes in:
-- __Commodity prices:__
-- __Nominal wages:__
-- __Productivity:__ 
+- __Commodity prices__
+- __Nominal wages__
+- __Productivity__ 
 
 ???
 What happens when some factor changes production levels at every price level?
@@ -305,152 +293,3 @@ In the long run, prices have no effect on aggregate output because prices (inclu
 knitr::include_graphics("week11graphs/potential.png") 
 ```
 
----
-
-# From the Short Run to the Long Run
-
-
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/SRLR.png") 
-```
-
----
-
-# Sticky wages in the great recession
-
-
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/sticky.png") 
-```
-
-???
-If the theory of sticky wages were true, we’d find evidence that wages fail to fall even during periods of high unemployment. We do.
-
----
-
-# Equilibrium: The AD-AS model
-
-```{r  out.width = "60%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/sreq.png") 
-```
-
---
-
- - The economy is in short-run macroeconomic equilibrium when $Q_D=Q_S$
-
- - An event that shifts the aggregate demand curve is a demand shock.
-
- - An event that shifts the aggregate supply curve is a supply shock.
- 
-??? 
-The short-run equilibrium aggregate price level is the aggregate price level in the short-run macroeconomic equilibrium.
-Short-run equilibrium aggregate output is the quantity of aggregate output produced in the short-run macroeconomic equilibrium.
-
----
-
-# Demand Shocks
-
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/ADshock.png") 
-```
-
----
-
-# Supply Shocks
-
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/ASshock.png") 
-```
-
-- __stagflation:__ the combination of inflation and falling aggregate output. 
-
----
-
-
-
-# Supply Shocks or Demand Shocks
-
-
-- Which type of recession is more common?
-
-```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/ADvsAS.png") 
-```
-
-???
-Demand shocks are the usual culprit. Negative supply shocks are rare but nasty.
-
----
-
-# A negative Demand Shock
-
-```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/negative.png") 
-```
-
-
-???
-In the long run the economy is self-correcting: demand shocks have only a short-run effect on aggregate output.
-A negative demand shock shifts AD leftward, the economy moves to E2 and a recessionary gap arises: the aggregate price level and aggregate output both decline, and unemployment rises. 
-But in the long run nominal wages fall in response to high unemployment, and SRAS shifts  rightward. Long-run macroeconomic equilibrium is restored at E3.
-
-
-
----
-
-# A positive Demand Shock
-
-```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/positive.png") 
-```
-
-
-???
-Starting at E1, a positive demand shock shifts AD rightward, and the economy moves to E2 in the short run.
-This results in an inflationary gap as aggregate output and the aggregate price level both rise, and unemployment falls. 
-In the long run, nominal wages rise in response to low unemployment, and SRAS1 shifts leftward. The economy returns to long-run macroeconomic equilibrium.
-
----
-
-# Policy response to Demand Shocks
-
-> “But this long run is a misleading guide to current affairs. In the long run we are all dead. Economists set themselves too easy, too useless a task if in tempestuous seasons they can only tell us that when the storm is long past the ocean is flat again.”
-—J. M. Keynes
-
---
-
-- If policy makers react quickly to the fall in aggregate demand, they can use monetary or fiscal policy to shift the aggregate demand curve back to the right.
-- Instead of going through a recession, the government could make the economy stay at the original equilibrium.
-
---
-
-- Macroeconomic policy would be desirable because: 
-  - The temporary fall in aggregate output is associated with high unemployment.
-  - Preventing deflation is a good thing.
-
---
-
-- __Does this mean that policy makers should always act to offset declines in aggregate demand?__
-
-
---
-
-- policy measures may have long-term costs in terms of lower long-run growth (budget deficits, for example).
-- policy makers aren’t perfectly informed, and the effects of their policies aren’t perfectly predictable
-- stabilization policies may have adverse effects.
-
----
-
-# Policy response to Supply Shocks
-
-```{r  out.width = "75%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week11graphs/supplyshock.png") 
-```
-
---
-
-- A negative supply shock leads to a rise in prices and a rise in unemployment, which poses a policy dilemma:
-  - Stabilization of unemployment requires an increase in aggregate demand. This leads to inflation.
-  - Stabilization of prices requires a decrease in aggregate demand. This leads to higher unemployment.
-
-- In the 1970s, the United States chose to stabilize prices at the cost of higher unemployment.

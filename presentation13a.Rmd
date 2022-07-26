@@ -1,0 +1,282 @@
+
+
+# Money, Banking and the Federal Reserve System
+
+## Manolis Chatzikonstantinou  
+
+---
+
+class: my-one-page-font
+
+# What will you learn in this lecture?
+
+- What are the various roles money plays and what forms does it take?
+
+--
+
+- Why is the level of the money supply so important to the state of the economy?
+
+--
+
+- How do the actions of private banks and the Federal Reserve determine the money supply?
+
+--
+
+- How does the Federal Reserve use open market operations to change the monetary base?
+
+
+---
+
+#  The pandemic short run equilibrium
+
+
+---
+
+#  The CARES act
+
+
+---
+
+#  The response of wages
+
+
+---
+
+#  The response of wages
+
+---
+
+class: my-one-page-font
+
+#  The meaning of money
+
+- We often use the word money to mean wealth, but for economists, money doesn’t include all forms of wealth. 
+
+- Liquidity distinguishes money from other forms of wealth? 
+
+--
+
+- __Money:__ any asset that can easily be used to purchase goods and services
+  - __Currency in circulation:__ cash held by the public
+  - __Checkable bank deposits:__ bank accounts on which people can write checks
+
+--
+
+- __The money supply:__ total value of financial assets, considered money.
+  - __The narrower definition__ of money(most liquid):  currency in circulation and checkable bank deposits. 
+  - __The broader definition__ narrow definition + “almost” checkable assets such as savings account deposits. 
+ 
+
+??? 
+dollars vs stocks
+
+---
+
+class: my-one-page-font
+
+# The roles of money
+
+Money functions as: 
+  - a medium of exchange:
+     - something people accept as payment for goods and services
+
+
+--
+
+Money functions as: 
+  - a store of value:
+     - Money is a means of holding purchasing power over time.
+     - It enables people to save the money they earn today and use tomorrow.
+     
+--
+
+Money functions as: 
+  - a unit of account:
+    - Money provides a yardstick for measuring and comparing the values of a wide variety of goods and services.
+
+---
+
+class: my-one-page-font
+
+# Types of money
+
+1.    __Commodity money:__ a good, normally gold or silver, used as a medium of exchange that has intrinsic value in other uses. 
+2.    __Commodity-backed money:__ a medium of exchange with no intrinsic value; the ultimate value is guaranteed by a promise that it can be converted into valuable goods. 
+  - The big advantage of commodity-backed money was that it tied up fewer resources: 
+  - note-issuing banks kept only enough gold to 
+  - satisfy demands for redemption of its notes, and it could lend out the remaining gold and silver.
+3.    __Fiat money:__ money whose value derives entirely from its official status as a means of payment
+  - Fiat money has two advantages. First, it doesn’t use up any real resources beyond the paper it’s printed on. 
+  - Second, the supply of money can be adjusted based on the needs of the economy.
+  - Fiat money has two disadvantages: it can be counterfeited, and 
+  - governments can abuse the privilege of printing money. 
+
+---
+
+class: my-one-page-font
+
+# Measuring the money supply
+
+__Monetary aggregate:__ an overall measure of the money supply
+
+- __M1:__ includes only the most liquid forms of money.
+- __M2:__ includes near-moneys: financial assets that can’t be directly used as a medium of exchange.
+
+&lt;img src="week13graphs/m1m2.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: my-one-page-font
+
+# Banks and monetary policy
+
+- Roughly 43% of M1 is currency in circulation.
+- Bank deposits make up more than half of M1 and most of M2.
+- How does the banking system create money?
+
+--
+
+- Banks are financial intermediaries that use liquid assets to finance the illiquid investments of borrowers.
+- Banks create liquidity, but do not lend all the deposits:
+  - a bank must keep currency in the its vault or deposits at the Federal Reserve, 
+- __Bank reserves:__ the currency that banks hold in their vaults plus their deposits at the Federal Reserve
+
+
+---
+
+
+
+# Banks: A review
+
+__Bank:__ a financial intermediary that provides liquid assets to lenders and finances illiquid investment spending
+
+
+--
+
+- __Bank deposit:__ a claim on a bank that obliges the bank to give the depositor their cash when demanded
+- __Bank Loan:__ a claim of a bank that determines the time of payments from lenders
+
+--
+
+- A bank is lending for long periods of time while deposits can be demanded  at any time. How can it manage that?
+  - On average, only a small fraction of depositors will want their cash at the same time.
+  - a bank keeps only a limited amount of cash on hand to satisfy its depositors.
+  - bank deposits are guaranteed up to $250,000 by the Federal Deposit Insurance Corporation, or FDIC.
+  - __Bank runs__
+  
+  
+--
+
+- U.S. companies tend to issue bonds, while European companies rely on bank borrowing. Why the difference?
+
+???
+This reduces the incentive to withdraw funds if there are concerns about the bank.
+U.S. businesses are more inclined to take risks. Also, European banks have more money than 
+U.S. banks because Europeans tend to keep more money in banks than Americans
+
+
+---
+
+class: my-one-page-font
+
+# Reserve ratios and Bank runs
+
+.pull-left[
+| Assets |  | Liabilities |  |
+| :--- | ---: | :--- | :---: |
+| Loans | $1,200,000 | Deposits | $1,000,000 |
+| Reserves | $100,000 |  |  |
+]
+
+.pull-right[
+
+- __T-account:__ a tool for analyzing a business’s financial position by showing the business’s assets and liabilities
+- __The reserve ratio:__ the fraction of bank deposits that a bank holds as reserves 
+- The Federal Reserve sets a minimum required reserve ratio for banks.
+]
+
+--
+
+- From time to time, people get worried about banks losing their money.
+- __Bank run:__ a phenomenon in which many of a bank’s depositors try to withdraw their funds because they fear a bank failure
+- In the 1930s, for example, the wave of bank runs swept across the United States. 
+- In response to bank runs, the United States established a system of bank regulations that protect depositors.
+
+---
+
+class: my-one-page-font
+
+
+# The Balance Sheet of a Bank
+
+$$ \text { Leverage }=\frac{\text { Assets }}{\text { Your Skin in the Game }}=\frac{\text { Assets }}{\text { Equity }}$$
+
+--
+
+__How much capital should a bank have?__
+  - remember that the reason banks hold equity is to absorb possible losses on the assets they own
+
+--
+
+__A model of a bank__: 
+
+Assume a bank has an amount of debt (e.g. deposits) `\(D\)` and an amount of equity(net worth) `\((\bar{K})\)` also called capital. Its liabilities are `\(L=D+\bar{K}\)`, equal to its total assets: 
+
+
+- Leverage ratio  `\(\lambda=\frac{\text { Assets }}{\text { Net Worth }}=\frac{L}{K}\)`
+
+
+---
+
+class: my-one-page-font
+
+
+# Probability of default
+
+What is the probability that a bank will go broke? 
+
+It is the probability, that after a negative shock, the net worth becomes negative.
+--
+
+When is it higher?
+
+- the higher the
+fraction of total assets the bank invests in  risky assets, e.g. risky loans that
+ofter lose their value
+
+-  the higher the leverage ratio of the bank is. 
+
+
+???
+Banks may have a high λ and still be safe by keeping α lowñand indeed
+this was thought to be the case for European banks which own lots of
+"safe" government bonds. This is why Deutsche Bank was considered
+safe even with a value of λ almost three times that of Citi.
+
+
+
+---
+
+class: my-one-page-font
+
+# Bank regulation
+
+Bank regulation has four main features: 
+
+--
+
+__Deposit insurance:__  a guarantee that a bank’s depositors will be paid even if the bank can’t come up with the funds 
+
+--
+
+__Capital requirements:__ requirement that the owners of banks hold substantially more assets than the value of bank deposits
+  - Due to deposit insurance, banks can take more risks since they are insured.
+  - __Solution:__ banks’ capital is required to equal 7% or more of their assets.
+
+--
+
+__Reserve requirements:__ rules set by the Federal Reserve that determine the minimum reserve ratio for a bank
+
+__The discount window:__ an arrangement in which the Federal Reserve stands ready to lend money to banks in trouble
+
+---

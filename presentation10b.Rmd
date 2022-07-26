@@ -1,0 +1,335 @@
+---
+title: "Income and Expenditure"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: center,middle,mctitle-slide 
+
+
+# Income and Expenditure
+
+## Manolis Chatzikonstantinou  
+
+---
+
+class: my-one-page-font
+
+
+# What will you learn in this lecture?
+
+- What is the importance of the multiplier? 
+
+
+--
+
+- What is the aggregate consumption function? 
+
+
+--
+
+- How do expected future income and aggregate wealth  affect consumer spending?
+
+--
+
+- What determines investment spending, and why do we need to distinguish between planned investment spending and unplanned inventory investment?
+
+--
+
+- Why is investment spending considered a leading  indicator of the future state of the economy?
+
+
+---
+
+# Investment Spending
+
+
+```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/invbc.png") 
+```
+
+---
+
+# Investment Spending
+
+.pull-left[
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/invbc.png") 
+```
+]
+
+.pull-right[
+
+- Small yet powerful: Although much smaller than consumer spending, investment spending tends  to drive the booms and busts in the business cycle. 
+
+
+- __Planned investment spending:__ the investment spending that businesses intend to undertake during a given period. Depends on:
+1. Interest rate
+2. Expected future real GDP
+3. Current level of production capacity
+]
+
+
+---
+
+class: my-one-page-font
+
+# The effect of interest rates and capacity
+
+- Firms with investment spending projects will only go ahead with a project if they expect a rate of return higher than the cost of the project. 
+
+- If the interest rate rises, fewer projects will pass that test, and as a result investment spending will be lower. 
+
+- Conversely, a fall in the interest rate makes some investment projects profitable so that more projects will be funded.
+
+--
+
+- If a firm has extra capacity and doesn’t expect sales to increase, its investment will be lower.
+
+- Other things equal, the higher the current capacity, the lower the investment spending.
+
+---
+
+class: my-one-page-font
+
+# Future GDP and investment spending
+
+According to the accelerator principle: 
+- A higher rate of growth in real GDP leads to higher planned investment spending.
+- A lower growth rate of real GDP leads to lower planned investment spending.
+
+--
+
+- __Inventories:__ stocks of goods held to satisfy future sales
+- __Inventory investment:__ the value of the change in total inventories held in the economy during a given period
+- __Unplanned inventory investment:__ unplanned changes in inventories that occur when actual sales are more or less than businesses expected
+
+--
+
+???
+If a firm pays for projects out of retained earnings (past profits used to finance investment spending), the trade-off is the same because the firm must consider the opportunity cost of the funds. 
+
+
+
+---
+
+class: my-one-page-font
+
+# The income-expenditure model
+
+
+__Actual investment spending:__ the sum of planned investment spending and unplanned inventory investment
+So, in any period:    
+
+$$I = I_{Unplanned} + I_{Planned}$$
+
+--
+
+- We’ll see that the multiple rounds of changes in real GDP are accomplished through 
+  - changes in the amount of output produced by firms
+  - changes they make in response to changes in inventories. 
+
+
+
+---
+
+class: my-one-page-font
+
+# The income-expenditure model
+
+Recall the assumptions underling the multiplier process:
+1. Changes in overall spending lead to changes in aggregate output.
+2. The interest rate is fixed.
+3. Taxes, government transfers, and government purchases are all zero.
+4. Exports and imports are both zero.
+
+--
+
+Since we assume that there are no taxes or transfers,
+$$
+\begin{aligned}
+& YD  = G D P=C+I \text { and }
+C=A+M P C \times Y D
+\end{aligned}
+$$
+
+- If $I_{planned}$ is fixed and $A E_{Planned}$ the planned aggregate spending, so
+$$A E_{Planned }=C+I_{Planned }$$
+
+---
+
+# Planned aggregate spending and real GDP
+
+- __Example: If C = 300 + 0.6 × YD__
+
+
+| Real GDP (billions of dollars) | YD (billions of dollars) | C (billions of dollars) | $I_{Planned}$ (billions of dollars) | $AE_{Planned}$ (billions of dollars) |
+| :---: | :---: | :---: | :---: | :---: |
+| $0 | $0 | $300 | $500 | $800 |
+| 500 | 500 | 600 | 500 | 1,100 |
+| 1,000 | 1,000 | 900 | 500 | 1,400 |
+| 1,500 | 1,500 | 1,200 | 500 | 1,700 |
+| 2,000 | 2,000 | 1,500 | 500 | 2,000 |
+| 2,500 | 2,500 | 1,800 | 500 | 2,300 |
+| 3,000 | 3,000 | 2,100 | 500 | 2,600 |
+| 3,500 | 3,500 | 2,400 | 500 | 2,900 |
+
+--
+
+- Equilibrium When Real GDP = YD = $AE_{Planned}$
+
+
+---
+
+# Aggregate consumption and planned aggregate spending
+
+```{r  out.width = "75%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/AEplanned.png") 
+```
+
+
+---
+
+# Income Expenditure equilibrium
+
+-  The __income–expenditure equilibrium__: no unplanned inventory investment
+
+
+| Real GDP | $AE_{Planned}$ | $I_{Unplanned}$ |
+| ---: | :---: | ---: |
+| $0 | $800 | -$800 |
+| 500 | 1,100 | -600 |
+| 1,000 | 1,400 | -400 |
+| 1,500 | 1,700 | -200 |
+| 2,000 | 2,000 | 0 |
+| 2,500 | 2,300 | 200 |
+| 3,000 | 2,600 | 400 |
+| 3,500 | 2,900 | 600 |
+
+--
+
+- If firms overestimate sales and produce too much, there will be unintended additions to inventories, $I_{Unplanned}>0$
+
+- If firms underestimate sales and produce too little, there will be unintended additions to inventories, $I_{Unplanned}<0$
+
+---
+
+class: my-one-page-font
+
+# Income expenditure equilibrium
+
+$$
+\begin{aligned}
+\text { GDP } &=C+I =C+I_{\text {Planned }}+I_{\text {Unplanned }}  \\
+&=A E_{\text {Planned }}+I_{\text {Unplanned }}
+\end{aligned}
+$$
+- Whenever real GDP exceeds $A E_{\text {Planned }}, I_{\text {Unplanned }}$ is positive.
+
+- Whenever real GDP is less than $A E_{\text {Planned, }} I_{\text {Unplanned }}$ is negative.
+
+--
+
+> Firms will act to correct their mistakes. They change their output to eliminate the unanticipated changes in inventories and move the economy where real GDP = planned aggregate spending.
+
+--
+
+- Income–expenditure equilibrium GDP (Y*): the level of real GDP at which real GDP equals planned aggregate spending.
+
+???
+- The economy is in income–expenditure equilibrium when aggregate output (real GDP) is equal to planned aggregate spending.
+
+---
+
+# Income expenditure equilibrium: Graph
+
+```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/equil.png") 
+```
+
+
+---
+
+class: my-one-page-font
+
+# The multiplier and inventory adjustment
+
+What happens when there’s a shift of the planned aggregate spending line? 
+
+
+--
+
+ - In our simple model, there are only two possible sources of a shift of the planned aggregate spending line: 
+    - a change in planned investment spending, IPlanned,  
+    - a shift of the aggregate consumption function, CF. 
+--
+    - A change in IPlanned can occur because of a change in the interest rate. 
+    - A shift of the aggregate consumption function can occur because of a change in aggregate wealth—say, due to a rise in house prices. 
+
+
+---
+
+class: my-one-page-font
+
+# The multiplier and inventory adjustment
+
+- Autonomous spending $\uparrow$ by 400 (MPC = 0.6)
+
+| Real GDP | $AE_{Planned}$ before autonomous change | $AE_{Planned}$ after autonomous change |
+| :---: | :---: | :---: |
+| 0 | 800 | 1,200 |
+| 500 | 1,100 | 1,500 |
+| 1,000 | 1,400 | 1,800 |
+| 1,500 | 1,700 | 2,100 |
+
+---
+
+# The multiplier and inventory adjustment
+
+| Real GDP | $AE_{Planned}$ before autonomous change | $AE_{Planned}$ after autonomous change |
+| :---: | :---: | :---: |
+| 0 | 800 | 1,200 |
+| 500 | 1,100 | 1,500 |
+| 1,000 | 1,400 | 1,800 |
+| 1,500 | 1,700 | 2,100 |
+| 2,000 | 2,000 | 2,400 |
+| 2,500 | 2,300 | 2,700 |
+| 3,000 | 2,600 | 3,000 |
+| 3,500 | 2,900 | 3,300 |
+| 4,000 | 3,200 | 3,600 |
+
+--
+
+- When planned spending does not equal the aggregate output, this difference shows up in changes in inventories. 
+- Firms respond to inventory changes and move real GDP to Income–expenditure equilibrium GDP.
+- That’s why changes in inventories are a leading indicator of future economic activity.
+
+---
+
+# The multiplier and inventory adjustment
+
+
+```{r  out.width = "60%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/equil2.png") 
+```
+
+--
+
+$$\Delta Y^{*}=\text { Multiplier } \times \Delta A A E_{\text {Planned }}=\frac{1}{1-M P C} \times \Delta A A E_{\text {Planned }}$$
+
+???
+We can summarize these results in an equation, where ∆AAEPlanned represents the autonomous change in AEPlanned, and ΔY*=Y*2 – Y*1, the subsequent change in income–expenditure equilibrium GDP:
+Since MPC < 1, each round of increases in disposable income leaks out into savings. As a result, increases in real GDP diminish from one round to the next. At some point the increase in real GDP is negligible, and the economy converges to a new income–expenditure equilibrium GDP.
+
+

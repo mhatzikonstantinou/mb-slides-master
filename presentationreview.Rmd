@@ -1,0 +1,228 @@
+---
+title: "Review"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+## Review Question
+
+In an economy with no government and no foreign sectors, autonomous consumer spending is  250 billion, planned investment spending is  350 billion, and the marginal propensity to consume is 2/3.Plot the aggregate consumption function and planned aggregate spending:
+
+---
+
+## Review Question
+
+
+In an economy with no government and no foreign sectors, autonomous consumer spending is  250 billion, planned investment spending is  350 billion, and the marginal propensity to consume is 2/3.  What is the income-expenditure equilibrium GDP?
+
+---
+
+
+## Review Question
+
+In an economy with no government and no foreign sectors, autonomous consumer spending is  250 billion, planned investment spending is  350 billion, and the marginal propensity to consume is 2/3.What is the value of the multiplier?
+
+---
+
+
+## Review Question
+
+In an economy with no government and no foreign sectors, autonomous consumer spending is  250 billion, planned investment spending is  350 billion, and the marginal propensity to consume is 2/3. If planned investment spending rises to 450 billion, what will be the new  equilibrium output?
+
+
+
+---
+
+# Graph Question
+
+- The economy is in short-run macroeconomic equilibrium at point E1 in the accompanying  diagram.
+  1. Draw a graph of an inflationary gap:
+  
+  
+  
+
+---
+
+# Graph Question
+
+- The economy is in short-run macroeconomic equilibrium at point E1 in the accompanying  diagram.
+  2. If the government did not intervene to close this gap, would the economy return to long run macroeconomic equilibrium? Explain and illustrate with a diagram:
+  
+  
+  
+---
+
+# Graph Question
+
+- The economy is in short-run macroeconomic equilibrium at point E1 in the accompanying  diagram.
+  3. Illustrate the macroeconomic situation with a diagram after the successful fiscal policy has 
+been implemented. What would happen to prices if the fiscal policy, is larger than the 
+successful one?
+
+
+---
+
+# Short questions: what is the effect on M1 and M2?
+
+- You sell a few shares of stock and put the proceeds into your savings account.
+
+
+
+- You transfer money from your savings account to your checking account.
+
+
+
+- You discover 0.25 under the floor mat in your car and deposit it in your checking account.
+
+ 
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqa.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqb.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqc.png") 
+```
+
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqd.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqe.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqf.png") 
+```
+
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqg.png") 
+```
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqh.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqi.png") 
+```
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqj.png") 
+```
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqk.png") 
+```
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pql.png") 
+```
+
+
+

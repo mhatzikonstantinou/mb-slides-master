@@ -1,0 +1,388 @@
+---
+title: "Income and Expenditure"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: center,middle,mctitle-slide 
+
+
+# Income and Expenditure
+
+## Manolis Chatzikonstantinou  
+
+---
+
+class: my-one-page-font
+
+
+# What will you learn in this lecture?
+
+- What is the importance of the multiplier? 
+
+
+--
+
+- What is the aggregate consumption function? 
+
+
+--
+
+- How do expected future income and aggregate wealth  affect consumer spending?
+
+--
+
+- What determines investment spending, and why do we need to distinguish between planned investment spending and unplanned inventory investment?
+
+--
+
+- Why is investment spending considered a leading  indicator of the future state of the economy?
+
+
+---
+
+class: my-one-page-font
+
+# The Multiplier: an informal introduction 
+
+-  Rise or fall in aggregate spending leads to changes in income, 
+  - which lead to further changes in aggregate spending. 
+  - Let’s examine that chain reaction more closely. 
+
+--
+
+Four simplifying assumptions: 
+  1. Producers are willing to supply additional output at a fixed price.
+  2. Changes in aggregate spending translate into  changes in aggregate output (NOT PRICES)
+  3. We take the interest rate as given.
+  4. There is no government spending, no taxes and  no Exports and imports.
+
+---
+
+class: my-one-page-font
+
+# The Multiplier: an informal introduction 
+
+
+__Example:__ Suppose home builders spend an extra 100 billion on home construction: 
+  - Aggregate output will increase by 100 billion. 
+
+1. leads to increased profits and wages that flow to households, 
+2. leads to increased consumer spending, which,
+3. leads to increased  output yet again. 
+
+--
+
+- There are multiple rounds of increases in aggregate output. 
+
+- How large is the total effect on aggregate output if we sum the effect from all these rounds of spending increases? 
+
+???
+Since households and firms are mutually
+interdependent (recall the circular flow), booms
+and busts involve chain reactions
+The multiplier helps us understand the extent of the
+chain reactions
+
+---
+
+class: my-one-page-font
+
+
+# The Multiplier: an informal introduction 
+
+__Marginal Propensity to Consume, or MPC__: the increase in consumer spending when disposable income rises by $1.
+
+$$ M P C=\frac{\Delta \text { consumer spending }}{\Delta \text { disposable income }}$$
+
+--
+
+For example, if consumer spending goes up by $6 and disposable income goes up by $10, MPC = $6/10 = 0.6
+
+--
+
+- Marginal propensity to save, or MPS: the fraction of an additional dollar of disposable income that is saved.
+
+$$MPS = 1 − MPC \text{ (Whatever is not spent is saved)} $$
+
+---
+
+class: my-one-page-font
+
+# The Multiplier: an informal introduction 
+
+
+__Example continued:__ 
+  1. The $ 100 billion increase in investment spending raises real GDP by 100 billion.
+  2. a second-round increase in real GDP: $M P C \times  100$ billion.
+  3.  a third-round increase in real GDP: $M P C \times M P C \times  100$ billion.
+  4. ...
+  5.  After an infinite number of rounds, the total effect on real GDP:
+$$\left(1+M P C+M P C^{2}+M P C^{3}+\ldots\right) \times  100 = \frac{1}{1-M P C} \times  100$$
+
+???
+Mathematical fact:
+$1+x+x^{2}+x^{3}+\cdots=\frac{1}{1-x}$ if $x$ is between 0 and 1 .
+Total increase in real GDP from a $\$ 100$ billion rise is
+
+---
+
+class: my-one-page-font
+
+# The multiplier
+
+- It’s important to distinguish between the initial change and the additional change in aggregate spending as the chain reaction unfolds. 
+- An initial change in spending at a given level of real GDP is called an __autonomous change in aggregate spending__. 
+  - the multiplier is the ratio of the total change in real GDP to the autonomous change in aggregate spending 
+--
+
+- If ΔAAS is an autonomous change in aggregate spending and ΔY = change in real GDP,
+
+$$
+\begin{array}{l}\Delta Y=\frac{1}{1-\mathrm{MPC}} \times \Delta \mathrm{AAS} \\ \text { And the multiplier }=\frac{\Delta Y}{\Delta \mathrm{AAS}}=\frac{1}{1-\mathrm{MPC}}\end{array}
+$$
+Let $\mathrm{MPC}=0.8$ and $\Delta \mathrm{AAS}=100$ Multiplier $=\frac{1}{1-0.8}=5$
+
+---
+
+class: my-one-page-font
+
+# Current disposable income and consumer spending
+
+- Consumer spending accounts for two-thirds of total spending on final goods and services. 
+
+- But what determines how much consumers spend? The most important factor is __current disposable income.__
+
+--
+
+- Current disposable income: income after taxes are paid and government transfers are received 
+
+ 
+
+
+---
+
+class: my-one-page-font
+
+# Current disposable income and consumer spending
+
+```{r  out.width = "90%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/consinc.png") 
+```
+
+---
+
+class: my-one-page-font
+
+# The consumption function
+
+__Consumption function:__ how an individual household’s consumer spending varies with the household’s disposable income:
+
+$$ c=a+M P C \times y d$$
+
+ - $c=$ household's consumer spending
+ - $y d=$ household disposable income
+ - $M P C=$ marginal propensity to consume
+ - $a=$ what a family would spend even with zero income
+
+---
+
+class: my-one-page-font
+
+# The aggregate consumption function
+
+
+- __Aggregate consumption function:__ the relationship for the economy as a whole between aggregate disposable income and aggregate consumer spending
+
+$$C = A + MPC × YD$$
+
+--
+
+
+Recall $M P C=\Delta \mathrm{C} / \Delta \mathrm{YD}$. Multiplying both sides of the equation by $\Delta \mathrm{YD}$, we get: 
+
+$$M P C \times \Delta YD=\Delta C$$
+
+In other words, when $YD$ goes up by  1, c goes up by $M P C \times 1$,
+
+
+???
+Same form as consumption function, just aggregate
+
+---
+
+# The consumption function: Graph
+
+```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/consgraph.png") 
+```
+
+
+---
+
+# The consumption function in the data
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/consdata.png") 
+```
+
+---
+
+# Shifts in the aggregate consumption function 
+
+```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/consshift1.png") 
+```
+
+---
+
+class: my-one-page-font
+
+
+# What causes shifts in C?
+
+- __Changes in Expected Future Disposable Income:__
+  - __Permanent income hypothesis:__ "Consumer spending depends on the expected income  over the long term rather than current income" 
+  - For example, expectations of higher incomes lead consumers to spend more, shifting the aggregate consumption function up.
+
+--
+
+- __Changes in Aggregate Wealth:__  
+  - __the life-cycle hypothesis:__"consumers plan their spending— they try to smooth their consumption—over their lifetimes"
+  - For example, a rise in aggregate stock market indices
+
+--
+
+- Did the aggregate consumption function shift after WWII? 
+???
+—say, because of a booming stock market—increases aggregate autonomous consumer spending, shifting the aggregate consumption function up.
+
+---
+
+# Aggregate consumption shifted after WWII 
+
+```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week10graphs/ww2.png") 
+```
+
+- Panel (a) shows aggregate data on disposable income and consumer spending from 1929 to 1941 when a simple linear consumption function, CF1, fitted the data well.
+
+- Panel (b) shows that the aggregate consumption function shifted up after World War II because consumers grew increasingly confident that economic boom would continue, and wealth was steadily increasing.
+
+---
+
+class: my-one-page-font
+
+# THe effect of Taxes
+
+A lump-sum tax will decrease disposal income
+
+$$Y d=Y-T$$
+
+- Thus, consumption function becomes:
+
+$$C=a+M P C *(Y-T)=a+M P C * Y-M P C * T$$
+
+
+--
+
+- Equal changes in government spending and taxation lead to an equal change in income.
+
+- If a $1 billion increase in spending is financed by a $1 billion tax increase, GDP rises $1 billion regardless of the MPC.
+
+__THE BALANCED BUDGET MULTIPLIER IS ALWAYS 1__
+
+
+???
+The only difference is that the consumption decreases by $M P C * T$
+
+---
+
+class: my-one-page-font
+
+# The Balanced Budget Multiplier
+
+- Suppose we increase government spending and taxes both by $10 billion; what would happen to real GDP?
+
+1. $\Delta Y$ from government purchases increase $=\Delta G \times \frac{1}{1-M P C}$
+2. $\Delta Y$ from tax increase $=\Delta T \times \frac{-M P C}{1-M P C}$
+
+--
+
+So the overall $\Delta Y$ is the sum of these:
+ $$\Delta Y= 10 \text{ billion} \times \frac{1}{1-M P C}+ 10 \text{ billion}  \times \frac{-M P C}{1-M P C} = 10  \text{ billion}$$
+
+---
+
+class: my-one-page-font
+
+# The Balanced Budget Multiplier
+
+
+- __Recessionary gap:__ the increase in aggregate spending necessary to bring a depressed economy back to full employment
+- __Inflationary gap:__ the decrease in aggregate spending necessary to bring an overheated economy back to full employment"
+
+--
+
+- Inflationary pressures occur when an economy produces output above full employment 
+- Excess spending results in higher prices, which can lead to other economic problems
+
+--
+
+-  The recessionary gap is the spending needed to close the GDP gap when boosted by the multiplier
+
+---
+
+class: my-one-page-font
+
+# What about Exports and Imports?
+
+- So far no international trade
+
+--
+
+- For the US economy good approximation, but not for Qatar
+
+--
+
+- After a change in income/wealth
+  - consumption of both imported goods and local goods $\uparrow$
+  - What matters for our story is $MPC_{local}$ vS $MPI$(imports)
+  
+--
+
+- Exports is a source of income
+  - If foreigners increase autonomous spending in goods we export:
+  - generates a cycle similar to the one we studied
+  
+  
+---
+
+class: my-one-page-font
+
+# What do you think happened?
+
+- According to our book:
+
+  - annual growth rate in N. Dakota between 2009 and 2012 was 15%
+  - 3 times that of the US
+--
+
+- Most of the growth was from Mining, 31%
+--
+
+- But there was substantial increase in other sectors:
+  - 17% in Wholesale
+  - 9% in Retail
+  - 12% in Finance

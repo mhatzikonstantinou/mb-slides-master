@@ -1,0 +1,300 @@
+---
+title: "Guideline for writing final papers"
+author: "Manolis Chatzikonstantinou"
+date: '2022-07-22'
+output: pdf_document
+editor_options: 
+  markdown: 
+    wrap: 72
+bibliography: references.bib
+urlcolor: blue
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This is a document that provides instructions on how to prepare your
+presentation and complete your final paper. That means you have to read
+this document carefully. This document provides concrete suggestions on
+the process and what I expect as an output of your work. However, this
+document does not provide technical documentation or instructions on how
+to use software to write a paper. You may use any software you choose,
+as long as it allows you to complete the assignment.
+
+## Procedure
+
+General Steps:
+
+    1. Selection of topic
+    2. Researching the sources
+    3. Reading the sources
+    4. Organizing the material
+    5. Preparing the outline and presentation 
+    6. Authoring the paper and submission 
+
+## Choice of Theme
+
+Pick one of the research question that are suggested in the syllabus and
+are repeated below:
+
+1.  The long run effects of Banking crisis-interventions.
+2.  Financial Markets in an inflationary environment.
+3.  Monetary policy for a Post-Pandemic World.
+4.  Digital Assets and Banking regulation
+
+information on useful literature is provided for you in the end of the
+document. It is not compulsory though to read the suggested papers, and
+you may use the papers you have researched. It is advisable to choose
+and declare your preferred topic before the end of September, i.e. give
+your team a month to work on the paper. Make sure you communicate your
+topic with me soon, the plan is that each topic would be at least
+presented twice.
+
+## Aspects of evaluation
+
+The following aspects will be condisered in evaluating your paper:
+
+    - introduction: clear formulation of the research question; 
+    - content: 
+      - literature review and use, 
+      - consistency/reasoning, 
+      - depth and accuracy 
+      - critical reflection;
+    - formalities: 
+      - references/citation, list of figures/tables;
+    - Conclusion
+      - clear summary of the topic and your arguments
+
+## Working on your topic
+
+After having agreed on a topic with the instructor, It is advised to
+start with a thorough search of scientific literature (textbooks and
+suggested readings) with relevance to your topic. Next you should try to
+get hold of this literature and do a first sorting. At the end you
+should be able to narrow your focus and write a first outline. In
+preparing your outline, keep in mind your presentation. Your
+presentation and your outline should follow a similar structure that
+your final paper will have:
+
+### Structure of your paper
+
+#### Introduction
+
+The introduction should include:
+
+-   The relevance of your topic
+-   The research question or statement
+-   Your purpose or goal (if different to your question)
+-   Methods used and description of your approach
+-   Your outline and preview of the results
+
+**All questions raised in the introduction have to be answered until the
+conclusion**
+
+#### Main Part
+
+The main part is the core of the paper with respect to content. Some
+advice you should keep in mind:
+
+-   Economists like facts
+-   The academic community cares a lot about correct reference to
+    previous scholarly work
+-   You arguments should be comprehensible. Also, keep them as short as
+    it is sufficient to ensure your logic goes through. Try not to
+    repeat yourself.
+-   Do not produce pure statements without giving reasons/facts.
+-   Make sure not to lose the thread!
+
+Lastly, I repeat here that you should **not** try to use ideas from
+other papers as your own. If you include direct speech or other authors'
+ideas always cite your sources! If you paraphrase authors make sure to
+use your own interpretation and language. Copying without proper
+citation would probably mean a **violation of the GU-Q Honor Code**, see
+[here](https://www.qatar.georgetown.edu/academics/academic-affairs/honor-system/).
+Citing and writing properly can be time consuming and tedious. I provide
+a few suggestions and guidelines in this document, but you can also use
+the resources the university provide you. The GU-Q [Writing
+Center](https://guides.qatar.georgetown.edu/home/writing) is a valuable
+resource. In terms of citations, I suggest that you follow the
+instructions [here](https://guides.qatar.georgetown.edu/home/citing).
+This would help you manage citations in a programmatic way but if you
+choose not to, make sure to follow a specific formulation, e.g. if the
+scholarly work is by Author A and Author B in year 19XX you should say:
+
+-   According to the Author A and Author B(19XX)...
+-   Author A and Author B(19XX) argue that...
+-   The Author A and Author B(19XX) consider ...
+-   These results were reported in Author A and Author B(19XX) ...
+
+#### Conclusion
+
+The conclusion should include no new arguments or research questions. If
+you introduce new questions, this should be done only as a suggestion
+for future research. In this part you should summarize the main
+arguments of the main part of your paper. Do not introduce new
+literature at this point. Repeat the main result of your analysis.
+**This is the space for you to repeat what your audience should remember
+in terms of your work and your primary question!**
+
+#### Appendix
+
+Sometimes it is advisable to complete your paper by adding an appendix
+with three sections. One bibliography section, a theoretical section and
+a figures/tables section.
+
+In bibliography, you should list your sources, all the scientific work
+you cited in your paper. Then, there is a theoretical section which in
+many papers is not needed and skipped. The theory section includes a
+summary of the methodology, mathematical formulas and proofs that are
+related to the arguments in the paper. A Figures / Tables, which repeats
+all the figures or tables in your paper, which should be labelled
+accordingly.
+
+### Proofreading
+
+Some suggestions:
+
+-   Make correct use of language in your paper.
+-   Make use but do not rely exclusively on spelling checkers of your
+    text software.
+-   Do a thorough proofreading before submitting your paper.
+-   If possible ask your friends to read your paper and make
+    corrections.
+-   Proofreading can take a few hours so account for that in your plan.
+
+### Submission
+
+Deliver your term paper by the end of the semester, and no later than
+November 8th. Deliver a printed version to my office and an electronic
+version in my email. The first page should be a cover page which should
+include the following information: - Name of the faculty - Name of the
+institute - Title of paper\
+- Authors - date of delivery
+
+In the cover page, include the author's declaration. Make sure to fill
+the relevant declaration.
+
+#### Declaration of independent work
+
+Each paper has to be accompanied by a declaration of independent work.
+Preferably, included in the title page. If the declaration is missing,
+the paper **will not be accepted**. The declaration form can be found
+here:
+
+**Declaration**
+
+We herewith declare that we wrote the following paper about the topic
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ independently. I did not use
+any other sources, figures or resources than the ones stated in the
+bibliography. This includes possible figures or tables. I marked all
+passages and sentences in my work that were taken from other sources
+clearly as such and named the exact source. Furthermore I declare that -
+to my best knowledge - this work has never before been submitted by me
+or somebody else at this or any other university. I am aware that a
+noncompliance with this declaration may result in a grading of my work
+as "insufficient" and may be reported to the Honor Council.
+
+Authors:
+
+(names here)
+
+(dates and signatures below)
+
+### Expected Time
+
+When planning your paper and presentation, bear in mind that
+approximately a third of the time will be necessary for search of the
+necessary literature, reading and understanding. A third should be
+allocated on writing a detailed outline and presentation. The last third
+remains for the final formulation and writing.
+
+### Expected Output
+
+1.  **Length:** 1500-2000 words. (or about 6-8 pages, 1 page = approx.
+    250 words). The word and page count do not include the cover page.
+2.  **Figures and Tables:** You need to use some material on the subject
+    matter from a newspaper, paper or online source. If it is
+    appropriate it might be good to replicate the same sort of material
+    using some data work.
+3.  **Formatting**:
+
+-   Please leave a margin of approx. 2-3 cm on both sides.
+-   Use a readable font, e.g. Times New Roman in 12 pt.
+-   Footnotes should be identified by superscripts without brackets. The
+    number of the footnote in the text should correspond to the number
+    of the footnote in the footnotes section.
+-   Correct citation: literature references in the text must follow the
+    rules of the [Chicago citation
+    style](https://guides.qatar.georgetown.edu/home/Chicago)
+-   The list of your literature is to be put at the end of your paper.
+    The reference specifications have to be given in the following
+    order:
+-   Authors, Year of publication. Title. Place of publication:
+    Publishing house. (See examples below)
+-   If your citation is taken from another source, both sources have to
+    be mentioned.
+-   When citing several titles of a same author in a certain year,
+    allocate alphabetical letters for the different titles, cite the
+    titles by using these letters and sort them accordingly (e.g. Author
+    19XXa; 19XXb; 19XXc).
+
+4.  **Bibliography:** Use at least three academic sources for
+    information in writing your paper. These can be text, scientific
+    books or articles.The quality of a scientific paper depends -- among
+    others -- on the amount of literature used. As a first orientation
+    to a topic, 100-200 pages of readings are advisable.
+
+You can find a list of relevant books and papers below:
+
+1.  The long run effects of Banking crisis-interventions.
+
+-   A list of Banking crisis-interventions can be found in
+    [@metrick2021] and the data, they used in the paper in
+    [Metrick-Schmelzing Paper and
+    Database](https://som.yale.edu/centers/program-on-financial-stability/metrick-schmelzing-paper-and-database)
+-   A review on the length and costs of banking crises and interventions
+    is given by [@frydl1999] and [@cecchetti].
+
+2.  Financial Markets in an inflationary environment.
+
+-   An article by [@domash2022] on [Overheating conditions indicate high
+    probability of a US
+    recession](https://voxeu.org/article/overheating-conditions-indicate-high-probability-us-recession)
+-   An article by [@goodhart2021] on [What may happen when central banks
+    wake up to more persistent
+    inflation?](https://voxeu.org/article/what-may-happen-when-central-banks-wake-more-persistent-inflation)
+-   A textbook by [@ibbotson] on [Stocks, Bonds, Bills, and Inflation](https://www.cfainstitute.org/-/media/documents/book/rf-publication/2021/sbbi-summary-edition-2021.pdf)
+
+3.  Monetary policy for a Post-Pandemic World.
+
+-   An article by [@ambrocio2022] on [The optimal inflation target:
+    Views from 600
+    economists](https://voxeu.org/article/optimal-inflation-target-views-600-economists)
+-   An article by [@masciandaro2022] on [Central banks and climate
+    policies: Unpleasant trade-offs are
+    likely](https://voxeu.org/article/central-banks-and-climate-policies)
+-   A summary by [@clarida] of the [The Federal Reserve's New Framework:
+    Context and
+    Consequences](https://www.federalreserve.gov/econres/feds/files/2022001pap.pdf)
+
+4.  Digital Assets and Banking regulation
+
+-   An article by [@jamet2022] on [Monetary policy and financial
+    stability implications of central bank digital
+    currencies](https://voxeu.org/article/monetary-policy-and-financial-stability-implications-central-bank-digital-currencies)
+-   An article by [@eça2021] on [The real effects of FinTech lending on
+    small and medium-sized
+    enterprises](https://voxeu.org/article/monetary-policy-and-financial-stability-implications-central-bank-digital-currencies)
+-   A summary of Fintech innovations by [@boot2020] found
+    [here](https://voxeu.org/article/old-and-new-fintech)
+-   More resources on the topic of [Central bank digital currencies,
+    community currencies, and the reinvention of
+    money](https://voxeu.org/article/central-bank-digital-currencies-community-currencies-and-reinvention-money)
+    and [Technology and
+    Finance](https://voxeu.org/content/technology-and-finance)
+    
+## Bibliography

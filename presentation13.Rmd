@@ -37,6 +37,7 @@ class: center,middle,mctitle-slide
 --
 
 - How do the actions of private banks and the Federal Reserve determine the money supply?
+
 --
 
 - How does the Federal Reserve use open market operations to change the monetary base?

@@ -1,0 +1,119 @@
+---
+title: "Flow of Funds in the United States"
+author: "Manolis Chatzikonstantinou"
+date: '2022-07-23'
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Getting Data from the Federal Reserve
+
+Load the packages and connect to the database API
+
+```{r echo=FALSE}
+pacman::p_load(fredr,extrafont,purrr,tidyverse,ggplot2,gt,glue)
+
+
+
+fredr::fredr_set_key("3bc35d4a8b94bd0f461a3a61f3d804ba")
+```
+
+```{r}
+
+data<-fredr_source_releases(
+  source_id = 1L
+)
+
+
+# Create a gt table based on preprocessed
+# `sp500` table data
+data %>% head(5) %>% select(name,link) %>% set_names("Table","Link") %>% 
+  gt()  %>%
+  tab_header(
+    title = "Data available in the FRED",
+    subtitle = "Provided by the Board of Governors of the Fed"
+  ) %>%
+  tab_options(
+    container.width = pct(85),
+    container.overflow.x = T,
+    table.align = "center",
+    table.width = pct(85),
+    table.layout = "auto"
+  )
+```
+
+We care about the following table:
+```{r}
+
+
+# Create a gt table based on preprocessed
+# `sp500` table data
+data %>% slice(10) %>% select(name,link) %>% set_names("Table","Link") %>% 
+  gt()  %>%
+  tab_header(
+    title = "Data available in the FRED",
+    subtitle = "Provided by the Board of Governors of the Fed"
+  ) %>%
+  tab_options(
+    container.width = pct(85),
+    container.overflow.x = T,
+    table.align = "center",
+    table.width = pct(85),
+    table.layout = "auto")
+```
+
+
+You may be interested about other data published in the database. If you would like to learn more, you can make use of the [Categories endpoint](https://fred.stlouisfed.org/docs/api/fred/#Categories) of the FRED API. In particular, FRED series are assigned categories. Each FRED category is assigned an integer identifier. For example:
+  - "Population, Employment, & Labor Markets" (category_id = 10)
+  - "National Accounts" (category_id = 32992)
+  - "Production & Business Activity" (category_id = 1)
+
+Then, you can see what are the subcategories related to each category:
+
+```{r}
+fredr_category_children(category_id = 1L)
+```
+
+The function `fredr_category_series()` returns detailed information for the FRED series belonging to the category specified by `category_id`. For example, to get the top 10 annual series in the "Population, Employment, & Labor Markets" category by popularity:
+
+```{r}
+fredr_category_series(
+  category_id = 1L, limit = 10L, order_by = "popularity",sort_order="desc")
+```
+
+You can find also the more recent releases
+
+```{r}
+fredr_releases_dates()
+
+```
+
+The function fredr_release_series() returns a set of series belonging to the FRED release specified by release_id. The data returned is a tibble where each row represents a series in the release specified. For example, to get series in the Employment Cost Index release:
+
+
+
+```{r}
+fredr_release_series(release_id = 11L)
+```
+
+Note the parameters available to filter series belonging to a release:
+
+```{r}
+fredr_release_series(
+  release_id = 10L,
+  filter_variable = "frequency",
+  filter_value = "Monthly",
+  order_by = "popularity",
+  sort_order = "desc",
+  limit = 10L
+)
+```
+Get the categories for a FRED series
+The fredr_series_categories() function returns a list of categories for the series specified by series_id. The data returned is a tibble in which each row represents a category that the series belongs to. For example, to get the categories for the UNRATE series:
+
+fredr_series_categories(series_id = "UNRATE")

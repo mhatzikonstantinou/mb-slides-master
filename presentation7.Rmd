@@ -36,7 +36,7 @@ class: center,middle,mctitle-slide
 
 --
 
-- __How does growth vary among several important regions of the world?__
+- __How do we account for different sources of growth?__
 
 - __Convergence Hypothesis and applications__
 
@@ -47,6 +47,10 @@ class: center,middle,mctitle-slide
 # Growth accounting
 
 > __Growth accounting:__ estimates of the contribution of each major factor in the aggregate production function to economic growth
+
+> __Labor productivity:__ the amount of output that can be produced with a given amount of labor inputs
+
+--
 
 > __Total factor productivity:__ the amount of output that can be produced with a given amount of factor inputs
 
@@ -72,9 +76,15 @@ class: center,middle,mctitle-slide
 
 # Total Factor Productivity 
 
-- $TFP =\mathrm{A}=\mathrm{Y} / \mathrm{F}(\mathrm{K}, \mathrm{L})$
- 
-- Basically, TFP is a 'catch-all' for anything that effects output other than capital input $\mathrm{K}$ and education-adjusted labor $\mathrm{L}$.
+- From our aggregate production function:
+
+$$ 
+\text{GDP} = T \times \text{(Physical capital)}^{1/3} \times \text{(Human capital)}^{2/3} = T \times H  \times  \text{(K)}^{1/3} \times \text{(L)}^{2/3}
+$$
+
+- To Total Factor Productivity (anything that effects output other than capital input $\mathrm{K}$ and education-adjusted labor $\mathrm{L}$)
+
+$$TFP =\mathrm{A}=\mathrm{Y} / \mathrm{F}(\mathrm{K}, \mathrm{L})$$
 
 --
 
@@ -93,7 +103,7 @@ knitr::include_graphics("week7graphs/cbpf.png")
 
 - Infrastructure/Market access
 
-- Misallocation
+- Misallocation/Quality of Inputs
 
 - Innovation
 
@@ -126,19 +136,53 @@ knitr::include_graphics("week7graphs/grac.png")
 - Capital has been growing faster than labor
 - The contribution of productivity is diminishing!
 
+
 ---
 
-# EAST ASIA’S MIRACLE (1 of 2)
+# Questions for class
 
-- It took South Korea only 35 years to achieve growth that required centuries elsewhere.
-- Since 1975, the East Asian region has increased real GDP per capita by 6% per year, more than three times America’s historical rate of growth.  
-- How have the Asian countries achieved such high growth rates?
+The change in read GDP per capita depends on 
+
+$$\text{1.} \Delta K$$
+- __What can affect the change in total capital units available?__
 
 --
 
-- Very high savings rates allow businesses to borrow and add more physical capital per worker. 
-- Very good basic education has permitted a rapid improvement in human capital. 
-- Substantial technological progress
+$$\text{2.} \Delta L$$
+- __What can affect the change in labor input?__
+
+--
+
+$$\text{3.} \Delta TFP$$
+- __What can affect the change in total capital units available?__
+
+---
+
+# Growth around the world
+
+
+```{r  out.width = "80%",fig.align='center',echo=FALSE}
+knitr::include_graphics("week7graphs/hist.png") 
+```
+
+
+---
+
+# East Asia’s miracle
+
+- It took South Korea only 35 years to achieve growth that required centuries elsewhere.
+- Since 1975, the East Asian region grew ( RGDP per capita) by 6% per year, more than three times the US growth rate. How?
+--
+
+- $K$:Very high savings rates allow businesses to borrow and add more physical capital per worker. 
+
+--
+
+- $L$:Very good basic education has permitted a rapid improvement in human capital. 
+
+--
+
+- $TFP$:Substantial technological progress
 
 --
 
@@ -166,21 +210,19 @@ knitr::include_graphics("week7graphs/argentina.png")
 
 ---
 
-# AFRICA’S TROUBLES AND PROMISE 
+# Africa’s Troubles and promise 
 
 - What’s holding much of Africa back?
 
 --
 
 - Government corruption
-- Civil wars and 
-- political instability
+- Civil wars and  political instability
 - Unfavorable geography
 
 --
 
 - Is Africa poor because it’s politically unstable or unstable because it’s poor? 
-
 
 --
 
@@ -245,6 +287,22 @@ Economic success of the United States has been possible because there are good l
 
 ---
 
+# Questions for class
+
+- We would like all countries to achieve high rates of growth
+
+- __Is it possible for all countries to have a level of per-capita GDP equivalent to that of the United States?__
+
+--
+
+- __Are there enough resources to sustain growth rates as those in SE Asia?__
+
+--
+
+- __Would the quality of the environment be negatively affected?__
+
+---
+
 # Is world growth sustainable?
 
 .pull-left[
@@ -277,11 +335,10 @@ As China and other emerging economies have grown, they began to emit much more c
 
 #  Economic growth and the environment
 
-- Economic growth tends to have the adverse impact on the environment:
+- Economic growth tends to have adverse impact on the environment:
   - pollution, loss of wildlife habitats, extinction of species, and reduced biodiversity.
-  - There’s local environmental degradation and global environmental degradation. 
-  - It’s easier to reduce local environmental harm and it’s more difficult to address global environmental degradation, in particular, the problem of climate change. 
-
+  - There’s local effect and a global effect of environmental 
+  - Tradeoff of developing counties: industrialize but generate harm for all households in the world  
 --
 
 __Climate change:__ changes in Earth’s climate brought about by human activity 
@@ -291,7 +348,7 @@ __Climate change:__ changes in Earth’s climate brought about by human activity
 --
 
 - Climate change is been a hard problem to solve because it requires the cooperation of many countries.
-- Paris Agreement of 2015
+
 - China and India agreed to limit their emissions, and the rich countries committed to help poorer countries pay the cost. 
 
 

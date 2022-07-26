@@ -1,0 +1,27 @@
+---
+title: "P-Quiz 8"
+author: "Manolis Chatzikonstantinou"
+date: "1/31/2022"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+What number is the letter A in the English alphabet?
+
+1.  8
+
+2.  14
+
+3.  1
+
+4.  23

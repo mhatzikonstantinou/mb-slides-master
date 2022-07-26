@@ -1,0 +1,164 @@
+---
+title: "Review"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
+    lib_dir: libs
+    nature:
+      highlightLines: true
+      countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
+---
+
+class: my-one-page-font
+
+# Question 1
+
+
+```{r  out.width = "40%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("ps7.png") 
+```
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqa.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqb.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqc.png") 
+```
+
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqd.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqe.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqf.png") 
+```
+
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqg.png") 
+```
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqh.png") 
+```
+
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqi.png") 
+```
+
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqj.png") 
+```
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pqk.png") 
+```
+
+---
+
+class: my-one-page-font
+
+# Short Question
+
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("pql.png") 
+```
+

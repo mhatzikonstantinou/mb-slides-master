@@ -1,5 +1,5 @@
 ---
-title: "GDP and the CPI: Tracking the Macroeconomy"
+title: "What Is Money?"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,7 +18,7 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# GDP and the CPI: Tracking the Macroeconomy II
+# Money and Interest rates: A definition
 
 ## Manolis Chatzikonstantinou  
 
@@ -28,395 +28,399 @@ class: center,middle,mctitle-slide
 # What will you learn today?
 
 
-- _What is gross domestic product (GDP), and how is it calculated?_
+- In this chapter, we develop precise definitions by exploring the functions of money, looking at why and how it promotes economic efficiency, tracing how its forms have evolved over time, and examining how money is currently measured.
 
 --
 
-- __What is the difference between real GDP and nominal GDP, and why is real GDP the appropriate measure of real economic activity?__
+3.1 Describe what money is
+3.2 List and summarize the functions of money
+3.3 Identify different types of payment systems
+3.4 Compare and contrast the M1 and M2 money supplies
+3.5 The cost of holding money
+---
 
- - Prices of goods and services are different when we study the same economy in different time periods,
-  
-  - Real GDP adjusts for the different Price Level
+# Meaning of Money
 
+- Money (or the “money supply”): anything that is generally accepted as payment for goods or services or in the repayment of debts.
+A broad definition
 
---
+Money (a stock concept) is different from:
+__Wealth:__ the total collection of pieces of property that serve to store value
+__Income:__ flow of earnings per unit of time (a flow concept)
 
-- __What is a price index, and how is it used to calculate the inflation rate?__
-
- - Measures cost of the "same basket of goods" in different years. 
- 
---
-
-**Why?**
-
-- From  **International Monetary Fund** data: In 2017–2018, the nominal GDP of Venezuela grew from 2 to 2,039 billion in national currency–a 101,850% increase.At the same time, there are food riots in the country. 
-
-- From  **Bureau of Economic Analysis** data: In 2000, the value of output produced by the soft drink industry was $3.3 billion. In 2006, that number was $4.1 billion $\rightarrow$ the United States’ GDP increased by $800 million as a result of soft drink production. 
-
-
-
+Functions of Money
+  - Medium of Exchange
+  - Unit of Account:
+  - Store of Value:
 
 ---
 
-# Nominal GDP and Real GDP
+# Functions of Money 
 
-- Nominal GDP is the value of goods and services produced during a given year **valued at the prices of that year**.
---
+Medium of Exchange:
+Eliminates the trouble of finding a double coincidence of needs (reduces transaction costs)
+Promotes specialization
+A medium of exchange must:
+be easily standardized
+be widely accepted
+be divisible
+be easy to carry
+not deteriorate quickly
 
-
-- Real GDP is the value of final goods and services produced in a given year **valued at the prices of a reference base year**.
---
-
-- The current base year is 2012: **"Real GDP shows what GDP would have been in each year if goods were priced in 2012 dollars."**
---
-
-
-.pull-left[
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week3graphs/nominalgdptable.png") 
-```
-]
-.pull-right[
-__Calculating nominal GDP__
-
-- Table 4.3 (a) shows the quantities produced and the prices in 2009 (the base year) and in 2014. 
-
-- Nominal GDP in 2009 is $100 million.
-
-- Because 2009 is the base year, real GDP equals nominal GDP and is $100 million.
-
-- Nominal GDP in 2014 is three times its value in 2009.
-]
---
-???
-If we add up consumer spending, investment spending, government purchases, exports and subtract imports, we will get the market value of the goods and services the economy produces—the country’s gross domestic product.
+Unit of Account:
+Used to measure value in the economy
+Reduces transaction costs
+Store of Value:
+Used to save purchasing power over time.
+Other assets also serve this function.
+Money is the most liquid of all assets but loses value during inflation.
 
 ---
 
-# Calculating Nominal GDP
+# Evolution of the Payments System (1 of 2)
 
-```{r  out.width = "55%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week3graphs/nominalgdptable.png") 
-```
+Commodity Money: valuable, easily standardized, and divisible commodities (e.g. precious metals, cigarettes)
+Fiat Money: paper money decreed by governments as legal tender
+Checks: an instruction to your bank to transfer money from your account
+Electronic Payment (e.g. online bill pay)
+E-Money (electronic money):
+Debit card
+Stored-value card (smart card)
+E-cash
 
----
+- Are We Headed for a Cashless Society?
 
-# Calculating Real GDP 
+Predictions of a cashless society have been around for decades, but they have not come to fruition.
+Although e-money might be more convenient and efficient than a payments system based on paper, several factors work against the disappearance of the paper system.
+However, the use of e-money will likely still increase in the future.
 
-
-.pull-left[
-```{r  out.width = "85%",echo=FALSE}
-knitr::include_graphics("week3graphs/realgdptable.png") 
-```
-]
-
-
-.pull-right[
-
-- Let's calculate real GDP in 2014.
-
-
-- The quantities are those of
-2014, as in part (b).
-
-
-- The prices are those in the
-base year (2009) 
-
-
-- The sum of these
-expenditures is real GDP
-in 2014, which is $160
-million
-]
+- Will Bitcoin Become the Money of the Future?
 
 ---
 
+# Measuring Mone
 
-# GDP Deflator
-
-
-```{r  out.width = "80%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week3graphs/gdpdeflator.png") 
-```
-
-???
-Exercise to follow the steps for 2018
----
-
-# GDP Statistics
-
-- How is GDP usually presented?
-
---
+How do we measure money? Which particular assets can be called “money”?
+Construct monetary aggregates using the concept of liquidity:
 
 ```{r  out.width = "50%",echo=FALSE}
-knitr::include_graphics("week3graphs/gdpstats.png") 
-```
-
-- **What is the base year?**
-
---
-
-- Where is the deflator?
-???
-Except for the base year, real GDP (output at prices of a base year) is not the same as nominal GDP (output at current prices).
-
-
---
-
--  Does Real GDP = Welfare/Standard of Living?
-
-???
-China: 14.72 trillion USD (2020) vs France 2.603 trillion USD(2020)
-Not an end in itself as it does not address how a country uses that output to affect living standards.
-
----
-
-
-# GDP and the meaning of life
-
-
-$$
-\text { Real GDP Per capita  }=\frac{\text { Real GDP }}{\text { Population }}
-$$
-
-
---
-
-__Uses and limitations of real GDP__
-
-- Measure The Standard of Living Over Time
-- Real GDP per person tells us the value of goods and services that the **average person** can enjoy.
-
-
---
-
-- For example, in the U.S. in 1960, real GDP per person was $15,850$ $ and in 2012 , it was $42,800$ $.
-- So real GDP per person in 2012 was $2.7$ times its 1960 level.
-
---
-
-__Some Shortcomings:__
-
-- Nonmarket activities and Leisure
-- Improved product quality
-- GDP and the environment
-- Noneconomic sources of well being
-
---
-
-
-
-[The Economist, Growth does not mean happiness](https://www.economist.com/graphic-detail/2019/03/21/economic-growth-does-not-guarantee-rising-happiness)
-
-
-???
-By using real GDP, we remove any influence that rising prices and a rising cost of living might have had on our comparison. 
-HOUSEWORK AND CHILDCARE
-Distributional Macroeconomics
-GDP can also be a poor measure of the living standards in
-various nations.
-To get around the problem, economists use purchasing power
-parity (PPP) PPP),
-
----
-
-# Aggregate Price Indeces
-
-- __Aggregate price level:__ a measure of the overall level of prices in the economy
-
-- To measure the aggregate price level, economists calculate the cost of purchasing a market basket.
-
-- **Market basket:** a hypothetical set of consumer purchases
-of goods and services
-
---
-
-__Price index:__ the cost of purchasing a given market basket
-in a given year, where that cost is normalized so that it is
-equal to 100 in the selected base year
-
---
-$$
-\text{Price index in a given year} = 
-$$
-
-
-$$
-\frac{\text{Cost of market basket in a given year}}{\text{Cost of market basket in base year}}\times 100
-$$
-
-
----
-
-# Calculating the cost of a market basket
-
-|  | January | February |
-| :--- | :--- | :--- |
-| Price of orange | $$ \$ 0.20 $$ | $$ \$ 0.40 $$ |
-| Price of grapefruit | $$ \$ 0.60 $$ | $$ \$ 1.00 $$ |
-| Price of lemon | $$ \$ 0.25 $$ | $$ \$ 0.45 $$ |
-| Cost of market basket (200 oranges, 50 grapefruit, 100 lemons ) | $$(200 \times 0.20) + (50 \times 0.60)+ (100 \times 0.25) = \$95.00 $$| $$ = \$175.00 $$ |
-
---
-
-- The CPI in the USA measures the cost of the market basket of a typical urban American family
-
---
-- __The inflation rate:__ the yearly percentage change in a price
-index, typically based on consumer price index (CPI), the
-most common measure of the aggregate price level.
-
---
-
-
-
-
-
-$$
-\textbf{Inflation rate: } \frac{\text{Price index in year 2 - Price index in year 1}}{\text{Price index in year 1}}\times 100
-$$
-
----
-
-# The consumer price index 
-
-
-The makeup of the consumer price index in 2010
-
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week3graphs/cpibasket.png") 
+knitr::include_graphics("week3graphs/maggregates.png") 
 ```
 
 
+- Table 1 Measures of the Monetary Aggregates
+
+Source: Federal Reserve Statistical Release, H.6, Money Stock Measures:
+https://www.federalreserve.gov/releases/H6/current
+
+
 ---
 
-# Consumer Prices in the long run
+# The Federal Reserve’s Monetary Aggregates 
 
-.pull-left[
+M1 versus M2: Does it matter which measure of money is considered?
+M1 and M2 can move in different directions in the short run (see figure).
+Conclusion: the choice of monetary aggregate is important for policymakers.
+
+- Where Are All the U.S. Dollars?
+The more than $4,500 of U.S. currency held per person in the United States is a surprisingly large number.
+
+
+```{r  out.width = "50%",echo=FALSE}
+knitr::include_graphics("week3graphs/m1m2g.jpg") 
+```
+
+- https://fred.stlouisfed.org/series/M1SL
+
+
+
+---
+
+class: my-one-page-font
+
+# The opportunity cost of holding money
+
+- We all carry some cash for the convenience, but that convenience comes with a price:
+  - Cash yields no return, no interest
+  - Funds in demand deposits are more accessible than those in Treasury bills, but they earn only 0.06%. 
+  - The most accessible asset—cash in your wallet—earns zero. 
+
+--
+
+- __Short-term interest rates:__ financial assets that mature within less than a year
+- __Long-term interest rates:__ financial assets that mature a number of years in the future
+
+--
+
+|  | March 2019 | March 2020 |
+| :--- | :---: | :---: |
+| Federal funds rate | 2.41% | 0.65% |
+| One-month Treasury bills | 2.45% | 0.37% |
+| Interest-bearing demand deposits | 0.06% | 0.06% |
+| Treasury bills minus interest-bearing demand deposits | 2.35 | 0.31 |
+| Treasury bills minus currency| 2.41 | 0.37 |
+
+- What happened to the opportunity cost of holding money between 2019 and 2020? 
+
+???
+The opportunity cost of holding money declined sharply between 2019 and 2020. 
+
+---
+
+# Measuring Interest Rates
+
+Present value: a dollar paid to you one year from now is less valuable than a dollar paid to you today.
+- Why: a dollar deposited today can earn interest and become $\$ 1 \times(1+i)$ one year from today.
+
+-- 
+
+- What is the value off 100 saved after $n$ years?
+  - Depends on how you save:
+Let $i=.10$
+    - In one year: $\$ 100 \times(1+0.10)=\$ 110$
+    - In two years: $\$ 110 \times(1+0.10)=\$ 121$
+    - or $\$ 100 \times(1+0.10)^{2}$
+    - In $n$ years
+$$
+\$ 100 \times(1+i)^{n}
+$$
+
+--
+
+- What is the value off 100 received after 1 or 2 or $n$ years?
+  - Can not directly compare, but:
+
+$$
+\mathrm{PV}=\frac{\mathrm{CF}}{(1+i)^{\mathrm{n}}}
+$$
+where P V = today’s (present) value
+C F = future cash flow (payment)
+i = the interest rate
+
+
+
+# What Is Money?
+
+## Manolis Chatzikonstantinou  
+
+---
+
+
+# What will you learn today?
+
+
+- Can we directly compare money received in different dates?
+
 ```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week3graphs/cpichange.png") 
+knitr::include_graphics("week4graphs/presentvalues.png") 
 ```
-]
 
 
+--
 
-.pull-right[
-- The annual percentage increases in recent years have been much smaller than those of the 1970s and early 1980s.
-
-- Evidence that using **real** GDP matters for comparisons over time
-
-- Changes in **prices** + Changes in the **market basket**
-]
-
+4.1 Calculate the present value of future cash flows and the yield to maturity on the four types of credit market instruments.
+4.2 Recognize the distinctions among yield to maturity, current yield, rate of return, and rate of capital gain.
+4.3 Interpret the distinction between real and nominal interest rates.
 
 ---
 
-# Other Price Indices
+#  How Much Is That Jackpot Worth? 
 
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week3graphs/cpistats.png") 
-```
-]
 
-.pull-right[
+Assume that you just hit the $20 million jackpot in the New York State Lottery, which promises you a payment of $1 million every year for the next 20 years. You are clearly excited, but have you really won $20 million?
 
-- __CPI__: Based on consumption basket and prices consumers pay!
 
-- __Producer price index (PPI):__ similar to the CPI, but measures changes in the prices of goods purchased by producers
+Assume that you just hit the $20 million jackpot in the New York State Lottery, which promises you a payment of $1 million every year for the next 20 years. You are clearly excited, but have you really won $20 million?
+No, not in the present value sense. In today’s dollars, that $20 million is worth a lot less.
+(Clue: assume an interest rate of 10% and work out the present value of $20 million over ten years)
 
-- Economists also use the GDP deflator that measures the price level by calculating the ratio of nominal to real GDP.
+---
 
+# Four Types of Credit Market Instruments
+
+Simple Loan
+Fixed Payment Loan
+Coupon Bond
+Discount Bond
+
+--
+
+Unifying way to measure returns:
+
+  - Yield to Maturity
+  Yield to maturity: the interest rate that equates the present value of cash flow payments received from a debt instrument with its value today
+
+--- 
+
+# Yield to Maturity on a Simple Loan
 
 $$
-\text { GDP deflator }=100 \times \frac{\text { Nominal GDP }}{\text { Real GDP }}
+\begin{aligned}
+&\mathrm{PV}=\text { amount borrowed }=\$ 100 \\
+&\mathrm{CF}=\text { cash flow in one year }=\$ 110 \\
+&n=\text { number of years }=1 \\
+&\$ 100=\frac{\$ 110}{(1+i)^{1}} \\
+&(1+i) \$ 100=\$ 110 \\
+&(1+i)=\frac{\$ 110}{\$ 100} \\
+&i=0.10=10 \%
+\end{aligned}
 $$
-]
----
-
-# Practice Problem: Calculating GDP
-
-|  | 2012 |  | 2013 |  | 2014 |  |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  | P | Q | P | Q | P | Q |
-| good A | $30 | 900 | $31 | 1,000 | $36 | 1,050 |
-| good B | $100 | 192 | $102 | 200 | $100 | 205 |
-
---
-
-- Compute nominal GDP in each year.
-
-- Compute real GDP in each year using 2012 as the base year.
-
---
-
-- nominal GDP multiply Ps and Qs from same year
-
-  - 2012: $$ \$ 46,200= \$30 \times 900+ \$ 100 \times 192$$
-
---
-  - 2013: $ 51,400
-  - 2014: $ 58,300
-
---
+For simple loans, the simple interest rate equals the yield to maturity
 
 ---
 
+# Fixed-Payment Loan
 
-# Practice Problem: Calculating GDP
-
-|  | 2012 |  | 2013 |  | 2014 |  |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-|  | P | Q | P | Q | P | Q |
-| good A | $30 | 900 | $31 | 1,000 | $36 | 1,050 |
-| good B | $100 | 192 | $102 | 200 | $100 | 205 |
-
---
-
-- Compute real GDP in each year using 2012 as the base year.
-
-
-
---
-
-real GDP multiply each year's Qs by 2012 Ps
-
-  - 2012: $46,200
-
---
-
-- 2014: $$ \$ 52,000=\$ 30 \times 1050+\$ 100 \times 205 $$
+The same cash flow payment every period throughout the life of the Ioan
+$\mathrm{LV}=$ Ioan value
+$\mathrm{FP}=$ fixed yearly payment
+$n=$ number of years until maturity
+$$
+\mathrm{LV}=\frac{\mathrm{FP}}{1+i}+\frac{\mathrm{FP}}{(1+i)^{2}}+\frac{\mathrm{FP}}{(1+i)^{3}}+\ldots+\frac{\mathrm{FP}}{(1+i)^{n}}
+$$
 
 ---
 
+# Coupon Bond
 
-# Practice Problem: Inflation
+Using the same strategy used for the fixed-payment loan:
+P = price of coupon bond
+C = yearly coupon payment
+F = face value of the bond
+n = years to maturity date
+
+$$
+\mathrm{P}=\frac{\mathrm{C}}{1+i}+\frac{\mathrm{C}}{(1+i)^{2}}+\frac{\mathrm{C}}{(1+i)^{3}}+\ldots+\frac{\mathrm{C}}{(1+i)^{n}}+\frac{\mathrm{F}}{(1+i)^{n}}
+$$
+
+When the coupon bond is priced at its face value, the yield to maturity equals the coupon rate.
+The price of a coupon bond and the yield to maturity are negatively related.
+The yield to maturity is greater than the coupon rate when the bond price is below its face value.
 
 
-- Use your previous answers to compute the GDP deflator in each
-year.
-- Use GDP deflator to compute the inflation rate from 2012 to
-2013, and from 2013 to 2014.
+| Price of Bond ($) | Yield to Maturity (%) |
+| :---: | :---: |
+| 1,200 | 7.13 |
+| 1,100 | 8.48 |
+| 1,000 | 10.00 |
+| 900 | 11.75 |
+| 800 | 13.81 |
+
+--- 
+
+# Consols and Discount Bonds
+
+Consol or perpetuity: a bond with no maturity date that does not repay principal but pays fixed coupon payments forever
+
+$P=C / i_{c}$
+$P_{c}=$ price of the consol
+$C=$ yearly interest payment
+$I_{C}=$ yield to maturity of the consol
+can rewrite above equation as this: $i_{c}=C / P_{c}$
+
+For coupon bonds, this equation gives the current yield, an easy to calculate approximation to the yield to maturity
 
 --
 
+Discount Bond
 
-|  | Nom. GDP | Real GDP | GDP deflator | Inflation rate |
-| :---: | :---: | :---: | :---: | :---: |
-| 2012 | $46,200 | $46,200 | 100.0 | n.a. |
-| 2013 | 51,400 | 50,000 | 102.8 | 2.8% |
-| 2014 | 58,300 | 52,000 | 112.1 | 9.1% |
+For any one year discount bond
+$$
+i=\frac{\mathrm{F}-\mathrm{P}}{\mathrm{P}}
+$$
+$\mathrm{F}=\mathrm{Face}$ value of the discount bond
+$P=$ Current price of the discount bond
+
+- The yield to maturity equals the increase in price over the year divided by the initial price.
+- What is a negative interest rate ? ( recent experience in Japan and several European states.)
 
 
---
+---
 
-* GDP deflator $(2008)=100 \times \frac{51,400}{50000}=102.8$
+# The Distinction Between Interest Rates and Returns 
 
---
+Rate of Return:
 
-* Inflation rate $(2008)= \frac{102.8 - 100}{100} = 0.028$
+- The payments to the owner plus the change in value expressed as a fraction of the purchase price
+
+$$
+\text { RET }=\frac{C}{P_{t}}+\frac{P_{t+1}-P_{t}}{P_{t}}
+$$
+$\mathrm{RET}=$ return from holding the bond from time $t$ to time $t+1$
+$P_{t}=$ price of bond at time $t$
+$\mathrm{P}_{t+1}=$ price of the bond at time $t+1$
+$C=$ coupon payment
+$\frac{\mathrm{C}}{\mathrm{P}_{t}}=$ current yield $=i_{c} \quad \frac{\mathrm{P}_{t+1}-\mathrm{P}_{t}}{\mathrm{P}_{t}}=$ rate of capital gain $=g$
+
+The return equals the yield to maturity only if the holding period equals the time to maturity.
+A rise in interest rates is associated with a fall in bond prices, resulting in a capital loss if time to maturity is longer than the holding period.
+The more distant a bond’s maturity, the greater the size of the percentage price change associated with an interest-rate change.
+
+
+
+---
+
+# The Distinction Between Interest Rates and Returns
+
+
+The more distant a bond’s maturity, the lower the rate of return the occurs as a result of an increase in the interest rate.
+Even if a bond has a substantial initial interest rate, its return can be negative if interest rates rise.
+
+
+Table 2 One-Year Returns on Different-Maturity 10%-Coupon-Rate Bonds When Interest Rates Rise from 10% to 20%
+
+| (1) Years to Maturity When Bond Is Purchased | (2) Initial Current Yield (%) | Initial Price I | Price Next Year* ($)
+| Rate of Capital Gain (%)| Rate of Return (%)|
+
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 30 | 10 | 1,000 | 503 | -49.7 | -39.7 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 20 | 10 | 1,000 | 516 | -48.4 | -38.4 |
+| 10 | 10 | 1,000 | 597 | -40.3 | -30.3 |
+| 5 | 10 | 1,000 | 741 | -25.9 | -15.9 |
+| 2 | 10 | 1,000 | 917 | -8.3 | +1.7 |
+| 1 | 10 | 1,000 | 1,000 | 0.0 | +10.0 |
+
+---
+
+# Maturity and the Volatility of Bond Returns: Interest-Rate Risk
+
+
+Prices and returns for long-term bonds are more volatile than those for shorter-term bonds.
+There is no interest-rate risk for any bond whose time to maturity matches the holding period.
+
+Nominal interest rate makes no allowance for inflation.
+Real interest rate is adjusted for changes in price level so it more accurately reflects the cost of borrowing.
+Ex ante real interest rate is adjusted for expected changes in the price level
+Ex post real interest rate is adjusted for actual changes in the price level
+
+-- 
+
+__Fisher Equation
+$$
+\begin{aligned}
+&i=i_{r}+\pi^{e} \\
+&i=\text { nominal interest rate } \\
+&i_{r}=\text { real interest rate } \\
+&\pi^{e}=\text { expected inflation rate }
+\end{aligned}
+$$
+
+???
+When the real interest rate is low, there are greater incentives to borrow and fewer incentives to lend. The real interest rate is a better indicator of the incentives to borrow and lend.
+
+---
+
+# Replication
+
+
+
+```{r  out.width = "50%",echo=FALSE}
+knitr::include_graphics("week4graphs/Picture1.jpg") 
+```
+
+- https://fred.stlouisfed.org/series/TB3MS
+- https://fred.stlouisfed.org/series/CPIAUCSL
 
 ---
 
@@ -426,14 +430,6 @@ year.
 
 __Useful Links__
 
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week3graphs/inflationpandemic.png") 
-```
-
-]
-
-.pull-right[
 
 The following websites provide information on U.S. GDP, inflation, unemployment, and many other interesting macroeconomic variables:
 
@@ -446,6 +442,4 @@ The following websites provide information on U.S. GDP, inflation, unemployment,
 - [Learning more about Prices & Inflation](https://www.bea.gov/resources/learning-center/what-to-know-prices-inflation)
 
 - [The Billion Price Project—Inflation in real time](http://www.thebillionpricesproject.com/) 
-
-]
 

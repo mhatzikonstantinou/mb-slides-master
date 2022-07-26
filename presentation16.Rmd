@@ -1,5 +1,5 @@
 ---
-title: "Macroeconomics: Events and Ideas"
+title: "Macroeconomics Review"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,315 +18,377 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Macroeconomics: Events and Ideas
+# Macroeconomics Review of Ideas
 
 ## Manolis Chatzikonstantinou  
 
 ---
 
-
+class: my-one-page-font
 
 # What will you learn in this lecture?
 
--  Why was classical macroeconomics inadequate for the problems posed by the Great Depression?
 
---
-
-- How did John Maynard Keynes and the experience of the Great Depression legitimize macroeconomic policy activism?
-
---
-
-- Why did the original focus of Keynesian economics on fiscal policy give way to emphasis on monetary policy?
-
---
-
-- Why did economists come temporarily to have great faith in the power of independent central banks to stabilize the economy?
-
---
-
-- How have events since 2008 undermined that faith and also changed views on deficits and debt?
-
----
-
-# Classical and Keynesian Macroeconomics 
-
-The main ideas of classical macroeconomics:
-The short run is unimportant.
-Prices are assumed to be flexible. 
-The aggregate supply curve is vertical even in the short run.
-Any increase in money supply leads to inflation and no effect on aggregate output.
-
---
-
-The Great Depression showed that economists cannot ignore the short run.
-During the Great Depression, there was no theory of the business cycle, and economists were giving conflicting and often harmful advice:
-Some argued that the government must take over and replace markets with a command economy. 
-Others argued that slumps were natural—even beneficial—and that nothing should be done.
-And some argued that slumps should be cured. The most compelling advocate for this view was John Maynard Keynes.
-
----
-
-# Keynes’s theory
-
-Keynes’s The General Theory of Employment, Interest, and Money (1936) is one of the most influential books on economics ever written.
-Keynes shifted the economists’ focus from the unreachable long run to the short run, in which people actually live.
-
---
-
-Keynes’s two main innovations:
-Keynes emphasized the importance of the short run effects of a change in aggregate demand on aggregate output.
-Keynes argued that changes in “animal spirits”—business confidence—cause the business cycle.
-
---
-
-Do not to confuse Keynes with socialism.
-Keynes himself was no socialist and not much of a leftist.
-When The General Theory was published, many intellectuals believed the capitalist system was dying and socialism was the only solution. 
-In contrast, Keynes argued that socialism was not the answer and all the capitalist system needed was a narrow technical fix.
-In that sense, his ideas were procapitalist and politically conservative.
-
----
-
-# Classical and Keynesian Macroeconomics 
-
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week16graphs/classickeynes.png") 
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week16graphs/friedmankeynes.png") 
 ```
+---
+
+class: my-one-page-font
+
+
+# True and False Questions
+ 
+- Monetary neutrality occurs when changes in the money supply have no effect on real aggregate output, __TRUE, by definition__.
+
+- The Quantity Theory of Money is always assuming money in neutral,  __FALSE, not necessarily__. The quantity theory of money describes only the relationship of inflation, gdp and money supply gorwth. 
+
+- During periods of hyperinflation, economists believe that the long run equilibrium provides better prediction on the effect of money supply growth on output  and prices.  __TRUE, economists believe wages are flexible when there is hyperinflation and the SRAS is the same as the LRAS__.
+
+---
+
+class: my-one-page-font
+
+# True and False Questions
+
+- Unexpected deflation affects negatively lenders and positively borrowers. __FALSE, the opposite is true__.
 
 
 ---
 
-# Policy to fight recessions
+class: my-one-page-font
 
-Keynes’s work legitimized macroeconomic policy activism—the use of monetary and fiscal policy to smooth out the business cycle.
-Before Keynes, macroeconomic policy activism was often half-hearted and insufficient. 
-When the administration of Franklin Roosevelt engaged in modest deficit spending, the economy improved. 
-When, in 1937, Roosevelt balanced the federal budget and raised interest rates, the result was a renewed slump.
 
---
+# Very important  TF Question
 
-What economists learned from Keynes was that economic recovery requires aggressive fiscal expansion. 
-When wartime deficit spending lifted the economy out of the Great Depression, the debate over Keynes’s views finally ended.
-
---
-
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week16graphs/recessions.png") 
-```
-
+- An increase in the money supply causes an increase in output in the short run and an increase in output in the long run.  __FALSE, in the long run, real variables are not affected__.
 
 ---
 
-# Challenges to Keynesian Economics
-
-Keynes’s ideas did not go unchallenged. 
-Keynes believed that monetary policy is ineffective during recessions, especially if it’s in the liquidity trap when the interest rate cannot be pushed any lower.
-When the era of near-zero interest rates came to an end after World War II, economists reassessed the importance of monetary policy. 
-
---
-
-In 1963, Milton Friedman and Anna Schwartz published A Monetary History of the United States, 1867–1960.
+class: my-one-page-font
 
 
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week16graphs/friedman.png") 
-```
+# Very important  TF Question
 
-
---
-
-They argued that business cycles were historically associated with fluctuations in the money supply.
-The Great Depression could have been avoided if the Fed had acted to increase the monetary base.
+- An increase in the interest rate, without a change in the money supply curve, can happen due to    __shifts in the money demand curve__              
 
 ---
 
-# Monetarism
+class: my-one-page-font
 
-A provocative idea emerged:
-Monetary policy should play a key role in economic management.
-Economic management could be taken out of the hands of politicians. 
-Macroeconomics can become more technical and less political.
+# True and False Questions
 
---
+- The zero lower bound implies that monetary policy can not be used after a shock to the oil price, caused by the war in Ukraine, to deal with inflationary pressure.   __FALSE, the zero lower bound restricts only the implementation of contractionary monetary policy__.
 
-Milton Friedman led a movement to eliminate all forms of macroeconomic policy activism—fiscal and monetary.
-Monetarists asserted that:
-Activist macroeconomic policy (fiscal or monetary) can only make things worse.
-GDP would grow steadily if the money supply grows steadily.
-The best way to manage the economy is with nonactivist monetary policy.
-
---
-
-Like Keynes, Friedman asserted
-That the short run was important
-That short-run changes in aggregate demand affected aggregate output as well as aggregate prices
-That macroeconomic policy should have been more expansionary during the Great Depression
-Unlike Keynes, Friedman argued
-That any activist policy, fiscal or monetary, made things worse
-That time lags limit discretionary fiscal policy and discretionary monetary policy
-That an autopilot approach is the best
-A monetary policy rule is a formula that determines the central bank’s actions.
-
----
-
-# Limits to Macroeconomic Policy
-
-Another criticism of Keynesian economics: 
-Keynesians believed that governments could use expansionary fiscal policy to achieve full employment on a permanent basis. 
-Friedman and Phelps’s natural rate hypothesis: any attempt to keep unemployment below a minimum level would lead to ever-rising inflation.
-The 1970s proved this hypothesis right, one of the triumphs of macroeconomic analysis. 
-If governments can’t keep unemployment below the natural rate, they should just try to keep it stable around the natural rate. 
-
---
-In the same time -> computers change macroeconomics!
-In the 1970s and 1980s, the classical view evolved into new classical macroeconomics:
-Rational expectations
-Real business cycle theory
-
----
-
-# Rational expectations and new Classical Economics
-
-Rational expectations: individuals and firms make decisions optimally, using all available information
-
-The original hypothesis: a government attempt to push unemployment below the natural rate would work in the short run but will eventually fail.
-Rational expectations: a government attempt to push unemployment down will immediately fail.
-When workers and employers bargain over wage contracts, they use all available information to account for future inflation.
-Robert Lucas: monetary policy can change output and unemployment only if it comes as a surprise to the public.
-
---
-
-Real business cycle theory: business cycles are caused by fluctuations in the rate of growth of productivity, not by demand shocks.
-Economic data indicate that demand shocks do play a role in business cycle.
-
---
-
-New Keynesian economics became influential in the 1990s. 
-It argues that market imperfections make many prices in the economy temporarily sticky. And with sticky prices, expected inflation can’t rise quickly enough to offset activist macroeconomic policy.
-
----
-
-# The political Business Cycle
-
-The final challenge to Keynes:
-Macroeconomic policy activism lends itself to political manipulation. 
-An obvious temptation for politicians: Pump up the economy in an election year and pay the price in higher inflation and/or higher unemployment later. 
-A political business cycle: political use of macroeconomic policy to serve political ends
-Richard Nixon’s expansionary fiscal and monetary policy led to rapid growth just before the 1972 election and a sharp acceleration in inflation after the election. 
-Kenneth Rogoff proclaimed Nixon “the all-time hero of political business cycles.”
-
---
-
-MOre here
-
----
-
-# Supply-side Economics
-
-In the 1970s, a group of economic writers proposed supply-side economics. 
-They urged the government to cut taxes arguing that tax cuts would boost incentives to work and increase potential output. 
-In 1980, Ronald Reagan made supply-side economics the basis of his presidential campaign.
-
---
-
-There is no evidence that would support supply-side economics. 
-Although tax cuts boost incentives to work and invest, the current U.S. tax rates aren’t high enough.
-According to the Congressional Budget Office, potential output didn’t increase after the Reagan tax cuts, and it didn’t fall after the Clinton tax hikes of 1993.
-In 2012, Kansas passed large cuts in state taxes. Yet its economy tanked, falling far below the national average. 
-
----
-
-# Did the FED cause the Great Depression?
-
-.pull-left[
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week16graphs/depression.png") 
-```
-]
-
-
-.pull-right[
-Milton Friedman claimed that the Fed caused the Great Depression.
-He argued that the money supply, as measured by M2, fell sharply from 1929 to 1933 as the economy plunged. 
-]
-
---
-
-But the Fed doesn’t control money supply–it controls monetary base (currency + bank reserves), and the monetary base rose sharply.
-M2 fell because bank runs destroyed confidence in banks’ safety: people withdrew their deposits and banks cut back on lending. 
-It’s doubtful if the Fed could have prevented the Great Depression, and it certainly didn’t cause it.
-
----
-
-# FROM GREAT MODERATION TO SECULAR STAGNATION
-
-After the stormy 1970s, things settled down: the recession of 1990–1991 was mild, and the inflation rate stayed below 4%. 
-
---
-
-The Great Moderation is the period from 1985 to 2007 when the U.S. economy experienced relatively small fluctuations and low inflation. It led to widespread belief that monetary policy could stabilize the economy.
-During the Great Moderation, economists and policy makers believed that monetary policy was highly effective and that the Fed could keep the economy stable. 
-
---
-
-The crisis of 2008 undermined any sense that central banks had things under control and brought economists back to a more traditional Keynesian view.
-In 2008, however, cutting the federal funds rate all the way to zero wasn’t enough to prevent a severe recession—and recovery from that recession was disappointingly slow. 
-Conventional monetary policy didn’t seem to work, and even unconventional monetary policy seemed to fall short. 
-
----
-
-# The revival of fiscal policy
-
-Events after 2008 showed that monetary policy wasn’t as reliable as many had believed. 
-This led to a revival of interest in fiscal policy, especially expansionary fiscal policy, or fiscal stimulus.
-In 2010–2013, a few countries conducted austerity policies—attempts to reduce their budget deficits by cutting spending and raising taxes.
-Data shows that the deeper the budget cuts, the worse the economic performance. 
-Each dollar of budget cuts reduced GDP by around $1.50. 
-Expansionary fiscal policy means higher budget deficits. Shouldn’t this be a source of concern?
 
 ---
 
 # Policy in a low-interest rate world
 
-.pull-left[
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
+```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
 knitr::include_graphics("week16graphs/lowinterest.png") 
 ```
-]
 
-.pull-right[
-During the 2008 financial crisis, the Fed cut interest rates all the way to zero. The Fed kept rates close to zero for many years, then raised them only slightly, and began cutting again in 2019.
-The persistence of low interest rates wasn’t just a U.S. phenomenon. 
-]
-
---
-
-Low interest rates also mean that the central banks don’t have enough room to cut. 
-It means that we should strengthen the economy’s automatic stabilizers, the tax and spending responses that help fight recessions even without new legislation. 
 
 ---
+
+
+class: my-one-page-font
+
+
+# Why the zero lower bound is important?
+
+-  __The Great Moderation:__ Recessions after 1990–1991 were mild, and the inflation rate stayed below 4%
+  - During the Great Moderation, economists and policy makers believed that monetary policy was highly effective
+--
+
+- The crisis of 2008 undermined any sense that central banks had things under control
+  - In 2008, however, cutting the federal funds rate all the way to zero wasn’t enough to prevent a severe recession
+  — and recovery from that recession was disappointingly slow. 
+  
+- Great Recession showed that monetary policy wasn’t as successful
+- Low interest rates also mean that the central banks don’t have enough room to __cut interest rates__. 
+  - "we should strengthen the economy’s automatic fiscal stabilizers" 
+  - This led to a revival of interest in expansionary fiscal policy, or fiscal stimulus.
+  - But expansionary fiscal policy means higher budget deficits. __Shouldn’t this be a source of concern?__
+
+---
+
+class: my-one-page-font
+
 
 # Policy in a low-interest rate world
 
-Why are interest rates so low? 
-Declining population growth and slow technological progress had put the world’s major economies on the edge of secular stagnation, a state in which the interest rate that is needed to achieve full employment is consistently close to zero.
-If low interest rates are the new normal, 
-We shouldn’t worry much about debt, and 
-We should worry a lot about fiscal responses to downturns.
 
-Old view: Higher debt leads to high interest payments, which lead to higher deficits, which increase debt, leading to higher interest payments…
-New view: What matters is not the debt but the debt to GDP ratio. Since interest rates are below the economy’s growth rate, the ratio tends to shrink over time.
+- But Why are interest rates so low? 
+  - Declining population growth and slow technological progress 
+  - secular stagnation: "full employment is achieved when interest rate is close to zero."
+
+- If zero interest rates is normal
+  - We shouldn’t worry much about debt, and 
+  - We should worry a lot about fiscal responses to downturns.
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10
+
+The Fed between September 18, 2007,  and December 16, 2008, lowered the federal funds rate in a series of steps from a high of 5.25% to a  rate between zero and 0.25%. The idea was to provide a boost to the economy by increasing  aggregate demand.  Use the liquidity preference model to explain how the Federal Open Market Committee lowers the  Fed Funds rate in the short run:
+
+In the short run;
+  1. The FOMC will decide to do open market purchases,  buying gov.bonds off of comercial banks' balance sheets.
+  2. More money will be available to banks as excess reserves. 
+  3. The monetary base and the money supply increases.
+  4. I move to a new point in the money demand curve, where
+    - the quantity of money is larger
+    - the interest rate is lower.
 
 
 ---
 
-# Useful links
+class: my-one-page-font
 
-Here DEBT TO GDP over pandemic!!
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week12graphs/implicit.png") 
+
+# Problem Set 10
+
+ Draw a typical graph that illustrates the mechanism in the liquidity preference model.
+
+
+```{r  out.width = "50%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("msshift.png") 
+```
+ 
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10 
+
+Explain why the reduction in the Fed Funds rate causes a change in the interest rate in the market for loans. Draw a typical graph that illustrates the mechanism:
+
+__The expansionary monetary policy will cause an increase in GDP in the new equilibrium-this also means an increase in savings__
+
+```{r  out.width = "30%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("week9graphs/shiftS.png") 
+```
+ 
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10 
+
+Explain why the reduction in the interest rate causes aggregate demand to increase in the short run.
+
+- The reduction of interest rates in the new short run equilibrium:
+  1. Increases Quantity of loans - Investment
+  2. Increases Consumption due to the multiplier effect 
+  3. Increases aggregate demand - shifts the AD to the left.
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+
+The  economy is in long-run macroeconomic equilibrium at point E1 when an oil shock shifts the short-run aggregate supply curve.How do the aggregate price level and aggregate output change in the short run as a result of the oil shock? Draw a typical graph of the macroeconomic equilibrium:
+
+- The aggregate price level increases and the actual output ( real GDP falls.)
+
+
+```{r  out.width = "50%",out.length = "100%", fig.align = 'center',echo=FALSE}
+knitr::include_graphics("srasshift.png") 
 ```
 
 
-- Visit this site for current debt and deficit figures:
-	https://www.cbo.gov/topics/budget
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+ Assume that the level of Real GDP before the shock is at 80 but after the shock the shock, the output gap is -10 % ? What is the new level of Real GDP? What is the new level of unemployment if the natural rate of unemployment is 5% and the Okun’s law holds in this particular case?
+ 
+ 
+---
+
+class: my-one-page-font
+
+
+# Review
+
+ 
+Before I answer this question, it is important to remember: 
+
+$$
+\text{Output Gap} = \frac{\text{Actual Output}-\text{Potential Output}}{\text{Potential Output}} \times 100
+$$
+
+- The level of unemployment when the output gap is zero is called natural rate of unemployment or NAIRU.
+
+$$
+\text{ Unemployment rate }=  \text{ Natural rate of Unemployment  }+  \text{ Cyclical rate of Unemployment  }
+$$
+
+- Okun's law helps me calculate (approximately) the cyclical rate: if the output gap is $X$, then the cyclical rate of unemployment is $X/2$.
+
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+ Assume that the level of Real GDP before the shock is at 80 but after the shock the shock, the output gap is -10 % ? What is the new level of Real GDP? What is the new level of unemployment if the natural rate of unemployment is 5% and the Okun’s law holds in this particular case?
+ 
+Now we can answer this question:
+
+- In the original equilibrium E1, the output gap is zero, so $80 =RGDP=\text{Potential Output}$
+
+- This means that the new Real GDP is $90\%$ the Potential output since the output gap is $-10\%$, so real GDP is 72.
+
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+- In the original equilibrium E1, the output gap is zero, so cyclical unemployment is zero, and
+$$
+\text{ Unemployment rate }=  \text{ Natural rate  }+  \text{ Cyclical rate of Unemployment  }
+$$
+$$
+\text{ Unemployment rate }=5\%
+$$
+- In the original equilibrium E2, the output gap is $-10\%$, so cyclical unemployment is $5\%$, and
+$$
+\text{ Unemployment rate }=  \text{ Natural rate   }+  \text{ Cyclical rate of Unemployment  }
+$$
+$$
+\text{ Unemployment rate }=5\%+5\%=10\%.
+$$
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+Assume that P1 is equal to 100, and the new equilibrium level of prices after the shock is equal to 120. What is the level of inflation rate?
+
+Again, just a quick reminder:
+
+
+$$
+\text{Inflation Rate} = \frac{P_2-P_1}{P_1} \times 100, why?
+$$
+
+well, because $P$ is usually either the CPI or GDP deflator, what we use to calculate inflation. Then 
+$$
+\text{Inflation Rate} = \frac{P_2-P_1}{P_1} \times 100=\frac{20}{100}\times 100=20\%
+$$
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+What monetary policies can the government use to address the effects of the supply shock? Use a diagram that shows the effect of policies chosen to address the change in real GDP. 
+
+First we need to understand what is the macroeconomic situation: 
+  1. $20\%$ inflation
+  2. $-10\%$ output gap or recessionary gap.
+  
+To deal with this sitation we need:
+  1. Contractionary policy to deal with inflation
+  2. Expansionary policy to deal with recession-real GDP.
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+Use a diagram that shows the effect of policies chosen to address the change in real GDP.
+
+
+To deal with this sitation we need:
+  1. Expansionary policy to deal with recession
+
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+Use another diagram to show the effect of policies chosen to address the change in the aggregate price level.
+
+
+To deal with this sitation we need:
+  1. Contractionary policy to deal with inflation
+
+
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+Assuming that equal decreases in unemployment caused by demand shocks, lead to equal increases in inflation. How much more inflation would there be to reach the old level of unemployment?
+
+If equal  decreases in unemployment caused by demand shocks, lead to equal increases in inflation, or in other words the Phillips curve has a very special form where:
+
+$$ \text{Cyclical Unemployment} = \text{-Inflation Rate}$$
+Then to reach the old level of unemployment, which is the natural rate $5\%$, I need an increase in inflation rate by $5\%$. If the tradeoff is even worse,e.g. 
+
+
+$$ \text{Cyclical Unemployment} = \text{-0.25 Inflation Rate}$$
+
+Then to reduce inflation by $5\%$, inflation has to go up by $20\%$ . This is the tradeoff faced by the monetary authority.
+---
+
+class: my-one-page-font
+
+
+# Problem Set 10-Q3
+
+Why would you prefer to have a SRAS that is horizontal? What type of policy would you choose then?
+
+If there is a horizontal curve, I can not affect the price level with demand shock, as shown below. This means, I do not face a dilemma, since I can only deal with real GDP and as a result I pick an expansioraty monetary policy.
+
+
+
+---
+
+class: my-one-page-font
+
+
+# Not Very important  TF Question
+
+- The independence of the central bank can help reduce the inflation rate caused by political temptation __TRUE, independence means the decisions are made independent of fiscal policy, if political temptation leads to expansionary fiscal policy (eg before election years), the monetary authority, if it is not affected by fiscal policy, will implement a contractionary monetary policy__.
+
+- The fact that in the long run, money is neutral means monetary policy can not stabilize the economy __FALSE,  stabilization policies are dealing with short run fluctuation (Keynes: "In the long run, we are all dead". Only if the SRAS was identical to LRAS would imply that monetary policy can not stabilize the economy__.
+  - Not very important for final, but can help you understand the difference among economic schools of thought. __Chapter 17:not covered__
+
+
+---
+
