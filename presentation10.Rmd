@@ -109,3 +109,72 @@ To counter the effect of the foreign exchange
 intervention, conduct an offsetting operation about domestic assets
 
 - No effect on the exchange rate.
+
+---
+
+# Balance of Payments
+
+Current Account
+
+International transactions that involve currently
+produced goods and services
+
+Trade Balance
+
+Capital Account
+
+Net receipts from capital transactions
+
+Sum of these two is the official reserve transactions
+balance
+
+Global: Should We Worry About the Large
+U.S. Current Account Deficit?
+
+Persistent trade deficits are a concern for several
+reasons.
+
+First, it indicates that, at current exchange rates, foreign
+demand for U.S. exports is far less than the U.S. demand
+for foreign goods.
+
+Second, a current account deficit means that foreigners’
+claim on U.S. assets is growing.
+
+---
+
+# Exchange Rate Regimes in the International Financial System 
+
+Fixed exchange rate regime
+
+Value of a currency is pegged relative to the value of
+one other currency (anchor currency)
+
+Floating exchange rate regime
+
+Value of a currency is allowed to fluctuate against all
+other currencies
+
+Managed float regime (dirty float)
+
+Attempt to influence exchange rates by buying and
+selling currencies
+
+How a Fixed Exchange Rate Regime
+Works
+
+When the domestic currency is overvalued, the central bank
+must:
+
+Purchase domestic currency to keep the exchange rate
+fixed (it loses international reserves), or
+
+Conduct a devaluation
+
+When the domestic currency is undervalued, the central bank
+must:
+
+Sell domestic currency to keep the exchange rate fixed (it
+gains international reserves), or
+
+Conduct a revaluation
