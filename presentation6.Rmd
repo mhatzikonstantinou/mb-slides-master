@@ -1,5 +1,5 @@
 ---
-title: "Long Run Economic Growth"
+title: "The Stock Market and Rational Expectations"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,400 +18,214 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Long Run Economic Growth I
+# The Stock Market and Rational Expectations
 
 ## Manolis Chatzikonstantinou  
 
 ---
 
+class: my-one-page-font
 
 # What will you learn today?
 
 
-- __Why is long run economic growth measured as the increase in real GDP per capita?__
+1. Calculate the price of common stock.
 
-- __Why is productivity the key to long run economic growth? How is productivity measured?__
+2. Recognize the impact of new information on stock
+prices.
 
-- __Why do long run growth rates differ so much among countries?__
-
---
-
-- How does growth vary among several important regions of the world?
-
-- Convergence Hypothesis and applications
-
-- How does scarcity of natural resources and environmental degradation pose a challenge to sustainable long run economic growth?
+3. Compare and contrast adaptive and rational
+expectations.
 
 ---
 
-# Growth has benefits and costs
+class: my-one-page-font
 
-```{r  out.width = "60%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/delhi.png") 
-```
+# Price of Common Stock
 
-???
-Delhi and Beijing have terrible air quality—which is a bad thing. But it’s a by-product of a very good thing: the remarkable economic growth. Why do you think that is? What are other issues with growth?
-
----
-
-# Comparing economies across time and space
-
-
-- The key statistic is __real GDP per capita__—real GDP divided by population. 
-
---
-
-- We focus on GDP because GDP measures the income earned in the economy in a given year. 
-
-- We use real GDP because we want to separate changes in the quantity of goods and services from the effects of a rising price level. 
-
-- We focus on real GDP per capita because we want to isolate the effect of changes in the population.
-
---
-
-.pull-left[
-```{r  out.width = "85%",echo=FALSE}
-knitr::include_graphics("week6graphs/china.png") 
-```
-]
-
-
-.pull-right[
-- Since 1980 India and China had a much higher growth rate than the United States. 
-
-- The standard of living achieved in the United States in 1900 was attained by China in 2000 and by India in 2016.
-
-]
-
-
----
-
-# Real GDP in the US 
-
-
-| Year | Percentage of 1900 real GDP per capita | Percentage of 2016 real GDP per capita |
-| :---: | :---: | :---: |
-| 1900 | 100% | 12% |
-| 1920 | 136% | 16% |
-| 1940 | 181% | 21% |
-| 1980 | 474% | 56% |
-| 2000 | 734% | 87% |
-| 2016 | 848% | 100% |
-
---
-
-- Growth rates:
-    - for decades 1900-1920: 36%
-    - for decades 1920-1940: 33%
-    - for decades 1940-1980: 161%
-    - for decades 1980-2000: 54%
-    - for decades 2000-2016: 16%
-
----
-
-# The Growth Rate – What it Means
-
-- The growth rate between two years, such as 2014 and 2013, is given by the
-formula:
-
-$$\text { Growth Rate in 2014 }=\frac{G D P_{2014}-G D P_{2013}}{G D P_{2013}}$$
-
-- GDP usually means real gdp per capita. 
-
-- $GDP_{2014}$ is real GDP per capita in 2014
-
---
-
-- In order to figure out the GDP over a longer period of time, say between 2009
-and 2014 (a period of 5 years), when you know average annual growth rate, e.g. 1.3%
-
-$$G D P_{2014}=G D P_{2009} \times(1.013)^{5}$$
-
-- 1.3% is it the average annual growth rate or more exactly, the rate that would generate the end year result if one growth rate had obtained for the entire time). 
-
---
-
-- $1.013^5 = 1.0667$, so __cumulative 5-year__ growth rate is 6.7%,
-
-- 1 percent growth matters: $1.013^{50} =  1.91$.
-
----
-
-# Logarithmic growth rates
-
-- The growth rate between two years in a similar formula:
-
-$$
-\begin{gathered}
-g=\frac{Y_{2}-Y_{1}}{Y_{1}}=\frac{Y_{2}}{Y_{1}}-1 \\
-1+g=\frac{Y_{2}}{Y_{1}}
-\end{gathered}
-$$
-- where $Y_{2}$ is the GDP in year 2 and $Y_{1}$ is the GDP in year 1 , and $g$ is the growth rate
-
---
-
-- Taking natural log (ln) from both sides:
-
-$$
-\begin{gathered}
-\ln (1+g)=\ln \left(\frac{Y_{2}}{Y_{1}}\right)=\ln \left(Y_{2}\right)-\ln \left(Y_{1}\right) \\
-\text { By log approximation: } \quad g=\ln \left(\frac{Y_{2}}{Y_{1}}\right)=\ln Y_{2}-\ln Y_{1}
-\end{gathered}
-$$
-
---
-
-- easy to go from short run to long run calculations:
-
-- $\ln(1.013^5) = \ln(1.0667)$, or in other words (by approximation $\ln(1+x) = x$:)
-
-- $5\times 0.0129 = 0.0645 \rightarrow$ pretty close to real number
-???
-- log approximation not great for large changes: $ln(1.9) = 0.64 \neq 0.9$!
-
-
----
-
-# Incomes around the world
-```{r  out.width = "70%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/world.png") 
-```
-
-
-- The United States has grown quickly, while some nations have stalled. 
-
---
-
-- Income levels tend to be similar in the same continent/region
-
-- Geography/Institutions?
-
-???
-A quarter of the world’s population lives in countries where the standard of living is lower than it was in the United States in 1900.
-
-
----
-
-# Growth rates
-
-- How did the United States manage to produce over eight times as much real GDP per person in 2019 than in 1900? 
-It’s a gradual process when real GDP per capita grows a few percent per year. 
-It’s helpful to use the Rule of 70 that tells us how long it takes for a variable to double: 
+- We use The One-Period Valuation Model:
 
 
 $$
-\text { Doubling time for } X=\frac{70}{\text { Annual growth rate of } X}
+P_{0}=\frac{\operatorname{Div}_{1}}{\left(1+k_{e}\right)}+\frac{P_{1}}{\left(1+k_{e}\right)}
+$$
+$P_{0}=$ the current price of the stock
+$D^{D i v_{1}}=$ the dividend paid at the end of year 1
+$k_{e}=$ the required return on investment in equity
+$P_{1}=$ the sale price of the stock at the end of the first period
+
+---
+
+class: my-one-page-font
+
+# The Generalized Dividend Valuation Model:
+
+The value of stock today is the present value of all future cash flows
+$$
+P_{0}=\frac{D_{1}}{\left(1+k_{e}\right)^{1}}+\frac{D_{2}}{\left(1+k_{e}\right)^{2}}+\ldots+\frac{D_{n}}{\left(1+k_{e}\right)^{n}}+\frac{P_{n}}{\left(1+k_{e}\right)^{n}}
 $$
 
-
-
---
-
- 
-- Example: If real GDP per capita is growing at an annual growth rate of 3.5%, it will double in 70/3.5 = 20 years.
-
-```{r  out.width = "55%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/power.png") 
-```
-
-???
-Small improvements add up fast
-
-
-
----
-
-# Comparing recent growth rates
-
-```{r  out.width = "80%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/recent.png") 
-```
-
-
-
----
-
-# The sources of long run economic growth
-
-- Long-run economic growth (per capita) depends on one ingredient: rising productivity. 
-
---
-
-- Sustained economic growth occurs when the amount of output produced by the average worker $\uparrow$ or of __Labor productivity__ (output per worker) $\uparrow$.  
-
-
---
-
-
-- labor productivity depends on
-
-1. capital deepening 
-2. human capital 
-3. technical change
-
---
-
-Point 1: Increase in physical capital
-
-- __Physical capital:__ human-made resources, such as buildings and
-machines
-
---
-
-Point 2: Increase in human capital
-- __Human capital:__ the improvement in labor created by the
-education and knowledge embodied in the workforce
-
---
-
-Point 3: ideas + blueprints
-- __Technological progress:__ an advance in technology used in production + new products 
-
-
-???
-Why does the average worker today produce far more a century ago? Modern workers have more physical capital, are better educated, and take advantage of a century’s technological progress. 
-Natural resources certainly influence productivity, but in the modern world, they are less important than human or physical capital.
-Japan, for example, has very few natural resources but very high real GDP per capita. Nigeria is a resource-rich nation but low real GDP per capita.
-
----
-
-# The aggregate production function
-
-- How much does output change when we change inputs?
-
-- __Aggregate production function:__ a hypothetical function that shows how productivity (real GDP per worker) depends on the quantities of physical capital per worker, human capital per worker, and technology.
-
---
-
-
-$$ 
-\text{GDP} = T \times \text{(Physical capital)}^{1/3} \times \text{(Human capital)}^{2/3}
+If $P_{n}$ is far in the future, it will not affect $P_{0}$
 $$
-
-$$ 
-\text{GDP per worker} = T \times H  \times \text{(Physical capital per worker)}^{1/3} 
+P_{0}=\sum_{t=1}^{\infty} \frac{D_{t}}{\left(1+k_{e}\right)^{t}}
 $$
-- where $T$ is an estimate of the level of technology, and $H$: human capital is years of education
-
---
-
--  "diminishing returns to physical capital": 
-> with  human capital per worker and the state of technology fixed, successive increases in the amount of physical capital per worker leads to a smaller increase in GDP
-
-- For example, a second computer improves one’s productivity, but not by as much as the first computer did.
-
---
-
-- In practice, all the factors contributing to higher productivity rise over time: both physical capital and human capital per worker increase, and technology advances as well. 
+The price of the stock is determined only by the present value of the future dividend stream
 
 ---
 
-# Diminishing returns to physical capital
+class: my-one-page-font
 
-```{r  out.width = "80%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/capital.png") 
-```
-
----
-
-# Technological progress
+# The Gordon Growth Model
 
 
-```{r  out.width = "70%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/technology.png") 
-```
+$$
+P_{0}=\frac{D_{0}(1+g)}{\left(k_{e}-g\right)}=\frac{D_{1}}{\left(k_{e}-g\right)}
+$$
+$D_{0}=$ the most recent dividend paid
+$g=$ the expected constant growth rate in dividends
+$k_{e}=$ the required return on an investment in equity
 
+- Dividends are assumed to continue growing at a constant rate
+forever
 
-
----
-
-# The productivity paradox
-
-```{r  out.width = "50%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/paradox.png") 
-```
-
-
-We live in an era of revolutionary technological change, but economic payoffs are hard to see. 
-Why?
+The growth rate is assumed to be less than the required return
+on equity
 
 ---
 
-# Why growth rates differ?
+class: my-one-page-font
 
-Rapidly growing economies excel at:  
- 
-1. savings and investment spending. 
-2. education. 
-3. research and development. 
+# Valuation
 
---
+video by sunderam
 
-.pull-left[
-
-```{r  out.width = "80%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week6graphs/chinaeducation.png") 
-```
-
-]
-
-.pull-right[
-
-- China’s success at adding human capital 
-
-- Research and development (R&D) + Science = New products and technology 
-
-- __Invention to innovation__: U.S. businesses were among the first to adopt R&D
-
-]
-
---
-???
-Saving and Investment Spending 
-In 2019, investment spending was 43% of China’s GDP, compared with only 21% in the United States.
-Money for investment spending comes from savings. Countries with that have high investment spending do so because they have high domestic savings. 
-
-
-# Left behind by growth
-
-
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week6graphs/leftbehind.png") 
-```
-
-- A growing share of income went to a few people at the top.
-
-???
-Historically, rising real GDP per capita has translated into real income for most people.  This is less and less true in the United States.Two qualifications: economic growth still raises the standard of living of the great majority of the population and gives rise to a global middle class
 
 ---
 
-# What we learned?
+# How the Market Sets Stock Prices (1 of 2)
+
+The price is set by the buyer willing to pay the highest
+price.
+
+The market price will be set by the buyer who can take
+best advantage of the asset.
+
+Superior information about an asset can increase its
+value by reducing its perceived risk.
+
+Information is important for individuals to value each
+asset.
+
+When new information is released about a firm,
+expectations and prices change.
+
+Market participants constantly receive information and
+revise their expectations, so stock prices change
+frequently.
+
+---
+
+# Monetary Policy and Stock Prices
+
+> Monetary policy can affect stock prices in two ways. First,
+when the Fed lowers interest rates, the return on bonds
+(an alternative asset to stocks) declines, and investors
+are likely to accept a lower required rate of return on an
+investment in equity. The resulting decline lowers the
+denominator in the Gordon growth model (Equation 5)
+and raises stock prices.
+
+> Furthermore, a lowering of interest rates is likely to
+stimulate the economy, so the growth rate in dividends, g,
+is likely to be somewhat higher. This rise in g also causes
+the denominator in Equation 5 to decrease, which also
+leads to a rise in stock prices.
 
 
-__Useful Links__
+---
 
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week6graphs/longrunmena.png") 
-```
+# The Coronavirus Stock
+Market Crash of 2020
+
+The spread of the coronavirus in February 2020 triggered
+a stock market crash in which the Dow Jones Industrial
+Average fell from a peak of 29,551 on February 12 to
+18,561 on March 20, a decline of 37%.
+
+The combination of expectations of a lower dividend
+growth rate (g) and a higher required return on investment
+
+in equity $\left(k_{e}\right)$
+
+led to one of the steepest stock market
+
+declines in U.S. history.
+
+video
+
+---
+
+# The Theory of Rational Expectations 
+
+Adaptive expectations:
+
+Expectations are formed from past experience only.
+
+Changes in expectations will occur slowly over time
+as data changes.
+
+However, people use more than just past data to
+form their expectations and sometimes change their
+expectations quickly.
+
+Expectations will be identical to optimal forecasts using
+all available information.
+
+Even though a rational expectation equals the optimal
+forecast using all available information, a prediction
+based on it may not always be perfectly accurate.
+
+It takes too much effort to make their expectation the
+best guess possible.
+
+The best guess will not be accurate because the
+predictor is unaware of some relevant information.
 
 
-]
+---
 
-.pull-right[
+# The Theory of Rational Expectations 
 
-- [Innovation and Growth](https://www.ecb.europa.eu/ecb/educational/explainers/tell-me-more/html/growth.en.html)
+- Rationale Behind the Theory
 
-- [MENA Economic Outlook](https://ihsmarkit.com/research-analysis/mena-economic-outlook-2022-global-headwinds.html)
+The incentives for equating expectations with optimal
+forecasts are especially strong in financial markets. In
+these markets, people with better forecasts of the future
+get rich.
 
-- [Productivity for prosperity](https://blogs.worldbank.org/psd/productivity-prosperity-long-run-it-almost-everything)
+The application of the theory of rational expectations to
+financial markets (where it is called the efficient market
+hypothesis or the theory of efficient capital markets) is
+thus particularly useful.
 
-- [Long-run growth after COVID-19](https://www.brookings.edu/research/how-to-boost-long-run-growth-after-covid-19/)
+- Implications of the Theory
 
-- [Economic Growth: Is it everyone's benefits?](https://equitablegrowth.org/economic-growth-in-the-united-states-a-tale-of-two-countries/) 
+If there is a change in the way a variable moves, the way
+in which expectations of the variable are formed will
+change as well.
 
-]
+Changes in the conduct of monetary policy (e.g.,
+target the federal funds rate)
 
+The forecast errors of expectations will, on average, be
+zero and cannot be predicted ahead of time.
+
+---
+
+# Take Home
+
+
+__Useful Links:__
+- [Data on budget deficits](http://www.cbo.gov/)
+- [Financial Data](https://finance.yahoo.com/)
+- [Get Financial Data in R](https://www.youtube.com/watch?v=hZS31_nSlGg)

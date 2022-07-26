@@ -163,10 +163,8 @@ class: my-one-page-font
   
   - __Moral Hazard__ (after the transaction): 
     - ensure borrower will repay the loan, how?  
-      - Sign a contract with restrictive covenants.
-      - collateral ...
+      - Sign a contract with restrictive covenants,collateral ...
       
-  
 --
       
   -  economies of scope;

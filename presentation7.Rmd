@@ -1,5 +1,5 @@
 ---
-title: "Long Run Economic Growth"
+title: "The Efficient Market Hypothesis"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,367 +18,163 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Long Run Economic Growth II
+# The Efficient Market Hypothesis
 
 ## Manolis Chatzikonstantinou  
 
 ---
 
 
+---
+
+class: my-one-page-font
+
 # What will you learn today?
 
 
-- Why is long run economic growth measured as the increase in real GDP per capita?
+1. Explain why arbitrage opportunities imply that the
+efficient market hypothesis holds.
 
-- Why is productivity the key to long run economic growth? How is productivity measured?
+2. R7.5 Identify and explain the implications of the efficient
+market hypothesis for financial markets.
 
-- Why do long run growth rates differ so much among countries?
-
---
-
-- __How do we account for different sources of growth?__
-
-- __Convergence Hypothesis and applications__
-
-- __How does scarcity of natural resources and environmental degradation pose a challenge to sustainable long run economic growth?__
+7.6 Summarize the reasons why behavioral finance
+suggestions that the efficient market hypothesis may not
+hold.
 
 ---
 
-# Growth accounting
+class: my-one-page-font
 
-> __Growth accounting:__ estimates of the contribution of each major factor in the aggregate production function to economic growth
+# Recall
 
-> __Labor productivity:__ the amount of output that can be produced with a given amount of labor inputs
+The rate of return from holding a security equals the sum of the capital
+gain on the security, plus any cash payments divided by the initial
+purchase price of the security.
 
---
 
-> __Total factor productivity:__ the amount of output that can be produced with a given amount of factor inputs
-
---
-
-- When total factor productivity increases, the economy can produce more output with the same quantity of physical capital, human capital, and labor.
-
---
-
-- Increases in total factor productivity are central to economic growth. 
-
-- Technological progress drives increases in total factor productivity.
-
---
-
-- According to the Bureau of Labor Statistics, over the period from 1948 to 2019 American labor productivity rose 2.1% per year. 
-
-- 49% of that rise is explained by increases in physical and human capital per worker; the rest is explained by rising total factor productivity—by  technological progress. 
-
-- How do we know? 
+$$
+R=\frac{P_{t+1}-P_{t}+C}{P_{t}}
+$$
+$R=$ the rate of return on the security
+$P_{t+1}=$ price of the security at time $t+1$, the end of the holding period
+$P_{t}=$ price of the security at time $t$, the beginning of the holding period
+$C=$ cash payment (coupon or dividend) made during the holding period
 
 ---
 
-# Total Factor Productivity 
+class: my-one-page-font
 
-- From our aggregate production function:
+# Forming Expectations
 
-$$ 
-\text{GDP} = T \times \text{(Physical capital)}^{1/3} \times \text{(Human capital)}^{2/3} = T \times H  \times  \text{(K)}^{1/3} \times \text{(L)}^{2/3}
+At the beginning of the period, we know $P_{t}$ and $C$. $P_{t+1}$ is unknown and we must form an expectation of it. The expected return then is
+$$
+R^{e}=\frac{P_{t+1}^{e}-P_{t}+C}{P_{t}}
 $$
 
-- To Total Factor Productivity (anything that effects output other than capital input $\mathrm{K}$ and education-adjusted labor $\mathrm{L}$)
 
-$$TFP =\mathrm{A}=\mathrm{Y} / \mathrm{F}(\mathrm{K}, \mathrm{L})$$
+Expectations of future prices are equal to optimal forecasts using all currently available information so
+$$
+P_{t+1}^{e}=P_{t+1}^{o f} \Rightarrow R^{e}=R^{\circ f}
+$$
 
---
+- But returns can not be far away from equilibrium returns: 
 
- 
-- __Cobb-Douglas production function:__
-
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week7graphs/cbpf.png") 
-```
-]
-
-.pull-right[
-
-- Regulation/Rule of law
-
-- Infrastructure/Market access
-
-- Misallocation/Quality of Inputs
-
-- Innovation
-
-- __Measure of our ignorance__
-]
-
-???
-A convenient functional form for growth accounting is the
----
-
-# Growth accounting 
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week7graphs/grac.png") 
-```
-]
-
-.pull-right[
-|  | 1939-1948 | 1948-1973 | 1973-1990 | 1990-2007 | 2007-2013 |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Output | 5.79 | 4.00 | 3.10 | 3.60 | 1.1 |
-| Capital | 3.34 | 3.70 | 4.20 | 4.10 | 1.4 |
-| Labor | 4.46 | 1.00 | 1.90 | 1.60 | -0.1 |
-| Productivity | 1.71 | 2.1 | 0.5 | 1.2 | 0.7 |
-]
-
---
-
-- Real GDP growth is declining over time.
-- Capital has been growing faster than labor
-- The contribution of productivity is diminishing!
-
+$$
+R^{\text {of }}=R^{e}=R^{*}
+$$
 
 ---
 
-# Questions for class
+# The Efficient Market Hypothesis
 
-The change in read GDP per capita depends on 
+- Rational Expectations in Financial Markets
 
-$$\text{1.} \Delta K$$
-- __What can affect the change in total capital units available?__
 
---
+Current prices in a financial market will be set so that the
+optimal forecast of a security’s return using all available
+information equals the security’s equilibrium return.
 
-$$\text{2.} \Delta L$$
-- __What can affect the change in labor input?__
+In an efficient market, a security’s price fully reflects all
+available information.
 
---
+- In an efficient market, all unexploited profit opportunities will
+be eliminated
 
-$$\text{3.} \Delta TFP$$
-- __What can affect the change in total capital units available?__
+- Why does this imply $R^{\text {of }}=R^{e}=R^{*}$?
+
+$$
+\begin{aligned}
+&R^{\text {of }}>R^{*} \Rightarrow P_{t} \uparrow \Rightarrow R^{\circ f} \downarrow \\
+&R^{\circ f}<R^{*} \Rightarrow P_{t} \downarrow \Rightarrow R^{\circ o f} \uparrow
+\end{aligned}
+$$
+until
+$$
+R^{\circ f}=R^{\star}
+$$
 
 ---
 
-# Growth around the world
+# Application
 
+How Valuable Are Published Reports by
+Investment Advisors?
 
-```{r  out.width = "80%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week7graphs/hist.png") 
-```
+Information in newspapers and in the published reports of
+investment advisers is readily available to many market
+participants and is already reflected in market prices.
+
+Acting on this information will not yield abnormally high
+returns, on average.
+
+The empirical evidence for the most part confirms that
+recommendations from investment advisers cannot help
+us outperform the general market.
+
+Recommendations from investment advisors cannot help
+us outperform the market.
+
+A hot tip is probably information already contained in the
+price of the stock.
+
+Stock prices respond to announcements only when the
+information is new and unexpected.
+
+A “buy and hold” strategy is the most sensible strategy for
+the small investor.
 
 
 ---
 
-# East Asia’s miracle
+# Application
 
-- It took South Korea only 35 years to achieve growth that required centuries elsewhere.
-- Since 1975, the East Asian region grew ( RGDP per capita) by 6% per year, more than three times the US growth rate. How?
---
+Application: What Do Stock Market Crashes Tell Us
+About the Efficient Market Hypothesis and the Efficiency
+of Financial Markets?
 
-- $K$:Very high savings rates allow businesses to borrow and add more physical capital per worker. 
+Nothing in efficient markets theory rules out large changes
+in stock prices. A large change in stock prices can result
+from new information that produces a dramatic decline in
+optimal forecasts of the future valuation of firms. However,
+economists are hard pressed to find fundamental changes
+in the economy that would have caused the Black Monday
+and tech crashes. One lesson from these crashes is that
+factors other than market fundamentals may have an effect
+on asset prices.
 
---
+Why the Efficient Market Hypothesis Does Not
+Imply That Financial Markets Are Efficient
 
-- $L$:Very good basic education has permitted a rapid improvement in human capital. 
+Some financial economists believe all prices are always
+correct and reflect market fundamentals (items that
+have a direct impact on future income streams of the
+securities) and so financial markets are efficient.
 
---
-
-- $TFP$:Substantial technological progress
-
---
-
-- Economic growth can be especially fast in countries that are playing catch-up to countries with higher GDP per capita.
-- East Asian economies grew fast because they adopted the technologies that already existed.
-
-
----
-
-#  Latin America's disappointment
-
-- What’s holding Argentina (and other Latin American nations) back?
-
-
-```{r  out.width = "70%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week7graphs/argentina.png") 
-```
-
-
---
-
-- Irresponsible government action that eroded savings through high inflation
-- Lack of emphasis on education
-- Political instability
+However, prices in markets like the stock market are
+unpredictable. This casts serious doubt on the stronger
+view that financial markets are efficient.
 
 ---
 
-# Africa’s Troubles and promise 
-
-- What’s holding much of Africa back?
-
---
-
-- Government corruption
-- Civil wars and  political instability
-- Unfavorable geography
-
---
-
-- Is Africa poor because it’s politically unstable or unstable because it’s poor? 
-
---
-
-- __The convergence hypothesis:__ differences in real GDP per capita among countries tend to narrow over time
-- But having a low real GDP per capita is no guarantee of rapid growth, as the examples of Latin America and Africa demonstrate. Conditional convergence!
-- Good news: Growth rates are up in sub-Saharan African nations since 2011.
-
-
-???
-Good news: Growth rates are up in sub-Saharan African nations since 2011.
-
----
-
-
-# Convergence hypothesis
-
-```{r  out.width = "90%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week7graphs/convergence.png") 
-```
-
----
-
-# The role of government in economic growth 
-
-__Six channels:__
-
-- Government subsidies to infrastructure    
-  - China spends more on infrastructure than Western Europe and North America combined.
-
-
---
-
-- Government subsidies to education
-  - Literacy in China has been increasing more rapidly than in Argentina. 
-
---
-- Government subsidies to R&D
-  - the Advanced Research Projects Agency Network (ARPANET), created by the U.S. Department of Defense.
-
---
-
-- Maintaining a well-functioning financial system
-  - If people distrust banks $\rightarrow$ cash in safe deposit boxes $\rightarrow$  not  turned into productive investment spending.
---
-
-- Protection of property rights
-  - Well functioning markets, e.g. patents and invention markets 
-
---
-
-- Political stability and good governance 
-
-
-???
-- Government policies can increase the economy’s growth rate through the following six channels: 
-Infrastructure: roads, power lines, ports, information networks, and other underpinnings for economic activity
-Property rights are the legal rights held by owners of valuable items to dispose of those items as they choose. 
-Intellectual property rights are the rights of innovators to accrue the rewards of their innovations. 
-(government-created temporary monopolies given to innovators for the use or sale of their innovations).
-There’s not much point in investing in a business if rioting mobs are likely to destroy it.
-Economic success of the United States has been possible because there are good laws, institutions that enforce those laws, and a stable political system that maintains those institutions
-
----
-
-# Questions for class
-
-- We would like all countries to achieve high rates of growth
-
-- __Is it possible for all countries to have a level of per-capita GDP equivalent to that of the United States?__
-
---
-
-- __Are there enough resources to sustain growth rates as those in SE Asia?__
-
---
-
-- __Would the quality of the environment be negatively affected?__
-
----
-
-# Is world growth sustainable?
-
-.pull-left[
-__Sustainable long-run economic growth:__ long-run growth that can continue in the face of the limited supply of natural resources and the impact of growth on the environment
-]
-
-.pull-right[
-- Theory: economic growth will be severely limited by lack of resources. 
-- Economists believe that modern economies handle scarcity fairly well. 
-- Directed technical change!
-]
-
-
-
---
-
-```{r  out.width = "50%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week7graphs/carbon.png") 
-```
-
-???
-Malthus argued that two types of checks hold population within resource limits: positive checks, which raise the death rate; and preventive ones, which lower the birth rat
-Resource scarcity leads to high prices, and these high prices provide strong incentives to conserve the resource and find alternatives. 
-For example, after the sharp oil price increases of the 1970s, U.S. consumers turned to smaller, more fuel-efficient cars.
-The United States and Europe have historically been responsible for the great bulk of carbon dioxide emissions. 
-As China and other emerging economies have grown, they began to emit much more carbon dioxide.
-
-
----
-
-#  Economic growth and the environment
-
-- Economic growth tends to have adverse impact on the environment:
-  - pollution, loss of wildlife habitats, extinction of species, and reduced biodiversity.
-  - There’s local effect and a global effect of environmental 
-  - Tradeoff of developing counties: industrialize but generate harm for all households in the world  
---
-
-__Climate change:__ changes in Earth’s climate brought about by human activity 
-
-> Unmitigated climate change will cost 20% of world gross domestic product by 2100. Moreover, these costs tend to fall more heavily on poor countries.
-
---
-
-- Climate change is been a hard problem to solve because it requires the cooperation of many countries.
-
-- China and India agreed to limit their emissions, and the rich countries committed to help poorer countries pay the cost. 
-
-
----
-
-
-# What we learned?
-
-
-__Useful Links__
-
-.pull-left[
-```{r  out.width = "100%",fig.align='center',echo=FALSE}
-knitr::include_graphics("week7graphs/china.png") 
-```
-
-]
-
-.pull-right[
-
-- [Innovation and Growth](https://www.ecb.europa.eu/ecb/educational/explainers/tell-me-more/html/growth.en.html)
-
-- [Converging to convergence](https://www.youtube.com/watch?v=agrqciukZoU)
-
-- [Boosting GDP growth by accounting for the environment](https://www-science-org.proxy.library.georgetown.edu/doi/10.1126/science.1253506)
-
-- [Growth, sustainability, and the measurement of global gross product](https://voxeu.org/article/growth-sustainability-and-measurement-global-gross-product)
-
-- [Climate Change, Climate Policy, and Economic Growth](https://www.youtube.com/watch?v=v4WzeuvBS_w)
-
-- [IMF Asks James Stock about Climate Change and the Role of Integrated Assessment Models](https://www.youtube.com/watch?v=gj4W9V3gyT0)
-]
-
+# Benchmarks for Stock Prices

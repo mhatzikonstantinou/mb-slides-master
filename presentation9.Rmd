@@ -1,5 +1,5 @@
 ---
-title: "Savings and Investment"
+title: "Exchange rates"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,7 +18,7 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Savings and Investment
+# Exchange rates
 
 ## Manolis Chatzikonstantinou  
 
@@ -28,436 +28,210 @@ class: my-one-page-font
 
 # What will you learn in this lecture?
 
+- 18.1 Explain how the foreign exchange market works and
+why exchange rates are importance.
 
-```{r  out.width = "50%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/nyse.jpg") 
+18.2 Identify the main factors that affect exchange rates in
+the long run.
+
+18.3 Draw the demand and supply curves for foreign
+exchange market and interpret the equilibrium in the market
+for foreign exchange.
+
+18.4 List and illustrate the factors that affect the exchange
+rates in the short run.
+
+
+---
+
+class: my-one-page-font
+
+# Foreign Exchange Market (1 of 2)
+
+Exchange rate: price of one currency in terms of another
+
+Foreign exchange market: the financial market where
+exchange rates are determined
+
+Spot transaction: immediate (two-day) exchange of
+bank deposits
+
+Spot exchange rate
+
+Forward transaction: the exchange of bank deposits at
+some specified future date
+
+Forward exchange rate
+---
+
+class: my-one-page-font
+
+# Foreign Exchange Market 
+Appreciation: a currency rises in value relative to another
+currency
+
+Depreciation: a currency falls in value relative to another
+currency
+
+When a country’s currency appreciates, the country’s goods
+become more expensive to foreigners and foreign goods in
+that country become less expensive to domestic economic
+agents
+
+The foreign exchange market is an over-the-counter market
+wherein most trades involve the buying and selling of bank
+deposits denominated in different currencies
+
+---
+
+class: my-one-page-font
+
+# Exchange Rates in the Long Run
+
+Theory of Purchasing Power Parity assumptions:
+
+All goods are identical in both countries
+
+Trade barriers and transportation costs are low
+
+Many goods and services are not traded across
+borders
+
+```{r  out.width = "80%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week9graphs/ppp.png")
 ```
 
-- What is the relationship between savings and investment spending?
-
-- How does the loanable funds market match savers with borrowers?
+- [Big Macs and PPP]()
 
 
 ---
 
 class: my-one-page-font
 
-# Matching up savings and investment spending
+# Factors That Affect Exchange Rates in the Long Run
 
-- In the modern economy, individuals and firms that create physical capital often do it with other people’s money.
+| Factor | Change in Factor | Response of the Exchange Rate, E^(**) |
+| :--- | :---: | :---: |
+| Domestic price level † | uarr | darr |
+| Trade barriers † | uarr | uarr |
+| Import demand | uarr | darr |
+| Export demand | uarr | uarr |
+| Productivity † | uarr | uarr |
 
-- __Savings–investment spending identity:__ S and I are always equal as a whole
+*Units of foreign currency per dollar:
 
---
+indicates domestic currency appreciation;
 
-- In a closed economy, exports: $X=0$ and imports: $I M=0$ so that
+depreciation.
 
-$$ GDP =C+I+G .$$
+Relative to other countries.
 
---
+Note: Only increases
 
-__Total income = Total spending:__ Income can either be spent on  (C) plus (G) — or saved (S):
+in the factors are shown; the effects of decreases in the variables on the exchange rate are the
 
-$$GDP =C+G+S$$
-
----
-
-class: my-one-page-font
-
-#  Savings and Investment in closed economy
-
-1. Total income = consumption spending + savings 
-2. Total income = consumption spending + investment spending
-
-- Putting these equations together, we get:
-
-$$ C+G+S =C+I+G .$$
-$$S \text{ (Savings) } =I  \text{ (Investment) }$$ 
-
---
-
-- Now let’s take a closer look at S
-  - Households are not the only ones that can save;
-  - the government can save, too.
-  
----
-
-class: my-one-page-font
-
-# Government savings and spending
- 
-- __Government borrowing:__ the amount of funds borrowed by governments in financial markets
-- __Budget balance:__ the difference between tax revenue and government spending
-
---
-
-$$S_{\text {Government }}=T-TR-G$$
-
-- $T$ is the value of tax revenues
-- $T R$ is the value of government transfers
-- $G$ is the value of government spending
-
-
-$$S_{\text {National }}=S_{\text {Government }}+S_{\text {Private }}$$
-
-The savings-investment spending identity takes the following form:
-
-$$
-S_{\text {National }} \text{  ( National Savings) } =I \text{  ( Investment Spending) }
-$$
----
-
-class: my-one-page-font
-
-#  Savings and Investment in open economies
-
-- In an open economy, goods and money can flow into and out of the country. 
-- A country can receive inflows of funds—foreign savings that finance investment spending in that country. 
-- A country can also generate outflows of funds—domestic savings that finance investment spending in another country. 
-
---
-
-- __Net capital inflow__ is the total flow of funds into a country minus the total flow of funds out of a country.
-- Positive net capital inflows give extra flow of funds from abroad that can be used for investment spending.
-
---
-
-If a country spends more on imports than it earns from exports, it must borrow the difference from foreigners
+opposite of those indicated in the “Response” column.
 
 ---
 
-class: my-one-page-font
+# Exchange Rates in the Short Run
 
-#  Savings and Investment in open economies
+An exchange rate is the price of domestic assets in terms of foreign assets
 
-If a country spends more on imports than it earns from exports, it must borrow the difference from foreigners
+Supply curve for domestic assets
 
-_Net capital inflow = imports - exports:_
+Assume amount of domestic assets is fixed (supply curve
+is vertical)
 
+Demand curve for domestic assets
 
-$$
-NCI=I M-X
-$$
---
+Most important determinant is the relative expected return
+of domestic assets
 
-Rearrange the national income identity  to
-$$
-I=(\text { GDP }-C-G)+(I M-X)
-$$
-Since  $GDP-C-G$ is equal to national savings:
-
-$$I=S_{\text {National }}+(I M-X)=S_{\text {National }}+N C I$$
-
+At lower current values of the dollar (everything else
+equal), the quantity demanded of dollar assets is higher
 
 ---
 
-class: my-one-page-font
-
-# Matching savings and investment in an open economy
+# Exchange Rate, $E_{t}$
 
 
-```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/siopen.png") 
+```{r  out.width = "80%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week9graphs/exeq.png")
 ```
+---
 
-- U.S. investment was financed by a private savings and positive net capital inflow and partly offset by a budget deficit. 
-- German investment was financed by private savings and a budget surplus but was offset by a capital outflow. 
-- We will consider only __closed economies__!
+# Shifts in the demand for domestic assets
+
+Domestic interest rate
+
+Foreign interest rate
+
+Expected future exchange rate
+
+- Plot here:
+
+--- 
+
+# Factors affecting the interest rate 
+
+| Factor | Change in Factor | Assets at Each Exchange Rate | Response of Exchange Rate, E |
+| :--- | :---: | :---: | :---: |
+| Domestic interest rate| uarr | uarr | uarr |
+| Foreign interest rate |  |  |  |
+|Expected domestic price level||||
+|Expected trade barriers||||
+|Expected import demand||||
+|Expected export demand||||
+|Expected productivity||||
 
 ---
 
-class: my-one-page-font
+# Changes in Interest Rates and the Exchange Rate
 
-# The market for loanable funds
+Changes in Interest Rates
 
-- How are savers and borrowers brought together?
-  - Financial markets
-  - There are many financial markets. For our purposes we’ll assume there’s just one market.
-  
---
+When domestic real interest rates raise, the
+domestic currency appreciates.
 
-__The loanable funds market:__ a hypothetical market that illustrates the market outcome of
-  1. the demand for funds generated by borrowers and 
-  2. the supply of funds provided by lenders 
+When domestic interest rates rise due to an
+expected increase in inflation, the domestic
+currency depreciates.
 
-We assume the price of loans is the __(nominal) interest rate.__  
+Changes in the Money Supply
 
---
+A higher domestic money supply causes the
+domestic currency to depreciate.
 
-__PRESENT VALUE:__ "the amount of money needed today to receive a given amount of money at a future date given the interest rate."
+Effect of a Rise in the Domestic Interest Rate
+as a Result of an Increase in Expected Inflation
 
----
+Step 1. A rise in the domestic real interest as a result of an increase in expected inflation shifts the demand curve to the left...
 
-class: my-one-page-font
-
-# Present Value
-
-- If you need 1,000 dollars in a year and the interest rate on savings is r, how much do you need to put in the bank now ?
-$$ X \times (1 + r) = 1000 \text{ or rearrange: } X = 1000/(1 + r)$$
---
-
-- An investment is worth making only if the future return is greater than the monetary cost of making the investment today. 
-
-???
-On any given day, the people with money to lend are not usually the same as people who want to borrow.
-(Again, we assume a simplified world with just one interest rate, knowing that the real world contains many interest rates according to length of loan, risk, and customers.)
-Example: A firm has two potential investment projects, each of which will yield $1,000 a year from now. 
-One project requires that the firm borrow $900. 
-The other requires that the firm borrow $950. 
-Which of these projects is worth borrowing money to finance and undertake?
-It depends on the interest rate.
-A 10% interest rate means $1,000 is worth $909 now, so only the first project is worth it, since its initial cost ($900) is less than the present value. 
-More projects are worth it as the interest rate falls.
+Step 2.this leads to a fall in the exchange rate
 
 ---
 
-class: my-one-page-font
-
-# The demand for loanable funds
-
-```{r  out.width = "60%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/loanD.png") 
-```
-
---
-
-- The interest rate measures the opportunity cost of investment spending.
-
-???
-The lower the interest rate, the less attractive it is to put money into the bank. The lower the interest rate, the more projects firms want to carry out, the higher the quantity of loanable funds demanded. That’s why the demand curve for loanable funds is downward sloping.
-
----
-
-class: my-one-page-font
-
-
-# The supply of loanable funds
-
-```{r  out.width = "65%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/loanS.png") 
-```
-
---
-
-- Why does the supply of loanable funds curve slope upward?
-
-???
-Loanable funds are supplied by savers. 
-By saving money today and earning interest, savers are rewarded with higher consumption in the future. More people are willing to forgo current consumption and make a loan to a borrower when the interest rate is higher. 
-
----
-
-class: my-one-page-font
-
-# The equilibrium interest rate
-
-```{r  out.width = "70%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/loanE.png") 
-```
-
----
-
-class: my-one-page-font
-
-# The equilibrium interest rate
-.pull-left[
-```{r  out.width = "90%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/loanE.png") 
-```
-]
-
-.pull-right[
-__Equilibrium interest rate:__ the rate when quantity of loanable funds supplied = the quantity of loanable funds demanded. 
-
-- This match-up is efficient and interest rate is "fair":
-  - Right investments get made: projects with higher payoffs get financed. 
-  - Right people do the saving and lending: those who are willing to lend for lower interest rates get to save and lend.
-]
-
----
-
-class: my-one-page-font
-
-
-# Increase in the demand for loanable funds
-
-
-
-.pull-left[
-```{r  out.width = "80%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/shiftD.png") 
-```
-]
-
-.pull-right[
-
-- Crowding out occurs when a government budget deficit drives up the interest rate and leads to reduced investment spending.
-
-- When the economy is depressed, government spending can lead to higher incomes, and these higher incomes lead to increased savings, which will allow the government to borrow without raising interest rates. 
-]
-
-???
-Large budget deficits that the U.S. government ran from 2008 to 2013 in the face of a depressed economy caused little if any crowding out.
-
----
-
-class: my-one-page-font
-
-# Increase in the supply for loanable funds
-
-
-
-.pull-left[
-```{r  out.width = "100%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/shiftS.png") 
-```
-]
-
-.pull-right[
-
-- Factors that can cause the supply curve to shift:
-  - Changes in private savings behavior
-  - In April 2020, following the coronavirus pandemic, savings as a percent of disposable income increased from 8% to 33%,
-  - Changes in net capital inflows
-  
-]
-
-???
-When Greece adopted the euro as its currency, investors believed that Greece was a safe place to put their funds and Greece experienced large net capital inflows, which shifted the supply curve shifted to the right. 
-By 2009, worries about the Greek government’s solvency led to a collapse in investor confidence, the net inflow of funds dried up, which shifted the supply curve to the left
-
----
-
-class: my-one-page-font
-
-# Inflation and interest rates
-
-- Shifts in the supply or demand for loanable funds curve change the interest rate.
-- Major changes in interest rates have been driven by many factors, including:
-
-  - changes in government policy;
-
---
-
-  - technological innovations that created new investment opportunities.
-
---
-
-  - people’s expectations about future inflation. Why?
-  
---
-
-__Real interest rate = nominal interest rate – inflation rate.__
-
-- The true cost of borrowing (and payoff to lending) is the real interest rate.
-- But neither lenders nor borrowers know what inflation will be, 
-  - loan contracts specify a nominal interest rate.
-
----
-
-class: my-one-page-font
-
-# The Fisher Effect
-
-The __Fisher Effect__ defines the relationship between real rates, nominal rates and inflation:
-
-$$1+R=(1+r)(1+\pi)$$
-
-- $R (\text{ or } i)=$ nominal rate (Quoted rate)
-- $r=$ real rate
-- $\pi=$ expected inflation rate
-- $1+R=1+r+\pi+r \pi$
-
-__Approximation:__  (we assume $r \pi$ is relatively small and close to 0 .
-
-$$R=r+\pi$$
-
----
-
-class: my-one-page-font
-
-# Changes in expected future inflation
-
-
-- According to the Fisher effect, an increase in expected future inflation drives up the nominal interest rate, __leaving the expected real interest rate unchanged.__
-
-```{r  out.width = "60%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/fisher.png") 
-```
-
----
-
-class: my-one-page-font
-
-
-# Sixty years of U.S. interest rates
-
-Changes in expected future inflation and changes in the expected return on investment spending clearly move interest rates.
-
-```{r  out.width = "90%",out.length = "100%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week9graphs/fisherhist.png") 
-```
-
----
-
-class: my-one-page-font
-
-
-# Financial Fluctuations
-
-- The financial system sometimes doesn’t function well and causes instability. 
-- What causes asset price fluctuations?
-
---
-
-__The demand for stocks:__
-- Demand for stocks depends on investors’ expectations about the future stock prices. 
-- It is also affected by attractiveness of bonds and other substitute assets.
-
---
-
-__The demand for other assets:__
-- The demand for other assets depends on the expected income and expected prices.
-- Demand for housing, for example, depends on implicit rent 
-
----
-
-class: my-one-page-font
-
-
-# Financial Fluctuations
-
-__Asset Price Expectations:__
-
-__The efficient markets hypothesis:__ You look at fundamentals  
-  - asset prices reflect all available information.  At any point in time, stock prices are fairly valued.
-
---
-
-Many economists regard EMH an oversimplification 
-  - investors are __irrational__ and limited information
-
---
-
-- How should economists and policy makers deal with asset price fluctuations affecting the economy? 
-
----
-
-class: my-one-page-font
-
-# Asset Prices and Macroeconomics
-
-
-
-- On one side, policy makers are reluctant to assume that the market is wrong
-    — that asset prices are either too high or too low. 
-- On the other side, the past 25 years were marked by two huge asset bubbles:
-  - __The dot-com bubble:__ In the late 1990s the prices of technology stocks soared, then plunged, helping to cause the 2001 recession. 
-  - __The housing bubble:__ In 2008, the collapse of the housing market triggered a severe financial crisis followed by a deep recession. 
-
---
-
-__Useful Links:__
-- [Data on budget deficits](http://www.cbo.gov/)
-- [Financial Data](https://finance.yahoo.com/)
-- [Get Financial Data in R](https://www.youtube.com/watch?v=hZS31_nSlGg)
+# Applications
+
+Application: The Global Financial Crisis
+and the Dollar
+
+With the start of the global financial crisis in August
+2007, the dollar began an accelerated decline in value,
+falling by 9% against the euro until mid-July of 2008.
+After hitting an all-time low against the euro on July 11,
+the value of the dollar suddenly shot upward, by over
+20% against the euro by the end of October. What is
+the relationship between the global financial crisis and
+these large swings in the value of the dollar?
+
+
+Application: Brexit and the British Pound
+
+As noted in the introduction, the Brexit vote in the
+United Kingdom on June 23, 2016, led to nearly a 10%
+depreciation in the British pound, from $1.48 to the
+pound on June 23, just before the vote, to $1.36 per
+pound on June 24. What explains the large one-day
+decline in the exchange rate for the pound?

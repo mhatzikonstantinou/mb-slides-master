@@ -1,5 +1,5 @@
 ---
-title: "Inflation and Deflation"
+title: "The Risk and Term Structure of Interest Rates"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,319 +18,371 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# Inflation and Deflation
+# The Risk and Term Structure of Interest Rates
 
 ## Manolis Chatzikonstantinou  
 
 ---
 
-
-# What will you learn this week?
-
+# Risk Structure of Interest Rates 
 
 
-- __What is a price index, and how is it used to calculate the inflation rate?__
+```{r  out.width = "60%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/ltbonds.png")
+```
 
- - Measures cost of the "same basket of goods" in different years. 
 
---
+Bonds with the same maturity have different interest rates due to:
 
-- __What are the economic costs of inflation?__
+- Default risk
 
---
+- Liquidity
+  - Cost of selling a bond
+  - Number of buyers/sellers in a bond market
 
-- __How do inflation and deflation create winners and losers?__
+- Tax considerations
 
---
-
-- __Why do policy makers try to maintain a stable rate of inflation?__
 ---
 
+# Risk Structure of Interest Rates 
 
 
-# Aggregate Price Indices
+Default risk: probability that the issuer of the bond is
+unable or unwilling to make interest payments or pay off
+the face value
 
-- __Aggregate price level:__ a measure of the overall level of prices in the economy
+U.S. Treasury bonds are considered default free
+(government can raise taxes).
 
-- To measure the aggregate price level, economists calculate the cost of purchasing a market basket.
+Risk premium: the spread between the interest rates
+on bonds with default risk and the interest rates on
+(same maturity) Treasury bonds
 
-- **Market basket:** a hypothetical set of consumer purchases of goods and services
-
---
-
-__Price index:__ the cost of purchasing a given market basket
-in a given year, where that cost is normalized so that it is
-equal to 100 in the selected base year
-
---
-$$
-\text{Price index in a given year} = 
-$$
-
-
-$$
-\frac{\text{Cost of market basket in a given year}}{\text{Cost of market basket in base year}}\times 100
-$$
+| Moody's | Rating Agency S&P | Fitch | Definitions |
+| :--- | :--- | :--- | :--- |
+| Aaa | AAA | AAA | Prime Maximum Safety |
+| Aa1 | AA+ | AA+ | High Grade High Quality |
+| Aa2 | AA | AA |  |
+| Aa3 | AA- | AA- |  |
+| Ba2 | BB | BB | Speculative |
 
 
 ---
 
-# Calculating the cost of a market basket
+# Default Risk
 
-|  | January | February |
-| :--- | :--- | :--- |
-| Price of orange | $$ \$ 0.20 $$ | $$ \$ 0.40 $$ |
-| Price of grapefruit | $$ \$ 0.60 $$ | $$ \$ 1.00 $$ |
-| Price of lemon | $$ \$ 0.25 $$ | $$ \$ 0.45 $$ |
-| Cost of market basket (200 oranges, 50 grapefruit, 100 lemons ) | $$(200 \times 0.20) + (50 \times 0.60)+ (100 \times 0.25) = \$95.00 $$| $$ = \$175.00 $$ |
-
---
-
-- The CPI in the USA measures the cost of the market basket of a typical urban American family
-
---
-- __The inflation rate:__ the yearly percentage change in a price
-index, typically based on consumer price index (CPI), the
-most common measure of the aggregate price level.
-
---
-
-
-$$
-\textbf{Inflation rate: } \frac{\text{Price index in year 2 - Price index in year 1}}{\text{Price index in year 1}}\times 100
-$$
+| Moody's | Rating Agency S&P | Fitch | Definitions |
+| :--- | :--- | :--- | :--- |
+| Ba2 | BB | BB | Speculative |
+| Ba3 | BB - | BB- |  |
+| B1 | B+ | B+ | Highly Speculative |
+| B2 | B | B |  |
+| B3 | B- | B- |  |
+| Caa1 | CCC+ | CCC | Substantial Risk |
+| Caa2 | CCC |  | In Poor Standing |
+| Caa3 | CCC - |  |  |
+| Ca |  |  | Extremely Speculative |
+| C |  |  | May Be in Default |
+|  |  | D | Default |
 
 ---
 
-# The consumer price index 
+# Increase in Default Risk
+
+```{r  out.width = "100%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/default.png")
+```
+
+---
+
+# Two Tales
+
+- The Global Financial Crisis and the Baa–Treasury Spread:
+
+> Starting in August 2007, the collapse of the subprime
+mortgage market led to large losses among financial
+institutions. As a consequence, many investors began to
+doubt the financial health of corporations with low credit
+ratings such as Baa and even the reliability of the ratings
+themselves. The perceived increase in default risk for
+Baa bonds made them less desirable at any given price.
+
+--
+
+- The Coronavirus Pandemic Crisis and the Baa–Treasury Spread:
 
 
-The makeup of the consumer price index in 2010
+> When the coronavirus officially became a pandemic in
+March 2020, the resulting lock-downs and social
+distancing dealt a knockout blow to the world economy.
+Many investors began to doubt the financial health of
+corporations with low credit ratings such as Baa.
+The perceived increase in default risk for Baa bonds
+made them less desirable at any given price, decreased
+the quantity demanded, and shifted the demand curve for
+Baa bonds to the left.
 
-```{r  out.width = "70%",echo=FALSE}
-knitr::include_graphics("week3graphs/cpibasket.png") 
+---
+
+# Income Tax considerations
+
+```{r  out.width = "100%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/tax.png")
 ```
 
 
 ---
 
-# Consumer Prices in the long run
+# Term Structure of Interest Rates 
 
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week3graphs/cpichange.png") 
-```
-]
+Bonds with identical risk, liquidity, and tax characteristics
+may have different interest rates because the time
+remaining to maturity is different
 
+Yield curve: a plot of the yield on bonds with differing
+terms to maturity but the same risk, liquidity, and tax
+considerations
 
+Upward-sloping: long-term rates are above
+short-term rates
 
-.pull-right[
-- The annual percentage increases in recent years have been much smaller than those of the 1970s and early 1980s.
+Flat: short- and long-term rates are the same
 
-- Evidence that using **real** GDP matters for comparisons over time
-
-- Changes in **prices** + Changes in the **market basket**
-]
+Inverted: long-term rates are below short-term rates
 
 
 ---
 
-# Other Price Indices
+# Term Structure of Interest Rates 
 
-.pull-left[
-```{r  out.width = "100%",echo=FALSE}
-knitr::include_graphics("week3graphs/cpistats.png") 
-```
-]
+The theory of the term structure of interest rates must
+explain the following facts:
 
-.pull-right[
+Interest rates on bonds of different maturities move
+together over time.
 
-- __CPI__: Based on consumption basket and prices consumers pay!
+When short-term interest rates are low, yield curves
+are more likely to have an upward slope; when
+short-term rates are high, yield curves are more likely
+to slope downward and be inverted.
 
-- __Producer price index (PPI):__ similar to the CPI, but measures changes in the prices of goods purchased by producers
-
-- Economists also use the GDP deflator that measures the price level by calculating the ratio of nominal to real GDP.
+Yield curves almost always slope upward.
 
 
-$$
-\text { GDP deflator }=100 \times \frac{\text { Nominal GDP }}{\text { Real GDP }}
-$$
-]
+Three theories to explain the three facts:
+
+Expectations theory explains the first two facts but not
+the third.
+
+Segmented markets theory explains the third fact but
+not the first two.
+
+Liquidity premium theory combines the two theories to
+explain all three facts.
 
 ---
 
+# U.S. Government Bonds With Different Maturities
 
-# Price level, inflation and deflation 
+```{r  out.width = "80%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/maturity.png")
+```
 
-- The price level is the average level of prices and the value of money.
+---
 
---
+# Expectations Theory 
 
-- A persistently rising price level is called inflation
+The interest rate on a long-term bond will equal an
+average of the short-term interest rates that people
+expect to occur over the life of the long-term bond.
 
-- A persistently falling price level is called deflation
+Buyers of bonds do not prefer bonds of one maturity over
+another; they will not hold any quantity of a bond if its
+expected return is less than that of another bond with a
+different maturity.
 
---
+Bond holders consider bonds with different maturities to
+be perfect substitutes.
 
--  We are interested in the price level because we want to
+---
+
+# An example:
+
+Let the current rate on one-year bond be 6%.
+
+You expect the interest rate on a one-year bond to be 8%
+next year.
+
+Then the expected return for buying two one-year bonds
+
+averages
+
+The interest rate on a two-year bond must be 7% for you
+to be willing to purchase it.
+
+---
+
+# Return on 2-year bond
+
+For an investment:
+- $i_{t}=$ today's interest rate on a one-period bond
+- $i_{t+1}^{e}=$ interest rate on a one-period bond expected for next period
+- $i_{2 t}=$ today's interest rate on the two-period bond
+
+Expected return over the two periods from investing $1 in
+the two-period bond and holding it for the two periods
+
+$$
+\begin{gathered}
+\left(1+i_{2 t}\right)\left(1+i_{2 t}\right)-1 \\
+=1+2 i_{2 t}+\left(i_{2 t}\right)^{2}-1 \\
+=2 i_{2 t}+\left(i_{2 t}\right)^{2}
+\end{gathered}
+$$
+
+- the expected return for holding the two-period bond for two periods is
+
+
+$$
+\begin{gathered}
+2 i_{2 t}
+\end{gathered}
+$$
+
+
+---
+
+# Return on two one-period bonds
+
+
+For an investment:
+- $i_{t}=$ today's interest rate on a one-period bond
+- $i_{t+1}^{e}=$ interest rate on a one-period bond expected for next period
+- $i_{2 t}=$ today's interest rate on the two-period bond
+
+
+$$
+\begin{gathered}
+\left(1+i_{t}\right)\left(1+i_{t+1}^{e}\right)-1 \\
+1+i_{t}+i_{t+1}^{e}+i_{t}\left(i_{t+1}^{e}\right)-1 \\
+i_{t}+i_{t+1}^{e}+i_{t}\left(i_{t+1}^{e}\right)
+\end{gathered}
+$$
+
+- If the second term is very small,  the expected return is 
+
+$$i_{t}+i_{t+1}^{e}$$
+
+- Both bonds will be held only if the expected returns are equal
+
+$$i_{t}+i_{t+1}^{e} = 2i_{2t}$$
+
+$$i_{2 t}=\frac{i_{t}+i_{t+1}^{e}}{2}$$
+
+---
+
+# Expectations Theory
+
+For bonds with longer maturities
+$$
+i_{n t}=\frac{i_{t}+i_{t+1}^{e}+i_{t+2}^{e}+\ldots+i_{t+(n-1)}^{e}}{n}
+$$
+The $n$-period interest rate equals the average of the one-period interest rates expected to occur over the $n$-period life of the bond
+
+Expectations theory explains:
+
+Why the term structure of interest rates changes at
+different times.
+
+Why interest rates on bonds with different maturities
+move together over time (fact 1).
+
+Why yield curves tend to slope up when short-term
+rates are low and slope down when short-term rates
+are high (fact 2).
+
+Cannot explain why yield curves usually slope upward
+(fact 3)
+
+---
+
+# Segmented Markets Theory
+
+Bonds of different maturities are not substitutes at all.
+
+The interest rate for each bond with a different maturity is
+determined by the demand for and supply of that bond.
+
+Investors have preferences for bonds of one maturity
+over another.
+
+If investors generally prefer bonds with shorter maturities
+that have less interest-rate risk, then this explains why
+yield curves usually slope upward (fact 3).
+
+---
+
+# Liquidity Premium 
+
+The interest rate on a long-term bond will equal an
+average of short-term interest rates expected to occur
+over the life of the long-term bond plus a liquidity
+premium that responds to supply and demand conditions
+for that bond.
+
+Bonds of different maturities are partial (not perfect)
+substitutes.
+
+- Liquidity Premium Theory 
+
+$$i_{n t}=\frac{i_{t}+i_{t+1}^{e}+i_{t+2}^{e}+\ldots+i_{t+(n-1)}^{e}}{n}+l_{nt}$$
+
+- $l_{nt}$ is the liquidity premium
+  - always positive
+  - Rises with the term to maturity
   
-  1. Measure the inflation rate or the deflation rate
-  2. Distinguish between money values and real values of economic variables
-
---
-
-- Are high prices bad ?
-
-
-**Real wage** is the wage rate divided by the price level.
-
-**Real income** is income divided by the price level.
-
-???
-The rise in prices in the United States since the 1960s hasn’t made the country poorer because it has also raised incomes by the same amount.
-The level of prices doesn’t matter.
-
---
-
-- Is inflation bad? The level of prices doesn’t matter, but the inflation rate does. 
-
-$$
-\text { Inflation rate }=\frac{\text { Price level in year } 2-\text { Price level in year } 1}{\text { Price level in year } 1} \times 100
-$$
-
-???
-Example: If the CPI increases from 120 to 135 over 1 year, what is the inflation rate?
-
-
 ---
 
-# The price vs the inflation level
+# Preferred Habitat Theory
 
-.pull-left[
+Investors have a preference for bonds of one maturity
+over another.
 
-```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week5graphs/pricesinflation.png") 
+They will be willing to buy bonds of different maturities
+only if they earn a somewhat higher expected return.
+
+Investors are likely to prefer short-term bonds over
+longer-term bonds.
+
+```{r  out.width = "80%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/liquidity.png")
 ```
 
-]
-
-
-.pull-right[
-- The price level has changed a lot. 
-- The inflation rate has had both ups and downs. And in 2009, the inflation rate briefly turned negative, a phenomenon called deflation. 
-]
-
-High rates of inflation impose significant costs: 
-- __Shoe-leather costs__  
-- __Menu costs__  
-- __Unit-of-account costs__  
---
-
-
-
-
 ---
 
-# Winners and losers of inflation
-
-- __Interest rate:__ the return a lender receives for allowing borrowers the use of their savings for one year, calculated as a percentage of the amount borrowed. 
-- __Nominal interest rate:__ the interest rate expressed in dollar terms
-- __Real interest rate:__ the nominal interest rate minus the rate of inflation
-
---
-
-- A borrower and a lender enter into a loan contract, the contract specifies a nominal interest rate. But each party has an expectation about the future rate of inflation. 
-
---
-
-If actual inflation > expected:
-
-- borrowers gain at the expense of lenders:  fund payments to lenders have a lower real value than had been expected. 
-- borrowers are the winners and lenders are the losers.
-
---
-
-If actual inflation < expected:
-
-- lenders gain at the expense of borrowers:  fund payments to lenders have a higher real value than had been expected. 
-- lenders are the winners and borrowers are the losers.
-
---
-
-Uncertainty about future inflation discourages people from entering into any form of long-term contract
+# Predictions
 
 
----
+Interest rates on different maturity bonds move together
+over time; explained by the first term in the equation
 
-# Why inflation and deflation cause problems?
+Yield curves tend to slope upward when short-term rates
+are low and to be inverted when short-term rates are
+high; explained by the liquidity premium term in the first
+case and by a low expected average in the second case
 
-- Low, steady, and anticipated inflation or deflation is not a problem.
+Yield curves typically slope upward; explained by a larger
+liquidity premium as the term to maturity lengthens
 
---
 
-- Unpredictable inflation or deflation is a problem because it:
-
-1. Redistributes income and wealth
-
-2. Lowers real GDP and employment
-
-3. Diverts resources from production
-
---
-
-- Unpredictable changes in the inflation rate redistribute
-income in arbitrary ways between employers and workers
-and between borrowers and lenders.
-
---
-
-- At its worse, inflation becomes hyperinflation an inflation rate
-that is so rapid that workers are paid twice a day because money
-loses its value so quickly.
-
----
-
-# Inflation in History!
-
-.pull-left[
-```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week3graphs/inflationhist.png") 
+```{r  out.width = "80%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/habitat.png")
 ```
-]
 
-.pull-right[
-
-- __Hyperinflation :__ extremely high rate of inflation.
-
-- __Demand pull inflation :__ increases in aggregate demand outpace increases in aggregate supply.
-
-- __Cost push inflation :__ increases in production costs cause firms to raise prices.
-
-]
 ---
 
-#  Inflation is easy, disinflation in hard
+# Yield Curves and Business Cycles
 
-.pull-left[
-```{r  out.width = "80%", fig.align = 'center',echo=FALSE}
-knitr::include_graphics("week3graphs/volcker.jfif") 
+```{r  out.width = "70%", fig.align="center",echo=FALSE}
+knitr::include_graphics("week5graphs/yieldcurves.png")
 ```
-]
-
-.pull-right[
-- Disinflation: bringing the inflation rate down
-
-- Two major periods of disinflation happened in the mid-1970s and the early 1980s. 
-
-- Disinflation is difficult and costly because it requires a temporary but large increase in the unemployment rate.
-
-- Cold-Turkey policies try to reduce the inflation rate as quickly as possible towards a target.
-
-- Gradualist policies reduce the rate of inflation at a slow pace
-
-]
-
-???
-To reduce inflation, policymakers must choose between cold-turkey and gradualist policies. Cold-Turkey policies try to reduce the inflation rate as quickly as possible towards a target. Gradualist policies reduce the rate of inflation at a slow pace, which is to say that these policies move the economy slowly towards a target.
-Cold-turkey policies create a shock-effect, which might not be good for the economy if the shock is great, but can be good for the economy if it builds policymaker trustworthiness. Gradualist policies allow policymakers to incorporate new information when playing out the policies
-
