@@ -1,0 +1,136 @@
+---
+title: "Capitalization Ratios"
+author: "Manolis Chatzikonstantinou"
+date: '2022-07-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Getting the data
+
+We will download several series of data related to interest rates. For that reason, here, I introduce a new package  that makes easier the use of data provided by the Research division of the Federal Reserve Bank of St. Louis. The database has more than 500,000 economic time series from 87 sources, covering  inflation and employment measures, exchange rates, interest rates, monetary aggregates, U.S. trade, production and financial data.  The use of those data with R is made simpler with the fredr package. This package provides a complete set of R function to the [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/) RESTful API. For that reason you should set up an account in the website above and then get an API to use in your applications. 
+
+After you do so install the package `install.packages('fred')` and start working with the data. As an example, let's find data about unemployment in the US. To do so, we will need to know the series ID in the data, however the package provides some functionality in case you do not know the key and you do not want to search directly in the website. The following code finds the most related series ID in the FRED data related to the term "unemployment" and plots the time series. Also, make sure to read the documentation `help("fredr")`.
+
+
+```{r warning=FALSE}
+library(tidyverse)
+library(fredr)
+fredr_set_key(Sys.getenv("FRED_API_KEY"))
+fredr_series_search_text(
+  search_text = "unemployment",
+  order_by = "search_rank",
+  sort_order = "desc",
+  limit = 1) %>%
+  pull(id) %>% 
+  fredr(series_id = .) %>%
+  ggplot(data = ., mapping = aes(x = date, y = value, color = series_id)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Rate", color = "Series")
+
+```
+
+For convenvience let's also define to function that downloads data from a specific starting date, at a monthly frequence, in levels ("lin") and in percent changes ("pc1").
+```{r}
+# Create a function to print squares of numbers in sequence.
+fredr_levels_monthly <- function(name) {
+fredr_series_observations(
+  series_id = name,
+  observation_start = as.Date("1955-01-01"),
+  frequency = "m",
+  units = "lin"
+)
+}
+
+fredr_pcyearly_monthly <- function(name) {
+fredr_series_observations(
+  series_id = name,
+  observation_start = as.Date("1955-01-01"),
+  frequency = "m",
+  units = "pc1"
+)
+}
+```
+
+## Getting back to normal 1:
+
+
+FRED’s all about data, which economists often use to conduct or test their research. So let’s look at some of that research…
+
+In a recent St. Louis Fed working paper, economists Maximiliano Dvorkin, Juan M. Sanchez, Horacio Sapriza, and Emircan Yurdagul study how the arrival of news affects emerging markets. They use a logic from a 2006 paper by Beaudry and Portier to identify news events—aka “shocks.” The idea is to compare a financial index that captures the expected future performance of the economy with a measure of current performance. They identify “good news” when the expected performance variable improves without any proportional improvement in the current performance variable. On the flip side, they identify “bad news” when the expected performance variable declines without any proportional decline in the current performance variable.
+
+Because their research focuses on emerging markets, they use the JPMorgan Emerging Market Bond Index (EMBI) spread, which captures the risk of sovereign default, as their measure of future performance. They show a connection between the arrival of bad news and an increase in the EMBI spread that can’t be accounted for by current data. They also find that these shocks are important in accounting for fluctuations in these emerging economies and that these economies can’t shield themselves from news shocks by extending the maturity of their debt.
+
+Now, back to FRED: Data can be used to test and illustrate the logic behind this research. The graph shows (in blue) the St. Louis Fed Economic News Index that’s used to predict the value of current real GDP before the BEA releases the official data. Assuming this index is good at capturing current news, we should see a strong correlation between this index and a financial index affected by the future performance of the economy. The index we chose (in red) is the S&P 500: This measure of the value of the stock market, as a measure of the expected performance of U.S. companies, serves as our measure of future performance.
+
+The graph shows that the S&P 500 and Economic News Index move closely together, which suggests the logic is correct and that additional research could identify how news affects the U.S. economy.
+
+How this graph was created: Search for and select “St. Louis Fed Economic News Index: Real GDP Nowcast.” From the “Edit Graph” panel, use the “Add Line” tab to search for and select the S&P 500 series; then click “Add data series.” From there (the “Edit Lines” tab), adjust the units to “Percent Change from Year Ago” for comparability with the news index. Now, both lines will be on the same graph, but their scales are quite different. To better compare the two, you can select “Format” and change the y-axis position to “Right” for the S&P 500 line.
+
+Suggested by Ryan Mather and Juan Sánchez.
+
+View on FRED, series used in this post: SP500, STLENI
+
+Split the sample in 2,before and after covid
+
+https://research.stlouisfed.org/publications/page1-econ/2016/04/01/stock-market-strategies-are-you-an-active-or-passive-investor/?&utm_source=fred.stlouisfed.org&utm_medium=referral&utm_term=related_resources&utm_content=&utm_campaign=pageone
+
+
+
+# Capitalization Ratios
+
+
+Total excluding market value of holdings of foreign corporate equities, investment fund shares, and American Depositary Receipts (ADRs)
+by US residents.
+** Quarterly from Q1-1964 through Q4-1989, and then monthly from January 1990.
+Source: Federal Reserve Board, Financial Accounts of the United States.
+
+
+RATIO MARKET VALUE US EQUITIES EX FOREIGN ISSUES*
+TO AFTER-TAX CORPORATE PROFITS
+
+```{r}
+
+data<-bind_rows(map_dfr(c("SP500","GS1", "FEDFUNDS"), fredr_levels_monthly),fredr_pcyearly_monthly("CPIAUCSL"))
+
+data<-data %>% select(1,2,3) %>% pivot_wider(id_cols = "date", names_from =  series_id)
+data<-data %>% mutate(AAAr=AAA-CPIAUCSL,GS1r=GS1-CPIAUCSL,FEDFUNDSr=FEDFUNDS-CPIAUCSL)
+SP500
+
+
+fredr_levels_monthly("SP500") %>% select(date,AAAr,GS1r,FEDFUNDSr) %>% pivot_longer(-date)%>% 
+  ggplot(data = ., mapping = aes(x = date, y = value, color = name)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Rate", color = "Series")
+
+```
+
+
+TOBIN’S q FOR NONFINANCIAL CORPORATIONS
+(ratio:
+
+https://fred.stlouisfed.org/graph/?g=xtC
+
+What is the current buffet ratio?
+Summary: The Buffett Indicator is the ratio of the total value of the US stock market versus the most current measure of total GDP. Currently: The total US stock market is worth $42.3T, the current GDP estimate is $24.3T, for a Buffett Indicator measure of 175%.
+
+using wilshire :
+The Buffett Indicator is the ratio of total US stock market valuation to GDP. Named after Warren Buffett, who called the ratio "the best single measure of where valuations stand at any given moment". (Buffett has since walked back those comments, hesitating to endorse any single measure as either comprehensive or consistent over time, but this ratio remains credited to his name). To calculate the ratio, we need to get data for both metrics: Total Market Value and GDP.
+
+Total Market Value
+The most common measurement of the aggregate value of the US stock market is the Wilshire 5000. This is available directly from Wilshire (links to all data sources below), with monthly data starting in 1971, and daily measures beginning in 1980. The Wilshire index was created such that a 1-point increase in the index corresponds to a $1 billion increase in US market cap. Per Wilshire, that 1:1 ratio has slightly drifted, and as of 2020 a 1-point increase in the index corresponded to a $1.05 billion dollar increase. We adjust the data back to inception (and projected going forward) on a straight-line basis to compensate for this slight drift.
+
+For data prior to 1970 (where Wilshire data is not available) we use the Z.1 Financial Account - Nonfinancial corporate business; corporate equities; liability, Level, published by the Federal Reserve, which provides a quarterly estimate of total market value back to 1945. In order to integrate the datasets, we index the Z.1 data to match up to the 1970 Wilshire starting point.
+
+Combined, these data make our Composite US Stock Market Value data series, shown below. Our current estimate of composite US stock market value is $42.3T.
+
+GDP
+The Gross Domestic Product (GDP) represents the total production of the US economy. This is measured quarterly by the US Government's Bureau of Economic Analysis. The GDP is a static measurement of prior economic activity - it does not forecast the future or include any expectation or valuation of future economic activity or economic growth. The GDP is calculated and published quarterly, several months in arrears, such that by the time the data is published it is several months old. In order to provide updated data for the most recent quarter we use the most recent GDPNow estimate published by the Federal Reserve Bank of Atlanta. Based on this, our current estimate of (annualized) GDP is $24.3T. A historical chart of GDP is shown below.
+https://fred.stlouisfed.org/graph/?g=qLC
+
+https://fred.stlouisfed.org/graph/?graph_id=164130&category_id=0
+to GDP

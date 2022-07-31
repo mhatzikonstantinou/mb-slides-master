@@ -1,0 +1,360 @@
+---
+title: "Stock Market Valuation"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Stock Market Valuation:
+
+
+Benchmarks for Valuation 
+  - Earnings 
+  - Dividends 
+  - Balance Sheets 
+
+
+Three ways to value a Business
+
+--
+
+```{r, out.width = '500px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/CFFx_xT-SGV_L12G6mjnYdibupSYVn3nqXIt1DKOXcY.original.fullsize.png')
+```
+---
+
+# How we measure the aggregate economy?
+
+- NIPA and the Integrated Macroeconomic Accounts
+  - __GDP__: Expenditure equals output equals incomes 
+  - Savings = Investment 
+  - Household capital (directly owned houses and durable goods) 
+  - Business capital (business are owned by households through intermediaries) 
+  - Wealth 
+
+
+```{r, out.width = '500px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/IBCKi9sGEiT3YOmtAjCofvA5YdQrjT9FHinuOmgTuMI.original.fullsize.png')
+```
+
+---
+
+# The T-account
+
+- The right(left) side of the account shows an individual’s sources(uses) of income
+
+| Uses of income |  | Sources of income |  |
+| :--- | :---: | :--- | :--- | :--- |
+| Consumption | 50 | Compensation | 70 |
+| Tax payments | 20 | Interest received | 20 |
+| Saving | 30 | Dividends received | 10 |
+| Total Expenditures and Saving | 100 | Total Income | 100 |
+
+--
+
+- Balancing Items
+
+--
+
+- Flows across sectors
+
+
+---
+
+# NIPA Sectors and Accounts
+
+- Businesses
+
+--
+
+- Households and institutions.
+
+--
+
+- Government
+
+--
+
+- Foreigners
+
+--
+
+Accounts
+-  Account 1. Domestic Income and Product Account
+  - expenditures vs income measures of GDP
+
+--
+
+-  Account 2. Private Enterprise Income Account
+  - T-account for businesses
+
+
+---
+
+# NIPA Sectors and Accounts
+
+-  Account 3. Personal Income and Outlay Account
+  - T-account for households
+
+--
+
+-  Account 4. Government Receipts and Expenditures Account
+  - T-account for government
+
+--
+
+-  Account 5. Foreign Transactions Current Account
+  - receipts vs payments to ROW
+
+--
+
+- Account 6. Domestic Capital Account
+  - savings=investment
+
+--
+
+- Account 7. Foreign Transactions Capital Account
+  - savings=investment with ROW
+
+
+---
+
+# Total Economy 
+
+- Expenditure vs Value Added vs Income Approach
+  - Income Approach = Taxes,Payments to Factors 
+    - (Workers, Assets, Firm Owners)
+
+--
+
+```{r, out.width = '800px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4JjnFhxLGpwjR29r6PsxZXdI8.original.fullsize.png')
+```
+
+---
+
+# Savings = Investment
+
+![](https://cdn.mathpix.com/snip/images/uTKbAxj7fNdKrh0NN3tN7xWASN3U6BlrWgpisoIOz0M.original.fullsize.png)
+
+
+--
+
+![](https://cdn.mathpix.com/snip/images/RETHFz6MV0V_4hsMW-6-EAbedqmsRYybVL7mEN95C0g.original.fullsize.png)
+
+--
+
+- Gross fixed capital formation (GFCF), also called "investment", is defined as the acquisition of produced assets (including purchases of second-hand assets), including the production of such assets by producers for their own use, minus disposals. 
+
+--
+
+
+- Every sector saves/invests
+- Domestic Investment $\neq$ Domestic Savings
+
+---
+
+# Household Net Worth
+
+- Non-Financial Assets + 
+  -  Financial Assets - 
+  -  Financial Liabilities = 
+  -  Net Worth
+
+--
+
+![](https://cdn.mathpix.com/snip/images/wZ6oPGOKK02WikGOyTLmRkCQ4wywE31f_4uhBbCI98k.original.fullsize.png)
+
+- More details in B.101 Balance Sheet of Households and Nonprofit Organizations
+
+---
+
+# Household Net Worth Relative to Economy
+
+
+![](https://cdn.mathpix.com/snip/images/YjiRCRVvRfWyUBhlawh82hbkIfg6_imImxcZlhPya5E.original.fullsize.png)
+
+- Created using FRED
+
+
+
+---
+
+
+# Relative Valuation Metrics
+
+  - Price Earnings Ratio (Relative Valuation to Sector)
+    - Value relative to GDP/Profits
+  - Tobin's Q (Replacement Value of Capital Stock)
+
+--
+
+- Can you forecast returns with these metrics?
+
+--
+
+- Why?
+  - The Total Value of US Corporations Has Risen over Time
+  - But so did GDP?
+  - Is the stock market overvalued?
+
+---
+
+# "Are Stocks Overvalued?: A Survey of Equity Valuation Models"
+
+![](https://cdn.mathpix.com/snip/images/jyGMpHPYXdH1PMpLgl-CKhJvU8n_BHuD_qonc_Z6iAI.original.fullsize.png)
+
+
+
+---
+
+# Stock Prices and Discounted Cash Flows
+
+![](https://cdn.mathpix.com/snip/images/EzK7BUFUlb5dXtaQZlI8Iw0_65StTnhvAPJZZ2vU0KA.original.fullsize.png)
+
+
+---
+
+# Stock Market Value Relative to GDP
+
+- The Buffet Indicator: Corporate equities to GDP
+  - __Numerator:__ Corporate Equities; Liability from the Federal Reserve's Quarterly Z.1 Balance Sheet (B.103).  
+      - This series is also published in the FRED repository as NCBEILQ027S.
+  - __Denominator:__ Nominal Quarterly GDP
+      - This series is also published in the FRED repository as NCBEILQ027S.
+
+- Do you think this is a good measure?
+
+---
+
+# Tobin’s Q
+
+- Cost Approach to Valuation of the US Non-Financial Corporate Sector from Balance Sheet
+
+- Financial Accounts of the United States Table B103 
+- Assets measured using 
+- Replacement Value 
+- Historical Cost 
+- Equity Measured 
+- Book Value 
+- Market Value
+
+--
+
+Balance Sheet Metrics
+• Tobin’s Q 
+• Market Value of Equity divided by Replacement 
+Value of Assets 
+• Book to Market Ratio 
+• Market Value of Equity divided by Historical Cost 
+of Assets 
+• Inflation reduces historical cost of assets relative to 
+replacement cost
+
+
+
+---
+
+# Tobin’s Q
+
+ Financial Accounts Table B.103 
+• Ratio of Market Value of Corporate Equities 
+• to Net Worth 
+• Net Worth is 
+• Non-Financial Assets at Replacement Value 
+• Plus Financial Assets 
+• Minus Liabilities
+
+The Q Ratio is based on data from the Federal Reserve Z.1 Statistical Release, section B.103 Balance Sheet of Nonfarm NonfinancialCorporate Business. Specifically it is the ratio of Corporate Equities; Liability divided by Corporate Business; Net Worth. Data estimates before 1945 were provided by John Mihaljevic, Dr. Tobin's research assistant at Yale.
+
+
+
+---
+
+# Data for Tobin's Q
+
+![](https://cdn.mathpix.com/snip/images/2dQsVIUVk-a140bIZAoBZPeJK14Rp0IswijVFSMPIfw.original.fullsize.png)
+
+![](https://cdn.mathpix.com/snip/images/IH4XEDf7JBqbeFv5D6PgR0KiwDrGb4RjAzkUTeFrGOQ.original.fullsize.png)
+
+![](https://cdn.mathpix.com/snip/images/SbyGgLo45IsX_ChAzKtWKPI3A6GN8VmobCa2GRM2Ics.original.fullsize.png)
+
+---
+
+# Price to Earnings Ratio
+
+
+- CAPE (Shiller P/E) Promoted by Robert Shiller, this metric compares the current price of equities 
+to the average of real earnings over the past 10 years
+
+
+
+
+---
+
+# Ratios in Recent Data: Has the market  been overvalued for 15 years?
+
+![](https://cdn.mathpix.com/snip/images/CFycriIDVDz16_0l-QEPBJELn2ZbfFlksYi_o6leoi0.original.fullsize.png)
+
+
+---
+
+# Data Exercise
+• Compute the four metrics for the non-financial corporate 
+sector using the data from the Flow of Funds and the 
+NIPA or the Integrated Macroeconomic Accounts
+• Buffet Indicator (Stock Market Value to Output)
+• Tobin’s Q (Stock Market Value to Non-Financial Assets)
+• Price-corporate profits ratio after taxes
+• Price-dividend ratio including stock buybacks
+• Trailing and leading ratios
+
+--- 
+
+# How 
+
+Data Sources
+• Market Value of Equities for the Non-Financial Corporate 
+Sector (End of period)
+• Table B1 line 14 or 
+• Table B103 line 42 or 
+• Table L223 line 3 or 
+• Table S5 line 144 (2018 data is missing)
+
+
+Data Sources
+• Gross Value Added for the Non-Financial Corporate 
+Sector 
+• Table S2 line 4 (2018 data is missing) or
+• Table S5 line 1 (2018 data is missing) or
+• BEA NIPA Table 1.14 line 17
+
+Net Worth for the Non-Financial Corporate Sector 
+• Table B103 line 39
+
+• After Tax Corporate Profits for the Non-Financial 
+Corporate Sector 
+• NIPA Table 1.14 line 29
+• Table F103 line 1 minus line 2
+
+
+
+
+---
+
+# Plot Buffet Indicator
+
+
+---
+
+# Plot Tobin's Q
+
+Price to After Tax Profits
