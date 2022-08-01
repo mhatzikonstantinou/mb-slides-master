@@ -25,12 +25,15 @@ class: center,middle,mctitle-slide
 ---
 
 
----
-
 class: my-one-page-font
 
 # What will you learn today?
 
+2. Recognize the impact of new information on stock
+prices.
+
+3. Compare and contrast adaptive and rational
+expectations.
 
 1. Explain why arbitrage opportunities imply that the
 efficient market hypothesis holds.
@@ -60,6 +63,63 @@ $R=$ the rate of return on the security
 $P_{t+1}=$ price of the security at time $t+1$, the end of the holding period
 $P_{t}=$ price of the security at time $t$, the beginning of the holding period
 $C=$ cash payment (coupon or dividend) made during the holding period
+
+---
+
+# The Theory of Rational Expectations 
+
+Adaptive expectations:
+
+Expectations are formed from past experience only.
+
+Changes in expectations will occur slowly over time
+as data changes.
+
+However, people use more than just past data to
+form their expectations and sometimes change their
+expectations quickly.
+
+Expectations will be identical to optimal forecasts using
+all available information.
+
+Even though a rational expectation equals the optimal
+forecast using all available information, a prediction
+based on it may not always be perfectly accurate.
+
+It takes too much effort to make their expectation the
+best guess possible.
+
+The best guess will not be accurate because the
+predictor is unaware of some relevant information.
+
+
+---
+
+# The Theory of Rational Expectations 
+
+- Rationale Behind the Theory
+
+The incentives for equating expectations with optimal
+forecasts are especially strong in financial markets. In
+these markets, people with better forecasts of the future
+get rich.
+
+The application of the theory of rational expectations to
+financial markets (where it is called the efficient market
+hypothesis or the theory of efficient capital markets) is
+thus particularly useful.
+
+- Implications of the Theory
+
+If there is a change in the way a variable moves, the way
+in which expectations of the variable are formed will
+change as well.
+
+Changes in the conduct of monetary policy (e.g.,
+target the federal funds rate)
+
+The forecast errors of expectations will, on average, be
+zero and cannot be predicted ahead of time.
 
 ---
 

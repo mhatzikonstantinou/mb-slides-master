@@ -1,5 +1,5 @@
 ---
-title: "The Stock Market and Rational Expectations"
+title: "The Stock Market"
 author: "Manolis Chatzikonstantinou"
 institute: "Georgetown University"
 date: "`r Sys.Date()`"
@@ -18,7 +18,7 @@ output:
 class: center,middle,mctitle-slide 
 
 
-# The Stock Market and Rational Expectations
+# The Stock Market 
 
 ## Manolis Chatzikonstantinou  
 
@@ -31,11 +31,40 @@ class: my-one-page-font
 
 1. Calculate the price of common stock.
 
-2. Recognize the impact of new information on stock
-prices.
+--
 
-3. Compare and contrast adaptive and rational
-expectations.
+2. Calculate the return on assets.
+
+--
+
+3. Discuss common techniques to value a company
+
+---
+
+
+class: my-one-page-font
+
+# Common Stock
+
+- __Common stock__ is the principal way that corporations raise equity capital. 
+  - Stockholders has the right to sell the stock
+  - For publicly listed firms, this happens in secondary markets
+
+--
+
+- __Shareholders__: owners of stock
+  -  ownership interest usually proportional to percentage of outstanding shares owned.   
+    - right to vote and residual claimant of cash flows
+    
+--
+
+- Stockholders are usually paid with __dividends__. Dividends depend on 
+  - the source of funds/ net earnings of the corporation
+  - the use of  funds/debt repayment or new investments
+ 
+--
+
+- Dividends are  made periodically, usually quarterly.
 
 ---
 
@@ -43,16 +72,21 @@ class: my-one-page-font
 
 # Price of Common Stock
 
-- We use The One-Period Valuation Model:
+- We use the One-Period Valuation Model:
 
 
-$$
-P_{0}=\frac{\operatorname{Div}_{1}}{\left(1+k_{e}\right)}+\frac{P_{1}}{\left(1+k_{e}\right)}
-$$
-$P_{0}=$ the current price of the stock
-$D^{D i v_{1}}=$ the dividend paid at the end of year 1
-$k_{e}=$ the required return on investment in equity
-$P_{1}=$ the sale price of the stock at the end of the first period
+$$P_{0}=\frac{\operatorname{Div}_{1}}{\left(1+k_{e}\right)}+\frac{P_{1}}{\left(1+k_{e}\right)}$$
+- $P_{0},P_{1}=$ the current and future price of the stock
+- $\operatorname{Div}_{1}=$ the dividend paid at the end of year 1
+- $k_{e}=$ the required return on investment in equity
+
+--
+
+Required return on investment in equity:
+  - alternative returns
+  - depends on preferences towards risk
+  - prior information
+
 
 ---
 
@@ -61,15 +95,18 @@ class: my-one-page-font
 # The Generalized Dividend Valuation Model:
 
 The value of stock today is the present value of all future cash flows
-$$
-P_{0}=\frac{D_{1}}{\left(1+k_{e}\right)^{1}}+\frac{D_{2}}{\left(1+k_{e}\right)^{2}}+\ldots+\frac{D_{n}}{\left(1+k_{e}\right)^{n}}+\frac{P_{n}}{\left(1+k_{e}\right)^{n}}
-$$
+$$P_{0}=\frac{D_{1}}{\left(1+k_{e}\right)^{1}}+\frac{D_{2}}{\left(1+k_{e}\right)^{2}}+\ldots+\frac{D_{n}}{\left(1+k_{e}\right)^{n}}+\frac{P_{n}}{\left(1+k_{e}\right)^{n}}$$
+--
 
-If $P_{n}$ is far in the future, it will not affect $P_{0}$
-$$
-P_{0}=\sum_{t=1}^{\infty} \frac{D_{t}}{\left(1+k_{e}\right)^{t}}
-$$
-The price of the stock is determined only by the present value of the future dividend stream
+- If $P_{n}$ is far in the future, it will not affect $P_{0}$!
+
+$$P_{0}=\sum_{t=1}^{\infty} \frac{D_{t}}{\left(1+k_{e}\right)^{t}}$$
+
+--
+
+The price of the stock is determined only by the __present value of the future dividend stream__!
+  - present value depends on required return 
+  - What would dividends be, in 5,10,20,100 years?
 
 ---
 
@@ -77,155 +114,181 @@ class: my-one-page-font
 
 # The Gordon Growth Model
 
+- Corporations try to increase the rate of dividends:
 
-$$
-P_{0}=\frac{D_{0}(1+g)}{\left(k_{e}-g\right)}=\frac{D_{1}}{\left(k_{e}-g\right)}
-$$
-$D_{0}=$ the most recent dividend paid
-$g=$ the expected constant growth rate in dividends
-$k_{e}=$ the required return on an investment in equity
+$$P_{0}=\frac{D_{0}(1+g)}{\left(k_{e}-g\right)}=\frac{D_{1}}{\left(k_{e}-g\right)}$$
+- $D_{0}=$ the most recent dividend paid
+- $k_{e}=$ the required return on an investment in equity
 
-- Dividends are assumed to continue growing at a constant rate
-forever
+--
 
-The growth rate is assumed to be less than the required return
-on equity
+- $g=$ the expected constant growth rate in dividends
+  - Dividends are assumed to continue growing at a constant rate forever
+  - The growth rate is assumed to be less than the required return on equity
 
 ---
 
 class: my-one-page-font
 
+# Rate of Return
+
+- The rate of return from holding a security equals   
+  - the sum of the capital gain on the security, + 
+  - any cash payments /
+  - by the initial purchase price of the security.
+
+
+$$R_{t,t+1}=\frac{P_{t+1}-P_{t}+C}{P_{t}}$$
+- $R=$ the rate of return on the security
+- $P_{t+1}=$ price of the security at time $t+1$, the end of the holding period
+- $P_{t}=$ price of the security at time $t$, the beginning of the holding period
+- $C=$ cash payment (coupon or dividend) made during the holding period
+  - for stocks, this is the dividend   
+
+---
+
+class: my-one-page-font
+
+# Rate of Return
+
+- Observe, we could do the same between $t$ and $t+n$
+
+$$R_{t,t+n}=\frac{P_{t+n}-P_{t}+C}{P_{t}}$$
+- $R=$ the rate of return on the security
+- $P_{t+n}=$ price of the security at time $t+1$, the end of the holding period
+- $P_{t}=$ price of the security at time $t$, the beginning of the holding period
+- $C=$ cash payment (coupon or dividend) made during the holding period
+  - for stocks, this is the dividends received in these n periods   
+
+---
+
+class: my-one-page-font
+
+# How the Market Sets Stock Prices  
+
+- The price is set by the buyer willing to pay the highest price.
+  - the buyer who can take best advantage of the asset.
+  - the buyer with superior information about an asset 
+  - more information can increase price by reducing perceived risk.
+
+--
+
+- Information is important for individuals to value each asset.
+  - When new information is released about a firm, expectations and prices change.
+
+--
+
+- Market participants constantly receive information  
+  - revise expectations
+  - revise valuations
+  - so stock prices change frequently.
+
+---
+
+
+
+class: my-one-page-font
+
 # Valuation
 
-video by sunderam
+
+<iframe width="669" height="502" src="https://www.youtube.com/embed/znmQ7oMiQrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 
 ---
 
-# How the Market Sets Stock Prices (1 of 2)
+class: my-one-page-font
 
-The price is set by the buyer willing to pay the highest
-price.
+# Stock Market Valuation:
 
-The market price will be set by the buyer who can take
-best advantage of the asset.
+Three ways to value a Business
 
-Superior information about an asset can increase its
-value by reducing its perceived risk.
 
-Information is important for individuals to value each
-asset.
+```{r, out.width = '500px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/CFFx_xT-SGV_L12G6mjnYdibupSYVn3nqXIt1DKOXcY.original.fullsize.png')
+```
 
-When new information is released about a firm,
-expectations and prices change.
+--
 
-Market participants constantly receive information and
-revise their expectations, so stock prices change
-frequently.
+
+- Information for Valuation 
+  - Earnings 
+  - Dividends 
+  - Balance Sheets 
+
+
 
 ---
 
-# Monetary Policy and Stock Prices
+class: my-one-page-font
 
-> Monetary policy can affect stock prices in two ways. First,
-when the Fed lowers interest rates, the return on bonds
-(an alternative asset to stocks) declines, and investors
-are likely to accept a lower required rate of return on an
-investment in equity. The resulting decline lowers the
-denominator in the Gordon growth model (Equation 5)
-and raises stock prices.
+# Price Earnings Valuation Method
 
-> Furthermore, a lowering of interest rates is likely to
-stimulate the economy, so the growth rate in dividends, g,
-is likely to be somewhat higher. This rise in g also causes
-the denominator in Equation 5 to decrease, which also
-leads to a rise in stock prices.
+- Theoretically, we want to use Dividend Valuation Method
+  - Difficult to apply. Dividends are hard to predict 
 
+    
+--
+
+- Price earnings(PE) ratio
+  - Provides an alternative
+  - Based on other similar firms price/earnings
+  - Price of firm's stock = the average industry PE times the expected earnings per share.
+  
+$$\frac{P}{E} \times E=P$$
+--
+
+- PE ratio is  widely followed
+  - how much will investors pay for $1 of earnings 
+  - it is high when:
+      1. market expects earnings to rise
+      2. market feels earnings are very low risk
 
 ---
 
 # The Coronavirus Stock
-Market Crash of 2020
 
-The spread of the coronavirus in February 2020 triggered
+- Market Crash of 2020
+
+>  The spread of the coronavirus in February 2020 triggered
 a stock market crash in which the Dow Jones Industrial
 Average fell from a peak of 29,551 on February 12 to
 18,561 on March 20, a decline of 37%.
 
-The combination of expectations of a lower dividend
-growth rate (g) and a higher required return on investment
+--
 
-in equity $\left(k_{e}\right)$
+- What caused the crash?
 
-led to one of the steepest stock market
+  - The combination of expectations of a lower dividend growth rate ($g$) +
+  - a higher required return on investment in equity $\left(k_{e}\right)$
 
-declines in U.S. history.
+--
 
-video
+- Valuations during the Pandemic 
 
 ---
 
-# The Theory of Rational Expectations 
+class: my-one-page-font
 
-Adaptive expectations:
+# Monetary Policy and Stock Prices
 
-Expectations are formed from past experience only.
+Monetary policy can affect stock prices in two ways:
 
-Changes in expectations will occur slowly over time
-as data changes.
+1. First, when the Fed lowers interest rates, the return on bonds declines,so
+    - the required return, $k_e$, is likely to be somewhat higher:
+      - lowers the denominator in the Gordon formula
+      - raises stock prices.
 
-However, people use more than just past data to
-form their expectations and sometimes change their
-expectations quickly.
-
-Expectations will be identical to optimal forecasts using
-all available information.
-
-Even though a rational expectation equals the optimal
-forecast using all available information, a prediction
-based on it may not always be perfectly accurate.
-
-It takes too much effort to make their expectation the
-best guess possible.
-
-The best guess will not be accurate because the
-predictor is unaware of some relevant information.
+2. Second, lowering of interest rates is likely to stimulate the economy, so
+    - the growth rate in dividends, $g$, is likely to be somewhat higher.
+      - lowers the denominator in the Gordon formula
+      - raises stock prices.
 
 
 ---
 
-# The Theory of Rational Expectations 
 
-- Rationale Behind the Theory
+# Useful Links:
 
-The incentives for equating expectations with optimal
-forecasts are especially strong in financial markets. In
-these markets, people with better forecasts of the future
-get rich.
-
-The application of the theory of rational expectations to
-financial markets (where it is called the efficient market
-hypothesis or the theory of efficient capital markets) is
-thus particularly useful.
-
-- Implications of the Theory
-
-If there is a change in the way a variable moves, the way
-in which expectations of the variable are formed will
-change as well.
-
-Changes in the conduct of monetary policy (e.g.,
-target the federal funds rate)
-
-The forecast errors of expectations will, on average, be
-zero and cannot be predicted ahead of time.
-
----
-
-# Take Home
-
-
-__Useful Links:__
-- [Data on budget deficits](http://www.cbo.gov/)
 - [Financial Data](https://finance.yahoo.com/)
 - [Get Financial Data in R](https://www.youtube.com/watch?v=hZS31_nSlGg)
