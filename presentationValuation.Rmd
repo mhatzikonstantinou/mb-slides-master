@@ -1,35 +1,53 @@
 ---
-title: "Stock Market Valuation"
-subtitle: "⚔<br/>with xaringan"
-author: "Yihui Xie"
-institute: "RStudio, PBC"
-date: "2016/12/12 (updated: `r Sys.Date()`)"
-output:
+title: "The Stock Market"
+author: "Manolis Chatzikonstantinou"
+institute: "Georgetown University"
+date: "`r Sys.Date()`"
+output: 
   xaringan::moon_reader:
+    seal: false
+    css: [default,metropolis, metropolis-fonts,"mctheme.css"]
     lib_dir: libs
     nature:
-      highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      slideNumberFormat: '%current%' 
+      ratio: '16:9'
 ---
 
-# Stock Market Valuation:
+class: center,middle,mctitle-slide 
+
+# Valuing the Aggregate Economy
 
 
-Benchmarks for Valuation 
-  - Earnings 
-  - Dividends 
-  - Balance Sheets 
+---
+
+class: my-one-page-font
+
+# Valuing the Aggregate Economy
 
 
-Three ways to value a Business
-
+Three ways to value a Stock Index
+  - Replacement Cost
+  - Price/Earnings
+  - Discounted Dividends
+  
 --
 
-```{r, out.width = '500px',fig.align='center',echo=F}
-knitr::include_graphics('https://cdn.mathpix.com/snip/images/CFFx_xT-SGV_L12G6mjnYdibupSYVn3nqXIt1DKOXcY.original.fullsize.png')
-```
+Benchmarks for Economy 
+  - Earnings = Profits 
+  - Dividends = Cash flows to households
+  - Balance Sheets = Assets owned by households
+  
+--
+
+- Why?
+  - The Total Value of US Corporations Has Risen over Time
+  - But so did GDP? Is the stock market overvalued?
+
 ---
+
+class: my-one-page-font
 
 # How we measure the aggregate economy?
 
@@ -38,7 +56,7 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/CFFx_xT-SGV_L12G6mj
   - Savings = Investment 
   - Household capital (directly owned houses and durable goods) 
   - Business capital (business are owned by households through intermediaries) 
-  - Wealth 
+  - Wealth of domestic households
 
 
 ```{r, out.width = '500px',fig.align='center',echo=F}
@@ -46,6 +64,9 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/IBCKi9sGEiT3YOmtAjC
 ```
 
 ---
+
+class: my-one-page-font
+
 
 # The T-account
 
@@ -68,6 +89,9 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/IBCKi9sGEiT3YOmtAjC
 
 
 ---
+
+class: my-one-page-font
+
 
 # NIPA Sectors and Accounts
 
@@ -99,6 +123,9 @@ Accounts
 
 ---
 
+class: my-one-page-font
+
+
 # NIPA Sectors and Accounts
 
 -  Account 3. Personal Income and Outlay Account
@@ -117,7 +144,6 @@ Accounts
 --
 
 - Account 6. Domestic Capital Account
-  - savings=investment
 
 --
 
@@ -126,6 +152,9 @@ Accounts
 
 
 ---
+
+class: my-one-page-font
+
 
 # Total Economy 
 
@@ -141,6 +170,8 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4
 
 ---
 
+class: my-one-page-font
+
 # Savings = Investment
 
 ![](https://cdn.mathpix.com/snip/images/uTKbAxj7fNdKrh0NN3tN7xWASN3U6BlrWgpisoIOz0M.original.fullsize.png)
@@ -148,19 +179,19 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4
 
 --
 
-![](https://cdn.mathpix.com/snip/images/RETHFz6MV0V_4hsMW-6-EAbedqmsRYybVL7mEN95C0g.original.fullsize.png)
+![](https://cdn.mathpix.com/snip/images/wzXEyRpo5mXsZXlaNenZpthxjTjJmcmRfiVoJxkhugM.original.fullsize.png)
+--
+
+- Gross fixed capital formation, also called "investment": the acquisition of produced assets ... (includes depreciation) -> We care about Net fixed capital formation 
 
 --
 
-- Gross fixed capital formation (GFCF), also called "investment", is defined as the acquisition of produced assets (including purchases of second-hand assets), including the production of such assets by producers for their own use, minus disposals. 
 
---
-
-
-- Every sector saves/invests
-- Domestic Investment $\neq$ Domestic Savings
-
+- Domestic Investment $\neq$ Domestic Savings.  __Part of investment is funded by foreigners!__
 ---
+
+class: my-one-page-font
+
 
 # Household Net Worth
 
@@ -173,42 +204,21 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4
 
 ![](https://cdn.mathpix.com/snip/images/wZ6oPGOKK02WikGOyTLmRkCQ4wywE31f_4uhBbCI98k.original.fullsize.png)
 
-- More details in B.101 Balance Sheet of Households and Nonprofit Organizations
-
----
-
-# Household Net Worth Relative to Economy
-
-
-![](https://cdn.mathpix.com/snip/images/YjiRCRVvRfWyUBhlawh82hbkIfg6_imImxcZlhPya5E.original.fullsize.png)
-
-- Created using FRED
-
+- More details in _B.101 Balance Sheet of Households and Nonprofit Organizations_
+  - domestic vs foreign portfolio holdings
+  - our valuation will assume all dividends go to domestic households!
 
 
 ---
 
+class: my-one-page-font
 
-# Relative Valuation Metrics
+# "Are Stocks Overvalued?"
 
-  - Price Earnings Ratio (Relative Valuation to Sector)
-    - Value relative to GDP/Profits
-  - Tobin's Q (Replacement Value of Capital Stock)
-
---
-
-- Can you forecast returns with these metrics?
-
---
-
-- Why?
-  - The Total Value of US Corporations Has Risen over Time
-  - But so did GDP?
-  - Is the stock market overvalued?
-
----
-
-# "Are Stocks Overvalued?: A Survey of Equity Valuation Models"
+- Other than knowing
+  - households' wealth
+  - portfolio holdings(foreign vs domestic)
+  - we can use NIPA data to value an economy!
 
 ![](https://cdn.mathpix.com/snip/images/jyGMpHPYXdH1PMpLgl-CKhJvU8n_BHuD_qonc_Z6iAI.original.fullsize.png)
 
@@ -225,11 +235,55 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4
 
 # Stock Market Value Relative to GDP
 
-- The Buffet Indicator: Corporate equities to GDP
-  - __Numerator:__ Corporate Equities; Liability from the Federal Reserve's Quarterly Z.1 Balance Sheet (B.103).  
-      - This series is also published in the FRED repository as NCBEILQ027S.
-  - __Denominator:__ Nominal Quarterly GDP
-      - This series is also published in the FRED repository as NCBEILQ027S.
+- The __Buffet Indicator:__ Corporate equities to GDP
+  - __Numerator:__ Corporate Equities; Liability from the Federal Reserve's Quarterly Z.1 Balance Sheet (B.103). Published in the FRED: _NCBEILQ027S_
+  - __Denominator:__ Nominal Quarterly GDP.  FRED _NCBEILQ027S_
+
+
+.panelset[
+.panel[.panel-name[M.Val.Equity]
+
+- Market Value of Equities for the Non-Financial Corporate Sector (End of period)
+  - Table B1 line 14 or 
+  - Table B103 line 42 or 
+  - Table L223 line 3 or 
+  - Table S5 line 144 (2018 data is missing)
+]
+
+.panel[.panel-name[Gr. Val. Added]
+
+
+- Gross Value Added for the Non-Financial Corporate Sector 
+  - Table S2 line 4 (2018 data is missing) or
+  - Table S5 line 1 (2018 data is missing) or
+  - BEA NIPA Table 1.14 line 17
+]
+
+
+.panel[.panel-name[Net Worth]
+
+Net Worth for the Non-Financial Corporate Sector 
+  - Table B103 line 39
+]
+
+
+.panel[.panel-name[Profits]
+
+
+- After Tax Corporate Profits for the Non-Financial  Corporate Sector 
+  - NIPA Table 1.14 line 29
+  - Table F103 line 1 minus line 2
+]
+
+]
+
+```{r}
+library(fredr)
+library(tidyverse)
+fredr_set_key("3bc35d4a8b94bd0f461a3a61f3d804ba")
+fredr("NCBEILQ027S")
+
+```
 
 - Do you think this is a good measure?
 
@@ -237,41 +291,36 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4
 
 # Tobin’s Q
 
-- Cost Approach to Valuation of the US Non-Financial Corporate Sector from Balance Sheet
+- __Market Value of Equity divided by Replacement Value of Assets__
+    - __Market Value of Equity divided by Historical Cost of Assets__
+    - Inflation reduces historical cost relative to  replacement cost
+--
 
-- Financial Accounts of the United States Table B103 
-- Assets measured using 
-- Replacement Value 
-- Historical Cost 
-- Equity Measured 
-- Book Value 
-- Market Value
+- Cost Approach
+  - Value the US Non-Financial Corporate Sector 
+  - Balance Sheet of the Economy
 
 --
 
-Balance Sheet Metrics
-• Tobin’s Q 
-• Market Value of Equity divided by Replacement 
-Value of Assets 
-• Book to Market Ratio 
-• Market Value of Equity divided by Historical Cost 
-of Assets 
-• Inflation reduces historical cost of assets relative to 
-replacement cost
+- Financial Accounts of the United States
+    - Table B103 
+    - Assets measured using  Replacement Value (Historical Cost)
 
+- Equity can be measured using
+    - Book Value 
+    - Market Value
 
 
 ---
 
-# Tobin’s Q
+#Table B.103 
 
- Financial Accounts Table B.103 
-• Ratio of Market Value of Corporate Equities 
-• to Net Worth 
-• Net Worth is 
-• Non-Financial Assets at Replacement Value 
-• Plus Financial Assets 
-• Minus Liabilities
+- Ratio of Market Value of Corporate Equities to Net Worth 
+
+- Net Worth is 
+  - Non-Financial Assets at Replacement Value 
+  - Plus Financial Assets 
+  - Minus Liabilities
 
 The Q Ratio is based on data from the Federal Reserve Z.1 Statistical Release, section B.103 Balance Sheet of Nonfarm NonfinancialCorporate Business. Specifically it is the ratio of Corporate Equities; Liability divided by Corporate Business; Net Worth. Data estimates before 1945 were provided by John Mihaljevic, Dr. Tobin's research assistant at Yale.
 
@@ -308,45 +357,59 @@ to the average of real earnings over the past 10 years
 ---
 
 # Data Exercise
-• Compute the four metrics for the non-financial corporate 
-sector using the data from the Flow of Funds and the 
-NIPA or the Integrated Macroeconomic Accounts
-• Buffet Indicator (Stock Market Value to Output)
-• Tobin’s Q (Stock Market Value to Non-Financial Assets)
-• Price-corporate profits ratio after taxes
-• Price-dividend ratio including stock buybacks
-• Trailing and leading ratios
 
---- 
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
 
-# How 
+- Compute the following four metrics for the non-financial corporate  sector using 
+    - FRED data  (the Flow of Funds and the  NIPA)
 
-Data Sources
-• Market Value of Equities for the Non-Financial Corporate 
-Sector (End of period)
-• Table B1 line 14 or 
-• Table B103 line 42 or 
-• Table L223 line 3 or 
-• Table S5 line 144 (2018 data is missing)
+  1. Buffet Indicator (Stock Market Value to Output)
+  2. Tobin’s Q (Stock Market Value to Non-Financial Assets)
+  3. Price-corporate profits ratio after taxes
+  4. Price-dividend ratio including stock buybacks
+
+--
+
+- How? 
+
+.panelset[
+.panel[.panel-name[M.Val.Equity]
+
+- Market Value of Equities for the Non-Financial Corporate Sector (End of period)
+  - Table B1 line 14 or 
+  - Table B103 line 42 or 
+  - Table L223 line 3 or 
+  - Table S5 line 144 (2018 data is missing)
+]
+
+.panel[.panel-name[Gr. Val. Added]
 
 
-Data Sources
-• Gross Value Added for the Non-Financial Corporate 
-Sector 
-• Table S2 line 4 (2018 data is missing) or
-• Table S5 line 1 (2018 data is missing) or
-• BEA NIPA Table 1.14 line 17
+- Gross Value Added for the Non-Financial Corporate Sector 
+  - Table S2 line 4 (2018 data is missing) or
+  - Table S5 line 1 (2018 data is missing) or
+  - BEA NIPA Table 1.14 line 17
+]
+
+
+.panel[.panel-name[Net Worth]
 
 Net Worth for the Non-Financial Corporate Sector 
-• Table B103 line 39
-
-• After Tax Corporate Profits for the Non-Financial 
-Corporate Sector 
-• NIPA Table 1.14 line 29
-• Table F103 line 1 minus line 2
+  - Table B103 line 39
+]
 
 
+.panel[.panel-name[Profits]
 
+
+- After Tax Corporate Profits for the Non-Financial  Corporate Sector 
+  - NIPA Table 1.14 line 29
+  - Table F103 line 1 minus line 2
+]
+
+]
 
 ---
 
