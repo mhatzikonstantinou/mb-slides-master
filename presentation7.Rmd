@@ -29,21 +29,17 @@ class: my-one-page-font
 
 # What will you learn today?
 
-2. Recognize the impact of new information on stock
-prices.
+- Recognize the impact of new information on stock prices
 
-3. Compare and contrast adaptive and rational
-expectations.
+- Compare and contrast adaptive and rational expectations
 
-1. Explain why arbitrage opportunities imply that the
-efficient market hypothesis holds.
+- What are arbitrage opportunities 
 
-2. R7.5 Identify and explain the implications of the efficient
-market hypothesis for financial markets.
+- What is the efficient market hypothesis 
 
-7.6 Summarize the reasons why behavioral finance
-suggestions that the efficient market hypothesis may not
-hold.
+- Identify and explain the implications of the efficient market hypothesis for financial markets.
+  - Behavioral Finance
+
 
 ---
 
@@ -51,75 +47,61 @@ class: my-one-page-font
 
 # Recall
 
-The rate of return from holding a security equals the sum of the capital
-gain on the security, plus any cash payments divided by the initial
-purchase price of the security.
+- The rate of return from holding a security equals the sum
+  - of the capital gain on the security, 
+  - any cash payments 
+  - divided by the initial purchase price of the security.
 
 
-$$
-R=\frac{P_{t+1}-P_{t}+C}{P_{t}}
-$$
-$R=$ the rate of return on the security
-$P_{t+1}=$ price of the security at time $t+1$, the end of the holding period
-$P_{t}=$ price of the security at time $t$, the beginning of the holding period
-$C=$ cash payment (coupon or dividend) made during the holding period
+$$R=\frac{P_{t+1}-P_{t}+D_t}{P_{t}}$$
 
 ---
 
+class: my-one-page-font
+
 # The Theory of Rational Expectations 
 
-Adaptive expectations:
+- __Adaptive expectations:__
+  - Expectations are formed from past experience only.
+  - Changes in expectations will occur slowly 
+    - as new information arrives.
 
-Expectations are formed from past experience only.
+- But: 
+  1. People use more than just past data to form their expectations 
+  2. People change their expectations quickly.
 
-Changes in expectations will occur slowly over time
-as data changes.
+--
 
-However, people use more than just past data to
-form their expectations and sometimes change their
-expectations quickly.
+- __Rational expectations:__
+  - Expectations = optimal forecasts using all available information.
+      - does not mean the prediction is always perfectly accurate,
+      - e.g. unaware of some relevant information.
 
-Expectations will be identical to optimal forecasts using
-all available information.
-
-Even though a rational expectation equals the optimal
-forecast using all available information, a prediction
-based on it may not always be perfectly accurate.
-
-It takes too much effort to make their expectation the
-best guess possible.
-
-The best guess will not be accurate because the
-predictor is unaware of some relevant information.
-
+- But: 
+  - It takes too much effort to 
+    1. obtain information
+    2. make an expectation the best guess possible.
+ 
 
 ---
 
+class: my-one-page-font
+
 # The Theory of Rational Expectations 
 
-- Rationale Behind the Theory
+- Rationale Behind the Theory in financial markets:
 
-The incentives for equating expectations with optimal
-forecasts are especially strong in financial markets. In
-these markets, people with better forecasts of the future
-get rich.
+ - The incentives for equating expectations with optimal forecasts are especially strong
+  - people with better forecasts of the future get rich.
 
-The application of the theory of rational expectations to
-financial markets (where it is called the efficient market
-hypothesis or the theory of efficient capital markets) is
-thus particularly useful.
-
-- Implications of the Theory
-
-If there is a change in the way a variable moves, the way
-in which expectations of the variable are formed will
-change as well.
-
-Changes in the conduct of monetary policy (e.g.,
-target the federal funds rate)
-
-The forecast errors of expectations will, on average, be
-zero and cannot be predicted ahead of time.
+- Efficient market hypothesis
+  - Theory of rational expectations to financial markets 
+  - Implications: 
+    1. If there is a change in the behavior of a variable,
+      - expectations of the variable   will change as well, e.g.
+      - Changes in the conduct of monetary policy 
+    2. The forecast errors of expectations will, on average, be zero and 
+      - cannot be predicted ahead of time.
 
 ---
 
@@ -127,16 +109,16 @@ class: my-one-page-font
 
 # Forming Expectations
 
-At the beginning of the period, we know $P_{t}$ and $C$. $P_{t+1}$ is unknown and we must form an expectation of it. The expected return then is
-$$
-R^{e}=\frac{P_{t+1}^{e}-P_{t}+C}{P_{t}}
-$$
+  - At the beginning of the period, we know $P_{t}$ and $D_t$.  
+  - $P_{t+1}$ is unknown and we must form an expectation of it. 
+
+The expected return then is
+$$R^{e}=\frac{P_{t+1}^{e}-P_{t}+D_t}{P_{t}}$$
 
 
-Expectations of future prices are equal to optimal forecasts using all currently available information so
-$$
-P_{t+1}^{e}=P_{t+1}^{o f} \Rightarrow R^{e}=R^{\circ f}
-$$
+- Expectations of future prices = optimal forecasts using available information:
+
+$$P_{t+1}^{e}=P_{t+1}^{o f} \Rightarrow R^{e}=R^{of}$$
 
 - But returns can not be far away from equilibrium returns: 
 
@@ -146,95 +128,440 @@ $$
 
 ---
 
+class: my-one-page-font
+
 # The Efficient Market Hypothesis
 
-- Rational Expectations in Financial Markets
 
-
-Current prices in a financial market will be set so that the
-optimal forecast of a security’s return using all available
-information equals the security’s equilibrium return.
-
-In an efficient market, a security’s price fully reflects all
-available information.
-
-- In an efficient market, all unexploited profit opportunities will
-be eliminated
+Current prices are such that:
+  - optimal forecast of a security’s return = the security’s equilibrium return.
+  - a security’s price fully reflects all available information.
+  - all unexploited profit opportunities will be eliminated
 
 - Why does this imply $R^{\text {of }}=R^{e}=R^{*}$?
 
-$$
-\begin{aligned}
-&R^{\text {of }}>R^{*} \Rightarrow P_{t} \uparrow \Rightarrow R^{\circ f} \downarrow \\
-&R^{\circ f}<R^{*} \Rightarrow P_{t} \downarrow \Rightarrow R^{\circ o f} \uparrow
-\end{aligned}
-$$
+$$\begin{aligned}
+&R^{\text {of }}>R^{*} \Rightarrow P_{t} \uparrow \Rightarrow R^{o f} \downarrow \\
+&R^{o f}<R^{*} \Rightarrow P_{t} \downarrow \Rightarrow R^{o f} \uparrow
+\end{aligned}$$
+
 until
-$$
-R^{\circ f}=R^{\star}
-$$
+
+$$R^{o f}=R^{\star}$$
 
 ---
 
+class: my-one-page-font
+
+
 # Application
 
-How Valuable Are Published Reports by
-Investment Advisors?
+- How Valuable Are Published Reports by Investment Advisors?
 
-Information in newspapers and in the published reports of
+> Information in newspapers and in the published reports of
 investment advisers is readily available to many market
-participants and is already reflected in market prices.
+participants 
 
-Acting on this information will not yield abnormally high
-returns, on average.
+- What does that mean to you?
 
-The empirical evidence for the most part confirms that
-recommendations from investment advisers cannot help
-us outperform the general market.
+--
 
-Recommendations from investment advisors cannot help
-us outperform the market.
+- This information is already reflected in market prices.
+   - Acting on this information will not yield abnormally high returns, on average.
+   - The empirical evidence for the most part confirms this.
+   - Recommendations from investment advisors cannot help us outperform the market. Why?
 
-A hot tip is probably information already contained in the
-price of the stock.
-
-Stock prices respond to announcements only when the
-information is new and unexpected.
-
-A “buy and hold” strategy is the most sensible strategy for
-the small investor.
+- A hot tip is probably information already contained in the price of the stock.
+  - Stock prices respond to announcements/news only when the information is new and unexpected.
+  - A “buy and hold” strategy is the most sensible strategy for the small investor.
 
 
 ---
 
+class: my-one-page-font
+
+
 # Application
 
-Application: What Do Stock Market Crashes Tell Us
-About the Efficient Market Hypothesis and the Efficiency
-of Financial Markets?
+- What Do Stock Market Crashes Tell Us About the EMH?
 
-Nothing in efficient markets theory rules out large changes
-in stock prices. A large change in stock prices can result
-from new information that produces a dramatic decline in
-optimal forecasts of the future valuation of firms. However,
-economists are hard pressed to find fundamental changes
-in the economy that would have caused the Black Monday
-and tech crashes. One lesson from these crashes is that
-factors other than market fundamentals may have an effect
-on asset prices.
+--
 
-Why the Efficient Market Hypothesis Does Not
-Imply That Financial Markets Are Efficient
+- Nothing in efficient markets theory rules out large changes in stock prices.
+- A large change in stock prices can result
+    1. from new information 
+    2. declines in optimal forecasts of the future valuation of firms
+      - factors other than market fundamentals may have an effect on asset prices.
 
-Some financial economists believe all prices are always
+--
+
+- Why the EMH Does Not Imply That Financial Markets Are Efficient
+
+> Some financial economists believe all prices are always
 correct and reflect market fundamentals (items that
 have a direct impact on future income streams of the
 securities) and so financial markets are efficient.
 
-However, prices in markets like the stock market are
-unpredictable. This casts serious doubt on the stronger
-view that financial markets are efficient.
+- Hard to reconcile with the fact that prices in the stock market are very unpredictable.
+- How to do you explain large bubbles and crashes?
+    - Behavioral Finance?
 
 ---
 
-# Benchmarks for Stock Prices
+class: my-one-page-font
+
+# Valuing the Aggregate Economy
+
+Three ways to value a Stock Index
+  - Replacement Cost
+  - Price/Earnings
+  - Discounted Dividends
+  
+--
+
+Benchmarks for Economy 
+  - Earnings = Profits 
+  - Dividends = Cash flows to households
+  - Balance Sheets = Assets owned by households
+  
+--
+
+- Why?
+  - The Total Value of US Corporations Has Risen over Time
+  - But so did GDP? Is the stock market overvalued?
+
+---
+
+class: my-one-page-font
+
+# How we measure the aggregate economy?
+
+- NIPA and the Integrated Macroeconomic Accounts
+  - __GDP__: Expenditure equals output equals incomes 
+  - Savings = Investment 
+  - Household capital (directly owned houses and durable goods) 
+  - Business capital (business are owned by households through intermediaries) 
+  - Wealth of domestic households
+
+
+```{r, out.width = '500px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/IBCKi9sGEiT3YOmtAjCofvA5YdQrjT9FHinuOmgTuMI.original.fullsize.png')
+```
+
+---
+
+class: my-one-page-font
+
+
+# The T-account
+
+- The right(left) side of the account shows an individual’s sources(uses) of income
+
+| Uses of income |  | Sources of income |  |
+| :--- | :---: | :--- | :--- | :--- |
+| Consumption | 50 | Compensation | 70 |
+| Tax payments | 20 | Interest received | 20 |
+| Saving | 30 | Dividends received | 10 |
+| Total Expenditures and Saving | 100 | Total Income | 100 |
+
+--
+
+- Balancing Items
+
+--
+
+- Flows across sectors
+
+
+---
+
+class: my-one-page-font
+
+
+# NIPA Sectors and Accounts
+
+- Businesses
+
+--
+
+- Households and institutions.
+
+--
+
+- Government
+
+--
+
+- Foreigners
+
+--
+
+Accounts
+-  Account 1. Domestic Income and Product Account
+  - expenditures vs income measures of GDP
+
+--
+
+-  Account 2. Private Enterprise Income Account
+  - T-account for businesses
+
+
+---
+
+class: my-one-page-font
+
+
+# NIPA Sectors and Accounts
+
+-  Account 3. Personal Income and Outlay Account
+  - T-account for households
+
+--
+
+-  Account 4. Government Receipts and Expenditures Account
+  - T-account for government
+
+--
+
+-  Account 5. Foreign Transactions Current Account
+  - receipts vs payments to ROW
+
+--
+
+- Account 6. Domestic Capital Account
+
+--
+
+- Account 7. Foreign Transactions Capital Account
+  - savings=investment with ROW
+
+
+---
+
+class: my-one-page-font
+
+
+# Total Economy 
+
+- Expenditure vs Value Added vs Income Approach
+  - Income Approach = Taxes,Payments to Factors 
+    - (Workers, Assets, Firm Owners)
+
+--
+
+```{r, out.width = '800px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4JjnFhxLGpwjR29r6PsxZXdI8.original.fullsize.png')
+```
+
+---
+
+class: my-one-page-font
+
+# Savings = Investment
+
+![](https://cdn.mathpix.com/snip/images/uTKbAxj7fNdKrh0NN3tN7xWASN3U6BlrWgpisoIOz0M.original.fullsize.png)
+
+
+--
+
+![](https://cdn.mathpix.com/snip/images/wzXEyRpo5mXsZXlaNenZpthxjTjJmcmRfiVoJxkhugM.original.fullsize.png)
+--
+
+- Gross fixed capital formation, also called "investment": the acquisition of produced assets ... (includes depreciation) -> We care about Net fixed capital formation 
+
+--
+
+
+- Domestic Investment $\neq$ Domestic Savings.  __Part of investment is funded by foreigners!__
+---
+
+class: my-one-page-font
+
+
+# Household Net Worth
+
+- Non-Financial Assets + 
+  -  Financial Assets - 
+  -  Financial Liabilities = 
+  -  Net Worth
+
+--
+
+![](https://cdn.mathpix.com/snip/images/wZ6oPGOKK02WikGOyTLmRkCQ4wywE31f_4uhBbCI98k.original.fullsize.png)
+
+- More details in _B.101 Balance Sheet of Households and Nonprofit Organizations_
+  - domestic vs foreign portfolio holdings
+  - our valuation will assume all dividends go to domestic households!
+
+
+---
+
+class: my-one-page-font
+
+# "Are Stocks Overvalued?"
+
+- Other than knowing
+  - households' wealth
+  - portfolio holdings(foreign vs domestic)
+  - we can use NIPA data to value an economy!
+
+![](https://cdn.mathpix.com/snip/images/jyGMpHPYXdH1PMpLgl-CKhJvU8n_BHuD_qonc_Z6iAI.original.fullsize.png)
+
+
+
+---
+
+# Stock Prices and Discounted Cash Flows
+
+![](https://cdn.mathpix.com/snip/images/EzK7BUFUlb5dXtaQZlI8Iw0_65StTnhvAPJZZ2vU0KA.original.fullsize.png)
+
+
+---
+
+# Stock Market Value Relative to GDP
+
+- The __Buffet Indicator:__ Corporate equities to GDP
+  - __Numerator:__ Corporate Equities; Liability from the Federal Reserve's Quarterly Z.1 Balance Sheet (B.103). Published in the FRED: _NCBEILQ027S_
+  - __Denominator:__ Nominal Quarterly GDP.  FRED _NCBEILQ027S_
+
+
+```{r}
+
+```
+
+- Do you think this is a good measure?
+
+---
+
+# Tobin’s Q
+
+- __Market Value of Equity divided by Replacement Value of Assets__
+    - __Market Value of Equity divided by Historical Cost of Assets__
+    - Inflation reduces historical cost relative to  replacement cost
+--
+
+- Cost Approach
+  - Value the US Non-Financial Corporate Sector 
+  - Balance Sheet of the Economy
+
+--
+
+- Financial Accounts of the United States
+    - Table B103 
+    - Assets measured using  Replacement Value (Historical Cost)
+
+- Equity can be measured using
+    - Book Value 
+    - Market Value
+
+
+---
+
+#Table B.103 
+
+- Ratio of Market Value of Corporate Equities to Net Worth 
+
+- Net Worth is 
+  - Non-Financial Assets at Replacement Value 
+  - Plus Financial Assets 
+  - Minus Liabilities
+
+The Q Ratio is based on data from the Federal Reserve Z.1 Statistical Release, section B.103 Balance Sheet of Nonfarm NonfinancialCorporate Business. Specifically it is the ratio of Corporate Equities; Liability divided by Corporate Business; Net Worth. Data estimates before 1945 were provided by John Mihaljevic, Dr. Tobin's research assistant at Yale.
+
+
+
+---
+
+# Data for Tobin's Q
+
+![](https://cdn.mathpix.com/snip/images/2dQsVIUVk-a140bIZAoBZPeJK14Rp0IswijVFSMPIfw.original.fullsize.png)
+
+![](https://cdn.mathpix.com/snip/images/IH4XEDf7JBqbeFv5D6PgR0KiwDrGb4RjAzkUTeFrGOQ.original.fullsize.png)
+
+![](https://cdn.mathpix.com/snip/images/SbyGgLo45IsX_ChAzKtWKPI3A6GN8VmobCa2GRM2Ics.original.fullsize.png)
+
+---
+
+# Price to Earnings Ratio
+
+
+- CAPE (Shiller P/E) Promoted by Robert Shiller, this metric compares the current price of equities 
+to the average of real earnings over the past 10 years
+
+
+
+
+---
+
+# Ratios in Recent Data: Has the market  been overvalued for 15 years?
+
+![](https://cdn.mathpix.com/snip/images/CFycriIDVDz16_0l-QEPBJELn2ZbfFlksYi_o6leoi0.original.fullsize.png)
+
+
+---
+
+# Data Exercise
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+- Compute the following four metrics for the non-financial corporate  sector using 
+    - FRED data  (the Flow of Funds and the  NIPA)
+
+  1. Buffet Indicator (Stock Market Value to Output)
+  2. Tobin’s Q (Stock Market Value to Non-Financial Assets)
+  3. Price-corporate profits ratio after taxes
+  4. Price-dividend ratio including stock buybacks
+
+--
+
+- How? 
+
+.panelset[
+.panel[.panel-name[M.Val.Equity]
+
+- Market Value of Equities for the Non-Financial Corporate Sector (End of period)
+  - Table B1 line 14 or 
+  - Table B103 line 42 or 
+  - Table L223 line 3 or 
+  - Table S5 line 144 (2018 data is missing)
+]
+
+.panel[.panel-name[Gr. Val. Added]
+
+
+- Gross Value Added for the Non-Financial Corporate Sector 
+  - Table S2 line 4 (2018 data is missing) or
+  - Table S5 line 1 (2018 data is missing) or
+  - BEA NIPA Table 1.14 line 17
+]
+
+
+.panel[.panel-name[Net Worth]
+
+Net Worth for the Non-Financial Corporate Sector 
+  - Table B103 line 39
+]
+
+
+.panel[.panel-name[Profits]
+
+
+- After Tax Corporate Profits for the Non-Financial  Corporate Sector 
+  - NIPA Table 1.14 line 29
+  - Table F103 line 1 minus line 2
+]
+
+]
+
+---
+
+# Plot Buffet Indicator
+
+
+---
+
+# Plot Tobin's Q
+
+Price to After Tax Profits

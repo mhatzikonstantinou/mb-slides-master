@@ -130,6 +130,29 @@ $$P_{0}=\frac{D_{0}(1+g)}{\left(k_{e}-g\right)}=\frac{D_{1}}{\left(k_{e}-g\right
 
 class: my-one-page-font
 
+# How the Market Sets Stock Prices  
+
+- The price is set by the buyer willing to pay the highest price.
+  - the buyer who can take best advantage of the asset.
+  - the buyer with superior information about an asset 
+  - more information can increase price by reducing perceived risk.
+
+--
+
+- Information is important for individuals to value each asset.
+  - When new information is released about a firm, expectations and prices change.
+
+--
+
+- Market participants constantly receive information  
+  - revise expectations
+  - revise valuations
+  - so stock prices change frequently.
+
+---
+
+class: my-one-page-font
+
 # Rate of Return
 
 - The rate of return from holding a security equals   
@@ -160,39 +183,6 @@ $$R_{t,t+n}=\frac{P_{t+n}-P_{t}+C}{P_{t}}$$
 - $C=$ cash payment (coupon or dividend) made during the holding period
   - for stocks, this is the dividends received in these n periods   
 
----
-
-class: my-one-page-font
-
-# How the Market Sets Stock Prices  
-
-- The price is set by the buyer willing to pay the highest price.
-  - the buyer who can take best advantage of the asset.
-  - the buyer with superior information about an asset 
-  - more information can increase price by reducing perceived risk.
-
---
-
-- Information is important for individuals to value each asset.
-  - When new information is released about a firm, expectations and prices change.
-
---
-
-- Market participants constantly receive information  
-  - revise expectations
-  - revise valuations
-  - so stock prices change frequently.
-
----
-
-
-
-class: my-one-page-font
-
-# Valuation
-
-
-<iframe width="669" height="502" src="https://www.youtube.com/embed/znmQ7oMiQrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
 
 
 ---
@@ -215,8 +205,6 @@ knitr::include_graphics('https://cdn.mathpix.com/snip/images/CFFx_xT-SGV_L12G6mj
   - Earnings 
   - Dividends 
   - Balance Sheets 
-
-
 
 ---
 
@@ -244,27 +232,42 @@ $$\frac{P}{E} \times E=P$$
       1. market expects earnings to rise
       2. market feels earnings are very low risk
 
+
+---
+
+
+
+class: my-one-page-font
+
+# Judging Valuations
+
+
+<iframe width="669" height="502" src="https://www.youtube.com/embed/znmQ7oMiQrM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-external="1"></iframe>
+
+
+
 ---
 
 # The Coronavirus Stock
 
 - Market Crash of 2020
 
->  The spread of the coronavirus in February 2020 triggered
-a stock market crash in which the Dow Jones Industrial
-Average fell from a peak of 29,551 on February 12 to
-18,561 on March 20, a decline of 37%.
+>  The spread of COVID triggered a stock market crash in which the Dow Jones Industrial
+Average fell from a peak of 29,551 on February 12 to 18,561 on March 20, a decline of 37%.
 
 --
 
 - What caused the crash?
 
-  - The combination of expectations of a lower dividend growth rate ($g$) +
+  - The combination of expectations of a lower dividend growth rate $(g)$ +
   - a higher required return on investment in equity $\left(k_{e}\right)$
 
 --
 
-- Valuations during the Pandemic 
+- Market Crash of 1987
+  - Average Drop of 20 percent
+  - Example: $(k_e=0.09+0.02),(g = 0.04)$ and $(D=7)$
+  - What happens if interest rate and investors require 2 percent more?
 
 ---
 
@@ -287,8 +290,213 @@ Monetary policy can affect stock prices in two ways:
 
 ---
 
+class: my-one-page-font
+
 
 # Useful Links:
 
 - [Financial Data](https://finance.yahoo.com/)
 - [Get Financial Data in R](https://www.youtube.com/watch?v=hZS31_nSlGg)
+
+--
+
+- [More on Valuations](https://pages.stern.nyu.edu/~adamodar/)
+  - [Getting Data](https://www.stern.nyu.edu/~adamodar/podcasts/Webcasts/gettingdata.mp4)
+  - [What to know about a company](https://www.stern.nyu.edu/~adamodar/podcasts/Webcasts/Reading10Knew.mp4)
+  - [Valuation Tools Webcast](https://youtu.be/F9GfXJ-IrSA)
+        - [Valuation Tools, Excel](https://pages.stern.nyu.edu/~adamodar/pc/fcffsimpleginzuCorona.xlsx)
+  - [Valuation and Market News](https://aswathdamodaran.blogspot.com/)
+
+
+---
+
+
+class: my-one-page-font
+
+# What will you learn today?
+
+- Recognize the impact of new information on stock prices
+
+- Compare and contrast adaptive and rational expectations
+
+- What are arbitrage opportunities 
+
+- What is the efficient market hypothesis 
+
+- Identify and explain the implications of the efficient market hypothesis for financial markets.
+  - Behavioral Finance
+
+
+---
+
+class: my-one-page-font
+
+# Recall
+
+- The rate of return from holding a security equals the sum
+  - of the capital gain on the security, 
+  - any cash payments 
+  - divided by the initial purchase price of the security.
+
+
+$$R=\frac{P_{t+1}-P_{t}+D_t}{P_{t}}$$
+
+---
+
+class: my-one-page-font
+
+# The Theory of Rational Expectations 
+
+- __Adaptive expectations:__
+  - Expectations are formed from past experience only.
+  - Changes in expectations will occur slowly 
+    - as new information arrives.
+
+- But: 
+  1. People use more than just past data to form their expectations 
+  2. People change their expectations quickly.
+
+--
+
+- __Rational expectations:__
+  - Expectations = optimal forecasts using all available information.
+      - does not mean the prediction is always perfectly accurate,
+      - e.g. unaware of some relevant information.
+
+- But: 
+  - It takes too much effort to 
+    1. obtain information
+    2. make an expectation the best guess possible.
+ 
+
+---
+
+class: my-one-page-font
+
+# The Theory of Rational Expectations 
+
+- Rationale Behind the Theory in financial markets:
+
+ - The incentives for equating expectations with optimal forecasts are especially strong
+  - people with better forecasts of the future get rich.
+
+- Efficient market hypothesis
+  - Theory of rational expectations to financial markets 
+  - Implications: 
+    1. If there is a change in the behavior of a variable,
+      - expectations of the variable   will change as well, e.g.
+      - Changes in the conduct of monetary policy 
+    2. The forecast errors of expectations will, on average, be zero and 
+      - cannot be predicted ahead of time.
+
+---
+
+class: my-one-page-font
+
+# Forming Expectations
+
+  - At the beginning of the period, we know $P_{t}$ and $D_t$.  
+  - $P_{t+1}$ is unknown and we must form an expectation of it. 
+
+The expected return then is
+$$R^{e}=\frac{P_{t+1}^{e}-P_{t}+D_t}{P_{t}}$$
+
+
+- Expectations of future prices = optimal forecasts using available information:
+
+$$P_{t+1}^{e}=P_{t+1}^{o f} \Rightarrow R^{e}=R^{of}$$
+
+- But returns can not be far away from equilibrium returns: 
+
+$$
+R^{\text {of }}=R^{e}=R^{*}
+$$
+
+---
+
+class: my-one-page-font
+
+# The Efficient Market Hypothesis
+
+
+Current prices are such that:
+  - optimal forecast of a security’s return = the security’s equilibrium return.
+  - a security’s price fully reflects all available information.
+  - all unexploited profit opportunities will be eliminated
+
+- Why does this imply $R^{\text {of }}=R^{e}=R^{*}$?
+
+$$\begin{aligned}
+&R^{\text {of }}>R^{*} \Rightarrow P_{t} \uparrow \Rightarrow R^{o f} \downarrow \\
+&R^{o f}<R^{*} \Rightarrow P_{t} \downarrow \Rightarrow R^{o f} \uparrow
+\end{aligned}$$
+
+until
+
+$$R^{o f}=R^{\star}$$
+
+---
+
+class: my-one-page-font
+
+
+# Application
+
+- How Valuable Are Published Reports by Investment Advisors?
+
+> Information in newspapers and in the published reports of
+investment advisers is readily available to many market
+participants 
+
+- What does that mean to you?
+
+--
+
+- This information is already reflected in market prices.
+   - Acting on this information will not yield abnormally high returns, on average.
+   - The empirical evidence for the most part confirms this.
+   - Recommendations from investment advisors cannot help us outperform the market. Why?
+
+- A hot tip is probably information already contained in the price of the stock.
+
+---
+
+class: my-one-page-font
+
+
+# Application
+
+- What Do Stock Market Crashes Tell Us About the EMH?
+
+--
+
+- Nothing in efficient markets theory rules out large changes in stock prices.
+- A large change in stock prices can result
+    1. from new information 
+    2. declines in optimal forecasts of the future valuation of firms
+      - factors other than market fundamentals may have an effect on asset prices.
+
+--
+
+- Why the EMH Does Not Imply That Financial Markets Are Efficient
+
+> Some financial economists believe all prices are always
+correct and reflect market fundamentals (items that
+have a direct impact on future income streams of the
+securities) and so financial markets are efficient.
+
+- Hard to reconcile with the fact that prices in the stock market are very volatile.
+
+
+---
+
+class: my-one-page-font
+
+
+# Behavioral Finance
+
+- The lack of short selling (causing over-priced stocks) may be explained by loss aversion.
+
+- The large trading volume may be explained by investor overconfidence.
+
+- Stock market bubbles may be explained by overconfidence and social contagion
