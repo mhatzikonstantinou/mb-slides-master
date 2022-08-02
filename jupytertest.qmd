@@ -1,0 +1,12 @@
+---
+title: "Using Jupyter Notebooks in Rstudio"
+format: pdf
+jupyter: python3
+---
+
+This is a sample Python Notebook
+
+```{python}
+print("Hello World")
+```
+
