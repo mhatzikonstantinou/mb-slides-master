@@ -2,12 +2,8 @@
 title: "Data Exercise: What is the interest rate?"
 author: "Manolis Chatzikonstantinou"
 date: "29/7/2022"
-output:
-  pdf_document: default
-  html_document: default
-  word_document: default
+format: pdf
 ---
-
 
 # Interest rates
 
@@ -53,7 +49,8 @@ This graph shows the federal funds rate for approximately the past 20 years, fro
 
 ```{r, include=TRUE}
 library(ggplot2)
-dataFF <-fredr(series_id = "FEDFUNDS") %>% filter(date >= "1999-12-01" & date <= "2023-01-01") 
+dataFF <-fredr(series_id = "FEDFUNDS") 
+dataFF <-subset(dataFF,date >= "1999-12-01" & date <= "2023-01-01") 
 ggplot(data = dataFF, mapping = aes(x = date, y = value)) +
     geom_line() + ggtitle("Fed Funds Rate") + 
     labs(x = "Observation Date", y = "Percent")
@@ -108,22 +105,25 @@ download the data for the yield of treasury bonds expiring in 1 year (FRED serie
 data<-rbind(fredr_levels_monthly("GS1",ddate = "1955-01-01"),
                 fredr_pcyearly_monthly("CPIAUCSL",ddate = "1955-01-01"))
 # see part of the data
-data %>% select(1,2,3) 
+data 
 ```
 
-Then we create the yield of treasury bonds expiring in 1 year (FRED series GS1) in real terms. Before we do that we need to express our data in a way that each row, contains one value for the yield and one value for the inflation each month, we do that by using the pivot_wider option from package
+Then we create the yield of treasury bonds expiring in 1 year (FRED series GS1) in real terms. Before we do that we need to express our data in a way that each row, contains one value for the yield and one value for the inflation each month, we do that by using the pivot_wider option from package. First we subset the data to select columns 1, 2 and 3  and then we pivot the data in a wide format where each row is identified by the variable date and each column is related to the old series id column.
 
 ```{r}
 library(tidyr)
-data %>% select(1,2,3) %>% pivot_wider(id_cols = "date", names_from =  series_id)
+data<-subset(data, select = date:value)
+pivot_wider(data=data,id_cols = "date", names_from =  series_id)
 ```
-Once we have the data in that form the real rate in created by subtracting the inflation column from the yield column. We can do that using the function, mutatefrom package dplyr that  adds new variables to existing datasets:
+Once we have the data in that form the real rate in created by subtracting the inflation column from the yield column. We can do that using the function, mutate from package dplyr that  adds new variables to existing datasets:
 
 ```{r}
+library(dplyr)
 # transform the data to have a column associated with GSI and one for inflation
-data<-data %>% select(1,2,3) %>% pivot_wider(id_cols = "date", names_from =  series_id)
+data<-subset(data, select = date:value) 
+data<-pivot_wider(data = data,id_cols = "date", names_from =  series_id)
 # then subtract the inflation rate for the specific year from the nominal interest rate
-data<-data %>% mutate(GS1r=GS1-CPIAUCSL)
+data<-mutate(data,GS1r=GS1-CPIAUCSL)
 # see part of the data
 data
 
@@ -145,9 +145,13 @@ data<-rbind(fredr_levels_monthly("AAA",ddate = "1955-01-01"),
                 fredr_levels_monthly("FEDFUNDS",ddate = "1955-01-01"),
                 fredr_pcyearly_monthly("CPIAUCSL",ddate = "1955-01-01"))
 
-data<-data %>% select(1,2,3) %>% pivot_wider(id_cols = "date", names_from =  series_id)
-data<-data %>% mutate(AAAr=AAA-CPIAUCSL,GS1r=GS1-CPIAUCSL,FEDFUNDSr=FEDFUNDS-CPIAUCSL)
-data<-data %>% select(date,AAAr,GS1r,FEDFUNDSr) %>% pivot_longer(-date)
+data<-subset(data, select = date:value) 
+data<-pivot_wider(data = data,id_cols = "date", names_from =  series_id)
+# then subtract the inflation rate for the specific year from the nominal interest rate
+data<-mutate(data,AAAr=AAA-CPIAUCSL,GS1r=GS1-CPIAUCSL,FEDFUNDSr=FEDFUNDS-CPIAUCSL)
+data<-subset(data, select = c(date,AAAr,GS1r,FEDFUNDSr)) 
+
+data<- pivot_longer(data,-date)
 
 ggplot(data = data, mapping = aes(x = date, y = value, color = name)) +
     geom_line() +
@@ -159,8 +163,34 @@ ggplot(data = data, mapping = aes(x = date, y = value, color = name)) +
 ### Exercise 
 
 Use any statistical software along with data from FRED to:
-  1. Replicate the above figure, plotting the real rates of triple A corporate bonds(FRED series AAA), 
-  the yield of treasury bonds expiring in 1 year (FRED series GS1), and the Fed Funds rate(FRED series FEDFUNDS) starting in 1955.
-  2. Construct a figure, plotting the yield of treasury bonds expiring in 1 year (FRED series GS1) in nominal terms, and the inflation rate based on the CPI series(FRED series CPIAUCSL) starting in 1960.    
-  3. Construct a  figure, plotting the real yield of treasury bonds expiring in 1 year (FRED series GS1), the  real yield of treasury bonds expiring in 2 year (FRED series GS2), and the  real yield of treasury bonds expiring in 10 years (FRED series GS10) starting in 1980. 
-  4. Based on the way, we used the data above to calculate the real rates. Would you say that this is closer to the ex ante rate or the ex post interest rate?
+
+  1.    Replicate the above figure, plotting the real rates of triple A corporate bonds(FRED series AAA), the yield of treasury bonds expiring in 1 year (FRED series GS1), and the Fed Funds rate(FRED series FEDFUNDS) starting in 1955.
+    
+  2.    Construct a figure, plotting the yield of treasury bonds expiring in 1 year (FRED series GS1) in nominal terms, and the inflation rate based on the CPI series(FRED series CPIAUCSL) starting in 1960.
+  
+  3.    Construct a  figure, plotting the real yield of treasury bonds expiring in 1 year (FRED series GS1), the  real yield of treasury bonds expiring in 2 year (FRED series GS2), and the  real yield of treasury bonds expiring in 10 years (FRED series GS10) starting in 1980. 
+  
+  4.    Based on the way, we used the data above to calculate the real rates. Would you say that this is closer to the ex ante rate or the ex post interest rate?
+  
+### Can I use Rstudio, to complete the exercise?
+
+The answer is yes. Why? First all the above code should help you get the data and understand the transformations you have to do to complete the assignment and second, a few weeks ago, the Rstudio organization [introduced Quarto](https://www.rstudio.com/blog/announcing-quarto-a-new-scientific-and-technical-publishing-system/?mkt_tok=NzA5LU5YTi03MDYAAAGGVgVTLhhcLGyfiMAW06R1dFiIxZl02pAMoMmfFNcrNqOJJa9fcRPDmQ_SKaXdpQAdQBfYbTUjy-fIA_4v9PLeYXJxepXCXglnr2Le7iTfIXY), a new open-source scientific and technical publishing system. To create your own pdf file from qmd document, just follow the following steps:
+
+1. Download and install the latest release of RStudio (v2022.07), you can skip that step if you recently did it.
+
+2. Be sure that you have installed the tidyverse and palmerpenguins packages:
+
+```
+install.packages("tidyverse")
+install.packages("palmerpenguins")
+```
+
+3. Download the Quarto document (.qmd) below, open it in RStudio, and click on  Render.
+
+ [Download hello.qmd](https://quarto.org/docs/get-started/hello/rstudio/_hello.qmd)
+ 
+After that you can also download the data_exercise.qmd from canvas and replicate my own pdf document.
+
+ If you want to further your journey with Quarto, here are some specific things that are recommended by Rstudio, follow their tutorial on [Quarto](https://quarto.org/docs/get-started/hello/rstudio.html). 
+ 
+ Then, watch the live workshop teaching on how to use Quarto available [here](https://www.youtube.com/watch?v=yvi5uXQMvu4). It takes you from the download page to doing some awesome things in just about 2 hours, starting from minute 35 of the live stream. There is a  Pre-built RStudio Cloud with workshop materials already installed here: https://rstudio.cloud/content/4332583 and an associated website here: https://jthomasmock.github.io/quarto-2hr-webinar/

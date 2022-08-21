@@ -29,15 +29,25 @@ class: my-one-page-font
 
 1. Identify the factors that affect the demand for assets.
 
+--
+
 2. Draw the demand and supply curves for the bond market 
   - identify the equilibrium interest rate $i^*$. 
 
+--
+
 3. List and describe the factors that affect the equilibrium  $i^*$
+
+--
 
 4. Describe the connection between the bond market and the money market
   - Liquidity Preference model
-  
+
+--
+
 5. List and describe the factors that affect the money market
+
+--
 
 6. Changes in money growth and $i^*$
 
@@ -75,6 +85,8 @@ class: my-one-page-font
   3. negatively related to the risk of its returns relative to alternative assets
   4. positively related to liquidity
 
+--
+
 | Variable | Change in Variable | Change in Quantity Demanded |
 | :--- | :---: | :---: |
 | Wealth | $\uparrow$ | $\uparrow$ |
@@ -101,31 +113,6 @@ knitr::include_graphics("week4graphs/supply_demand.png")
 
 class: my-one-page-font
 
-# Changes in Equilibrium Interest Rates
-
-Shifts in the demand for bonds:
-
-Wealth: in an expansion with growing wealth, the demand curve
-for bonds shifts to the right
-
-Expected Returns: higher expected interest rates in the future
-lower the expected return for long-term bonds, shifting the
-demand curve to the left
-
-Expected Inflation: an increase in the expected rate of inflations
-lowers the expected return for bonds, causing the demand curve
-to shift to the left
-
-Risk: an increase in the riskiness of bonds causes the demand
-curve to shift to the left
-
-Liquidity: increased liquidity of bonds results in the demand curve
-shifting right
-
----
-
-class: my-one-page-font
-
 # Shift in the Demand Curve for Bonds
 
 ```{r  out.width = "60%", fig.align="center",echo=FALSE}
@@ -139,25 +126,55 @@ class: my-one-page-font
 
 # Factors that shift the Demand Curve
 
-| Variable | Change in Variable  | Change in Quantity Demanded at Each Bond Price |
-| :--- | :---: | :---: |
-| Wealth | $\uparrow$ | $\uparrow$  |
-| Expected interest rate |   | |
-| Expected inflation |  |  |
-| Riskiness of bonds relative to other assets|  |  |
-| Liquidity of bonds relative to other assets|  |  |
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+.panelset[
+.panel[.panel-name[Variables]
+
+- __Wealth:__ in an expansion with growing wealth, the Bonds' demand curve
+shifts right
+
+- __Expected Returns:__ higher expected interest rates in the future
+lower the expected return for long-term bonds, shifting the
+demand curve to the left
+
+- __Expected Inflation:__ an increase in the expected rate of inflations
+lowers the expected return for bonds: left shift
+
+
+- Higher __Risk:__ causes the Bonds' demand curve to shift to the left
+
+- Higher __Liquidity:__ results in the demand curve shifting right
+
+]
+
+.panel[.panel-name[Summary]
+
+| Variable | Change in Variable  | Shift in Demand | Change in $i^*$ | 
+| :--- | :---: | :---: |  :---: |
+| Wealth | $\uparrow$ | $\uparrow$  | |
+| Expected interest rate |   | | |
+| Expected inflation |  |  | |
+| Riskiness of bonds relative to other assets|  |  | |
+| Liquidity of bonds relative to other assets|  |  | |
+
+]
+
+]
+
 
 ---
 
 # Shifts in the supply for bonds:
 
-- __Expected profitability of investment opportunities:__
-  - in an expansion, the supply curve shifts to the right
+- __Expected profitability of investment opportunities:__ Expansion -> supply curve shifts to the right
 
 - As __Expected inflation__ increases the supply curve for bonds shifts to the right
 
-- __Government budget:__
-  - increased budget deficits shift the supply curve to the right
+- Increased __budget deficits__ shift the supply curve to the right
   
 ```{r  out.width = "40%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week4graphs/supply.png") 
@@ -218,6 +235,8 @@ __If the market for money is in equilibrium then the bond market is also in equi
 $$ M^D =  M^S \Rightarrow B^S = B^D $$
 ---
 
+
+
 # The Liquidity Preference Framework 
 
 ```{r  out.width = "60%", fig.align="center",echo=FALSE}
@@ -229,46 +248,33 @@ knitr::include_graphics("week4graphs/moneyeq.png")
  
 ---
 
+class: my-one-page-font
+
 # Factors affecting the Money Market Equilibrium
 
-Shifts in the demand for money:
+- Shifts in the demand for money:
 
-Income Effect: a higher level of income causes the
-demand for money at each interest rate to increase
-and the demand curve to shift to the right
+1. __Income Effect:__ a higher level of income causes the
+demand for money at each interest rate to increase -> demand curve shifts right
 
-Price-Level Effect: a rise in the price level causes
-the demand for money at each interest rate to
-increase and the demand curve to shift to the right
+2.  a rise in the __Price-Level:__ causes the demand for money at each interest rate to
+increase -> demand curve to shift to the right
 
-Shifts in the supply of money:
+- Shifts in the supply of money:
 
-Assume that the supply of money is controlled by the
-central bank.
+Assumption: The supply of money is controlled by the central bank.
 
-An increase in the money supply engineered by the
-Federal Reserve will shift the supply curve for money
-to the right.
+1. An increase in the money supply by the Fed will shift supply to the right.
 
 ---
 
 # Factors affecting the Money Market Equilibrium
-
-| Variable | Change in Variable | Demand or Supply at Each Interest Rate | Change in $i$ |
-| :--- | :---: | :---: | :---: |
-| Income | uarr | M^(d)uarr | uarr |
-| Price level |  |  |  |
-| Money Supply |  |  |  |
 
 - If Income or Prices increase:
 
-```{r  out.width = "40%", fig.align="center",echo=FALSE}
+```{r  out.width = "60%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week4graphs/moneyeq2.png") 
 ```
-
----
-
-# Response to a Change in the Money Supply
 
 
 ---
@@ -276,20 +282,23 @@ class: my-one-page-font
  
 # Money and Interest Rates
 
-A one time increase in the money supply will cause prices
-to rise to a permanently higher level by the end of the year.
-The interest rate will rise via the increased prices.
+> A one time increase in the money supply will cause prices to rise to a permanently higher level by the end of the year.
 
-Price-level effect remains even after prices have stopped
-rising.
+--
 
-A rising price level will raise interest rates because people
+- The interest rate will rise via the increased prices.
+  - Price-level effect remains even after prices have stopped rising.
+
+--
+
+> A rising price level will raise interest rates because people
 will expect inflation to be higher over the course of the year.
 When the price level stops rising, expectations of inflation
 will return to zero.
 
-Expected-inflation effect persists only as long as the price
-level continues to rise.
+--
+
+- Expected-inflation effect persists only as long as the price level continues to rise.
 
 
 ---
@@ -309,20 +318,26 @@ class: my-one-page-font
  
 # Let's see:
 
-Liquidity preference framework leads to the conclusion
+> Liquidity preference framework leads to the conclusion
 that an increase in the money supply will lower interest
 rates: the liquidity effect.
 
-Income effect finds interest rates rising because increasing
+--
+
+> Income effect finds interest rates rising because increasing
 the money supply is an expansionary influence on the
 economy (the demand curve shifts to the right).
 
-Price-Level effect predicts an increase in the money
+--
+
+> Price-Level effect predicts an increase in the money
 supply leads to a rise in interest rates in response to the
 rise in the price level (the demand curve shifts to the
 right).
 
-Expected-Inflation effect shows an increase in interest
+--
+
+> Expected-Inflation effect shows an increase in interest
 rates because an increase in the money supply may lead
 people to expect a higher price level in the future (the
 demand curve shifts to the right).
@@ -332,12 +347,10 @@ demand curve shifts to the right).
 
 class: my-one-page-font
  
-# Increase in Money Supply Growth
-
-- Three Scenarios:
+# Three Scenarios:
 
 
-```{r  out.width = "40%", fig.align="center",echo=FALSE}
+```{r  out.width = "45%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week4graphs/scenarios.png") 
 ```
 

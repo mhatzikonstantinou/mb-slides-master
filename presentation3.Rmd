@@ -29,12 +29,24 @@ class: my-one-page-font
 # What will you learn today?
 
 1. Develop precise definitions by exploring the functions of money
+
+--
+
 2. List and summarize the functions of money
   - why and how it promotes economic efficiency
+  
+--
+
 3. Identify different types of payment systems
   - tracing how money have evolved over time, 
+
+--
+
 4. Compare and contrast the M1 and M2 money supplies
   - how money is currently measured.
+
+--
+
 5. The cost of holding money
   - Define Interest Rates
 ---
@@ -46,10 +58,14 @@ class: my-one-page-font
 
 - Money (or the “money supply”): anything that is generally accepted as __payment for goods or services__ or in the repayment of debts.
 
+--
+
 Money (a stock concept) is different from:
 
 - __Wealth:__ the total collection of pieces of property that serve to store value
 - __Income:__ flow of earnings per unit of time (a flow concept)
+
+--
 
 __Functions of Money__
   - Medium of Exchange
@@ -210,12 +226,12 @@ class: my-one-page-font
 # Measuring Interest Rates
 
 - __Present value:__ a dollar in a year is less valuable than a dollar paid to you today.
-- Why: a dollar deposited today can earn interest and become $\$ 1 \times(1+i)$ one year from today.
+- Why: a dollar deposited today can earn interest and become $1 \times(1+i)$ one year from today.
 
 --
 
-- What is the value off 100 saved after $n$ years?
-  - __Depends on how you save, let $i=.10$__
+- What is the value of 100 saved after $n$ years?
+  - __Depends on how you save. if $i=10$ percent:
     - In one year: $100 \times(1+0.10)= 110$
     - In two years: $110 \times(1+0.10)= 121$
     - or $100 \times(1+0.10)^{2}$

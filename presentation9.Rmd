@@ -28,74 +28,65 @@ class: my-one-page-font
 
 # What will you learn in this lecture?
 
-- 18.1 Explain how the foreign exchange market works and
-why exchange rates are importance.
+- Explain how the foreign exchange market works and why exchange rates are importance.
 
-18.2 Identify the main factors that affect exchange rates in
-the long run.
+--
 
-18.3 Draw the demand and supply curves for foreign
-exchange market and interpret the equilibrium in the market
-for foreign exchange.
+-  Identify the main factors that affect exchange rates in the long run.
 
-18.4 List and illustrate the factors that affect the exchange
-rates in the short run.
+--
+
+-  Draw the demand and supply curves for foreign exchange market and interpret the equilibrium in the market for foreign exchange.
+
+--
+
+-  List and illustrate the factors that affect the exchange rates in the short run.
 
 
 ---
 
 class: my-one-page-font
 
-# Foreign Exchange Market (1 of 2)
+# Foreign Exchange Market
 
-Exchange rate: price of one currency in terms of another
+__Exchange rate:__ price of one currency in terms of another
 
-Foreign exchange market: the financial market where
-exchange rates are determined
+__Foreign exchange market:__ 
+  - the financial market where exchange rates are determined
+  - over-the-counter market
+  - trading reserves
+  
+__Spot transaction:__ immediate (two-day) exchange of bank deposits
+  - Spot exchange rate
 
-Spot transaction: immediate (two-day) exchange of
-bank deposits
+__Forward transaction:__ the exchange of bank deposits at some specified future date
+  - Forward exchange rate
 
-Spot exchange rate
-
-Forward transaction: the exchange of bank deposits at
-some specified future date
-
-Forward exchange rate
 ---
 
 class: my-one-page-font
 
 # Foreign Exchange Market 
-Appreciation: a currency rises in value relative to another
-currency
 
-Depreciation: a currency falls in value relative to another
-currency
+- Appreciation: a currency rises in value relative to another currency
+ 
+- Depreciation: a currency falls in value relative to another currency
 
-When a country’s currency appreciates, the country’s goods
-become more expensive to foreigners and foreign goods in
-that country become less expensive to domestic economic
-agents
+--
 
-The foreign exchange market is an over-the-counter market
-wherein most trades involve the buying and selling of bank
-deposits denominated in different currencies
+
+Theory of Purchasing Power Parity:
+  - Exchange Rates in the Long Run  
+  - Assumption 1: All goods are identical in both countries
+  - Assumption 2: Trade barriers and transportation costs are low
 
 ---
 
 class: my-one-page-font
 
-# Exchange Rates in the Long Run
+# Foreign Exchange Market 
 
-Theory of Purchasing Power Parity assumptions:
-
-All goods are identical in both countries
-
-Trade barriers and transportation costs are low
-
-Many goods and services are not traded across
-borders
+But, Many goods and services are not traded across borders
 
 ```{r  out.width = "80%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week9graphs/ppp.png")
@@ -103,53 +94,35 @@ knitr::include_graphics("week9graphs/ppp.png")
 
 - [Big Macs and PPP]()
 
-
 ---
 
 class: my-one-page-font
 
 # Factors That Affect Exchange Rates in the Long Run
 
-| Factor | Change in Factor | Response of the Exchange Rate, E^(**) |
+| Factor | Change in Factor | Response of the Exchange Rate |
 | :--- | :---: | :---: |
-| Domestic price level † | uarr | darr |
-| Trade barriers † | uarr | uarr |
-| Import demand | uarr | darr |
-| Export demand | uarr | uarr |
-| Productivity † | uarr | uarr |
-
-*Units of foreign currency per dollar:
-
-indicates domestic currency appreciation;
-
-depreciation.
-
-Relative to other countries.
-
-Note: Only increases
-
-in the factors are shown; the effects of decreases in the variables on the exchange rate are the
-
-opposite of those indicated in the “Response” column.
+| Domestic prices, Relative to other countries |  |  |
+| Trade barriers, Relative to other countries |  |  |
+| Import demand |  |  |
+| Export demand |  |  |
+| Productivity, Relative to other countries |  |  |
 
 ---
 
+class: my-one-page-font
+
 # Exchange Rates in the Short Run
 
-An exchange rate is the price of domestic assets in terms of foreign assets
+- An exchange rate is the price of domestic assets in terms of foreign assets
 
 Supply curve for domestic assets
-
-Assume amount of domestic assets is fixed (supply curve
-is vertical)
+  - Assume amount of domestic assets is fixed 
+  - Supply curve is vertical
 
 Demand curve for domestic assets
-
-Most important determinant is the relative expected return
-of domestic assets
-
-At lower current values of the dollar (everything else
-equal), the quantity demanded of dollar assets is higher
+  - Most important determinant is the relative expected return of domestic assets
+  - At lower current values of the dollar, the quantity demanded of dollar assets is higher
 
 ---
 
@@ -159,25 +132,28 @@ equal), the quantity demanded of dollar assets is higher
 ```{r  out.width = "80%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week9graphs/exeq.png")
 ```
+
 ---
 
 # Shifts in the demand for domestic assets
 
-Domestic interest rate
+- Domestic interest rate
 
-Foreign interest rate
+- Foreign interest rate
 
-Expected future exchange rate
+- Expected future exchange rate
 
-- Plot here:
 
---- 
+
+---
+
+class: my-one-page-font
 
 # Factors affecting the interest rate 
 
-| Factor | Change in Factor | Assets at Each Exchange Rate | Response of Exchange Rate, E |
+| Factor | Change in Factor | Assets at Each Exchange Rate | Response of Exchange Rate |
 | :--- | :---: | :---: | :---: |
-| Domestic interest rate| uarr | uarr | uarr |
+| Domestic interest rate|  |  |  |
 | Foreign interest rate |  |  |  |
 |Expected domestic price level||||
 |Expected trade barriers||||
@@ -187,37 +163,34 @@ Expected future exchange rate
 
 ---
 
+class: my-one-page-font
+
+
 # Changes in Interest Rates and the Exchange Rate
 
-Changes in Interest Rates
 
-When domestic real interest rates raise, the
-domestic currency appreciates.
+- When domestic real interest rates rise, the domestic currency appreciates.
 
-When domestic interest rates rise due to an
-expected increase in inflation, the domestic
-currency depreciates.
+- When domestic interest rates rise due to an expected increase in inflation, the domestic currency depreciates.
 
-Changes in the Money Supply
+- Changes in the Money Supply
+  - A higher domestic money supply causes the domestic currency to depreciate.
 
-A higher domestic money supply causes the
-domestic currency to depreciate.
+- An Increase in Expected Inflation -> rise in interest rate
 
-Effect of a Rise in the Domestic Interest Rate
-as a Result of an Increase in Expected Inflation
+Step 1. shifts the demand curve to the left...
 
-Step 1. A rise in the domestic real interest as a result of an increase in expected inflation shifts the demand curve to the left...
-
-Step 2.this leads to a fall in the exchange rate
+Step 2. this leads to a fall in the exchange rate
 
 ---
 
+class: my-one-page-font
+
 # Applications
 
-Application: The Global Financial Crisis
-and the Dollar
+Application 1: The Global Financial Crisis and the Dollar
 
-With the start of the global financial crisis in August
+> With the start of the global financial crisis in August
 2007, the dollar began an accelerated decline in value,
 falling by 9% against the euro until mid-July of 2008.
 After hitting an all-time low against the euro on July 11,
@@ -226,12 +199,14 @@ the value of the dollar suddenly shot upward, by over
 the relationship between the global financial crisis and
 these large swings in the value of the dollar?
 
+--
 
-Application: Brexit and the British Pound
+Application 2: Brexit and the British Pound
 
-As noted in the introduction, the Brexit vote in the
+>As noted in the introduction, the Brexit vote in the
 United Kingdom on June 23, 2016, led to nearly a 10%
 depreciation in the British pound, from $1.48 to the
 pound on June 23, just before the vote, to $1.36 per
 pound on June 24. What explains the large one-day
 decline in the exchange rate for the pound?
+

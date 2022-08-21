@@ -26,7 +26,7 @@ class: center,middle,mctitle-slide
 
 class: my-one-page-font
 
-# What will you learn today?
+# What will you review today?
 
 
 1. Calculate the price of common stock.
@@ -38,6 +38,36 @@ class: my-one-page-font
 --
 
 3. Discuss common techniques to value a company
+
+
+
+---
+
+class: my-one-page-font
+
+# What will you learn today?
+
+
+4. Recognize the impact of new information on stock prices
+
+--
+
+5.  Compare and contrast adaptive and rational expectations
+
+--
+
+6. What are arbitrage opportunities 
+
+--
+
+7. What is the efficient market hypothesis 
+
+--
+
+8. Identify and explain the implications of the efficient market hypothesis for financial markets.
+  - Behavioral Finance
+
+9. Is the Stock Market Overvalued?
 
 ---
 
@@ -278,7 +308,7 @@ class: my-one-page-font
 Monetary policy can affect stock prices in two ways:
 
 1. First, when the Fed lowers interest rates, the return on bonds declines,so
-    - the required return, $k_e$, is likely to be somewhat higher:
+    - the required return, $k_e$, is likely to be somewhat lower:
       - lowers the denominator in the Gordon formula
       - raises stock prices.
 
@@ -286,46 +316,6 @@ Monetary policy can affect stock prices in two ways:
     - the growth rate in dividends, $g$, is likely to be somewhat higher.
       - lowers the denominator in the Gordon formula
       - raises stock prices.
-
-
----
-
-class: my-one-page-font
-
-
-# Useful Links:
-
-- [Financial Data](https://finance.yahoo.com/)
-- [Get Financial Data in R](https://www.youtube.com/watch?v=hZS31_nSlGg)
-
---
-
-- [More on Valuations](https://pages.stern.nyu.edu/~adamodar/)
-  - [Getting Data](https://www.stern.nyu.edu/~adamodar/podcasts/Webcasts/gettingdata.mp4)
-  - [What to know about a company](https://www.stern.nyu.edu/~adamodar/podcasts/Webcasts/Reading10Knew.mp4)
-  - [Valuation Tools Webcast](https://youtu.be/F9GfXJ-IrSA)
-        - [Valuation Tools, Excel](https://pages.stern.nyu.edu/~adamodar/pc/fcffsimpleginzuCorona.xlsx)
-  - [Valuation and Market News](https://aswathdamodaran.blogspot.com/)
-
-
----
-
-
-class: my-one-page-font
-
-# What will you learn today?
-
-- Recognize the impact of new information on stock prices
-
-- Compare and contrast adaptive and rational expectations
-
-- What are arbitrage opportunities 
-
-- What is the efficient market hypothesis 
-
-- Identify and explain the implications of the efficient market hypothesis for financial markets.
-  - Behavioral Finance
-
 
 ---
 
@@ -341,6 +331,11 @@ class: my-one-page-font
 
 $$R=\frac{P_{t+1}-P_{t}+D_t}{P_{t}}$$
 
+--
+
+- But Prices depend on Valuations   
+- And Valuations depend on expectations!
+
 ---
 
 class: my-one-page-font
@@ -351,6 +346,8 @@ class: my-one-page-font
   - Expectations are formed from past experience only.
   - Changes in expectations will occur slowly 
     - as new information arrives.
+
+--
 
 - But: 
   1. People use more than just past data to form their expectations 
@@ -380,6 +377,8 @@ class: my-one-page-font
  - The incentives for equating expectations with optimal forecasts are especially strong
   - people with better forecasts of the future get rich.
 
+--
+
 - Efficient market hypothesis
   - Theory of rational expectations to financial markets 
   - Implications: 
@@ -397,6 +396,9 @@ class: my-one-page-font
 
   - At the beginning of the period, we know $P_{t}$ and $D_t$.  
   - $P_{t+1}$ is unknown and we must form an expectation of it. 
+  
+--
+
 
 The expected return then is
 $$R^{e}=\frac{P_{t+1}^{e}-P_{t}+D_t}{P_{t}}$$
@@ -405,6 +407,7 @@ $$R^{e}=\frac{P_{t+1}^{e}-P_{t}+D_t}{P_{t}}$$
 - Expectations of future prices = optimal forecasts using available information:
 
 $$P_{t+1}^{e}=P_{t+1}^{o f} \Rightarrow R^{e}=R^{of}$$
+--
 
 - But returns can not be far away from equilibrium returns: 
 
@@ -423,6 +426,8 @@ Current prices are such that:
   - optimal forecast of a security’s return = the security’s equilibrium return.
   - a security’s price fully reflects all available information.
   - all unexploited profit opportunities will be eliminated
+
+--
 
 - Why does this imply $R^{\text {of }}=R^{e}=R^{*}$?
 
@@ -497,6 +502,338 @@ class: my-one-page-font
 
 - The lack of short selling (causing over-priced stocks) may be explained by loss aversion.
 
+--
+
+
 - The large trading volume may be explained by investor overconfidence.
 
+--
+
 - Stock market bubbles may be explained by overconfidence and social contagion
+
+
+
+---
+
+class: my-one-page-font
+
+# Valuing the Aggregate Economy
+
+
+Three ways to value a Stock Index
+  - Replacement Cost
+  - Price/Earnings
+  - Discounted Dividends
+  
+--
+
+Benchmarks for Economy 
+  - Earnings = Profits 
+  - Dividends = All Cash flows to households
+  
+--
+
+- Why do we care?
+  - The Total Value of US Corporations Has Risen over Time
+  - But so did GDP? Is the stock market overvalued?
+
+---
+
+class: my-one-page-font
+
+# How we measure the aggregate economy?
+
+- NIPA and the Integrated Macroeconomic Accounts
+  - __GDP__: Expenditure equals output equals incomes 
+  - Savings = Investment 
+    - Household capital (directly owned houses and durable goods) 
+    - Business capital (business are owned by households through intermediaries) 
+    - Wealth of domestic households
+
+
+```{r, out.width = '500px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/IBCKi9sGEiT3YOmtAjCofvA5YdQrjT9FHinuOmgTuMI.original.fullsize.png')
+```
+
+---
+
+class: my-one-page-font
+
+
+# The T-account
+
+- The right(left) side of the account shows an individual’s sources(uses) of income
+
+| Uses of income |  | Sources of income |  |
+| :--- | :---: | :--- | :--- | :--- |
+| Consumption | 50 | Compensation | 70 |
+| Tax payments | 20 | Interest received | 20 |
+| Saving | 30 | Dividends received | 10 |
+| Total Expenditures and Saving | 100 | Total Income | 100 |
+
+--
+
+- Balancing Items
+
+--
+
+- Flows across sectors
+
+
+---
+
+class: my-one-page-font
+
+
+# NIPA Sectors and Accounts
+
+- Businesses
+
+--
+
+- Households and institutions.
+
+--
+
+- Government
+
+--
+
+- Foreigners
+
+--
+
+Accounts
+-  Account 1. Domestic Income and Product Account
+  - expenditures vs income measures of GDP
+
+--
+
+-  Account 2. Private Enterprise Income Account
+  - T-account for businesses
+
+
+---
+
+class: my-one-page-font
+
+
+# NIPA Sectors and Accounts
+
+-  Account 3. Personal Income and Outlay Account
+  - T-account for households
+
+--
+
+-  Account 4. Government Receipts and Expenditures Account
+  - T-account for government
+
+--
+
+-  Account 5. Foreign Transactions Current Account
+  - receipts vs payments to ROW
+
+--
+
+- Account 6. Domestic Capital Account
+
+--
+
+- Account 7. Foreign Transactions Capital Account
+  - savings=investment with ROW
+
+
+---
+
+class: my-one-page-font
+
+
+# Total Economy 
+
+- Expenditure vs Value Added vs Income Approach
+  - Income Approach = Taxes,Payments to Factors 
+    - (Workers, Assets, Firm Owners)
+
+--
+
+```{r, out.width = '800px',fig.align='center',echo=F}
+knitr::include_graphics('https://cdn.mathpix.com/snip/images/TksbwBwYfTqHZ7m78C4JjnFhxLGpwjR29r6PsxZXdI8.original.fullsize.png')
+```
+
+---
+
+class: my-one-page-font
+
+# "Are Stocks Overvalued?"
+
+- Other than knowing
+  - what we produce and
+  - what we own
+  - we can use NIPA data to value an economy!
+
+![](https://cdn.mathpix.com/snip/images/jyGMpHPYXdH1PMpLgl-CKhJvU8n_BHuD_qonc_Z6iAI.original.fullsize.png)
+
+
+
+---
+
+# Stock Prices and Discounted Cash Flows
+
+![](https://cdn.mathpix.com/snip/images/EzK7BUFUlb5dXtaQZlI8Iw0_65StTnhvAPJZZ2vU0KA.original.fullsize.png)
+
+
+---
+
+# Stock Market Value Relative to GDP
+
+- The __Buffet Indicator:__ Corporate equities to GDP
+  - __Numerator:__ Corporate Equities; Liability from the Federal Reserve's Quarterly Z.1 Balance Sheet (B.103). Published in the FRED: _NCBEILQ027S_, or
+  -  __Numerator:__  Wilshire 5000 Total Market Full Cap Index. Published in the FRED: _WILL5000INDFC_,
+  - __Denominator:__ Nominal Quarterly GDP.  FRED _GDP_
+
+
+
+
+- Do you think this is a good measure?
+  - Corporate Profits relative to GDP have increased substantially!
+
+- CAPE (Shiller P/E) 
+  -   Promoted by Robert Shiller,
+  - compares the current price of equities 
+  - to the average of real earnings over the past 10 years
+
+
+
+---
+
+# Stock Market Value Relative to GDP
+
+.panelset[
+.panel[.panel-name[Get Data]
+
+
+```{r, eval=F}
+library(fredr)
+library(tidyverse)
+fredr_set_key("yourkey")
+mv<-fredr("WILL5000INDFC")
+gdp<-fredr("GDP")
+```
+]
+
+.panel[.panel-name[Calculate Buffet Indicator]
+
+
+```{r, eval=F}
+mv %>% filter(date == "2007-12-01")
+gdp %>% filter(date == "2007-12-01")
+data<-inner_join(mv %>% mutate(mv = value/56.7) %>% select(date,mv), 
+                 gdp %>% mutate(gdp = value/14715.1) %>% select(date,gdp))
+data <-data %>% mutate(buffet = mv/gdp)
+data %>% drop_na
+```
+]
+
+
+.panel[.panel-name[Plot]
+
+
+```{r, eval=F}
+data %>% drop_na()  %>% filter(date>"1985-01-01") %>%
+  ggplot(data = ., mapping = aes(x = date, y = buffet)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Buffet Indicator")+
+  theme_classic(base_size = 15)
+```
+]
+
+
+
+.panel[.panel-name[Result]
+
+
+```{r, echo=F, warning=F,message=FALSE,}
+library(fredr)
+library(tidyverse)
+fredr_set_key("3bc35d4a8b94bd0f461a3a61f3d804ba")
+mv<-fredr("WILL5000INDFC")
+gdp<-fredr("GDP")
+data<-inner_join(mv %>% mutate(mv = value/56.7) %>% select(date,mv), 
+                 gdp %>% mutate(gdp = value/14715.1) %>% select(date,gdp))
+data <-data %>% mutate(buffet = mv/gdp)
+data %>% drop_na() %>% filter(date>"1985-01-01") %>%
+  ggplot(data = ., mapping = aes(x = date, y = buffet)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Buffet Indicator")+
+  theme_classic(base_size = 15)
+```
+]
+
+]
+
+---
+
+# Corporate Profits relative to GDP
+
+
+```{r, echo=F, warning=F,message=FALSE,}
+library(fredr)
+library(tidyverse)
+fredr_set_key("3bc35d4a8b94bd0f461a3a61f3d804ba")
+cp<-fredr("CP")
+gdp<-fredr("GDP")
+data<-inner_join(cp %>% rename(cp=value) %>% select(date,cp), 
+                 gdp %>% rename(gdp=value)%>% select(date,gdp))
+data <-data %>% filter(date>"1985-01-01") %>% mutate(ratio = cp/gdp)
+data %>% drop_na() %>%
+  ggplot(data = ., mapping = aes(x = date, y = ratio)) +
+    geom_line() +
+    labs(x = "Observation Date", y = "Ratio of Corporate Profits to GDP")+
+  theme_classic(base_size = 15)
+```
+
+
+---
+
+# Data Exercise
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+```
+
+- Compute the following four metrics for the non-financial corporate  sector using 
+    - FRED data  (the Flow of Funds and the  NIPA)
+
+  1. Buffet Indicator (Stock Market Value to Output)
+  2. Price-corporate profits ratio after taxes
+
+--
+
+- How? 
+
+- After Tax Corporate Profits for the Non-Financial  Corporate Sector 
+  - NIPA Table 1.14 line 29
+  - Table F103 line 1 minus line 2
+
+---
+
+
+class: my-one-page-font
+
+
+# Useful Links:
+
+- [Financial Data](https://finance.yahoo.com/)
+- [Get Financial Data in R](https://www.youtube.com/watch?v=hZS31_nSlGg)
+
+--
+
+- [More on Valuations](https://pages.stern.nyu.edu/~adamodar/)
+  - [Getting Data](https://www.stern.nyu.edu/~adamodar/podcasts/Webcasts/gettingdata.mp4)
+  - [What to know about a company](https://www.stern.nyu.edu/~adamodar/podcasts/Webcasts/Reading10Knew.mp4)
+  - [Valuation Tools Webcast](https://youtu.be/F9GfXJ-IrSA)
+        - [Valuation Tools, Excel](https://pages.stern.nyu.edu/~adamodar/pc/fcffsimpleginzuCorona.xlsx)
+  - [Valuation and Market News](https://aswathdamodaran.blogspot.com/)
+
+
+---

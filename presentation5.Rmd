@@ -27,7 +27,7 @@ class: center,middle,mctitle-slide
 # Risk Structure of Interest Rates 
 
 
-```{r  out.width = "60%", fig.align="center",echo=FALSE}
+```{r  out.width = "50%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week5graphs/ltbonds.png")
 ```
 
@@ -37,7 +37,6 @@ Bonds with the same maturity have different interest rates due to:
 - Default risk
 
 - Liquidity
-  - Cost of selling a bond
   - Number of buyers/sellers in a bond market
 
 - Tax considerations
@@ -47,16 +46,15 @@ Bonds with the same maturity have different interest rates due to:
 # Risk Structure of Interest Rates 
 
 
-Default risk: probability that the issuer of the bond is
-unable or unwilling to make interest payments or pay off
+- Default risk: probability that the issuer of the bond is
+unable to make interest payments or pay off
 the face value
 
-U.S. Treasury bonds are considered default free
-(government can raise taxes).
+- U.S. Treasury bonds are considered default free
+    - (government can raise taxes).
 
-Risk premium: the spread between the interest rates
-on bonds with default risk and the interest rates on
-(same maturity) Treasury bonds
+- Risk premium: the spread between the interest rates
+on bonds with default risk and risk-free rate
 
 | Moody's | Rating Agency S&P | Fitch | Definitions |
 | :--- | :--- | :--- | :--- |
@@ -95,6 +93,8 @@ knitr::include_graphics("week5graphs/default.png")
 
 ---
 
+class: my-one-page-font
+
 # Two Tales
 
 - The Global Financial Crisis and the Baa–Treasury Spread:
@@ -113,8 +113,7 @@ Baa bonds made them less desirable at any given price.
 
 
 > When the coronavirus officially became a pandemic in
-March 2020, the resulting lock-downs and social
-distancing dealt a knockout blow to the world economy.
+March 2020, it dealt a knockout blow to the world economy.
 Many investors began to doubt the financial health of
 corporations with low credit ratings such as Baa.
 The perceived increase in default risk for Baa bonds
@@ -133,52 +132,49 @@ knitr::include_graphics("week5graphs/tax.png")
 
 ---
 
+class: my-one-page-font
+
 # Term Structure of Interest Rates 
 
-Bonds with identical risk, liquidity, and tax characteristics
+- Bonds with identical risk, liquidity, and tax characteristics
 may have different interest rates because the time
 remaining to maturity is different
 
-Yield curve: a plot of the yield on bonds with differing
+- __Yield curve:__ a plot of the yield on bonds with differing
 terms to maturity but the same risk, liquidity, and tax
 considerations
-
-Upward-sloping: long-term rates are above
+  - Upward-sloping: long-term rates are above
 short-term rates
-
-Flat: short- and long-term rates are the same
-
-Inverted: long-term rates are below short-term rates
+  - Flat: short- and long-term rates are the same
+  - Inverted: long-term rates are below short-term rates
 
 
 ---
 
+class: my-one-page-font
+
 # Term Structure of Interest Rates 
 
-The theory of the term structure of interest rates must
+- The theory of the term structure of interest rates must
 explain the following facts:
 
-Interest rates on bonds of different maturities move
+1. Interest rates on bonds of different maturities move
 together over time.
 
-When short-term interest rates are low, yield curves
-are more likely to have an upward slope; when
-short-term rates are high, yield curves are more likely
-to slope downward and be inverted.
+2. When short-term interest rates are low(high), yield curves
+are more likely to have an upward(downward) slope;
 
-Yield curves almost always slope upward.
+3. Yield curves almost always slope upward.
 
+--
 
-Three theories to explain the three facts:
+- Three theories to explain the three facts:
 
-Expectations theory explains the first two facts but not
-the third.
+1. Expectations theory explains the first two facts but not the third.
 
-Segmented markets theory explains the third fact but
-not the first two.
+2. Segmented markets theory explains the third fact but not the first two.
 
-Liquidity premium theory combines the two theories to
-explain all three facts.
+3. Liquidity premium theory combines the two theories to explain all three facts.
 
 ---
 
@@ -190,37 +186,30 @@ knitr::include_graphics("week5graphs/maturity.png")
 
 ---
 
+class: my-one-page-font
+
 # Expectations Theory 
 
-The interest rate on a long-term bond will equal an
-average of the short-term interest rates that people
-expect to occur over the life of the long-term bond.
+- The interest rate on a long-term bond will equal an
+average of all short-term interest rates long-term maturity.
 
-Buyers of bonds do not prefer bonds of one maturity over
-another; they will not hold any quantity of a bond if its
-expected return is less than that of another bond with a
-different maturity.
+- Buyers of bonds do not prefer bonds of one maturity over another; 
+  - expected returns are equalized over time.
+  - Bond holders consider bonds with different maturities to be perfect substitutes.
 
-Bond holders consider bonds with different maturities to
-be perfect substitutes.
+--
 
----
+- Example: Let the current rate on one-year bond be 6%.   
+    - You expect the interest rate on a one-year bond to be 8% in a year.
 
-# An example:
-
-Let the current rate on one-year bond be 6%.
-
-You expect the interest rate on a one-year bond to be 8%
-next year.
-
-Then the expected return for buying two one-year bonds
-
-averages
-
-The interest rate on a two-year bond must be 7% for you
-to be willing to purchase it.
+- Then the expected return for buying two one-year bonds is 7%.
+  - the two-year bond must be 7% for you to purchase it.
+  - we can recover expectations.
 
 ---
+
+class: my-one-page-font
+
 
 # Return on 2-year bond
 
@@ -268,6 +257,7 @@ $$
 i_{t}+i_{t+1}^{e}+i_{t}\left(i_{t+1}^{e}\right)
 \end{gathered}
 $$
+--
 
 - If the second term is very small,  the expected return is 
 
@@ -281,57 +271,55 @@ $$i_{2 t}=\frac{i_{t}+i_{t+1}^{e}}{2}$$
 
 ---
 
+class: my-one-page-font
+
 # Expectations Theory
 
 For bonds with longer maturities
-$$
-i_{n t}=\frac{i_{t}+i_{t+1}^{e}+i_{t+2}^{e}+\ldots+i_{t+(n-1)}^{e}}{n}
-$$
-The $n$-period interest rate equals the average of the one-period interest rates expected to occur over the $n$-period life of the bond
+$$i_{n t}=\frac{i_{t}+i_{t+1}^{e}+i_{t+2}^{e}+\ldots+i_{t+(n-1)}^{e}}{n}$$
+The $n$-period interest rate equals the average of the one-period interest rates expected to occur over the $n$-period life of the bond!
 
 Expectations theory explains:
 
-Why the term structure of interest rates changes at
-different times.
+- Why the term structure of interest rates changes at different times.
 
-Why interest rates on bonds with different maturities
-move together over time (fact 1).
+- Why interest rates on bonds with different maturities move together over time (fact 1).
 
-Why yield curves tend to slope up when short-term
-rates are low and slope down when short-term rates
-are high (fact 2).
+- Why yield curves tend to slope up when short-term rates are low (fact 2).
 
-Cannot explain why yield curves usually slope upward
-(fact 3)
+- __Cannot explain why yield curves usually slope upward(fact 3)__
 
 ---
+
+class: my-one-page-font
 
 # Segmented Markets Theory
 
-Bonds of different maturities are not substitutes at all.
+- Bonds of different maturities are not substitutes at all.
 
-The interest rate for each bond with a different maturity is
-determined by the demand for and supply of that bond.
+- The interest rate for each bond with a different maturity is determined by the demand for and supply of that bond.
 
-Investors have preferences for bonds of one maturity
-over another.
+--
 
-If investors generally prefer bonds with shorter maturities
-that have less interest-rate risk, then this explains why
-yield curves usually slope upward (fact 3).
+- Investors have preferences for bonds of one maturity over another.
+   - generally  bonds with shorter maturities preferred
+   - have less interest-rate risk, then this explains why yield curves usually slope upward (fact 3).
 
 ---
 
+class: my-one-page-font
+
 # Liquidity Premium 
 
-The interest rate on a long-term bond will equal an
+> The interest rate on a long-term bond will equal an 
 average of short-term interest rates expected to occur
 over the life of the long-term bond plus a liquidity
 premium that responds to supply and demand conditions
 for that bond.
 
-Bonds of different maturities are partial (not perfect)
-substitutes.
+- Bonds of different maturities are partial (not perfect) substitutes.
+
+--
 
 - Liquidity Premium Theory 
 
@@ -345,37 +333,36 @@ $$i_{n t}=\frac{i_{t}+i_{t+1}^{e}+i_{t+2}^{e}+\ldots+i_{t+(n-1)}^{e}}{n}+l_{nt}$
 
 # Preferred Habitat Theory
 
-Investors have a preference for bonds of one maturity
-over another.
+- Investors have a preference for bonds of one maturity over another:
 
-They will be willing to buy bonds of different maturities
-only if they earn a somewhat higher expected return.
-
-Investors are likely to prefer short-term bonds over
-longer-term bonds.
-
-```{r  out.width = "80%", fig.align="center",echo=FALSE}
+```{r  out.width = "70%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week5graphs/liquidity.png")
 ```
 
 ---
 
+class: my-one-page-font
+
 # Predictions
 
 
-Interest rates on different maturity bonds move together
-over time; explained by the first term in the equation
+- Interest rates on different maturity bonds move together over time; 
+  - explained by the first term in the equation
 
-Yield curves tend to slope upward when short-term rates
-are low and to be inverted when short-term rates are
-high; explained by the liquidity premium term in the first
-case and by a low expected average in the second case
+- Yield curves tend to slope upward when short-term rates are low and
+- to be inverted when short-term rates are high; 
+  - explained by the liquidity premium term in the first case and by a low expected average in the second case
 
-Yield curves typically slope upward; explained by a larger
-liquidity premium as the term to maturity lengthens
+- Yield curves typically slope upward; 
+  - explained by a larger liquidity premium as the term to maturity lengthens
 
 
-```{r  out.width = "80%", fig.align="center",echo=FALSE}
+
+---
+
+# Predictions
+
+```{r  out.width = "50%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week5graphs/habitat.png")
 ```
 
@@ -383,6 +370,6 @@ knitr::include_graphics("week5graphs/habitat.png")
 
 # Yield Curves and Business Cycles
 
-```{r  out.width = "70%", fig.align="center",echo=FALSE}
+```{r  out.width = "60%", fig.align="center",echo=FALSE}
 knitr::include_graphics("week5graphs/yieldcurves.png")
 ```

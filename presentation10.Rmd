@@ -24,36 +24,29 @@ class: center,middle,mctitle-slide
 
 ---
 
-
+class: my-one-page-font
 
 # What will you learn in this lecture?
 
-- 19.1 Use graphs and T-accounts to illustrate the
-distinctions between the effects of sterilized and
-unsterilized interventions on foreign exchange markets.
+- The effects of sterilized and unsterilized interventions on foreign exchange markets.
 
-19.2 Interpret the relationships among the current
+- Interpret the relationships among the current
 account, the capital account, and official reserve
 transactions balance.
 
-19.3 Identify the mechanisms for maintaining a fixed
+-  Identify the mechanisms for maintaining a fixed
 exchange rate and assess the challenges faced by fixed
 exchange rate regimes.
 
-19.4 Summarize the advantages and disadvantages of
+- Summarize the advantages and disadvantages of
 capital controls.
 
-19.5 Assess the role of the I M F as an international lender
-of last resort.
-
-19.6 Identify the ways in which international monetary
-policy and exchange rate arrangements can affect
+- Identify the ways in which international monetary policy and exchange rate arrangements can affect
 domestic monetary policy operations.
 
-19.7 Summarize the advantages and disadvantages of
-exchange-rate targeting.
-
 ---
+
+class: my-one-page-font
 
 # Intervention in the Foreign Exchange Market
 
@@ -73,7 +66,7 @@ exchange-rate targeting.
 
 --
 
-A central bank’s purchase of domestic currency and
+Purchase of domestic currency and
 corresponding sale of foreign assets in the foreign
 exchange market lead to an equal decline in its
 international reserves and the monetary base.
